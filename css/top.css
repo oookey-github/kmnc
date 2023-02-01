@@ -27,7 +27,7 @@ body{
 }
 
 .mv{
-    background-image: url(../img/mv.png);
+    background-image: url(../image/mv.png);
     position: absolute;
     left: 0;
     top: 0;
@@ -62,6 +62,7 @@ body{
     line-height: 5.5rem;
     font-weight: 400;
     text-shadow: 0 0 8px rgb(0 0 0);
+    margin: 3rem auto;
 }
 .front_title::after{
     content: '';
