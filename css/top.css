@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+.pc{display: inherit;}
+.sp{display: none;}
+@media screen and ( max-width:767px ){
+	.pc{display: none;}
+	.sp{display: inherit;}
+}
+html{font-size: 62.5%;}
+body{
+	font-size:1.4em;
+	font-style: normal;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    color: #292929
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+@media (min-width: 768px) {
+    body {
+        min-width: 1024px;
+    }
+}
+@media only screen and (max-width: 767px){
+	html{font-size: calc( 1000vw / XXX );}
+}
+
+.mv{
+    background-image: url(../img/mv.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.mv_inner{
+    height: 83rem;
+}
+.mv_front{
+    height: 45rem;
+    text-align: center;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    color: #fff;
+    text-shadow: 0 0 80px rgb(4 0 0 / 60%);
+}
+.mv_front .logo img{
+    width: 25rem;
+    height: auto;
+}
+.front_title{
+    font-size: 3.8rem;
+    letter-spacing: 1.5rem;
+    line-height: 5.5rem;
+    font-weight: 400;
+    text-shadow: 0 0 8px rgb(0 0 0);
+}
+.front_title::after{
+    content: '';
+    position: absolute;
+    width: 24rem;
+    height: 0.1rem;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 9rem;
+}
+.front_blur{
+    --sample-color: 96, 2, 238;
+    aspect-ratio: 1 / 1;
+    background:rgba(0,0,0,0.23);
+    border-radius: 50%;
+    filter: blur(50px);
+    width: min(100%, 52rem);
+    position: absolute;
+    margin-top: -31rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 54rem;
+}
