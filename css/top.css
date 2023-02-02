@@ -8,7 +8,7 @@
 }
 html{font-size: 62.5%;}
 body{
-	font-size:1.4em;
+	font-size:1.6em;
 	font-style: normal;
     font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
     color: #292929
@@ -26,13 +26,24 @@ body{
 	html{font-size: calc( 1000vw / XXX );}
 }
 
+/* 共通クラス */
+.vertical{
+    writing-mode: vertical-rl;
+}
+/* トップページ */
+.body_inner{
+    position: relative;
+}
+/* mv */
 .mv{
     background-image: url(../image/mv.png);
-    position: absolute;
-    left: 0;
+    position: relative;
     top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: 83rem;
     background-position: center;
     background-size: cover;
 }
@@ -55,6 +66,7 @@ body{
 .mv_front .logo img{
     width: 25rem;
     height: auto;
+    margin-right: 4rem;
 }
 .front_title{
     font-size: 3.8rem;
@@ -62,7 +74,7 @@ body{
     line-height: 5.5rem;
     font-weight: 400;
     text-shadow: 0 0 8px rgb(0 0 0);
-    margin: 3rem auto;
+    margin: 3rem auto 10rem;
 }
 .front_title::after{
     content: '';
@@ -72,7 +84,7 @@ body{
     background-color: #fff;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 9rem;
+    margin-top: 8rem;
 }
 .front_blur{
     --sample-color: 96, 2, 238;
@@ -89,4 +101,104 @@ body{
     bottom: 0;
     margin: auto;
     height: 54rem;
+}
+
+.arrow {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    position: relative;
+    width: 0.5em;
+    height: 0.5em;
+    transform: translateX(-25%) rotate(45deg);
+    margin-right: 1rem;
+}
+  
+.arrow::before, .arrow::after {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    border-radius: 0.1em;
+}
+  
+.arrow::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.1em;
+}
+  
+.arrow::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.1em;
+}
+.circle_btn_w {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 19rem;
+    margin: 0 auto;
+}
+.circle_btn_text{
+    position: absolute;
+    right: 0;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* コンテンツ */
+.content_section{
+    padding-bottom: 13rem;
+}
+
+/* バナー */
+.toppage .banner{
+    height: 18rem;
+    width: 70%;
+    min-width: 100rem;
+    margin: 8rem auto 0;
+    color: #fff;
+}
+.toppage .banner_img{
+    background-image: url(../image/banner_1.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* メインコンテンツ */
+.main_content{
+    display: flex;
+    position: relative;
+}
+/* mc画像 */
+.mc_item_1{
+    height: 74vh;
+    width: 48vh;
+}
+.mc_img_1{
+    background-image: url(../image/mc_1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+/* 縦書き */
+.vertical_text{
+    position: absolute;
+    top: -4rem;
+}
+/* mc文章 */
+.mc_text{
+    display: flex;
+    flex-direction: column;
+}
+.mc_title{
+    font-size: 3.2rem;
+    letter-spacing: 1rem;
+    line-height: 5rem;
 }
