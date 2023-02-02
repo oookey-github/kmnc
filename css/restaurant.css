@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+.pc{display: inherit;}
+.sp{display: none;}
+@media screen and ( max-width:767px ){
+	.pc{display: none;}
+	.sp{display: inherit;}
+}
+html{font-size: 62.5%;}
+body{
+	font-size:1.4em;
+	font-style: normal;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    color: #292929;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+@media (min-width: 768px) {
+    body {
+        min-width: 1024px;
+    }
+}
+@media only screen and (max-width: 767px){
+	html{font-size: calc( 1000vw /430px  );}
+}
+/* ====== 色 ====== */
+.bg1{
+    background-color: #FFFFFF;
+}
+.bg2{
+    background-color:#F5F8F8
+}
+.bg3{
+    background-color: #244D57;
+}
+.bg4{
+    background-color: #F8F6F0;
+}
+.c1{
+    color:#FFFFFF;
+}
+.c2{
+    color:#FCE9B0;
+}
+
+/* ================ */
+
+/* フォントサイズ 太さ */
+.fs08{
+    font-size:0.8rem;
+}
+.fs10{
+    font-size:1rem;
+}
+.fs12{
+    font-size:1.2rem;
+}
+.fs13{
+    font-size:1.3rem
+}
+.fs16{
+    font-size:1.6rem;
+}
+.fs18{
+    font-size:1.8rem
+}
+.fs22{
+    font-size:2.2rem
+}
+.fs24{
+    font-size:2.4rem;
+}
+.fs25{
+    font-size:2.5rem;
+}
+.fs28{
+    font-size:2.8rem;
+}
+.fs30{
+    font-size:3rem;
+}
+.fs34{
+    font-size:3.4rem;
+}
+.fw-b{
+    font-weight:bold;
+}
+
+/* ================ */
+/* flex */
+.flex{
+    display:flex;
+}
+/* ボタン */
+.btn{
+    width:14.5rem;
+    height:3.1rem;
+    justify-content: center;
+    align-items: center;
+    margin-right:5.7rem;
+}
+/* ヘッダー */
+.header{
+    width:100%;
+    height:27.5rem;
+    background-image: url(../image/header_bg_restaurant.png);
+    justify-content: space-between;
+    padding:0 4.4rem 0 11rem;
+}
+.logo_icon{
+    width:16.4rem;
+    height:15.2rem;
+}
+.nav_btn{
+    margin-top:4.6rem;
+    
+}
+/* ハンバーガーボタン */
+.openbtn{
+    display:inline-block;
+    position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+    cursor: pointer;
+    width: 3rem;
+    height:3rem;
+    border-radius: 5px;
+    margin-left:10.4rem
+}
+    .openbtn span{
+    display: inline-block;
+    transition: all .4s;
+    /*アニメーションの設定*/position: absolute;
+    height:0.3rem;
+    border-radius: 2px;
+    background: #fff;
+    width: 3rem;
+}
+
+.openbtn span:nth-of-type(1) {
+    top:0px; 
+}
+
+.openbtn span:nth-of-type(2) {
+    top:8px;
+}
+
+.openbtn span:nth-of-type(3) {
+    top:17px;
+}
+.nav_link{
+    margin:2.4rem 0 0 10.5rem;
+    align-items: center;
+}
+.nav_link p{
+    margin-right:1rem;
+}
+/* 右側メニュー */
+.sns_menu{
+    justify-content: end;
+}
+/*お食事のご案内*/
+.border{
+    border-top:1px solid #292929;
+    width:11.5rem;
+    
+}
+
+.title p{
+    margin-top:-1.6rem;
+    margin-bottom:3.8rem;
+}
+.title p:last-child{
+    letter-spacing: 0.54rem;
+}
+.restaurant_info{
+    width:80%;
+    margin:0 auto;
+}
+.restaurant_info_inner{
+    display: inline-block;
+}
+/*float clear*/
+.clear{
+    clear: both;
+}
+/* 右側 */
+.float-r{
+    float:right;
+}
+/* 左側 */
+.float-l{
+    float:left;
+}
+
+
+.restaurant_info_img img{
+    width:94.9rem;
+    height:53.1rem;
+}
+.vertical_text{
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    line-height: 42px;
+    margin-left:5.9rem;
+}
+.vertical_text p{
+    line-height: 4.2rem;
+    margin-left:2rem;
+    letter-spacing: 1.2rem;
+    white-space: pre;
+}
+.txt_i_2{
+    text-indent: 3.5em;
+}
+.txt_i_8{
+    text-indent: 12em;
+}
+.restaurant_info_text{
+    margin-top:4rem;
+    display:inline-block;
+    margin:4rem 0 13.6rem;
+}
+.restaurant_info_text p{
+    line-height: 2.6rem;
+    letter-spacing: 0.18rem;
+}
+.restaurant_info_text p:last-child{
+    margin-top:2.7rem;
+
+}
+
+.dish_menu{
+    justify-content: center;
+    text-align: center;
+}
+.dish_menu p{
+    margin:0 9.6rem;
+    letter-spacing:0.22rem;
+}
+.border-l{
+    border-left: 1px solid #707070;
+}
+.border-r{
+    border-right:1px solid #707070;
+}
+
