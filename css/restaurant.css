@@ -21,6 +21,7 @@ body{
     body {
         min-width: 1024px;
     }
+    
 }
 @media only screen and (max-width: 767px){
 	html{font-size: calc( 1000vw /430px  );}
@@ -87,7 +88,9 @@ body{
 .fw-b{
     font-weight:bold;
 }
-
+.kome{
+    text-indent: 1em;
+}
 /* ================ */
 /* flex */
 .flex{
@@ -105,9 +108,15 @@ body{
 .header{
     width:100%;
     height:27.5rem;
-    background-image: url(../image/header_bg_restaurant.png);
+    background: url(../image/header_bg_oshokuji.png) no-repeat;
     justify-content: space-between;
     padding:0 4.4rem 0 11rem;
+    background-position: 80% 20%;
+    background-size: cover;
+    position:relative;
+    min-width:130rem;
+
+
 }
 .logo_icon{
     width:16.4rem;
@@ -160,6 +169,12 @@ body{
     justify-content: end;
 }
 /*お食事のご案内*/
+.oshokuji{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 120rem;
+    min-width: 130rem;
+}
 .border{
     border-top:1px solid #292929;
     width:11.5rem;
@@ -174,10 +189,7 @@ body{
     letter-spacing: 0.54rem;
 }
 .restaurant_info{
-    width:80%;
-    margin:0 auto;
-    max-width:120rem;
-    min-width:120rem;
+    
 }
 .restaurant_info_inner{
     display: inline-block;
@@ -213,7 +225,7 @@ body{
     letter-spacing: 1.2rem;
     white-space: pre;
 }
-.txt_i_2{
+.txt_i_35{
     text-indent: 3.5em;
 }
 .txt_i_8{
@@ -238,6 +250,7 @@ body{
     text-align: center;
     width:100%;
     min-width:125rem;
+    margin-bottom:10.3rem;
 }
 .dish_menu p{
     margin:0 9.6rem;
@@ -249,4 +262,110 @@ body{
 .border-r{
     border-right:1px solid #707070;
 }
+.restaurant_name p:first-child{
+    text-indent: 1.5em;
+    letter-spacing: 0.68rem;
+}
+.restaurant_name p:last-child{
+    margin-top:2.2rem;
+    text-indent:4.5em;
+    letter-spacing: 0.44rem;
+}
+.restaurant_info_img_2 img{
+    width:79.6rem;
+    margin-left:6.25rem;
+}
+.reserve_btn{
+    width:37rem;
+    height:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:4.6rem 0;
+}
+.reserve_btn p{
+    letter-spacing: 4.8px;
+}
+
+.explanation{
+    letter-spacing: 1.6px;
+    line-height: 2.6rem;
+}
+.explanation p:first-child{
+    letter-spacing: 2.2px;
+}
+.explanation p:last-child{
+    margin-top:2.2rem;
+}
+.meal{
+    max-width:78.8rem;
+}
+.meal_inner{
+    justify-content: space-between;
+    margin-top:7.7rem;
+}
+.meal_inner img{
+    width:24rem;
+}
+.meal_menu{
+    border-top:1px solid #BCBCBC;
+    border-bottom:1px solid #BCBCBC;
+    padding-top:2.1rem;
+    padding-bottom:2.4rem;
+    width:78.8rem;
+    margin-top:7rem;
+}
+.meal_menu p{
+    text-align: center;
+}
+.meal_menu_text{
+    text-align: left;
+    margin-left:4.1rem;
+    margin-top:5rem;
+    border-bottom: 1px solid #BCBCBC;
+}
+.meal_menu_text_inner:first-child{
+    padding-top:0;
+}
+.meal_menu_text_inner {
+    padding-top:3rem
+}
+.meal_menu_text_inner p{
+    font-size: 1.8rem;
+    letter-spacing:0.54rem;
+    line-height: 2.4rem;
+
+}
+.meal_menu_text_inner:last-child{
+    padding-bottom:4.3rem
+}
+
+.pd-1{
+    padding-left:1.3em;
+}
+.txt-275{
+    text-indent:2.75em;
+}
+.restaurant_name.iseebi p{
+    letter-spacing:0.68rem;
+    line-height: 4.2rem;
+}
+
+.restaurant_name.iseebi p:last-child{
+    margin-top:0;
+    text-indent: 1.5em;
+
+}
+#restaurant2{
+    margin-top:12.4rem;
+}
+#restaurant3{
+    margin-top:15.9rem;
+}
+#restaurant4{
+    margin-top:17.45rem
+}
+
+
+
 
