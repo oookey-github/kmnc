@@ -29,10 +29,14 @@ body{
 /* 共通クラス */
 .vertical{
     writing-mode: vertical-rl;
+    margin-top: 2rem;
+    letter-spacing: 0.5rem;
 }
 /* トップページ */
 .body_inner{
     position: relative;
+    letter-spacing: 0.3rem;
+    line-height: 2.4rem;
 }
 /* mv */
 .mv{
@@ -137,17 +141,15 @@ body{
 .circle_btn_w {
     display: flex;
     align-items: center;
-    position: relative;
-    width: 19rem;
+    justify-content: center;
     margin: 0 auto;
 }
 .circle_btn_text{
-    position: absolute;
-    right: 0;
     font-size: 1.4rem;
     display: flex;
     align-items: center;
     font-weight: bold;
+    margin-left: -4rem;
 }
 
 /* コンテンツ */
@@ -175,11 +177,15 @@ body{
 .main_content{
     display: flex;
     position: relative;
+    justify-content: center;
+    margin-top: 15rem;
 }
 /* mc画像 */
 .mc_item_1{
     height: 74vh;
+    min-height: 60rem;
     width: 48vh;
+    min-width: 39rem;
 }
 .mc_img_1{
     background-image: url(../image/mc_1.png);
@@ -189,16 +195,76 @@ body{
 }
 /* 縦書き */
 .vertical_text{
+    bottom: 53rem;
+    text-align: center;
     position: absolute;
-    top: -4rem;
+    left: 50%;
+}
+.text_line_v{
+    border: solid 0.07rem #292929;
+    transform: rotate(90deg);
+    padding-top: 7rem;
 }
 /* mc文章 */
 .mc_text{
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 12rem;
+    position: relative;
 }
 .mc_title{
     font-size: 3.2rem;
     letter-spacing: 1rem;
     line-height: 5rem;
+    margin-bottom: 4.5rem;
 }
+.mc_text .circle_btn_w{
+    margin-top: 6rem;
+    margin-bottom: 6.5rem;
+}
+/* ロクシタンバナー */
+.loccitane_banner{
+    text-align: center;
+}
+.loccitane_banner h2{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.7rem;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+
+}
+.loccitane_banner p{
+    letter-spacing: 0.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 4rem;
+
+}
+.loccitane_banner img{
+    text-align: center;
+    width: 70%;
+    min-width: 100rem;
+    height: 24rem;
+}
+
+/* 特別プラン */
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider li {
+    width: auto;
+    height: 25vh;
+}
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;/*スライド左右の余白調整*/
+}
+
+
