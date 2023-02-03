@@ -176,6 +176,8 @@ body{
 .restaurant_info{
     width:80%;
     margin:0 auto;
+    max-width:120rem;
+    min-width:120rem;
 }
 .restaurant_info_inner{
     display: inline-block;
@@ -234,6 +236,8 @@ body{
 .dish_menu{
     justify-content: center;
     text-align: center;
+    width:100%;
+    min-width:125rem;
 }
 .dish_menu p{
     margin:0 9.6rem;
