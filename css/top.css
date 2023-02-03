@@ -54,6 +54,9 @@ body{
 .mv_inner{
     height: 83rem;
 }
+.logo{
+    
+}
 .mv_front{
     height: 45rem;
     text-align: center;
@@ -67,7 +70,7 @@ body{
     color: #fff;
     text-shadow: 0 0 80px rgb(4 0 0 / 60%);
 }
-.mv_front .logo img{
+.mv_front .logo_white img{
     width: 25rem;
     height: auto;
     margin-right: 4rem;
@@ -159,14 +162,12 @@ body{
 
 /* バナー */
 .toppage .banner{
-    height: 18rem;
-    width: 70%;
+    width: 60%;
     min-width: 100rem;
     margin: 8rem auto 0;
     color: #fff;
 }
-.toppage .banner_img{
-    background-image: url(../image/banner_1.png);
+.toppage .banner_img img{
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -178,14 +179,15 @@ body{
     display: flex;
     position: relative;
     justify-content: center;
+    align-items: flex-end;
     margin-top: 15rem;
 }
-/* mc画像 */
+/* mc1 */
 .mc_item_1{
     height: 74vh;
-    min-height: 60rem;
+    min-height: 66rem;
     width: 48vh;
-    min-width: 39rem;
+    min-width: 44rem;
 }
 .mc_img_1{
     background-image: url(../image/mc_1.png);
@@ -223,6 +225,86 @@ body{
     margin-top: 6rem;
     margin-bottom: 6.5rem;
 }
+
+/* mc2 */
+.mc_2{
+    flex-direction: row-reverse;
+    margin-top: 27rem;
+}
+.mc_item_2{
+    height: 55vh;
+    min-height: 42rem;
+    width: 50%;
+    min-width: 63rem;
+    position: absolute;
+    right: 0;
+}
+.mc_img_2{
+    background-image: url(../image/mc_2.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.mc_2 .mc_text{
+    margin-right: 60rem;
+    margin-left: 0;
+}
+.horiz_text{
+    bottom: 44rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: -12rem;
+}
+.text_line_h{
+    border: solid 0.07rem #292929;
+    padding-left: 10rem;
+    margin-right: 2rem;
+}
+.mc_2 .mc_text .circle_btn_w{
+    margin-bottom: 1rem;
+}
+/* mc3 */
+.mc_img_3{
+    background-image: url(../image/mc_3.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.mc_3{
+    flex-direction: row-reverse;
+    margin-top: 35rem;
+}
+.mc_item_3{
+    height: 55vh;
+    min-height: 42rem;
+    width: 50%;
+    min-width: 63rem;
+    position: absolute;
+    left: 0;
+}
+.mc_3 .mc_text{
+    margin-left: 60rem;
+}
+
+.mc_3 .mc_text .circle_btn_w {
+    margin-bottom: -8.5rem;
+}
+.mc_3 .vertical_text{
+    bottom: 39rem;
+}
+
+/* mc4 */
+.mc_4{
+    background-image: url(../image/mc_4-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.mc_4 .mc_img_2{
+    background-image: url(../image/mc_4-1.png);
+}
+
 /* ロクシタンバナー */
 .loccitane_banner{
     text-align: center;
@@ -245,7 +327,6 @@ body{
     text-align: center;
     width: 70%;
     min-width: 100rem;
-    height: 24rem;
 }
 
 /* 特別プラン */
