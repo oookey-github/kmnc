@@ -300,14 +300,19 @@ body{
     background-size: cover;
     background-position: center;
     height: 100%;
+    margin-top: 23rem;
 }
 .mc_4 .mc_img_2{
     background-image: url(../image/mc_4-1.png);
+}
+.mc_4 .horiz_text{
+    bottom: 34rem;
 }
 
 /* ロクシタンバナー */
 .loccitane_banner{
     text-align: center;
+    margin-top: 19rem;
 }
 .loccitane_banner h2{
     font-size: 3rem;
