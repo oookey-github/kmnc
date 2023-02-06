@@ -29,7 +29,6 @@ body{
 /* 共通クラス */
 .vertical{
     writing-mode: vertical-rl;
-    margin-top: 2rem;
     letter-spacing: 0.5rem;
 }
 /* トップページ */
@@ -175,6 +174,10 @@ body{
 .content_section{
     padding-bottom: 13rem;
 }
+.content_section h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
 
 /* バナー */
 .toppage .banner{
@@ -199,12 +202,6 @@ body{
     align-items: flex-end;
     white-space: nowrap;
 }
-.cs_mc{
-    /* padding: 0 48px;
-    max-width: 1336px;
-    min-width: 1072px;
-    margin: 0 auto; */
-}
 /* mc1 */
 .mc_1{
 
@@ -228,6 +225,9 @@ body{
     position: absolute;
     left: 50%;
 }
+.vertical_text p{
+    margin-top: 1.5rem;
+}
 .text_line_v{
     border: solid 0.01rem #292929;
     transform: rotate(90deg);
@@ -242,7 +242,7 @@ body{
     position: relative;
 }
 .mc_title{
-    font-size: 3.2rem;
+    font-size: 3.2rem !important;
     letter-spacing: 1rem;
     line-height: 5rem;
     margin-bottom: 4.5rem;
@@ -341,8 +341,6 @@ body{
 
 }
 .loccitane_banner h2{
-    font-size: 3rem;
-    font-weight: bold;
     letter-spacing: 0.7rem;
     line-height: 4.5rem;
     margin-bottom: 2rem;
@@ -361,22 +359,31 @@ body{
 }
 
 /* 特別プラン */
-/*==================================================
-スライダーのためのcss
-===================================*/
+.plan_list{
+    
+}
+.plan_list h2 {
+    text-align: center;
+    margin-bottom: 4.2rem;
+}
 .slider li {
-    width: auto;
-    height: 25vh;
+    width: 40rem;
+    height: 26rem;
+    margin: 0 auto;
 }
 .slider img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+.slider li p{
+    margin-top: 2rem;
 }
 
-/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-
-.slider .slick-slide {
-    margin:0 10px;/*スライド左右の余白調整*/
+/* お知らせ */
+.news{
+    display: flex;
 }
-
-
+.news dl{
+    max-width: 76rem;
+}
