@@ -297,6 +297,7 @@ body{
 .explanation p:last-child{
     margin-top:2.2rem;
 }
+
 .meal{
     max-width:78.8rem;
 }
@@ -395,12 +396,17 @@ body{
 .venue .text{
     margin-left:1.8rem;
 }
+.aft.time p:last-child{
+    margin-left:0;
+}
 .time{
     border-top:1px solid #E0E0E0;
     border-bottom:1px solid #E0E0E0;
     padding:1.85rem 0 ;
     position:relative;
     margin:3rem 0 2rem;
+    letter-spacing: 0.16rem;
+    line-height: 2.6rem;
 }
 
 .time span{
@@ -408,6 +414,9 @@ body{
     left:50%;
     right:50%;
 
+}
+.time p:last-child{
+    margin-left:7.6rem;
 }
 .introduction{
     margin-top: 16.4rem;
@@ -507,12 +516,30 @@ min-width:130rem;
 }
 .footer1_inner{
     justify-content: center;
+    padding-top:5.7rem;
+
 }
 .adress{
     width:27.1rem;
-    padding-top:5.7rem;
-    margin-right:5.7rem
+    margin-right:5.7rem;
 }
 .adress img{
     width:19.1rem;
+    margin-bottom:4.2rem;
+}
+.adress p{
+    
+    line-height: 2.6rem;
+    letter-spacing: 0.14rem;
+}
+.adress p:last-child{
+    margin-top:2rem
+}
+.adress span{
+    margin-left:1.4rem;
+}
+.each_page{
+    width:45rem;
+    flex-wrap: wrap;
+
 }
