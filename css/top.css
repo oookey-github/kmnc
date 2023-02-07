@@ -31,11 +31,17 @@ body{
     writing-mode: vertical-rl;
     letter-spacing: 0.5rem;
 }
+.bold{
+    font-weight: bold;
+}
+.multiply{
+    mix-blend-mode: multiply; /* 乗算 */
+}
 /* トップページ */
 .body_inner{
     position: relative;
     letter-spacing: 0.3rem;
-    line-height: 2.4rem;
+    line-height: 2.6rem;
 }
 
 /* mv 動画 */
@@ -176,7 +182,6 @@ body{
 }
 .content_section h2{
     font-size: 3rem;
-    font-weight: bold;
 }
 
 /* バナー */
@@ -224,12 +229,13 @@ body{
     text-align: center;
     position: absolute;
     left: 50%;
+    font-size: 2rem;
 }
 .vertical_text p{
     margin-top: 1.5rem;
 }
 .text_line_v{
-    border: solid 0.01rem #292929;
+    border: solid 0.01rem;
     transform: rotate(90deg);
     padding-top: 7rem;
 }
@@ -281,6 +287,7 @@ body{
     display: flex;
     align-items: center;
     left: -12rem;
+    font-size: 2rem;
 }
 .text_line_h{
     border: solid 0.01rem #292929;
@@ -316,7 +323,7 @@ body{
     margin-bottom: -8.5rem;
 }
 .mc_3 .vertical_text{
-    bottom: 44rem;
+    bottom: 42rem;
 }
 
 /* mc4 */
@@ -398,6 +405,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 120rem;
+    margin: 5.5rem auto 0;
 }
 .hospitality_list li{
     width: 50rem;
@@ -420,6 +429,7 @@ body{
 .hospitality_list li h2{
     text-align: left;
     margin-bottom: 1.3rem;
+    font-weight: bold;
 }
 /* 心揺さぶる体験 */
 .experience_list h2{
@@ -428,7 +438,7 @@ body{
     line-height: 4.5rem;
     letter-spacing: 0.5rem;
 }
-.experience_list ul{
+.experience_list li{
     width: 66rem;
     height: 39rem;
     margin: 0 auto;
@@ -440,4 +450,145 @@ body{
 }
 .experience_list p{
     margin-top: 2rem;
+}
+/* 熊野観光のご案内 */
+.kumano_circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 6rem;
+}
+.circle_img{
+    width: 60rem;
+    height: 60rem;
+    margin-bottom: 6.5rem;
+}
+.circle_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.kumano_circle .title{
+    margin-bottom: 6.5rem;
+}
+.kumano_circle .title img{
+    width: 3.5rem;
+}
+.kumano_circle .title h2{
+    letter-spacing: 1rem;
+    margin: 3.6rem auto 2.6rem;
+}
+.kumano_circle p{
+    line-height: 3.2rem;
+}
+.kumano_circle .circle_btn{
+    margin-top: 6.5rem;
+}
+/* 日本書紀に遡る… */
+.kumano_banner{
+    background-image: url(../image/kumano_banner.png);
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 83rem;
+    background-position: center;
+    background-size: cover;
+
+    color: #fff;
+}
+.kumano_banner .inner{
+    width: 120rem;
+    height: 83rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.kumano_banner .left{
+
+}
+.kumano_banner .left h2{
+    position: absolute;
+}
+.kumano_banner .vertical_text{
+    bottom: auto;
+    left: auto;
+}
+.kumano_banner .multiply{
+    background-color: rgba(202,211,224,0.5);
+    width: 45rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.kumano_banner .right{
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    bottom: 6rem;
+}
+.kumano_banner .right img{
+    width: 19.5rem;
+    margin-top: 6rem;
+}
+/* フォトスポット */
+.photo_spot{
+    text-align: center;
+}
+.photo_spot ul{
+    display: flex;
+    justify-content: center;
+    width: 120rem;
+    margin: 5.5rem auto 0;
+}
+.photo_spot li{
+    width: 26rem;
+    height: 36rem;
+    margin: 0rem 2.5rem 0rem 2.5rem;
+}
+.photo_spot li img{
+    width: 100%;
+    height: 36rem;
+    object-fit: cover;
+}
+.photo_spot li p{
+    margin-top: 3rem;
+}
+/* インスタグラム */
+.instagram{
+    text-align: center;
+    margin-top: 7rem;
+}
+.instagram h2{
+    line-height: 5rem;
+    letter-spacing: 1rem;
+}
+.instagram h2 span{
+    font-size: 2rem;
+}
+.instagram ul{
+    margin-top: 5.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80rem;
+    margin: 2rem auto 0;
+}
+.instagram li{
+    width: 23rem;
+    height: 23rem;
+    margin: 0.7rem;
+}
+.instagram li img{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
 }
