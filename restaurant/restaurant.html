@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/restaurant.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
     <title>お食事のご案内</title>
 </head>
 <body>
@@ -13,7 +17,9 @@
         <header>
             <div class="flex header">
                 <div class="logo_icon">
-                    <img src="../image/logo2.svg">
+                    <a href="../index.html">
+                        <img src="../image/logo2.svg">
+                    </a>
                 </div>
                 <div class="nav_btn flex">
                     <div class="bg3 btn flex">
@@ -26,7 +32,7 @@
                     </div>
                     <div class="hammburger">
                         <div class="openbtn">
-                            <span ></span>
+                            <span></span>
                             <span></span>
                             <span></span>
                         </div>
@@ -36,7 +42,7 @@
                 
             </div>
             <div class="nav_link flex">
-                <a href=""><p class="fs12">トップ</p></a>
+                <a href="../index.html"><p class="fs12">トップ</p></a>
                 <p>＞</p>
                 <a href=""><p class="fs12"> お食事のご案内</p></a>
             </div>
@@ -44,15 +50,20 @@
     
         <!-- 右側メニュー -->
         <div class="sns_menu flex">
-            <div class="">
-                <a href="">
-                    <img>
-                    <p class="fs08">Instagram</p>
-                </a>
-                <a href="">
-                    <img>
-                    <p class="fs08">Facebook</p>
-                </a>
+            <div class="sns_menu_inner">
+                <div class="insta_icon">
+                    <a href="">
+                        <img src="../image/instagram_icon.svg">
+                        <p class="fs08">Instagram</p>
+                    </a>
+                </div>
+                <div class="facebook_icon">
+                    <a href="">
+                        <img src="../image/facebook_icon.svg">
+                        <p class="fs08">Facebook</p>
+                    </a>
+                </div>
+                
                 <div class="">
                     <div class="bg3">
                         <p class="fs18 c1">宿泊<br>予約</p>
@@ -63,8 +74,11 @@
             </div>
         </div>
         <!-- お食事のご案内 -->
-        <div class="border"></div>
+        
     <div class="oshokuji">
+        <div class="border_div">
+            <div class="border"></div>
+        </div>
         <section>
             
             <div class="restaurant_info">
@@ -364,7 +378,7 @@
                         </div>
                         <div class="introduction_text2">
                             <p class="fs28">熊野、三重の美酒</p>
-                            <p class="fs16">古来より神々に捧げる御神酒を醸す地、熊野。峻厳な山々に降り注ぐ雨が大地に染み込み、清流として恵みをもたらします。穀雨では熊野の地酒、三重の地酒を豊富に取り揃えています。</p>
+                            <p class="fs16">古来より神々に捧げる御神酒を醸す地、熊野。<br>峻厳な山々に降り注ぐ雨が大地に染み込み、清流として恵みをもたらします。穀雨では熊野の地酒、三重の地酒を豊富に取り揃えています。</p>
                         </div>
                     </div>
                     <div class="introduction_image">
@@ -384,8 +398,8 @@
                         </div>
                         <div class="introduction_text2">
                             <p class="fs28">熊野灘の恵み</p>
-                            <p class="fs16">熊野灘は魚介の宝庫として盛んに漁が行われ、尾鷲の漁港では毎日競りが開かれます。なかには地元でしか流通しない珍しい魚介も多くあります。</p>
-                            <p class="fs16">ヤガラ・ガスエビ・タカアシガニなど普段は聞き慣れない魚介もあれば、クエ・フグ・伊勢海老など高級魚も水揚げされます。日ごとに異なる新鮮な魚介を最大限に活かす、料理人の苦労と愉しみが尽きない漁場があります。</p>
+                            <p class="fs16">熊野灘は魚介の宝庫として盛んに漁が行われ、<br>尾鷲の漁港では毎日競りが開かれます。<br>なかには地元でしか流通しない珍しい魚介も多くあります。</p>
+                            <p class="fs16">ヤガラ・ガスエビ・タカアシガニなど普段は聞き慣れない<br>魚介もあれば、クエ・フグ・伊勢海老など高級魚も水揚げ<br>されます。日ごとに異なる新鮮な魚介を最大限に活かす、<br>料理人の苦労と愉しみが尽きない漁場があります。</p>
                         </div>
                     </div>
                 </div>
@@ -399,7 +413,8 @@
                         </div>
                         <div class="introduction_text2">
                             <p class="fs28">松坂牛</p>
-                            <p class="fs16">世界遺産 伊勢神宮と熊野倶楽部をつなぐ隠れ家リゾート「熊野倶楽部」では、紀州備長炭で焼き上げた松坂牛をお召し上がりいただけます。一品一品、箸を進める歓びを堪能「熊野の味覚三昧会席」、三重の美食文化、松坂牛に、伊勢海老を堪能「【三重を堪能】御食国（みけつくに）会席」でお召し上がりいただけます。</p>
+                            <p class="fs16">世界遺産 伊勢神宮と熊野倶楽部をつなぐ隠れ家<br>リゾート「熊野倶楽部」では、紀州備長炭で<br>焼き上げた松坂牛をお召し上がりいただけます。</p>
+                            <p class="fs16">一品一品、箸を進める歓びを堪能「熊野の味覚三昧会席」、三重の美食文化、松坂牛に、伊勢海老を堪能<br>「【三重を堪能】御食国（みけつくに）会席」でお召し<br>上がりいただけます。</p>
                         </div>
                     </div>
                     <div class="introduction_image">
@@ -419,7 +434,8 @@
                         </div>
                         <div class="introduction_text2">
                             <p class="fs28">自然と共存する耕作</p>
-                            <p class="fs16">厳しい自然と共に生き抜く熊野を映す丸山千枚田、地形の妙が生み出す「風伝おろし」。見渡す限りの平野といった耕作に恵まれない地域ですが、古来より自然に抗うのではなく共存することで恵みを得てきた地域です。土と雨と太陽、土に生きる生き物がもたらす自然の恵みを活かしたお料理を感謝に気持ちを込めながら、一皿一皿を大切にご提供いたします。</p>
+                            <p class="fs16">厳しい自然と共に生き抜く熊野を映す丸山千枚田、<br>地形の妙が生み出す「風伝おろし」。</p>
+                            <p class="fs16">見渡す限りの平野といった耕作に恵まれない地域ですが、<br>古来より自然に抗うのではなく共存することで恵みを得て<br>きた地域です。土と雨と太陽、土に生きる生き物がもたらす自然の恵みを活かしたお料理を感謝に気持ちを込めながら、一皿一皿を大切にご提供いたします。</p>
                         </div>
                     </div>
                 </div>
@@ -442,78 +458,136 @@
             <div>
                 
                 <div class="each_page flex">
-                    <div>
-                        <a href="">
-                            <div></div>
-                            <p>潤いの歓待</p>
-                        </a>
+                    <div class="each_page_inner">
+                        <div class="page_btn">
+                            <a href="" class="flex">
+                                <div class="circle_btn"></div>
+                                <p>潤いの歓待</p>
+                            </a>
+                        </div>
+                        <div class="page_btn">
+                            <a href="" class="flex">
+                                <div class="circle_btn"></div>
+                                <p>オールスイート</p>
+                            </a>
+                        </div>
+                        <div class="page_btn">
+                            <a href="" class="flex">
+                                <div class="circle_btn"></div>
+                                <p>美しご馳走</p>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="">
-                            <div></div>
-                            <p>オールスイート</p>
-                        </a>
+                    <div class="each_page_inner">
+                        <div class="page_btn">
+                            <a href="" class="flex">
+                                <div class="circle_btn"></div>
+                                    <p>天仰ぐ湯処</p>
+                            </a>
+                        </div>
+                        <div class="page_btn">
+                            <a href="" class="flex">
+                                <div class="circle_btn"></div>
+                                    <p>心揺さぶる対意見</p>
+                            </a>
+                        </div>
+                        <div class="each_page_inner">
+                            <div class="page_btn">
+                                <a href="" class="flex">
+                                    <div class="circle_btn"></div>
+                                    <p>ホテル案内</p>
+                                </a>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div>
-                        <a href="">
-                            <div></div>
-                            <p>美しご馳走</p>
-                        </a>
+                    <div class="each_page_inner">
+                        <div class="page_btn">
+                            <a href="" class="flex">
+                                <div class="circle_btn"></div>
+                                <p>アクセス</p>
+                            </a>
+                        </div>
+                        <div class="page_btn">
+                            <a href="" class="flex">
+                                <div class="circle_btn"></div>
+                                <p>宿泊プラン一覧</p>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="">
-                            <div></div>
-                            <p>天仰ぐ湯処</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <div></div>
-                            <p>心揺さぶる体験</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <div></div>
-                            <p>ホテル案内</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <div></div>
-                            <p>アクセス</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <div></div>
-                            <p>宿泊プラン一覧</p>
-                        </a>
-                    </div>
+                    
                 </div>
-                <div class="">
-                    <div>
+                <div class="btn_box flex">
+                    <div class="white_btn flex">
                         <a href="">
-                            <p>宿泊プラン一覧</p>
+                            <p class="fs13">宿泊プラン一覧</p>
                         </a>
                     </div>
-                    <div class="">
+                    <div class="white_btn flex">
                         <a href="">
-                            <p>空室情報</p>
+                            <p class="fs13 flex">空室情報</p>
                         </a>
                     </div>
-                    <div class="">
+                    <div class="white_btn flex">
                         <a href="">
-                            <p>アクセスマップ</p>
+                            <p class="fs13 flex">アクセスマップ</p>
+                        </a>
+                    </div>
+                    <div class="white_btn flex">
+                        <a href="">
+                            <p class="fs13 flex">お問合せ</p>
                         </a>
                     </div>
                 </div>
             </div>
             
         </div>
-        <p>© 2016 Resort Kumano Club All rights reserved.</p>
+        <p class="footer_c">© 2016 Resort Kumano Club All rights reserved.</p>
     </div>
-    <div class="footer2">
+    <div class="footer2 bg4">
+        <div class="footer2_inner">
+            <div class="footer2_title ">
+                <img src="../image/hotel_net_logo.svg">
+            </div>
+            <div class="flex">
+                <div class="hotel_net">
+                    <p>・有峰ハウス［富山県］</p>
+                    <p>・伊勢志摩の波音　海楼［三重県］</p>
+                    <p>・海風テラスあたみ［静岡県］</p>
+                    <p>・大阪ガス研修施設 奥池ロッジ［兵庫県］ </p>
+                    <p>・風木立の川辺 紫明館［群馬県］</p>
+                </div>
+                <div class="hotel_net">
+                    <p>・絹の渓谷 碧流［栃木県］ </p>
+                    <p>・キャッスル真名井［石川県］</p>
+                    <p>・京都・烟河［京都府］</p>
+                    <p>・久慈サンピア日立［茨城県］ </p>
+                    <p>・倉敷シーサイドホテル［岡山県］</p>
+                </div>
+                <div class="hotel_net">
+                    <p>・グリーンビュー立山［富山県］</p>
+                    <p>・黒潮荘［千葉県］</p>
+                    <p>・強羅 風の音［神奈川県］</p>
+                    <p>・サンヒルズ三河湾［愛知県］</p>
+                    <p>・サンペルラ志摩［三重県］</p>
+                </div>
+                <div class="hotel_net">
+                    <p>・ちりはまホテルゆ華［石川県］</p>
+                    <p>・那須の森 ヴィレッジ［栃木県］</p>
+                    <p>・合歓の旅籠 嵐山［京都府］</p>
+                    <p>・能登小牧台 ［石川県］</p>
+                    <p>・パノラマイン山中湖［山梨県］</p>
+                </div>
+                <div class="hotel_net">
+                    <p>・フジ住宅 白浜保養所［和歌山県］</p>
+                    <p>・別府 豊泉荘［大分県］</p>
+                    <p>・ホテルうみんぴあ［福井県］</p>
+                    <p>・八ヶ岳ホテル風か［山梨県］</p>
+                    <p>・里創人　熊野倶楽部［三重県］</p>
+                </div>
+
+            </div>
+        </div>
 
     </div>
 </footer>
