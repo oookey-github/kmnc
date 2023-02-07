@@ -212,7 +212,7 @@ body{
     width:94.9rem;
     height:53.1rem;
 }
-.vertical_text{
+.restaurant_info .vertical_text{
     writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: vertical-rl;
@@ -410,5 +410,109 @@ body{
 
 }
 .introduction{
+    margin-top: 16.4rem;
+    position:relative;
+    width:100%;
+    min-width:130rem;
+}
+.introduction_inner{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 120rem;
+    justify-content: space-between;
+
+}
+.vertical_line{
+    position:absolute;
+    height:8rem;
+    top:-5rem;
+    right:1.5rem;
+    padding-bottom:1rem;
+    padding:10.4rem 0 0;
+    margin-bottom:2rem;
+    border: solid 0.01rem #292929;
+
+}
+.introduction_title{
+    margin:0 auto;
+    position: absolute;
+    left:49%;
     
+}
+.introduction_title_inner{
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+}
+.introduction_title_inner p{
+    position:relative;
+    top:8rem;
+    letter-spacing: 0.48rem;
+    line-height: 3.1rem;
+}
+#introduction1{
+    padding-top:31.6rem;
+}
+.introduction_text{
+    width:50.4rem;
+}
+.introduction_text1{
+    align-items: center;
+    padding-bottom:1.9rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.54rem;
+    
+}
+.introduction_text1 img{
+    width:2.2rem;
+    margin-right:2.1rem;
+}
+.introduction_image{
+    width:53.3rem;
+    
+}
+.introduction_image img{
+    width:100%;
+}
+
+.introduction_text2 p:first-child{
+    line-height: 4.3rem;
+    letter-spacing: 0.84rem;
+    padding-bottom:4.4rem;
+}
+.introduction_text2 p:last-child,
+.introduction_text2 p
+{
+    letter-spacing: 0.48rem;
+    line-height: 2.4rem;
+}
+#introduction2,#introduction3,#introduction4{
+    padding-top:19.2rem;
+}
+#introduction2 .introduction_text2 p:last-child{
+    padding-top:3rem;
+}
+#introduction4{
+    padding-bottom:18.4rem;
+}
+.footer_img{
+width:100%;
+min-width:130rem;
+}
+.footer_img img{
+    width:100%;
+}
+.footer1 p{
+    color:#FFFFFF;
+}
+.footer1_inner{
+    justify-content: center;
+}
+.adress{
+    width:27.1rem;
+    padding-top:5.7rem;
+    margin-right:5.7rem
+}
+.adress img{
+    width:19.1rem;
 }
