@@ -365,7 +365,50 @@ body{
 #restaurant4{
     margin-top:17.45rem
 }
+#bf_viking_aft{
+    margin-top:17.45rem;
+}
+.venue{
+    border-top:1px solid #707070;
+    border-bottom:1px solid #707070;
+    padding:8.75rem 0 4.85rem 2.45rem;
+}
+.venue_img{
+    width:42.1rem;
+    margin-right:3.2rem;
+}
+.venue_img img{
+    width:100%;
+}
+.venue .title{
+    letter-spacing: 0.25rem;
+    line-height: 3.8rem;
+}
+.venue .explanation {
+    line-height: 3.8rem;
+    letter-spacing: 0.16rem;
+}
+.border2{
+    width:7.85rem;
+    border-top:1px solid #707070;
+}
+.venue .text{
+    margin-left:1.8rem;
+}
+.time{
+    border-top:1px solid #E0E0E0;
+    border-bottom:1px solid #E0E0E0;
+    padding:1.85rem 0 ;
+    position:relative;
+    margin:3rem 0 2rem;
+}
 
+.time span{
+    position:absolute;
+    left:50%;
+    right:50%;
 
-
-
+}
+.introduction{
+    
+}
