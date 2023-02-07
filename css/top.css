@@ -23,7 +23,7 @@ body{
     }
 }
 @media only screen and (max-width: 767px){
-	html{font-size: calc( 1000vw / XXX );}
+	html{font-size: calc( 1000vw / 430vw );}
 }
 
 /* 共通クラス */
