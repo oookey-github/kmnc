@@ -59,6 +59,10 @@ body{
     height: 83rem;
     object-fit: cover;
 }
+/* ヘッダー */
+.toppage .header{
+    background-image: none;
+}
 /* mv */
 .mv{
     background-image: url(../image/mv.png);
@@ -71,6 +75,7 @@ body{
     height: 83rem;
     background-position: center;
     background-size: cover;
+    color: #fff;
 }
 .mv_inner{
     height: 83rem;
@@ -88,7 +93,6 @@ body{
     bottom: 0;
     left: 0;
     margin: auto;
-    color: #fff;
     text-shadow: 0 0 80px rgb(4 0 0 / 60%);
 }
 .mv_front .logo_white img{
@@ -136,8 +140,8 @@ body{
     vertical-align: middle;
     line-height: 1;
     position: relative;
-    width: 0.5em;
-    height: 0.5em;
+    width: 0.45em;
+    height: 0.45em;
     transform: translateX(-25%) rotate(45deg);
     margin-right: 1rem;
 }
@@ -162,7 +166,7 @@ body{
     bottom: 0;
     width: 0.1em;
 }
-.circle_btn {
+.circle_btn_top {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,6 +178,24 @@ body{
     align-items: center;
     font-weight: bold;
     margin-left: -4rem;
+}
+.mv_news{
+    display: flex;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 4.5rem;
+    left: 6%;
+    white-space: nowrap;
+}
+.mv_news h2{
+    font-weight: bold;
+}
+.mv_news dt{
+    float: left;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+    margin: 0px 1.5rem 0 0.5rem;
 }
 
 /* コンテンツ */
@@ -231,8 +253,10 @@ body{
     left: 50%;
     font-size: 2rem;
 }
-.vertical_text p{
+.toppage .vertical_text p{
     margin-top: 1.5rem;
+    margin-left: 0;
+    letter-spacing: 0.8rem;
 }
 .text_line_v{
     border: solid 0.01rem;
@@ -253,7 +277,7 @@ body{
     line-height: 5rem;
     margin-bottom: 4.5rem;
 }
-.mc_text .circle_btn{
+.mc_text .circle_btn_top{
     margin-top: 6rem;
     margin-bottom: 6.5rem;
 }
@@ -294,7 +318,7 @@ body{
     padding-left: 10rem;
     margin-right: 2rem;
 }
-.mc_2 .mc_text .circle_btn{
+.mc_2 .mc_text .circle_btn_top{
     margin-bottom: 1rem;
 }
 /* mc3 */
@@ -319,7 +343,7 @@ body{
     margin-left: 60rem;
 }
 
-.mc_3 .mc_text .circle_btn {
+.mc_3 .mc_text .circle_btn_top {
     margin-bottom: -8.5rem;
 }
 .mc_3 .vertical_text{
@@ -431,15 +455,18 @@ body{
     font-weight: bold;
 }
 .news .btn{
-    width: 26rem;
-    height: 5.4rem;
+    padding: 1.3rem 2rem;
     border: 0.1rem solid;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
     margin-top: 7rem;
-    margin-right: 38rem;
+    margin-right: 1000rem;
+    margin-left: 961.7rem;
+    white-space: nowrap;
+    width: auto;
+    height: auto;
 }
 
 
@@ -531,7 +558,7 @@ body{
 .kumano_circle p{
     line-height: 3.2rem;
 }
-.kumano_circle .circle_btn{
+.kumano_circle .circle_btn_top{
     margin-top: 6.5rem;
 }
 /* 日本書紀に遡る… */
@@ -561,11 +588,24 @@ body{
 
 }
 .kumano_banner .left h2{
+    font-size: 3.8rem;
     position: absolute;
+    top: 30%;
+    left: 10.5%;
+    line-height: 7rem;
+    text-shadow: 0rem 0rem 1rem #35526f;
+}
+.kumano_banner .left h2 span{
+    margin-top: 16rem;
 }
 .kumano_banner .vertical_text{
     bottom: auto;
-    left: auto;
+    left: 24%;
+    top: 19%;
+    text-shadow: 0rem 0rem 1rem #35526f;
+}
+.kumano_banner .text_line_v{
+    padding-top: 5rem;
 }
 .kumano_banner .multiply{
     background-color: rgba(202,211,224,0.5);
