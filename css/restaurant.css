@@ -259,6 +259,9 @@ line-height: 1.1rem;;
 .border_div{
     position:relative;
 }
+.restaurant_info .border{
+    bottom:-1rem;
+}
 .border{
     border: solid 0.01rem #292929;
     padding-left: 10rem;
@@ -269,7 +272,6 @@ line-height: 1.1rem;;
 }
 
 .title p{
-    margin-top:-1.6rem;
     margin-bottom:3.8rem;
 }
 .title p:last-child{
@@ -332,14 +334,14 @@ line-height: 1.1rem;;
 
 }
 
-.dish_menu{
+.menu{
     justify-content: center;
     text-align: center;
     width:100%;
     min-width:125rem;
     margin-bottom:10.3rem;
 }
-.dish_menu p{
+.menu p{
     margin:0 9.6rem;
     letter-spacing:0.22rem;
 }
@@ -349,11 +351,11 @@ line-height: 1.1rem;;
 .border-r{
     border-right:1px solid #707070;
 }
-.restaurant_name p:first-child{
+.name p:first-child{
     text-indent: 1.5em;
     letter-spacing: 0.68rem;
 }
-.restaurant_name p:last-child{
+.name p:last-child{
     margin-top:2.2rem;
     text-indent:4.5em;
     letter-spacing: 0.44rem;
@@ -383,6 +385,9 @@ line-height: 1.1rem;;
 }
 .explanation p:last-child{
     margin-top:2.2rem;
+}
+.explanation .reserve_btn p{
+    margin-top:0;
 }
 
 .meal{
@@ -479,6 +484,8 @@ line-height: 1.1rem;;
 .border2{
     width:7.85rem;
     border-top:1px solid #707070;
+    position:relative;
+    top:2rem;
 }
 .venue .text{
     margin-left:1.8rem;
@@ -694,8 +701,6 @@ min-width:130rem;
 }
 .btn_box{
     margin-top:3rem;
-   
-    opacity: 0.32;
 }
 .footer_c{
     text-align: center;

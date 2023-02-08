@@ -1,0 +1,59 @@
+
+.guest_room .header{
+    background-image: url(../image/header_guest_room.png);
+}
+.guest_room .title{
+    margin-top:12rem;
+}
+.guest_room_guidance_inner{
+    width:80%;
+    margin:0 auto;
+    max-width:114rem;
+}
+.guest_room_mv{
+    width:114rem;
+    margin:0 auto 5.6rem;;
+}
+.guest_room_mv img{
+    width:100%;
+}
+.text_center{
+    text-align: center;
+}
+.text p:first-child{
+    line-height: 4rem;
+    letter-spacing: 0.84rem;
+    margin-bottom:4.6rem;
+
+}
+.text p:last-child{
+    line-height: 2.6rem;
+    letter-spacing: 0.18rem;
+    padding-bottom:5.2rem;
+}
+.guest_room_guidance_inner .menu{
+    width:10.5rem;
+    margin-top:4.2rem;
+    justify-content: space-between;
+    margin:4.2rem auto 13.6rem;
+}
+.guest_room_guidance_inner .menu p{
+    margin:0 4.7rem;
+}
+.guest_room_guidance_inner .name p:first-child,
+.guest_room_guidance_inner .name p:last-child{
+    text-indent:0;
+    text-indent:0;
+}
+.guest_room_guidance_inner .name p:last-child{
+    margin-bottom:3.1rem;
+}
+.guest_room_guidance_inner .img{
+    width:90.8rem;
+}
+.guest_room_guidance_inner .img img{
+    width:100%;
+}
+.guest_room .guest_room_guidance_inner .title{
+    margin-top:0;
+}
