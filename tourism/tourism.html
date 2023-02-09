@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊野の過ごし方</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/top.css">
+    <link rel="stylesheet" href="../css/restaurant.css">
+    <link rel="stylesheet" href="../css/tourism.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- ＃リンクのスムーズスクロール -->
+    <script>
+        window.onload = ()=>{
+        $("#loader").delay(1500).queue(function(){
+            $(this).addClass("loaded");
+            }); 
+        };
+        $(function(){
+            var windowWidth = $(window).width();
+            // var headerHight = 88;
+            // #で始まるリンクをクリックしたら実行されます
+            $('a[href^="#"]').click(function() {
+            // スクロールの速度
+            var speed = 400; // ミリ秒で記述
+            var href= $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false; 
+            });
+        });
+
+        
+                
+    </script>
+
+</head>
+<body>
+    <div class="tourism">
+        <div class="body_inner">
+
+            <!-- 右側メニュー -->
+            <div class="sns_menu flex">
+                <div class="sns_menu_inner">
+                    <div class="insta_icon">
+                        <a href="">
+                            <img src="../image/instagram_icon.svg">
+                            <p class="fs08">Instagram</p>
+                        </a>
+                    </div>
+                    <div class="facebook_icon">
+                        <a href="">
+                            <img src="../image/facebook_icon.svg">
+                            <p class="fs08">Facebook</p>
+                        </a>
+                    </div>
+                    <div class="flex page-top_reserve_btn">
+                        <div class="page-top">
+                            <a href=""></a>
+                        </div>
+                        <div class="hotel_reserve_btn bg3">
+                            <p class="fs18 c1">宿泊<br>予約</p>
+                            <p class="fs10 c2">Search</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="mv">
+                <div class="mv_inner">
+                    
+                    <div class="flex header">
+                        <div class="logo_icon">
+                            <a href="../index.html">
+                                <img src="../image/logo2.svg">
+                            </a>
+                        </div>
+                        <div class="nav_btn flex">
+                            <div class="bg3 btn flex">
+                                <img>
+                                <a href=""><p class="fs13 c1"><span class="arrow"></span>宿泊プラン一覧</p></a>
+                            </div>
+                            <div class="bg3 btn flex">
+                                <img>
+                                <a href=""><p class="fs13 c1"><span class="arrow"></span>客室情報</p></a>
+                            </div>
+                            <div class="hammburger">
+                                <div class="openbtn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="mv_front">
+                        <div class="kumano_banner">
+                            <a href="">
+                                <div class="inner">
+                                    <div class="multiply"></div>
+                                    <div class="left">
+                                        <div class="vertical_text">
+                                            <span class="text_line_v"></span>
+                                            <p class="vertical">熊野の自然に佇む</p>
+                                        </div>
+                                        <h2 class="vertical">日本書紀に遡る<br><span>創生の歴史</span></h2>
+                                    </div>
+                                    <div class="right">
+                                        <p>熊野の伝承は日本書紀の時代まで遡ります<br>花窟神社には神世七代である伊奘冉尊（いざなみ）、<br>火の神、軻遇突智（かぐつち）が祀られています</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tourism_inner">
+                <p>
+                    悠久の営みの中で熊野信仰とともに歴史を刻み「紀伊山地の霊場と表詣道」は2004年にユネスコの世界遺産に登録されています。
+                    <br><br>
+                    「伊勢に七度」「熊野へ三度」
+                    <br><br>
+                    平安の時代には盛んに熊野御幸が行われ身分や階級を問わず、多くの人々が熊野に憧れをいだき、救いを求め、蘇りを願って異郷の地とも思える山深いこの地を目指しました。
+                </p>
+            </div>
+
+            <div class="tourism_btn">
+                <ul>
+                    <li><a href="#tourism_1"><span class="arrow"></span><p>熊野古道</p></a></li>
+                    <li><a href="#tourism_2"><span class="arrow"></span><p>花の窟神社</p></a></li>
+                    <li><a href="#tourism_3"><span class="arrow"></span><p>獅子岩</p></a></li>
+                    <li><a href="#tourism_4"><span class="arrow"></span><p>七里御浜</p></a></li>
+                    <li><a href="#tourism_5"><span class="arrow"></span><p>鬼ヶ城</p></a></li>
+                    <li><a href="#tourism_6"><span class="arrow"></span><p>熊野那智大社</p></a></li>
+                    <li><a href="#tourism_7"><span class="arrow"></span><p>丸山千枚田</p></a></li>
+                    <li><a href="#tourism_8"><span class="arrow"></span><p>産田神社</p></a></li>
+                    <li><a href="#tourism_9"><span class="arrow"></span><p>三反帆</p></a></li>
+                    <li><a href="#tourism_10"><span class="arrow"></span><p>新鹿海水浴場</p></a></li>
+                    <li><a href="#tourism_11"><span class="arrow"></span><p>神倉神社</p></a></li>
+                    <li><a href="#tourism_12"><span class="arrow"></span><p>瀞峡</p></a></li>
+                    <li><a href="#tourism_13"><span class="arrow"></span><p>速玉大社</p></a></li>
+                    <li><a href="#tourism_14"><span class="arrow"></span><p>本宮大社</p></a></li>
+                    <li><a href="#tourism_15"><span class="arrow"></span><p>熊野大花火大会</p></a></li>
+                    <li><a href="#tourism_16"><span class="arrow"></span><p>クマノザクラ</p></a></li>
+                </ul>
+            </div>
+
+            <div class="content_section">
+                <div class="kumano_circle">
+                    <div class="title">
+                        <img src="../image/logo_brown.svg" alt="">
+                        <h2>熊野観光のご案内</h2>
+                        <p>人はなぜ熊野に惹かれるのか。心の故郷が、ここにある</p>
+                    </div>
+                    <div class="circle_img">
+                        <img src="../image/circle.png" alt="">
+                    </div>
+                    <div>
+                        <p>
+                            険しい山々を超え詣でる長き道のり、<br>それ自体が修行の道とされました<br><br>
+                            見渡す限りの自然に抱かれた<br>熊野の雄大な景色は、<br>今もなお昔の原型をとどめ、<br>訪れる人々の心を惹きつけています
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tourism_list">
+                <ul>
+                    <li id="tourism_1">
+                        <img src="../image/tourism_li_1.png" alt="">
+                        <h2><span>世界遺産</span> 熊野古道</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li id="tourism_2">
+                        <img src="../image/tourism_li_2.png" alt="">
+                        <h2><span>世界遺産</span> 花の窟神社</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li id="tourism_3">
+                        <img src="../image/tourism_li_3.png" alt="">
+                        <h2><span>世界遺産</span> 獅子岩</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li id="tourism_4">
+                        <img src="../image/tourism_li_4.png" alt="">
+                        <h2><span>世界遺産</span> 七里御浜</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li id="tourism_5">
+                        <img src="../image/tourism_li_5.png" alt="">
+                        <h2><span>世界遺産</span> 鬼ヶ城</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li id="tourism_6">
+                        <img src="../image/tourism_li_6.png" alt="">
+                        <h2><span>世界遺産</span> 熊野那智大社</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li id="tourism_7">
+                        <img src="../image/tourism_li_7.png" alt="">
+                        <h2>丸山千枚田</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li id="tourism_8">
+                        <img src="../image/tourism_li_8.png" alt="">
+                        <h2>産田神社</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li id="tourism_9">
+                        <img src="../image/tourism_li_9.png" alt="">
+                        <h2>三反帆</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li id="tourism_10">
+                        <img src="../image/tourism_li_10.png" alt="">
+                        <h2>新鹿海水浴場</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li  id="tourism_11">
+                        <img src="../image/tourism_li_11.png" alt="">
+                        <h2>神倉神社</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li id="tourism_12">
+                        <img src="../image/tourism_li_12.png" alt="">
+                        <h2>瀞峡</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li id="tourism_13">
+                        <img src="../image/tourism_li_13.png" alt="">
+                        <h2><span>【熊野三山】</span><br><span>世界遺産</span> 速玉大社</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li id="tourism_14">
+                        <img src="../image/tourism_li_14.png" alt="">
+                        <h2><span>【熊野三山】</span><br><span>世界遺産</span> 世界遺産本宮大社</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li  id="tourism_15">
+                        <img src="../image/tourism_li_15.png" alt="">
+                        <h2>熊野大花火大会</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                    <li  id="tourism_16">
+                        <img src="../image/tourism_li_16.png" alt="">
+                        <h2>クマノザクラ</h2>
+                        <p>「歩くことが清めることに繋がる熊野詣」伊勢神宮から熊野三山へ続く伊勢路。険しい山々を超え詣でる長き道のりは、それ自体が修行の道とされました。見渡す限りの自然に抱かれた熊野の雄大な景色は、今もなお昔の原型をとどめ、訪れる人々の心を惹きつけています。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="official_site">
+                <div class="tourism_btn ">
+                    <ul>
+                        <li><a target="_blank" href="https://www.city.kumano.lg.jp/kankou/kankou.html"><div class="circle_btn"></div><p>熊野市公式サイト</p></a></li>
+                        <li><a target="_blank" href="http://kumano-kankou.com/?p=3463"><div class="circle_btn"></div><p>熊野市観光公社</p></a></li>
+                        <li><a target="_blank" href="https://www.kodo.pref.mie.lg.jp/"><div class="circle_btn"></div><p>熊野古道伊勢路</p></a></li>
+                        <li><a target="_blank" href="http://kumano-kankou.com/?p=3463"><div class="circle_btn"></div><p>熊野市観光公社</p></a></li>
+                        <li><a target="_blank" href="https://www.hongu.jp/"><div class="circle_btn"></div><p>熊野本宮観光協会</p></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

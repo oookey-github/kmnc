@@ -68,8 +68,18 @@ body{
 	margin-top: 48rem;
 }
 /* 施設リスト */
+.guide .map_list_inner{
+	padding-top: 21rem;
+	padding-bottom: 16rem;
+}
+.guide .map_list h2{
+	font-size: 2.5rem;
+	margin-left: 4.4rem;
+	margin-bottom: 5rem;
+	font-weight: bold;
+}
 .guide .map_list{
-	padding-top: 32rem;
+	margin-top: 6rem;
 }
 .guide .map_list ul{
 	display: flex;
@@ -89,4 +99,14 @@ body{
 	font-size: 1.8rem;
 	font-weight: bold;
 	margin: 2.5rem 0 2rem;
+	white-space: nowrap;
+}
+.guide .map_list li p{
+	font-size: 1.5rem;
+}
+.guide .time.flex p:last-child{
+	margin-left: 4rem;
+}
+.guide .time p:last-child{
+	margin-left: 0;
 }

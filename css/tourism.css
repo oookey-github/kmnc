@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+.pc{display: inherit;}
+.sp{display: none;}
+@media screen and ( max-width:767px ){
+	.pc{display: none;}
+	.sp{display: inherit;}
+}
+html{font-size: 62.5%;}
+body{
+	font-size:1.6em;
+	font-style: normal;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    color: #292929
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+@media (min-width: 768px) {
+    body {
+        min-width: 1024px;
+    }
+}
+@media only screen and (max-width: 767px){
+	html{font-size: calc( 1000vw / 430vw );}
+}
+
+/* MV */
+.tourism .header {
+    background-image: none;
+}
+.tourism .mv{
+    background-image: url(../image/kumano_banner.png);
+}
+.tourism .mv_front{
+    height: auto;
+}
+.tourism .kumano_banner{
+    background-image: none;
+    position: static;
+    width: auto;
+    height: auto;
+}
+.tourism .kumano_banner .inner{
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: block;
+    position:static;
+}
+.tourism .kumano_banner .multiply{
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    position: static;
+}
+.tourism .kumano_banner .vertical_text{
+    right: 0;
+    left: auto;
+    top: 16%;
+    font-size: 2.2rem;
+}
+.tourism .vertical_text p{
+    margin-top: 1.5rem;
+    margin-left: 0;
+    letter-spacing: 0.8rem;
+}
+.tourism .kumano_banner .left h2{
+    font-size: 4.2rem;
+    margin: 0 auto;
+    letter-spacing: 1.4rem;
+    top: 20%;
+    left: 0%;
+    line-height: 7.2rem;
+}
+.tourism .kumano_banner .left h2 span{
+    margin-top: 28rem;
+}
+.tourism .kumano_banner .left {
+    width: 20rem;
+    margin: 0 auto;
+    height: 83rem;
+    position: relative;
+}
+.tourism .kumano_banner .right{
+    bottom: 8rem;
+    right: 5%;
+}
+
+/* 観光説明 */
+.tourism_inner{
+    background-image: url(../image/tourism_map.png);
+    height: 93.4rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.tourism_inner p{
+    width: 42rem;
+    padding-top: 12.5rem;
+    margin-left: 20%;
+}
+/* ボタン */
+.tourism_btn{
+    margin-top: 10rem;
+}
+.tourism_btn ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90rem;
+    font-size: 1.8rem;
+    margin: 0 auto;
+}
+.tourism_btn li {
+    width: 18rem;
+    margin-top: 2.5rem;
+}
+.tourism_btn li a{
+    display: flex;
+    align-items: center;
+}
+.tourism .kumano_circle{
+    margin-top: 12rem;
+}
+.tourism_list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 78rem;
+    margin: 0 auto;
+}
+.tourism_list li{
+    width: 30rem;
+    margin: 4.5rem;
+    padding-top: 5rem;
+}
+.tourism_list li img{
+    height: 48rem;
+    width: 100%;
+    object-fit: cover;
+}
+.tourism_list li h2{
+    font-size: 2.3rem;
+    margin: 3rem 0 2.5rem;
+    white-space: nowrap;
+    line-height: 3rem;
+}
+.tourism_list li h2 span{
+    font-size: 1.8rem;
+}
+.tourism .circle_btn{
+    border: 1px solid #292929;
+}
+.tourism .circle_btn:before{
+    border-top: 1px solid #292929;
+    border-right: 1px solid #292929;
+}
+.official_site .tourism_btn ul{
+    width: 70rem;
+    font-size: 1.6rem;
+    margin-bottom: 25rem;
+}
+.official_site .tourism_btn li{
+    width: 23.3rem;
+}
