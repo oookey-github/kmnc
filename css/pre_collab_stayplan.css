@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+.pc{display: inherit;}
+.sp{display: none;}
+@media screen and ( max-width:767px ){
+	.pc{display: none;}
+	.sp{display: inherit;}
+}
+html{font-size: 62.5%;}
+body{
+	font-size:1.4em;
+	font-style: normal;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    color: #292929;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+@media (min-width: 768px) {
+    body {
+        min-width: 1024px;
+    }
+    
+}
+@media only screen and (max-width: 767px){
+	html{font-size: calc( 1000vw /430px  );}
+}
+.header{
+    background: url(../image/header_pre_collabo_stayplan.png) no-repeat;
+
+}
+.introduction{
+    width:100%;
+    margin-top:7.4rem;
+    min-width:114rem;
+}
+.introduction .img{
+    width:100%;
+    margin-bottom:5rem;
+}
+.introduction .title{
+    max-width:126rem;
+    width:100%;
+    margin:0 auto;
+}
+
+.introduction .loccintane_logo{
+    background: url(../image/loccitane_img.png) no-repeat;
+    position:relative;
+    background-position: 80% 20%;
+    background-size: cover;
+    width:50%;
+    height:50.4rem;
+    
+
+}
+.introduction .loccintane_logo img{
+    position: absolute;
+    left:50%;
+    width:22.2rem;
+    top:50%;
+}
+.introduction .kumano_logo{
+    background: url(../image/kumano_logo_bg.png) no-repeat;
+    position:relative;
+    background-position: 80% 20%;
+    background-size: cover;
+    width:50%;
+    height:50.4rem;
+}
+.introduction .kumano_logo img{
+    width:22.2rem;
+    position:absolute;
+    right:50%;
+    top:50%;
+}   
+.introduction .text_center.text p{
+    line-height: 3.8rem;
+    letter-spacing: 0.5rem;
+}
+.introduction_loccitane{
+    width:100%;
+    max-width:126rem;
+    margin:0 auto 6rem;
+    
+}
+.introduction_loccitane:last-child{
+    align-items: center;
+}
+.introduction_loccitane img{
+    width:42.6rem;
+    margin-right:5.7rem;
+}
+.introduction_p p{
+    line-height: 2.8rem;
+    letter-spacing: 0.2rem;
+}
+.introduction_p:last-child{
+    margin-top:3rem;
+    margin-right:7rem;
+}
+.introduction_img_2 {
+    align-items: baseline;
+    margin-left:5.7rem
+}
+.introduction_img_2 img:first-child{
+    width:24.4rem;
+    height:24.4rem
+}
+.introduction_img_2 img:last-child{
+    height:19.5rem;
+    width:19.5rem;
+}
+#collabo1{
+    width:100%;
+    padding-top:15rem;
+    max-width:126rem;
+    margin:0 auto;
+}
+
+.loccitane_royal_suite .title{
+    text-align: center;
+}
+.title2{
+    display: inline-block;
+}
+.border_div{
+    display: inline-block;
+}
+.title2 .border_div .border{
+    bottom: -2.5rem;
+    left: -35rem;
+}
+.border_right{
+    border: solid 0.01rem #292929;
+    padding-left: 10rem;
+    margin-right: 2rem;
+    position: absolute;
+    bottom: 6.5rem;
+    left: 25rem
+}
+.loccitane_royal_suite_mv{
+    width:100%;
+    margin:0 auto;
+}
+.loccitane_royal_suite_mv img{
+    width:100%;
+    height:54rem;
+}
+.loccitane_royal_suite .explanation{
+    text-align: center;
+    margin-bottom:10rem;
+    margin-top:4.6rem;
+}
+.loccitane_royal_suite .explanation p{
+    line-height: 3.2rem;
+    letter-spacing: 0.2rem;
+}
+.loccitane_royal_suite_flex{
+    width:100%;
+    margin:0 auto;
+
+}
+.loccitane_royal_suite_flex .box{
+    justify-content: space-between;
+}
+.flex_box{
+    width:38.8rem;
+}
+.flex_box img{
+    width:100%;
+}
+.loccitane_royal_suite_introduction p:first-child{
+    margin-top:3.4rem;
+    margin-bottom:6.3rem;
+    line-height: 3.2rem;
+}
+.loccitane_royal_suite_introduction p:last-child,
+.loccitane_royal_suite_introduction_reset_selam p:last-child
+{
+    line-height: 2.6rem;
+    letter-spacing: 0.2rem;
+}
+.loccitane_royal_suite_introduction_reset_selam p:first-child{
+    margin-top:3.4rem;
+    margin-bottom:3.1rem;
+    line-height: 3.2rem;
+}
+.reserve_btn2{
+    background-color: #FFB500;
+    width:52.1rem;
+    margin: 9rem auto 0;
+    height:7.2rem;
+}
+.reserve_btn2 p{
+    line-height: 2.8rem;
+    letter-spacing: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+#collabo2{
+    padding-top:11.9rem;
+    max-width:126rem;
+    margin:0 auto;
+}
+.title2 .border_div .border .aft{
+    left:-35rem;
+}
+.aft .title p:last-child{
+    margin-bottom:5.6rem;
+}
+.aft .introduction_loccitane{
+    width:100%;
+    padding-top:5.1rem;
+    justify-content: space-between;
+}
+.aft .introduction_p p:first-child{
+    margin-bottom:4.5rem;
+}
+.aft .introduction_img_2 img{
+    width:60.9rem;
+    height:34.2rem;
+}
+#collabo3{
+    padding-top:13.7rem;
+    max-width:126rem;
+    margin:0 auto;
+    padding-bottom:10rem;
+}
+.club.aft.loccitane_royal_suite .explanation p{
+    line-height: 3.6rem;
+}
+.club.aft .introduction_loccitane{
+    padding-top:10rem;
+}

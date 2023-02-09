@@ -126,7 +126,7 @@ body{
 .view.room{
     width:102.9rem;
     
-    margin:12.4rem auto 0;
+    margin:12.4rem auto 10rem;
 }
 .view.room .flex{
     justify-content: space-between;
@@ -138,7 +138,12 @@ body{
 .indoor_view{
     margin-top:8.9rem;
     text-align: center;
-    margin-bottom:25.5rem;
+    margin-bottom:2.5rem;
+}
+.indoor_view p{
+    margin-bottom:1.2rem;
+    line-height: 4.2rem;
+    letter-spacing: 0.4rem;
 }
 #introduction3.room{
     padding-bottom:17.6rem;

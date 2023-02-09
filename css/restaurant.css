@@ -45,7 +45,9 @@ body{
 .c2{
     color:#FCE9B0;
 }
-
+.c3{
+    color:#244D57;
+}
 /* ================ */
 
 /* フォントサイズ 太さ */
@@ -67,8 +69,14 @@ body{
 .fs18{
     font-size:1.8rem
 }
+.fs20{
+    font-size: 2rem;
+}
 .fs22{
     font-size:2.2rem
+}
+.fs23{
+    font-size: 2.3rem;
 }
 .fs24{
     font-size:2.4rem;
@@ -552,6 +560,16 @@ line-height: 1.1rem;;
     top:8rem;
     letter-spacing: 0.48rem;
     line-height: 3.1rem;
+}
+.indoor_view{
+    margin-top:8.9rem;
+    text-align: center;
+    margin-bottom:2.5rem;
+}
+.indoor_view p{
+    margin-bottom:1.2rem;
+    line-height: 4.2rem;
+    letter-spacing: 0.4rem;
 }
 #introduction1{
     padding-top:31.6rem;
