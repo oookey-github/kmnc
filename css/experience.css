@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+.pc{display: inherit;}
+.sp{display: none;}
+@media screen and ( max-width:767px ){
+	.pc{display: none;}
+	.sp{display: inherit;}
+}
+html{font-size: 62.5%;}
+body{
+	font-size:1.6em;
+	font-style: normal;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    color: #292929
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+@media (min-width: 768px) {
+    body {
+        min-width: 1024px;
+    }
+}
+@media only screen and (max-width: 767px){
+	html{font-size: calc( 1000vw / 430vw );}
+}
+
+.experience .header{
+    background-image: url(../image/header_experience.png);
+}
+
+/* 体験プラン */
+.exp_list{
+    
+}
+.exp_li_content{
+    margin-top: 10rem;
+}
+.exp_list ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8rem auto 0rem;
+    width: 126rem;
+}
+.exp_list li{
+    width: 38rem;
+    margin: 0rem 2rem 8rem;
+}
+.exp_list ul img{
+    height: 22rem;
+    width: 100%;
+    object-fit: cover;
+}
+.exp_list ul h2{
+    font-size: 2rem;
+    margin: 2rem 0 1.5rem;
+    font-weight: bold;
+}
+.exp_list ul p{
+    letter-spacing: 0.2rem;
+}
+.exp_list ul .btn{
+    width: fit-content;
+    margin-right: 0;
+    border-bottom: 0.1rem solid;
+    margin-top: 2rem;
+}
