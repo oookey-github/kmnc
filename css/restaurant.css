@@ -24,7 +24,7 @@ body{
     
 }
 @media only screen and (max-width: 767px){
-	html{font-size: calc( 1000vw /430px  );}
+	html{font-size: calc( 1000vw /43rem);}
 }
 /* ====== 色 ====== */
 .bg1{
@@ -44,6 +44,9 @@ body{
 }
 .c2{
     color:#FCE9B0;
+}
+.c3{
+    color: #244D57;
 }
 
 /* ================ */
@@ -69,6 +72,9 @@ body{
 }
 .fs22{
     font-size:2.2rem
+}
+.fs23{
+    font-size: 2.3rem;
 }
 .fs24{
     font-size:2.4rem;
@@ -337,6 +343,10 @@ line-height: 1.1rem;;
     width:79.6rem;
     margin-left:6.25rem;
 }
+.restaurant_info_explanation_text{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 .reserve_btn{
     width:37rem;
     height:5rem;
@@ -437,7 +447,11 @@ line-height: 1.1rem;;
 .venue{
     border-top:1px solid #707070;
     border-bottom:1px solid #707070;
-    padding:8.75rem 0 4.85rem 2.45rem;
+    padding:8.75rem 0 4.85rem 0rem;
+    justify-content: center;
+}
+.venue .flex{
+    justify-content: center;
 }
 .venue_img{
     width:42.1rem;
@@ -466,6 +480,12 @@ line-height: 1.1rem;;
 .aft.time p:last-child{
     margin-left:0;
 }
+.venue  .aft.time .flex{
+    justify-content: flex-start;
+}
+.venue .time.flex{
+    justify-content: flex-start;
+}
 .time{
     border-top:1px solid #E0E0E0;
     border-bottom:1px solid #E0E0E0;
@@ -484,6 +504,22 @@ line-height: 1.1rem;;
 }
 .time p:last-child{
     margin-left:2.2rem;
+}
+.indoor_view{
+    margin:7rem auto 0;
+    
+}
+.indoor_view p{
+    text-align: center;
+    margin-bottom:2rem;
+    line-height: 4.2rem;
+    letter-spacing: 0.3rem;
+
+}
+.indoor_view iframe{
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
 }
 .introduction{
     margin-top: 16.4rem;
@@ -719,4 +755,213 @@ min-width:130rem;
 }
 .personal_information a:first-child{
     margin-right:4rem;
+}
+@media screen and ( max-width:767px ){
+    
+	.restaurant{
+        width:100%;
+        min-width:auto;
+        max-width:100%
+    }
+    .header{
+        height:8.8rem;
+        min-width:auto;
+        padding:0 0 0 2.8rem;
+        width:100%;
+    }
+    .logo_icon{
+        width:6.9rem;
+    }
+    .logo_icon img{
+        width:6.9rem;
+    }
+    .nav_link{
+        margin-left:0;
+    }
+    .oshokuji{
+        min-width:100%;
+    }
+    .restaurant_info_inner{
+        min-width:auto;
+        width:100%
+    }
+    .restaurant_info_img img{
+        width:28.9rem;
+        height:36.8rem;
+        object-fit: cover;
+        margin-top:3rem;
+        padding-right:1rem;
+    }
+    .restaurant_info .vertical_text{
+        margin-left:0;
+    }
+    .restaurant_info .title p:last-child{
+        font-size:1.3rem;
+    }
+    .title p{
+        font-size:2rem;
+    }
+    .vertical_text p{
+        font-size: 2rem;
+        margin-left:0;
+        line-height: 2.6rem;
+        
+    }
+    .restaurant_info_text{
+        padding-top:4rem;
+        margin:0 auto 14.9rem;
+        width:80%;
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+    }
+    .restaurant_info_text p{
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+        
+    }
+    .menu{
+        min-width:auto;
+        width:85%;
+        margin:0 auto;
+        justify-content: center;
+    }
+    .menu p{
+        font-size: 1.8rem;
+    }
+    .menu span{
+        font-size:1rem;
+    }
+    .menu div{
+        justify-content: space-between;
+    }
+    .menu_sp{
+        width:100%;
+        padding-bottom: 5rem;
+    }
+    .menu_sp .border-l,
+    .menu_sp .border-r{
+        height:2rem;
+        display:flex;
+        justify-content: center;
+    }
+    .menu p:first-child{
+        margin:0 3rem;
+    }
+    .restaurant_info_img_2.sp{
+        width:100%;
+    }
+    .restaurant_info_img_2 img{
+        width:100%;
+        margin-left:0;
+        margin-bottom:5rem;
+    }
+    .restaurant_info {
+        margin:0 auto;
+        width:80%;
+    }
+    .restaurant_info_explanation_text{
+        flex-direction: column-reverse;
+
+    }
+    
+    .name p:first-child{
+        font-size:2.8rem;
+        text-indent: 1.5rem;
+    }
+    .name p:last-child{
+        text-indent: 3rem;
+    }
+    .name{
+        margin-bottom:2.6rem;
+    }
+    .reserve_btn{
+        height:6rem;
+        margin-bottom:3.5rem;
+    }
+    .meal_inner{
+        width:100%;
+        margin-top:0;
+        justify-content: center;
+        overflow: hidden;
+        display:inline-block
+    }
+    .meal_menu{
+        width:37.4rem;
+    }
+    .venue {
+        flex-wrap: wrap;
+    }
+    .venue .flex{
+        flex-wrap:wrap;
+    }
+    .indoor_view iframe{
+        width:100%
+    }
+    .introduction {
+        min-width:auto;
+    }
+    .introduction_inner.flex{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .introduction_text{
+        width:100%;
+    }
+    .introduction_image{
+        width:100%;
+    }
+    .introduction_image img{
+        width:100%;
+        
+    }
+    #introduction2 .introduction_inner.flex,
+    #introduction4 .introduction_inner.flex
+    {
+        flex-direction: column;
+    } 
+    footer{
+        min-width:auto;
+    }
+    .footer_img{
+        min-width:auto;
+    }
+    .footer_img{
+        width:100%;
+    }
+    .footer_img img{
+        width:100%;
+        height:33rem;
+        object-fit: cover;
+    }
+    .footer1_inner{
+        flex-direction: column;
+    }
+    .footer1_inner .flex{
+        flex-direction: column;
+    }
+    .each_page{
+        flex-direction: column;
+        width:100%
+    }
+    .btn_box{
+        flex-direction: column;
+    }
+    .personal_information.flex{
+        flex-direction: column;
+    }
+    .footer_c{
+        width:100%;
+    }
+    .footer2_inner{
+        min-width:auto;
+    }
+    .footer2_title{
+        width:100%;
+    }
+    .footer2_inner .flex{
+        flex-direction: column;
+    }
 }
