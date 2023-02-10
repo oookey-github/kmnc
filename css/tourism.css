@@ -28,18 +28,12 @@ body{
 
 /* MV */
 .tourism .header {
-    background-image: none;
+    background-image: url(../image/header_tourism.png);
 }
 .tourism .mv{
     background-image: url(../image/kumano_banner.png);
 }
 .tourism .mv_front{
-    height: auto;
-}
-.tourism .kumano_banner{
-    background-image: none;
-    position: static;
-    width: auto;
     height: auto;
 }
 .tourism .kumano_banner .inner{
@@ -58,8 +52,7 @@ body{
 .tourism .kumano_banner .vertical_text{
     right: 0;
     left: auto;
-    top: 16%;
-    font-size: 2.2rem;
+    top: 13%;
 }
 .tourism .vertical_text p{
     margin-top: 1.5rem;
@@ -67,7 +60,7 @@ body{
     letter-spacing: 0.8rem;
 }
 .tourism .kumano_banner .left h2{
-    font-size: 4.2rem;
+    font-size: 3.8rem;
     margin: 0 auto;
     letter-spacing: 1.4rem;
     top: 20%;
@@ -75,7 +68,7 @@ body{
     line-height: 7.2rem;
 }
 .tourism .kumano_banner .left h2 span{
-    margin-top: 28rem;
+    margin-top: 19rem;
 }
 .tourism .kumano_banner .left {
     width: 20rem;
@@ -86,6 +79,22 @@ body{
 .tourism .kumano_banner .right{
     bottom: 8rem;
     right: 5%;
+}
+
+/* タイトル */
+.tourism .mc_text{
+    height: 14rem;
+}
+.tourism .horiz_text{
+    bottom: auto;
+    top: 4rem;
+    font-size: 3rem;
+}
+.tourism .mc_title{
+    font-size: 1.8rem !important;
+    letter-spacing: 0.5rem;
+    margin-bottom: auto;
+    margin-top: 6.5rem;
 }
 
 /* 観光説明 */
