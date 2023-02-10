@@ -37,6 +37,11 @@ body{
 .multiply{
     mix-blend-mode: multiply; /* 乗算 */
 }
+.notscroll{
+    position: absolute;
+	inset: 0;
+	overflow: auto;
+}
 /* トップページ */
 .body_inner{
     position: relative;
@@ -738,26 +743,26 @@ body{
 /*ナビゲーション*/
 #g-nav ul {
     /*ナビゲーション天地中央揃え*/
-    position: absolute;
     z-index: 999;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
 }
 
 /*リストのレイアウト設定*/
+#g-nav .nv_inner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
 #g-nav .nav_bg{
     background-image: url(../image/menu_bg.png);
     width: 33rem;
     height: 100%;
     background-position: center;
     background-size: cover;
-    position: absolute;
-    left: 0;
+    position: fixed;
 }
 #g-nav .nav_access{
     position: absolute;
-    top: 10%;
+    top: 11%;
     left: 31%;
     color: #292929;
     font-size: 1.6rem;
@@ -767,13 +772,17 @@ body{
     height: auto;
     margin-left: 2.5rem;
     margin-bottom: 2.5rem;
+    mix-blend-mode: multiply;
 }
 #g-nav .nav_content{
     position: absolute;
-    top: 26%;
-    right: -4%;
+    top: 13%;
+    right: 10%;
     color: #292929;
-    width: 53rem;
+    width: 50rem;
+}
+#g-nav .nav_content .flex{
+    justify-content: space-between;
 }
 #g-nav .horiz_text{
     position: static;
@@ -781,7 +790,7 @@ body{
     width: 30rem;
 }
 #g-nav .nav_mc li{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 #g-nav .text_line_h{
     padding-left: 2rem;
@@ -792,22 +801,86 @@ body{
 #g-nav .nav_mc p{
     font-size: 1.3rem;
     margin-left: 4.2rem;
-    margin-top: 0.6rem;
+    margin-top: 0.2rem;
 }
 #g-nav .nav_mc{
-    top: 16rem;
-    left: 0;
+
 }
 #g-nav .nav_sub{
-    top: 0;
-    right: 0;
     width: 16rem;
     font-size: 1.6rem;
 }
 #g-nav .nav_sub li{
     margin-bottom: 3rem;
 }
-/*========= ボタンのためのCSS ===============*/
+#g-nav .nav_star{
+    background-image: url(../image/menu_star.png);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+#g-nav .nav_star h2{
+    font-size: 2.4rem;
+    line-height: 2.3rem;
+    position: absolute;
+    left: 4.5rem;
+    top: 55%;
+    transform: translateY(-50%);
+}
+#g-nav .nav_star h2 span{
+    font-size: 1.3rem;
+}
+#g-nav .nav_star p{
+    font-size: 1.3rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+}
+#g-nav .btn{
+    border: 0.1rem solid;
+    width: 47%;
+    height: 6.8rem;
+    margin-right: 0;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    padding: 2rem 1rem 2rem 3rem;
+}
+#g-nav .nav_sns{
+    font-family: 'Noto Sans JP', sans-serif;
+    align-items: flex-end;
+    text-align: center;
+    width: 13rem;
+    white-space: nowrap;
+    letter-spacing: 0.1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+}
+#g-nav .nav_sns .insta_icon{
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+#g-nav .nav_sns .facebook_icon{
+    margin-bottom: 0;
+    margin-left: 2rem;
+}
+#g-nav .nav_sns .facebook_icon p{
+    margin-top: 0.4rem;
+}
+#g-nav .nav_sns img{
+    width: 4rem;
+    height: auto;
+}
+#g-nav .nav_sns .nav_photo{
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    border-bottom:0.1rem solid #292929;
+    margin-bottom: 2.8rem;
+    margin-left: 7rem;
+}
+/*====
+===== ボタンのためのCSS ===============*/
 .openbtn{
 	position:fixed;
     z-index: 9999;/*ボタンを最前面に*/
@@ -827,8 +900,8 @@ body{
     height: 0.2rem;
     border-radius: 2px;
 	background-color: #fff;
-  	width: 50%;
-  }
+    width: 50%;
+}
 
 .openbtn span:nth-of-type(1) {
 	top:10px;	
