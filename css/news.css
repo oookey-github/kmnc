@@ -35,11 +35,16 @@ body{
 .newspage .vertical{
     font-size: 3rem;
     letter-spacing: 1.5rem;
+    margin-top: 4.5rem;
 }
 .newspage .news{
     margin-top: 10rem;
     margin-bottom: 20rem;
     flex-wrap: nowrap;
+}
+.newspage .news dl{
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
 }
 .newspage .detail{
     width: 82rem;
@@ -71,15 +76,52 @@ body{
 .newspage .title{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-.newspage .title a{
+.newspage_detail .vertical{
+    margin-top: 0;
+}
+.newspage_detail .news a{
     display: flex;
     border-bottom: 0.1rem solid;
     align-items: center;
-    margin-left: -15rem;
-    margin-top: 10rem;
+    margin: 7rem auto 0;
+    width: fit-content;
 }
-.newspage .title a .arrow{
+.newspage_detail .news a .arrow{
     transform: translateX(-25%) rotate(-135deg);
 }
+
+/* ページネーション */
+.Pagination {
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    }
+    .Pagination > * + * {
+    margin-left: 0.5rem;
+    }
+    .Pagination-Item-Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 2.5rem;
+    height: 3.2rem;
+    background: #fff;
+    font-size: 1.4rem;
+    transition: all 0.15s linear;
+    }
+    .Pagination-Item-Link-Icon {
+    width: 1.3rem;
+    }
+    .Pagination-Item-Link.isActive {
+    pointer-events: none;
+    background: #292929;
+    color: #fff;
+    padding-left: 0.25rem;
+    }
+    .Pagination-Item-Link:not(.isActive):hover {
+    background:  #292929;
+    color: #fff;
+    }

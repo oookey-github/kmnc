@@ -66,3 +66,30 @@ body{
     border-bottom: 0.1rem solid;
     margin-top: 2rem;
 }
+.experience .title {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    letter-spacing: 0.7rem;
+    line-height: 3rem;
+}
+.experience .title span{
+    font-size: 3.6rem;
+    line-height: 5rem;
+}
+.experience .title::before,
+.experience .title::after {
+    content: '';
+    flex-grow: 0.1;/* 余白を分け与える */
+    height: 0.1rem;
+    background-color: #292929;
+}
+.experience .title::before {
+    margin-right: 5rem;
+}
+.experience .title::after {
+    margin-left: 5rem;
+}
