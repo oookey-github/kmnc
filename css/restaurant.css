@@ -24,7 +24,7 @@ body{
     
 }
 @media only screen and (max-width: 767px){
-	html{font-size: calc( 1000vw /43rem);}
+	html{font-size: calc( 1000vw /43px);}
 }
 /* ====== 色 ====== */
 .bg1{
@@ -781,35 +781,52 @@ min-width:130rem;
     .oshokuji{
         min-width:100%;
     }
+    .border{
+        left:0;
+        padding-left:1.9rem;
+        bottom:-1rem;
+    }
     .restaurant_info_inner{
         min-width:auto;
         width:100%
     }
     .restaurant_info_img img{
-        width:28.9rem;
+        width:27rem;
         height:36.8rem;
         object-fit: cover;
-        margin-top:3rem;
+        margin-top:4.6rem;
         padding-right:1rem;
     }
     .restaurant_info .vertical_text{
-        margin-left:0;
+        margin:0 2.8rem 0 0;
     }
     .restaurant_info .title p:last-child{
         font-size:1.3rem;
     }
+    .guid{
+        margin:2.5rem 0 0 0;
+    }
+    .title p{
+        margin-bottom:1.2rem;
+    }
+    .title{
+        margin-left:3rem
+    }
     .title p{
         font-size:2rem;
+    }
+    .title p:last-child{
+        margin-bottom:0;
     }
     .vertical_text p{
         font-size: 2rem;
         margin-left:0;
-        line-height: 2.6rem;
+        line-height: 3.2rem;
         
     }
     .restaurant_info_text{
-        padding-top:4rem;
-        margin:0 auto 14.9rem;
+        padding-top:4.3rem;
+        margin:0 auto 7.3rem;
         width:80%;
         display:flex;
         justify-content: center;
@@ -821,6 +838,11 @@ min-width:130rem;
         font-size: 1.4rem;
         letter-spacing: 0.1rem;
         
+    }
+    .restaurant1 .flex,
+    .restaurant2 .flex,
+    .restaurant3 .flex{
+        justify-content:center;
     }
     .menu{
         min-width:auto;
@@ -851,7 +873,12 @@ min-width:130rem;
         margin:0 3rem;
     }
     .restaurant_info_img_2.sp{
-        width:100%;
+        width:37.4rem;
+        margin:0 auto;
+    }
+    .explanation{
+        width:37.4rem;
+        margin:0 auto;
     }
     .restaurant_info_img_2 img{
         width:100%;
@@ -860,7 +887,7 @@ min-width:130rem;
     }
     .restaurant_info {
         margin:0 auto;
-        width:80%;
+        width:100%;
     }
     .restaurant_info_explanation_text{
         flex-direction: column-reverse;
@@ -872,10 +899,11 @@ min-width:130rem;
         text-indent: 1.5rem;
     }
     .name p:last-child{
-        text-indent: 3rem;
+        text-indent: 2rem;
     }
     .name{
         margin-bottom:2.6rem;
+        margin-top:2.6rem;
     }
     .reserve_btn{
         height:6rem;
@@ -886,22 +914,51 @@ min-width:130rem;
         margin-top:0;
         justify-content: center;
         overflow: hidden;
-        display:inline-block
+    }
+    .meal_inner.flex img{
+        margin-left:3.5rem;
     }
     .meal_menu{
         width:37.4rem;
+        margin:7rem auto 0;
+    }
+    .meal_menu_text{
+        width:37.4rem;
+        margin:7rem auto;
+    }
+    .restaurant_name.iseebi{
+        margin-top:2.6rem;
+    }
+    .restaurant_name.iseebi p{
+        font-size: 2.8rem;
+    }
+    #bf_viking_aft {
+        margin-top:7.2rem;
     }
     .venue {
         flex-wrap: wrap;
+        justify-content: center;
+        width:37.4rem;
+        margin:0 auto;
+    }
+    .venue_img{
+        width:37.4rem;
+        margin-right:0;
     }
     .venue .flex{
         flex-wrap:wrap;
+    }
+    .venue .title{
+        margin-left:0;
     }
     .indoor_view iframe{
         width:100%
     }
     .introduction {
         min-width:auto;
+    }
+    .introduction_inner{
+        width:37.4rem;
     }
     .introduction_inner.flex{
         flex-wrap: wrap;
@@ -910,20 +967,66 @@ min-width:130rem;
     .introduction_text{
         width:100%;
     }
+    .introduction_text1{
+        margin-top:3.5rem; 
+        padding-bottom:2.4rem;
+    }
+    .introduction_text1 img{
+        margin-left:1rem;
+    }
     .introduction_image{
         width:100%;
     }
     .introduction_image img{
         width:100%;
-        
     }
     #introduction2 .introduction_inner.flex,
     #introduction4 .introduction_inner.flex
     {
         flex-direction: column;
-    } 
+    }
+    #introduction2,#introduction3,#introduction4{
+        padding-top:12.5rem;
+    }
+    .introduction_text2 p:first-child{
+        padding-bottom: 2.5rem;
+    }
     footer{
         min-width:auto;
+    }
+    .footer1_inner{
+        padding-bottom:5.9rem;
+    }
+    .adress{
+    margin:0 auto;
+    width:auto;
+    }
+    .adress img{
+        margin-right:0;
+    }
+    .adress p:last-child{
+        margin-top:3.5rem;
+    }
+    .each_page{
+        margin-top:6rem;
+        width:100%;
+        justify-content: end;
+    }
+    .each_page_inner:first-child{
+        width:42%;
+    }
+    .each-page_inner:last-child{
+        width:60%;
+    }
+    .white_btn{
+        margin-left:0;
+        margin-bottom:3rem;
+        width:19.1rem;
+    }
+    .btn_box{
+        width:47%;
+        margin:4rem auto 0;
+
     }
     .footer_img{
         min-width:auto;
@@ -939,13 +1042,8 @@ min-width:130rem;
     .footer1_inner{
         flex-direction: column;
     }
-    .footer1_inner .flex{
-        flex-direction: column;
-    }
-    .each_page{
-        flex-direction: column;
-        width:100%
-    }
+    
+    
     .btn_box{
         flex-direction: column;
     }
@@ -955,13 +1053,36 @@ min-width:130rem;
     .footer_c{
         width:100%;
     }
+    .footer2{
+        padding-top: 6.4rem;
+        padding-bottom:15.9rem;
+    }
     .footer2_inner{
         min-width:auto;
     }
     .footer2_title{
-        width:100%;
+        width:5.7rem;
+        margin:0 auto;
     }
     .footer2_inner .flex{
         flex-direction: column;
+    }
+    .oyado_list.sp{
+        border-top:1px solid #707070;
+        border-bottom: 1px solid #707070;
+        height:6.1rem;
+        width:31.7rem;
+        margin:0 auto;
+        margin-top:4.1rem;
+        
+    }
+    .oyado_list.sp p{
+        height:100%;
+        justify-content: center;
+    }
+    .footer2_title.sp img{
+        width:5.7rem;
+        margin:0 auto;
+        text-align: center;
     }
 }
