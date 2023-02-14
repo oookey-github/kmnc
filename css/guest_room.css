@@ -42,6 +42,14 @@ body{
 #guest_room_guidance{
     margin:0 auto;
     width:114rem;
+    padding:6.1rem 0;
+}
+#guest_room_guidance .title{
+    padding-bottom:4.5rem;
+}
+#guest_room_guidance .title p:last-child{
+    margin-top:1.2rem;
+    margin-bottom:0;
 }
 .guest_room .header{
     background-image: url(../image/header_guest_room.png);
@@ -53,8 +61,17 @@ body{
     width:100%;
     margin:0 auto;
 }
-.guest_room_guidance_inner .title p:first-child{
+.guest_room .guest_room_guidance_inner .title p:nth-child(2){
     margin-bottom:1.2rem;
+    letter-spacing: 0.6rem;
+}
+.guest_room .guest_room_guidance_inner .title p:nth-child(3){
+    margin-bottom:1.5rem;
+    letter-spacing: 1.5rem;
+}
+.guest_room .guest_room_guidance_inner .title p:nth-child(4){
+    margin-bottom:3.1rem;
+    letter-spacing: 0.5rem;
 }
 .guest_room_mv{
     width:114rem;
@@ -170,6 +187,12 @@ body{
 .mc_text.room .border_div{
     top:-0.5rem;
 }
+#room1 .title .border_div .border,
+#room2 .title .border_div .border,
+#room3 .title .border_div .border,
+#room4 .title .border_div .border{
+    bottom:-1rem
+}
 @media screen and ( max-width:767px ){
     .guest_room .guest_room_guidance_inner .title:first-child{
         margin-top:2.9rem;
@@ -227,6 +250,10 @@ body{
     }
     #guest_room_guidance{
         width:100%;
+        padding: 0;
+    }
+    #guest_room_guidance .title{
+        padding-bottom:0;
     }
     .guest_room_mv{
         width:100%;
