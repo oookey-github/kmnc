@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/restaurant.css">
     <link rel="stylesheet" href="../css/guide.css">
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=M+PLUS+1p:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="guide notscroll">
@@ -22,11 +23,11 @@
                         </a>
                     </div>
                     <div class="nav_btn flex">
-                        <div class="bg3 btn flex">
+                        <div class="bg3 btn flex pc">
                             <img>
                             <a href=""><p class="fs13 c1"><span class="arrow"></span>宿泊プラン一覧</p></a>
                         </div>
-                        <div class="bg3 btn flex">
+                        <div class="bg3 btn flex pc">
                             <img>
                             <a href=""><p class="fs13 c1"><span class="arrow"></span>客室情報</p></a>
                         </div>
@@ -80,9 +81,6 @@
 
                     <div class="main_content mc_2">
                         <div class="content_inner">
-                            <div class="mc_item_2">
-                                <div class="mc_img_2"></div>
-                            </div>
                             <div class="mc_text">
                                 <div class="horiz_text">
                                     <span class="text_line_h"></span>
@@ -102,6 +100,24 @@
                                         五感に刻まれる旅がここにあります。
                                     </p>
                                 </div>
+                            </div>
+                            <div class="map">
+                                <map name="hotel_map">
+                                    <area shape="rect" coords="412,44,545,100" href="#" alt="駐車場" />
+                                    <area shape="rect" coords="433,181,538,243" href="#" alt="フロント" />
+                                    <area shape="rect" coords="243,86,406,152" href="#" alt="紀南幸商店街" />
+                                    <area shape="rect" coords="185,159,370,206" href="#" alt="匠工房" />
+                                    <area shape="rect" coords="122,308,232,342" href="#" alt="新姫庵" />
+                                    <area shape="rect" coords="88,349,245,383" href="#" alt="湯浴みぼっこ" />
+                                    <area shape="rect" coords="317,348,418,396" href="#" alt="馳走庵" />
+                                    <area shape="rect" coords="483,457,714,511" href="#" alt="Tha Club Lounge" />
+                                    <area shape="rect" coords="467,527,555,567" href="#" alt="穀雨" />
+                                    <area shape="rect" coords="373,574,544,636" href="#" alt="安らぎの座" />
+                                    <area shape="rect" coords="12,520,132,560" href="#" alt="新月庵" />
+                                    <area shape="rect" coords="9,653,173,693" href="#" alt="はなれ 咲ら村" />
+                                    <area shape="rect" coords="104,744,213,793" href="#info" alt=" 満月庵" />
+                                </map>
+                                <img usemap="#hotel_map" src="../image/hotel_map.png" alt="" class="">
                             </div>
                         </div>
                     </div>
@@ -198,6 +214,10 @@
             </div>
         </div>
     </div>
-    
+
+<!-- マップ  -->
+<script src="../js/main.js"></script>
+<script src="../js/jquery.rwdImageMaps.min.js"></script>
+
 </body>
 </html>

@@ -32,7 +32,9 @@ body{
 /* タイトル */
 .guide .mc_text{
 	margin-top: 7rem;
-	margin-right: 67rem;
+	margin-right: 0rem;
+	justify-content: normal;
+	margin-right: 6rem;
 }
 .guide .horiz_text{
 	bottom: auto;
@@ -47,13 +49,10 @@ body{
 .guide .mc_2{
 	margin-top: 6rem;
 }
-.guide .mc_img_2{
-	background-image: url(../image/hotel_map.png);
-}
-.guide .mc_item_2{
-	height: 89rem;
-	width: auto;
-    min-width: 83rem;
+.guide .mc_2 .content_inner{
+	display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 .guide .mc_text .inner h2{
 	font-size: 2.4rem;
@@ -67,6 +66,17 @@ body{
 	background-color: #F4F8F8;
 	margin-top: 48rem;
 }
+/* マップ */
+.map{
+	width: 70rem;
+	height: auto;
+	margin-top: 4rem;
+}
+.map img{
+	width: 100%;
+	height: auto;
+}
+
 /* 施設リスト */
 .guide .map_list_inner{
 	padding-top: 21rem;
@@ -84,6 +94,7 @@ body{
 .guide .map_list ul{
 	display: flex;
     justify-content: center;
+	flex-wrap: wrap;
 	margin: 0 auto;
 }
 .guide .map_list li{
@@ -109,4 +120,22 @@ body{
 }
 .guide .time p:last-child{
 	margin-left: 0;
+}
+
+
+
+@media screen and (max-width: 767px){
+	/* マップ */
+	.guide .mc_2 .content_inner{
+		flex-wrap: wrap;
+	}
+	.map{
+		width: 37rem;
+		margin: 0 auto;
+	}
+	/* 施設リスト */
+	.guide .map_list li{
+		margin-bottom: 4rem;
+	}
+
 }

@@ -423,6 +423,10 @@ body{
     justify-content: center;
     margin-top: 7rem;
 }
+.news_inner{
+    display:flex;
+    flex-wrap: nowrap;
+}
 .news h2{
     margin-right: 15rem;
 }
@@ -945,11 +949,77 @@ body{
 }
 #g-nav .nav_content{
     width: 24rem;
+    right: 7%;
+    top: 11%;
+}
+#g-nav .nv_inner{
+    position: static;
 }
 .openbtn{
     top: 2rem;
     right: 2rem;
 }
+#g-nav .nav_access{
+    top: auto;
+    bottom: -91rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 8rem;
+    line-height: 2.3rem;
+}
+#g-nav .nav_access img{
+    margin-bottom: 1rem !important;
+}
+#g-nav .nav_content .flex{
+    flex-wrap: wrap;
+}
+#g-nav .nav_content .flex .flex_inner{
+    display: flex;
+    align-items: flex-end;
+}
+#g-nav .nav_mc h2{
+    font-size: 1.9rem;
+    letter-spacing: 0.1rem;
+}
+#g-nav .nav_mc p{
+    margin-top: 0;
+}
+#g-nav .nav_sub li{
+    margin-bottom: 2rem;
+}
+#g-nav .nav_sub{
+    margin-bottom: 2rem;
+}
+#g-nav .nav_star h2{
+    font-size: 2rem;
+    left: 2rem;
+    transform: none;
+    top: 2rem;
+    line-height: 2rem;
+}
+#g-nav .nav_star p{
+    font-size: 1.2rem;
+    right: 2rem;
+    bottom: 1rem;
+    text-shadow: 0 0 5px rgb(0 0 0);
+}
+#g-nav .btn{
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+#g-nav .nav_sns{
+    width: auto;
+    margin-top: 3rem;
+}
+#g-nav .horiz_text{
+    width: 25rem;
+}
+#g-nav .nav_sns .nav_photo{
+    margin-left: 0;
+    margin-top: 3rem;
+}
+
 }
 
 @media screen and ( max-width:767px ){
@@ -982,7 +1052,8 @@ body{
     .mv_news{
         white-space: inherit;
         letter-spacing: 0.1rem;
-        width: 30rem;
+        min-width: 30rem;
+        width: 80%;
         display: block;
         left: 50%;
         transform: translateX(-50%);
@@ -1097,12 +1168,17 @@ body{
         flex-direction: column;
         align-content: center;
     }
+    .news_inner{
+        flex-direction: column;
+        align-items: center
+    }
     .news h2{
         margin: 0 auto 5rem;
         writing-mode: inherit;
     }
     .news dl{
-        width: 30rem;
+        min-width: 30rem;
+        width: 80%;
     }
     .news dd{
         padding-bottom: 4rem;
@@ -1154,7 +1230,8 @@ body{
         margin: 2rem auto 3.5rem;
     }
     .kumano_circle .title{
-        margin-bottom: 0;
+        margin-bottom: 4rem;
+        margin-left: 0;
     }
     .kumano_circle p{
         font-size: 1.6rem !important;

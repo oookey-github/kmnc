@@ -125,3 +125,31 @@ body{
     background:  #292929;
     color: #fff;
     }
+
+    @media screen and (max-width: 767px){
+        .newspage .news{
+            margin-top: 4rem;
+        }
+        .newspage .news h2{
+            margin: 0px auto 4rem;
+        }
+        .newspage .vertical{
+            font-size: 2.8rem;
+        }
+        .newspage .news dl{
+            margin: 1.7rem auto;
+        }
+        .Pagination{
+            min-width: 30rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .newspage .detail{
+            min-width: 30rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .newspage .detail_title h2{
+            margin-bottom: 0;
+        }
+    }

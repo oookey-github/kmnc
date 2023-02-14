@@ -93,3 +93,31 @@ body{
 .experience .title::after {
     margin-left: 5rem;
 }
+
+@media screen and (max-width: 767px){
+    .experience .title{
+        margin-left: 0;
+        line-height: 2.7rem;
+        letter-spacing: 0.4rem;
+    }
+    .exp_list ul{
+        width: 30rem;
+        margin: 6rem auto;
+    }
+    .exp_list li{
+        width: 30rem;
+        margin: 0rem auto 7rem;
+    }
+    .experience .title span{
+        font-size: 2.6rem;
+    }
+    .experience .title span{
+        line-height: 3.5rem;
+    }
+    .experience .title::before {
+        margin-right: 3rem;
+    }
+    .experience .title::after {
+        margin-left: 3rem;
+    }
+}

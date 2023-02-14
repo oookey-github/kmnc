@@ -173,3 +173,53 @@ body{
 .official_site .tourism_btn li{
     width: 23.3rem;
 }
+
+@media screen and (max-width: 767px){
+    .tourism .mc_text{
+        width: auto;
+    }
+    .tourism .mc_title{
+        margin-left: 5.8rem;
+        font-size: 1.2rem !important;
+        margin-top: 5.7rem;
+    }
+    .tourism .horiz_text{
+        font-size: 2.2rem;
+    }
+    .tourism_inner{
+        height: 79rem;
+    }
+    .tourism .kumano_banner .inner{
+        position: relative;
+    }
+    .tourism .kumano_banner .left h2{
+        font-size: 3.4rem;
+        top: 13%;
+    }
+    .tourism .kumano_banner .right{
+        margin: -27rem auto;
+        width: 100%;
+        bottom: auto;
+        right: auto;
+    }
+    .tourism .kumano_banner .vertical_text{
+        top: 11%;
+    }
+    .tourism_inner p{
+        width: 30rem;
+        padding-top: 5rem;
+        margin: 0 auto;
+    }
+    .tourism_btn ul{
+        font-size: 1.5rem;
+        width: 30rem;
+        letter-spacing: 0.2rem;
+        justify-content: space-between;
+    }
+    .tourism_btn{
+        margin-top: 5rem;
+    }
+    .tourism_btn li{
+        width: 14rem;
+    }
+}
