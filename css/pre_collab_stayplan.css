@@ -438,16 +438,19 @@ body{
 }
 @media screen and ( max-width:375px ){
     .introduction .title p:nth-child(2){
-        font-size: 2.33rem;
+        font-size: 2.3rem;
     }
     .introduction .title p:nth-child(3){
         letter-spacing: 0.19rem;
     }
     .introduction .text_center.text p{
-        font-size: 1.8rem;
+        font-size: 1.75rem;
     }
     .title2 p{
         font-size:2.4rem;
+    }
+    .loccitane_royal_suite .explanation p{
+        font-size:1.5rem
     }
     .loccitane_royal_suite_introduction p:first-child{
         font-size:1.9rem
