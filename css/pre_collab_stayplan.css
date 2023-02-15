@@ -438,7 +438,7 @@ body{
 }
 @media screen and ( max-width:375px ){
     .introduction .title p:nth-child(2){
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
     .introduction .title p:nth-child(3){
         letter-spacing: 0.19rem;
@@ -456,6 +456,6 @@ body{
         font-size:1.9rem
     }
     .introduction_loccitane .introduction_p p{
-        letter-spacing: 0.17rem;
+        letter-spacing: 0.15rem;
     }
 }
