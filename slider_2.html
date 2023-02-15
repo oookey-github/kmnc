@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <script src="./js/slick.min.js"></script>
+
+    <link rel="stylesheet" href="./slick/ajax-loader.gif">
+    <link rel="stylesheet" href="./slick/slick.svg">
+    <link rel="stylesheet" href="./slick/slick.eot">
+    <link rel="stylesheet" href="./slick/slick.ttf">
+    <link rel="stylesheet" href="./slick/slick.woff">
+
+    <style>
+        ul.slick_exp {
+        }
+        .slick_exp li {
+            width: 660px !important;
+            height: 390px;
+            margin: 0 40px ;
+        }
+        .slick_exp li img{
+            width: 100%;
+            height: auto;
+        }
+
+        /* 透明にして大きくする */
+        .slick_exp .slick-slide {
+            transform: scale(0.8);/*左右の画像のサイズを80%に*/
+            transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+            opacity: 0.5;/*透過50%*/
+        }
+        .slick_exp .slick-slide.slick-center{
+            transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+            opacity: 1;/*透過なし*/
+        }
+
+        /* 矢印 ドットナビゲーション */
+        /*矢印の設定*/
+        .slick-arrow {
+            display: block;
+            position: absolute;
+            top: 13rem;
+            bottom: auto;
+            margin: 0px calc(50vw - 34rem);
+            padding: 0;
+            width: 72px;
+            height: 72px;
+            color: #000;
+            z-index: 1;
+            transition: opacity 0.5s;
+            z-index: 1;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        .slick-arrow:hover {
+            opacity: 0.7;
+        }
+
+
+        /* 共通設定 */
+
+        .slick-next::before,
+        .slick-next::after,
+        .slick-prev::before,
+        .slick-prev::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            content: "";
+            vertical-align: middle;
+        }
+        .slick-next::after,
+        .slick-prev::after {
+            width: 10px;
+            height: 10px;
+            border-top: 1px solid #000;
+            border-right: 1px solid #000;
+            margin: 2rem 1.8rem;
+        }
+
+        /* next */
+
+        .slick-next {
+            right: 26px;
+        }
+        .slick-next::after {
+            right: 4px;
+            transform: rotate(45deg);
+        }
+
+        /* prev */
+
+        .slick-prev {
+            left: 26px;
+        }
+        .slick-prev::after {
+            left: 4px;
+            transform: rotate(-135deg);
+        }
+
+        /*ドットナビゲーションの設定*/
+
+        .slick_exp-dots {
+            text-align:center;
+            margin: 60px -660px 0 0;
+        }
+
+        .slick_exp-dots li {
+            display:inline-block;
+            margin: 0 -305px;
+        }
+
+        .slick_exp-dots button {
+            color: transparent;
+            outline: none;
+            width:8px;/*ドットボタンのサイズ*/
+            height:8px;/*ドットボタンのサイズ*/
+            display:block;
+            border-radius:50%;
+            background:#ccc;/*ドットボタンの色*/
+            top: auto;
+            bottom: 0;
+        }
+
+        .slick_exp-dots .slick-active button{
+            background:#333;/*ドットボタンの現在地表示の色*/
+        }
+    </style>
+
+    <script>
+        $(function(){
+            $('.slick_exp').slick({
+                autoplay: true,//自動的に動き出すか。初期値はfalse。
+                infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+                speed: 500,//スライドのスピード。初期値は300。
+                slidesToShow: 1,//スライドを画面に3枚見せる
+                slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+                prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+                nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+                centerMode: true,//要素を中央ぞろえにする
+                variableWidth: true,//幅の違う画像の高さを揃えて表示
+                dots: true,//下部ドットナビゲーションの表示
+                dotsClass: "slick_exp-dots"
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+    <ul class="slick_exp">
+        <li>
+            <a href="">
+                <img src="./image/exp_1.png" alt="" width="660px" height="390x">
+                <p>熊野の真髄に迫るプレミアムツアー　〈ご宿泊者限定〉<br>丸山千枚田をはじめとした、熊野の見処を巡ります。</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./image/exp_2.png" alt="" width="660px" height="390x">
+                <p>熊野の真髄に迫るプレミアムツアー　〈ご宿泊者限定〉<br>丸山千枚田をはじめとした、熊野の見処を巡ります。</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./image/exp_3.png" alt="" width="660px" height="390x">
+                <p>星空鑑賞会<br>見上げれば、満天の星。静寂の中、澄み切った夜空をお愉しみください。</p>
+            </a>
+        </li>
+
+    </ul>
+    
+</body>
+</html>

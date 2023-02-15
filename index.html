@@ -6,9 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>世界遺産リゾート 熊野倶楽部【公式】</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <script src="./js/jquery-3.6.3.min.js"></script>
     <link rel="stylesheet" href="./css/top.css">
     <link rel="stylesheet" href="./css/restaurant.css">
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=M+PLUS+1p:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <script src="./js/slick.min.js"></script>
+
+    <script>
+        $(function(){
+            $('.slick').slick({
+                autoplay: true,
+                dots: true,
+                infinite: true,
+                speed: 1500,
+                slidesToShow: 3,
+                centerMode: true,
+                variableWidth: true,
+                initialSlide:5,
+                autoplaySpeed:1500,
+                
+            });
+        });
+    </script>
+
 </head>
 <body>
     <!-- 右側メニュー -->
@@ -288,11 +310,35 @@
                 <div class="content_section">
                     <div class="plan_list">
                         <h2>特別プラン</h2>
-                        <ul class="slider">
+                        <ul class="slick">
+                            <li>
+                                <a href="">
+                                    <img src="./image/plan_banner_1.png" alt="">
+                                    <p>伊勢神宮と熊野古道をつなぐ隠れ家リゾート隠れ家リゾートで癒しの時間を</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./image/plan_banner_2.png" alt="">
+                                    <p>【三重を食す 御食国会席】松阪牛・伊勢海老・山海の幸を堪能 ―美食オールインクルーシブー</p>
+                                </a>
+                            </li>
                             <li>
                                 <a href="">
                                     <img src="./image/plan_banner_3.png" alt="">
                                     <p>【秋満喫／みかん狩り】＜ハーフブッフェ＞五感で味わう未体験なご旅行を ー美食オールインクルーシブー</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./image/plan_banner_4.png" alt="">
+                                    <p>【LOCCITANE×世界遺産リゾート熊野倶楽部】ラグジュアリー美食オールインクルーシブステイを堪能（先着100組様限定）</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./image/plan_banner_5.png" alt="">
+                                    <p>【休日は格別の癒しを】＜味覚＞充実の３食付、土地の旬を華やかに味わう ―美食オールインクルーシブ―</p>
                                 </a>
                             </li>
                         </ul>
@@ -504,8 +550,6 @@
         </div>
     </div>
 
-<!-- ハンバーガーメニュー -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!--自作のJS-->
 <script src="./js/main.js"></script>
 </body>

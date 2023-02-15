@@ -395,25 +395,25 @@ body{
 }
 
 /* 特別プラン */
-.plan_list{
-    
-}
 .plan_list h2 {
     text-align: center;
     margin-bottom: 4.2rem;
 }
-.slider li {
-    width: 40rem;
-    height: 26rem;
-    margin: 0 auto;
+.slick li {
+    width: 40rem !important;
+    margin: 0 4rem ;
+    position: inherit;
+    /* left: calc(50vW - 200px); */
 }
-.slider img {
+
+.slick li img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 26.3rem;
 }
-.slider li p{
+.slick li p{
+    font-size: 1.6rem;
     margin-top: 2rem;
+    font-weight: bold;
 }
 
 /* お知らせ */
@@ -421,7 +421,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 7rem;
 }
 .news_inner{
     display:flex;
