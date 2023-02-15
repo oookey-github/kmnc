@@ -588,6 +588,7 @@ line-height: 1.1rem;;
     margin: 0 auto;
     max-width: 120rem;
     justify-content: space-between;
+    position:relative;
 
 }
 .vertical_line{
