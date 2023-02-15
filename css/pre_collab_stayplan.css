@@ -23,6 +23,7 @@ body{
     }
     
 }
+
 @media only screen and (max-width: 767px){
 	html{font-size: calc( 1000vw /430px  );}
 }
@@ -33,7 +34,7 @@ body{
 .introduction{
     width:100%;
     margin-top:7.4rem;
-    min-width:114rem;
+    min-width:100%;
 }
 .introduction .img{
     width:100%;
@@ -49,34 +50,21 @@ body{
 }
 
 .introduction .loccintane_logo{
-    background: url(../image/loccitane_img.png) no-repeat;
-    position:relative;
-    background-position: 80% 20%;
-    background-size: cover;
     width:50%;
     height:50.4rem;
-    
-
 }
 .introduction .loccintane_logo img{
-    position: absolute;
-    left:50%;
-    width:22.2rem;
-    top:50%;
+    width:100%;
+    object-fit: cover;
 }
 .introduction .kumano_logo{
-    background: url(../image/kumano_logo_bg.png) no-repeat;
-    position:relative;
-    background-position: 80% 20%;
-    background-size: cover;
     width:50%;
     height:50.4rem;
+    object-fit: cover;
 }
 .introduction .kumano_logo img{
-    width:22.2rem;
-    position:absolute;
-    right:50%;
-    top:50%;
+    width:100%;
+    object-fit: cover;
 }   
 .introduction .text_center.text p{
     line-height: 3.8rem;
@@ -241,7 +229,17 @@ body{
 .club.aft .introduction_loccitane{
     padding-top:10rem;
 }
+
 @media screen and ( max-width:767px ){
+    .nav_link{
+        justify-content: center;
+    }
+    .nav_link p:last-child{
+        padding:0;
+    }
+    .nav_link p:nth-child(2){
+        padding:0 1.2rem;
+    }
     .introduction{
         min-width: auto;
         
@@ -283,9 +281,6 @@ body{
         line-height: 2.9rem;
         
     }
-    .introduction_img{
-        margin-top:6rem;
-    }
     .introduction_p{
         text-align: center;
     }
@@ -300,6 +295,7 @@ body{
         margin-right: 0.4rem;
         height:12.2rem;
     }
+    
     .introduction_p p{
         margin-right:0;
         margin-bottom:6rem;
@@ -309,16 +305,32 @@ body{
     .introduction_p:last-child{
         margin-right:0;
     }
+    .introduction_img{
+        width:100%;
+        justify-content: space-between;
+        margin-top:6rem;
+    }
     .flex3{
         align-self:flex-end;
     }
     .flex2,.flex4{
         margin-top: 0.4rem;
     }
+    .align-self{
+        width:49.5%;
+    }
+    .align-self div,.align-self-right div{
+        max-width:18.5rem;
+    }
+    .align-self div img,.align-self-right div img{
+        width:100%;
+    }
     .align-self-right{
         margin-top:6.1rem;
         flex-wrap: wrap;
+        width:49.5%;
     }
+    
     .introduction_loccitane:last-child{
         margin-top:5rem;
     }
@@ -384,11 +396,21 @@ body{
         margin-bottom: 0;
     }
     .reserve_btn2{
-        width:36.8rem;
-        display:inline-block
+        width:100%;
+        display:inline-block;
+
+    }
+    .aft .introduction_img{
+        width:80%;
+        margin:6rem auto;
+    }
+    .aft .introduction_img img{
+        width:100%;
+        height:100%;
     }
     .aft .introduction_img_2 img{
         width:100%;
+        object-fit: cover;
     }
     .introduction_img_2{
         margin-left:0;
@@ -412,5 +434,25 @@ body{
     .aft .introduction_loccitane .introduction_p p{
         letter-spacing: 0.2rem;
         margin-top:3.9rem;
+    }
+}
+@media screen and ( max-width:375px ){
+    .introduction .title p:nth-child(2){
+        font-size: 2.36rem;
+    }
+    .introduction .title p:nth-child(3){
+        letter-spacing: 0.19rem;
+    }
+    .introduction .text_center.text p{
+        font-size: 1.8rem;
+    }
+    .title2 p{
+        font-size:2.4rem;
+    }
+    .loccitane_royal_suite_introduction p:first-child{
+        font-size:1.9rem
+    }
+    .introduction_loccitane .introduction_p p{
+        letter-spacing: 0.17rem;
     }
 }
