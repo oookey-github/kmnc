@@ -61,6 +61,9 @@ body{
     width:100%;
     margin:0 auto;
 }
+.explanation.room.inner{
+    flex-direction: column;
+}
 .guest_room .guest_room_guidance_inner .title p:nth-child(2){
     margin-bottom:1.2rem;
     letter-spacing: 0.6rem;
@@ -301,6 +304,7 @@ body{
         width:85%;
         margin:0 auto;
     }
+    
     .mc_2 .mc_text{
         margin-right:0;
     }
