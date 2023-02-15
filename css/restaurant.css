@@ -1097,3 +1097,9 @@ min-width:130rem;
         text-align: center;
     }
 }
+@media screen and ( max-width:375px ){
+    .restaurant_info .vertical_text{
+        font-size:3rem;
+        margin:0 0.9rem 0 0;
+    }
+}
