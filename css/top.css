@@ -27,6 +27,9 @@ body{
 }
 
 /* 共通クラス */
+body img{
+    border-radius: 0.2rem;
+}
 .vertical{
     writing-mode: vertical-rl;
     letter-spacing: 0.5rem;
@@ -239,10 +242,8 @@ body{
 
 }
 .mc_item_1{
-    height: 74vh;
-    min-height: 74rem;
-    width: 48vh;
-    min-width: 48rem;
+    height: 74rem;
+    width: 47rem;
 }
 .mc_img_1{
     background-image: url(../image/mc_1.png);
@@ -515,6 +516,9 @@ body{
     font-weight: bold;
 }
 /* 心揺さぶる体験 */
+.experience_list{
+    margin-bottom: -15rem;
+}
 .experience_list h2{
     text-align: center;
     margin-bottom: 4.2rem;
@@ -531,8 +535,122 @@ body{
     height: 100%;
     object-fit: cover;
 }
-.experience_list p{
-    margin-top: 2rem;
+/* 透明にして大きくする */
+.slick_exp .slick-slide {
+    transform: scale(0.8);/*左右の画像のサイズを80%に*/
+    transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+    opacity: 0.5;/*透過50%*/
+}
+.slick_exp .slick-slide.slick-center{
+    transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+    opacity: 1;/*透過なし*/
+}
+
+/* 矢印 ドットナビゲーション */
+/*矢印の設定*/
+.slick-arrow {
+    display: block;
+    position: absolute;
+    bottom: auto;
+    margin: 0px calc(50vw - 29rem);
+    padding: 0 !important;
+    width: 7.2rem !important;
+    height: 7.2rem !important;
+    color: #292929 !important;
+    z-index: 1;
+    transition: opacity 0.5s;
+    z-index: 1;
+    background-color: #fff !important;
+    border-radius: 50%;
+}
+.slick-arrow:hover {
+    opacity: 0.7;
+    background-color: #fff;
+}
+.experience_list .slick-arrow{
+    top: 20rem !important;
+}
+
+/* 共通設定 */
+
+.slick-next::before,
+.slick-next::after,
+.slick-prev::before,
+.slick-prev::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto !important;
+    content: "" !important;
+    vertical-align: middle;
+}
+.slick-next::after,
+.slick-prev::after {
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    margin: 2rem 1.8rem;
+}
+
+/* next */
+
+.slick-next {
+    right: -14rem !important;
+}
+.slick-next::after {
+    right: 3.2rem;
+    transform: rotate(45deg);
+}
+
+/* prev */
+
+.slick-prev {
+    left: -14rem !important;
+}
+.slick-prev::after {
+    left: 3.2rem;
+    transform: rotate(-135deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick_exp-dots {
+    text-align:center;
+    margin: 13rem auto 0;
+}
+
+.slick_exp-dots li {
+    display:inline-block;
+    margin: 0 -31rem;
+    height: 1rem;
+}
+
+.slick_exp-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+    margin: 0 auto;
+}
+
+.slick_exp-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+
+/* 文字 */
+.text-slider{
+    font-size: 1.5rem;
+    width: 660px;
+    margin: 0 auto ;
+    top: -16rem;
+}
+.text-slider .txt{
+    margin: 0 auto;
+    width: 660px !important;
 }
 /* 熊野観光のご案内 */
 .kumano_circle{
@@ -765,8 +883,8 @@ body{
 }
 #g-nav .nav_access{
     position: absolute;
-    top: 11%;
-    left: 31%;
+    top: 10rem;
+    left: 41rem;
     color: #292929;
     font-size: 1.6rem;
 }
@@ -779,8 +897,8 @@ body{
 }
 #g-nav .nav_content{
     position: absolute;
-    top: 13%;
-    right: 10%;
+    top: 12rem;
+    left: 74rem;
     color: #292929;
     width: 50rem;
 }
@@ -818,7 +936,7 @@ body{
 }
 #g-nav .nav_star{
     background-image: url(../image/menu_star.png);
-    height: 10rem;
+    height: 8.3rem;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -840,7 +958,7 @@ body{
     font-size: 1.3rem;
     position: absolute;
     right: 3rem;
-    bottom: 2rem;
+    bottom: 1rem;
 }
 #g-nav .btn{
     border: 0.1rem solid;
@@ -881,6 +999,10 @@ body{
     border-bottom:0.1rem solid #292929;
     margin-bottom: 2.8rem;
     margin-left: 7rem;
+}
+#g-nav .nav_content .flex .flex_inner{
+    display: flex;
+    align-items: flex-end;
 }
 /*====
 ===== ボタンのためのCSS ===============*/
@@ -948,10 +1070,10 @@ body{
 }
 #g-nav .nav_content{
     width: 24rem;
-    right: 7%;
-    top: 11%;
+    top: 15rem;
+    left: 11rem;
 }
-#g-nav .nv_inner{
+#g-nav .nav_inner{
     position: static;
 }
 .openbtn{
@@ -959,47 +1081,52 @@ body{
     right: 2rem;
 }
 #g-nav .nav_access{
-    top: auto;
-    bottom: -91rem;
+    white-space: nowrap;
+    top: 126rem;
+    bottom: auto;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
     padding-bottom: 8rem;
-    line-height: 2.3rem;
+    line-height: 2rem;
+    left: 11rem;
 }
 #g-nav .nav_access img{
-    margin-bottom: 1rem !important;
+    position: absolute;
+    top: -123rem;
+    width: 11.5rem;
 }
 #g-nav .nav_content .flex{
     flex-wrap: wrap;
 }
-#g-nav .nav_content .flex .flex_inner{
-    display: flex;
-    align-items: flex-end;
-}
 #g-nav .nav_mc h2{
     font-size: 1.9rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0rem;
 }
 #g-nav .nav_mc p{
     margin-top: 0;
+    font-size: 1.1rem;
 }
 #g-nav .nav_sub li{
     margin-bottom: 2rem;
 }
 #g-nav .nav_sub{
     margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
 }
 #g-nav .nav_star h2{
     font-size: 2rem;
-    left: 2rem;
+    left: 1.5rem;
     transform: none;
-    top: 2rem;
-    line-height: 2rem;
+    top: 1.5rem;
+    line-height: 1.8rem;
+}
+#g-nav .nav_star h2 span{
+    font-size: 1.1rem;
 }
 #g-nav .nav_star p{
-    font-size: 1.2rem;
-    right: 2rem;
-    bottom: 1rem;
+    font-size: 1.1rem;
+    right: 1rem;
+    bottom: 0.4rem;
     text-shadow: 0 0 5px rgb(0 0 0);
 }
 #g-nav .btn{
@@ -1220,6 +1347,87 @@ body{
         width: 30rem;
         height: 17rem;
     }
+    /* 心揺さぶる体験 */
+    .experience_list li{
+        width: 29rem;
+        height: 17rem;
+        margin: 0 auto;
+    }
+    .text-slider .txt{
+        width: 29rem !important;
+    }
+    .text-slider{
+        width: 29rem;
+    }
+    .slick_exp-dots li {
+        display:inline-block;
+        margin: 0 -13rem;
+        height: 1rem;
+    }
+    .slick_exp-dots{
+        margin: 15rem auto 0;
+    }
+    .text-slider{
+        top: -18rem;
+    }
+
+    /* 矢印 ドットナビゲーション */
+/*矢印の設定*/
+.slick-arrow {
+    margin: 0px calc(50vw - 29rem);
+    width: 3.2rem !important;
+    height: 3.2rem !important;
+}
+.slick-arrow:hover {
+    opacity: 0.7;
+    background-color: #fff;
+}
+.experience_list .slick-arrow{
+    top: 9rem !important;
+}
+
+/* 共通設定 */
+
+.slick-next::before,
+.slick-next::after,
+.slick-prev::before,
+.slick-prev::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto !important;
+    content: "" !important;
+    vertical-align: middle;
+}
+.slick-next::after,
+.slick-prev::after {
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    margin: 2rem 1.8rem;
+}
+
+/* next */
+
+.slick-next {
+    right: 13rem !important;
+}
+.slick-next::after {
+    right: 1.5rem;
+    transform: rotate(45deg);
+}
+
+/* prev */
+
+.slick-prev {
+    left: 13rem !important;
+}
+.slick-prev::after {
+    left: 1.5rem;
+    transform: rotate(-135deg);
+}
+    
     /* 観光のご案内 */
     .kumano_circle{
         margin-top: 10rem;
