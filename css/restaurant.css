@@ -589,7 +589,6 @@ line-height: 1.1rem;;
     max-width: 120rem;
     justify-content: space-between;
     position:relative;
-
 }
 .vertical_line{
     position:absolute;
@@ -602,23 +601,23 @@ line-height: 1.1rem;;
     border: solid 0.01rem #292929;
 
 }
-.introduction_title{
+
+.introduction_title_inner{
     margin:0 auto;
     position: absolute;
-    left:49%;
+    left:50%;
     
+    display:inline-block
 }
-.introduction_title_inner{
+.introduction_title_inner p{
+    margin-top:8rem;
+    letter-spacing: 0.48rem;
+    line-height: 3.1rem;
     writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: vertical-rl;
 }
-.introduction_title_inner p{
-    position:relative;
-    top:8rem;
-    letter-spacing: 0.48rem;
-    line-height: 3.1rem;
-}
+
 #introduction1{
     padding-top:31.6rem;
 }
