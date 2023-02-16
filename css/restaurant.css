@@ -1059,6 +1059,9 @@ min-width:130rem;
     .venue .text .restaurant_guide .title p:first-child{
         font-size:2.3rem;
     }
+    .venue .time.flex{
+        justify-content: space-between;
+    }
     .venue_img{
         width:37.4rem;
         margin-right:0;
