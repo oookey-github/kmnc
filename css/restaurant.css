@@ -259,7 +259,7 @@ line-height: 1.1rem;;
     display:inline-block;
 }
 .restaurant_guide .title p{
-    margin-bottom:3.8rem;
+    margin-bottom:1.8rem;
 }
 .restaurant_guide .title p:last-child{
     letter-spacing: 0.54rem;
@@ -287,6 +287,7 @@ line-height: 1.1rem;;
 .restaurant_info_img img{
     width:94.9rem;
     height:53.1rem;
+    margin-top:4rem;
 }
 .restaurant_info .vertical_text{
     writing-mode: vertical-rl;
