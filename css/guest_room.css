@@ -337,8 +337,8 @@ body{
         margin-top:0;
     }
     .introduction_text2 p:first-child{
-        font-size: 2.3rem;
-        letter-spacing: 0.35rem;
+        font-size: 2rem;
+        letter-spacing: 0.31rem;
     }
     #introduction2 .introduction_text2 p:last-child,
     #introduction3 .introduction_text2 p:last-child{
