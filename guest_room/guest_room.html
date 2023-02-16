@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    <script src="../js/main.js"></script>
 
     <title>客室のご案内</title>
 </head>
@@ -24,12 +26,12 @@
                         <img src="../image/logo2.svg">
                     </a>
                 </div>
-                <div class="nav_btn flex pc">
-                    <div class="bg3 btn flex">x
+                <div class="nav_btn flex">
+                    <div class="bg3 btn pc">
                         <img>
                         <a href=""><p class="fs13 c1">宿泊プラン一覧</p></a>
                     </div>
-                    <div class="bg3 btn flex">
+                    <div class="bg3 btn pc">
                         <img>
                         <a href=""><p class="fs13 c1">客室情報</p></a>
                     </div>
@@ -44,7 +46,7 @@
                 </div>
             <!-------------------------------------->
             </div>
-            <div class="flex pankuzu">
+            <div class="flex">
                 <div class="nav_link flex">
                     <a href="../index.html"><p class="fs12">トップ</p></a>
                     <p>></p>
@@ -105,18 +107,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="btn_right">
+                
                     <div class="page-top">
                         <a href="#"></a>
                     </div>
-                    <div class="ai_btn_set">
-                        <p>AIコンシェルジュ</p>
-                        <div class="ai_btn">
-                            <img src="../image/ai_icon.svg">
-                        </div>
-                        
-                    </div>
-                </div>
                 
             </div>
         </div>
@@ -125,11 +119,11 @@
                 <div class="hotel_reserve_btn bg3">
                 <p class="fs18 c1">宿泊<br>予約</p>
                 <p class="fs10 c2">Search</p>
+                </div>
             </div>
         </div>
         
         <!-- ------------------------- -->
-
         <!-- 客室のご案内 -->
 
             
@@ -147,8 +141,8 @@
                         </div>
                     </div>
 
-                    <div class="guest_room_mv">
-                        <img src="../image//guest_room_mv.png">
+                    <div class="guest_room_mv parallax_box">
+                        <img src="../image//guest_room_mv.png" class="parallax">
                     </div>
 
                     <div class="text_center text">
@@ -644,8 +638,9 @@
         
             </div>
         </footer>
+        <script src="simpleParallax.js"></script>
 </body>
 </html>
-<script src="../js/main.js"></script>
-<link rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js">
+<!-- <script src="../js/main.js"></script>
+<link rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"> -->
     
