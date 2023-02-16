@@ -601,7 +601,11 @@ line-height: 1.1rem;;
     border: solid 0.01rem #292929;
 
 }
-
+.introduction_title{
+    display:inline-block;
+    position:absolute;
+    right:50%;
+}
 .introduction_title_inner{
     margin:0 auto;
     position: absolute;
@@ -610,12 +614,14 @@ line-height: 1.1rem;;
     display:inline-block
 }
 .introduction_title_inner p{
+    position:absolute;
     margin-top:8rem;
+    right:-1.5rem;
     letter-spacing: 0.48rem;
     line-height: 3.1rem;
-    writing-mode: vertical-rl;
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: vertical-rl;
+    writing-mode: horizontal-tb;
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: horizontal-tb;
 }
 
 #introduction1{
