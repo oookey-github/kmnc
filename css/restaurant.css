@@ -992,6 +992,9 @@ min-width:130rem;
         margin-bottom:2.6rem;
         margin-top:2.6rem;
     }
+    .explanation .reserve_btn p{
+        font-size: 1.8rem;
+    }
     .reserve_btn{
         height:6rem;
         margin-bottom:3.5rem;
