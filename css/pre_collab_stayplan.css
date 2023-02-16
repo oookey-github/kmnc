@@ -233,6 +233,7 @@ body{
 }
 
 @media screen and ( max-width:767px ){
+    /* 全ページ共通 右側メニュー */
     .sns_menu_inner{
         width:5.4rem;
         text-align: center;
@@ -330,6 +331,7 @@ body{
     }
     .pankuzu{
         justify-content: center;
+        margin-left:0;
     }
     .nav_link{
         justify-content: center;
@@ -340,6 +342,7 @@ body{
     .nav_link p:nth-child(2){
         padding:0 1.2rem;
     }
+    /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
     .introduction{
         min-width: auto;
         
