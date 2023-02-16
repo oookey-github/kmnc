@@ -288,11 +288,13 @@ body{
         width:100%;
     }
     .mc_img_2.room{
-        width:38.5rem;
+        max-width:38.5rem;
         position:absolute;
         right:0;
         height:23.7rem;
         margin-bottom:3.7rem;
+        width:92%;
+        object-fit: cover;
     }
     .mc_2 .mc_text.room{
         margin-right:0;
