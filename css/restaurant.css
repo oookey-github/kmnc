@@ -1088,6 +1088,7 @@ min-width:130rem;
         font-size: 1.6rem;
         line-height: 2.8rem;
     }
+    
     #bf_viking_aft .time.aft p,
     #dinner .time.aft p,
     #cafe .time.aft p
@@ -1097,8 +1098,9 @@ min-width:130rem;
     #bf_viking_aft .time.aft p:last-child,
     #dinner .time.aft p:last-child,
     #cafe .time.aft p:last-child{
-        font-size: 1.4rem;;
+        font-size: 1.27rem;
     }
+    
     .indoor_view iframe{
         width:100%
     }
