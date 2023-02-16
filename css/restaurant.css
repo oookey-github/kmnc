@@ -618,9 +618,9 @@ line-height: 1.1rem;;
     margin-top:8rem;
     letter-spacing: 0.48rem;
     line-height: 3.1rem;
-    writing-mode: horizontal-tb;
-    -webkit-writing-mode: horizontal-tb;
-    -ms-writing-mode: horizontal-tb;
+    writing-mode: initial;
+    -webkit-writing-mode: initial;
+    -ms-writing-mode: initial;
 }
 
 #introduction1{
