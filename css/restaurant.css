@@ -1115,6 +1115,7 @@ min-width:130rem;
     .introduction_text1{
         margin-top:3.5rem; 
         padding-bottom:2.4rem;
+        letter-spacing: 0.28rem;
     }
     .introduction_text1 img{
         margin-left:1rem;
@@ -1133,8 +1134,12 @@ min-width:130rem;
     #introduction2,#introduction3,#introduction4{
         padding-top:12.5rem;
     }
+    .introduction_text2 p:last-child, .introduction_text2 p{
+        letter-spacing: 0.25rem;
+    }
     .introduction_text2 p:first-child{
         padding-bottom: 2.5rem;
+        font-size:2.3rem;
     }
     footer{
         min-width:auto;
