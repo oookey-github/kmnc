@@ -616,7 +616,6 @@ line-height: 1.1rem;;
 .introduction_title_inner p{
     position:absolute;
     margin-top:8rem;
-    right:-1.5rem;
     letter-spacing: 0.48rem;
     line-height: 3.1rem;
     writing-mode: horizontal-tb;
