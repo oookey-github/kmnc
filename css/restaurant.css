@@ -1102,7 +1102,8 @@ min-width:130rem;
     #dinner .time.aft p:last-child,
     #cafe .time.aft p:last-child
     {
-        font-size: 1rem;
+        font-size: 1.15rem;
+        letter-spacing: 0.1rem;
     }
    
     .indoor_view iframe{
