@@ -50,8 +50,8 @@ $(function(){
     $('.slick_exp').slick({
         autoplay: true,//自動的に動き出すか。初期値はfalse。
         infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-        speed: 1100,//スライドのスピード。初期値は300。
-        autoplaySpeed:1700,
+        speed: 600,//スライドのスピード。初期値は300。
+        autoplaySpeed:8000,
         slidesToShow: 1,//スライドを画面に3枚見せる
         slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
         prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
@@ -60,10 +60,13 @@ $(function(){
         variableWidth: true,//幅の違う画像の高さを揃えて表示
         dots: true,//下部ドットナビゲーションの表示
         dotsClass: "slick_exp-dots",
-        asNavFor:".text-slider"
     });
 });
+
+// 熊野の過ごし方
+// スムーススクロール
 $(function(){
+
     $('.text-slider').slick({
         speed: 1100,//スライドのスピード。初期値は300。
         infinite: true,//スライドをループさせるかどうか。初期値はtrue。
@@ -98,4 +101,14 @@ $(function(){
     pagetop.click(function() {
         $("html,body").animate({scrollTop: 0},backSpeed );
     });
+
+    $('a[href^="#"]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+});
+
 });

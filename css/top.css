@@ -519,7 +519,7 @@ body img{
 }
 /* 心揺さぶる体験 */
 .experience_list{
-    margin-bottom: -15rem;
+    margin-bottom: -12rem;
 }
 .experience_list h2{
     text-align: center;
@@ -527,25 +527,24 @@ body img{
     line-height: 4.5rem;
     letter-spacing: 0.5rem;
 }
-.experience_list li{
-    width: 66rem;
-    height: 39rem;
-    margin: 0 auto;
+.experience_list ul{
 }
-.experience_list img{
+.experience_list li{
+    width: 66rem !important;
+    height: auto;
+    margin: 0 4rem;
+    /* position: inherit;
+    left: calc(50vw - 46rem); */
+}
+.experience_list li img{
     width: 100%;
-    height: 100%;
+    height: 39rem !important;
     object-fit: cover;
 }
-/* 透明にして大きくする */
-.slick_exp .slick-slide {
-    transform: scale(0.8);/*左右の画像のサイズを80%に*/
-    transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
-    opacity: 0.5;/*透過50%*/
-}
-.slick_exp .slick-slide.slick-center{
-    transform: scale(1);/*中央の画像のサイズだけ等倍に*/
-    opacity: 1;/*透過なし*/
+/* 文字 */
+.experience_list li p{
+    font-size: 1.5rem;
+    margin: 3rem auto 0;
 }
 
 /* 矢印 ドットナビゲーション */
@@ -619,13 +618,13 @@ body img{
 
 .slick_exp-dots {
     text-align:center;
-    margin: 13rem auto 0;
+    margin: 6rem auto 0;
 }
 
 .slick_exp-dots li {
     display:inline-block;
     margin: 0 -31rem;
-    height: 1rem;
+    height: 0rem;
 }
 
 .slick_exp-dots button {
@@ -641,18 +640,6 @@ body img{
 
 .slick_exp-dots .slick-active button{
     background:#333;/*ドットボタンの現在地表示の色*/
-}
-
-/* 文字 */
-.text-slider{
-    font-size: 1.5rem;
-    width: 660px;
-    margin: 0 auto ;
-    top: -16rem;
-}
-.text-slider .txt{
-    margin: 0 auto;
-    width: 660px !important;
 }
 /* 熊野観光のご案内 */
 .kumano_circle{
@@ -845,6 +832,7 @@ body img{
 	background:#fff;
     /*動き*/
 	transition: all 0.6s;
+    animation-name: fadein;
 }
 
 /*アクティブクラスがついたら位置を0に*/
@@ -1006,6 +994,16 @@ body img{
     display: flex;
     align-items: flex-end;
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 /*====
 ===== ボタンのためのCSS ===============*/
 .openbtn{
@@ -1064,6 +1062,16 @@ body img{
 }
 
 @media screen and ( max-width:767px ){
+/* ヘッダー */
+.toppage .header{
+    padding: 0;
+}
+.toppage .logo_icon{
+    width: 11.2rem;
+}
+.toppage .logo_icon img{
+    width: 100%;
+}
     /* ハンバーガーメニュー */
 /*========= ナビゲーションのためのCSS ===============*/
 
@@ -1357,36 +1365,29 @@ body img{
     .hospitality_list li div{
         padding: 3rem;
     }
-    /* 体験 */
-    .experience_list li{
-        width: 30rem;
-        height: 17rem;
-    }
     /* 心揺さぶる体験 */
     .experience_list{
-        margin-bottom: -27rem;
+        margin-bottom: -18rem;
+        margin-top: -2rem;
     }
     .experience_list li{
-        width: 29rem;
-        height: 17rem;
-        margin: 0 auto;
-    }
-    .text-slider .txt{
         width: 29rem !important;
+        height: auto;
+        margin: 0 1rem;
     }
-    .text-slider{
-        width: 29rem;
+    .experience_list li img{
+        height: 17rem !important;
     }
-    .slick_exp-dots li {
-        display:inline-block;
-        margin: 0 -13rem;
-        height: 1rem;
+    .experience_list li p{
+        margin-top: 2.3rem;
+        letter-spacing: 0.2rem;
+    }
+    .slick_exp-dots li{
+        margin: 0 -16rem !important;
+        height: 0;
     }
     .slick_exp-dots{
-        margin: 15rem auto 0;
-    }
-    .text-slider{
-        top: -18rem;
+        margin: 3rem auto 0;
     }
 
     /* 矢印 ドットナビゲーション */
