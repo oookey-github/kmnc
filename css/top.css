@@ -50,8 +50,8 @@ body img{
 /* 右側メニュー */
 /* ボタン */
 .btn{
-    width:14.5rem;
-    height:3.1rem;
+    width: 15rem;
+    height: 4rem;
     justify-content: center;
     align-items: center;
     margin-right:5.7rem;
@@ -61,6 +61,7 @@ body img{
     margin-top:4.6rem;
     position:absolute;
     right:8rem;
+    letter-spacing: 0.1rem;
 }
 .nav_link{
     font-family: 'Noto Sans JP', sans-serif;
@@ -144,6 +145,9 @@ line-height: 1.1rem;;
 .hotel_reserve_btn{
     width:10.1rem;
     box-shadow: 0px 0px 12px #00000029;
+    z-index: 999;
+    position: relative;
+    cursor: pointer;
 }
 .hotel_reserve_btn p{
     line-height: 2.5rem;
@@ -154,8 +158,30 @@ line-height: 1.1rem;;
     padding:4rem 0 1.1rem;
 }
 .hotel_reserve_btn p:last-child{
-    padding-bottom:3.7rem;
+    padding-bottom:3rem;
     letter-spacing: 0.2rem;
+}
+.hotel_reserve img{
+    width: 97rem;
+    height: auto;
+}
+
+.hotel_reserve_inner{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 998;
+    /*ナビのスタート位置と形状*/
+	bottom: 2rem;
+    right: -120%;
+	width:97rem;
+    height: auto;/*ナビの高さ*/
+    /*動き*/
+	transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+.hotel_reserve_inner.panelactive{
+    right: 7rem;
 }
 
 
@@ -1136,7 +1162,7 @@ line-height: 1.1rem;;
 	position:fixed;
     z-index: 9999;/*ボタンを最前面に*/
     top: 4rem;
-    right: 3rem;
+    right: 4rem;
 	cursor: pointer;
     width: 6rem;
     height:6rem;
@@ -1185,12 +1211,6 @@ line-height: 1.1rem;;
     transform: translateY(-6px) rotate(45deg);
     width: 50%;
     background-color: #ADADAD;	
-}
-
-.nav_btn {
-    margin-top: 4.6rem;
-    position: absolute;
-    right: 15rem;
 }
 
 @media screen and ( max-width:767px ){

@@ -88,3 +88,14 @@ $(function(){
     return false;
 });
 });
+
+// 宿泊予約
+$(".hotel_reserve_btn").hover(function () {//ボタンがクリックされたら
+	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+    $(".hotel_reserve_inner").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+});
+
+$(".hotel_reserve_inner a").click(function () {//ナビゲーションのリンクがクリックされたら
+    $(".hotel_reserve_btn").removeClass('active');//ボタンの activeクラスを除去し
+    $(".hotel_reserve_inner").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+});
