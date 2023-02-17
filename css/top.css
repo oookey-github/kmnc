@@ -45,6 +45,123 @@ body img{
 	inset: 0;
 	overflow: auto;
 }
+
+
+/* 右側メニュー */
+/* ボタン */
+.btn{
+    width:14.5rem;
+    height:3.1rem;
+    justify-content: center;
+    align-items: center;
+    margin-right:5.7rem;
+}
+/* 宿泊プラン一覧ボタン　客室情報ボタン */
+.nav_btn{
+    margin-top:4.6rem;
+    position:absolute;
+    right:8rem;
+}
+.nav_link{
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top:2.4rem ;
+    line-height: 2.4rem;
+    letter-spacing: 0.3rem;
+    margin-left:11.5rem;
+}
+.nav_link p:last-child{
+    padding:0 1.2rem;
+}
+/* ============================== */
+.sns_menu{
+    justify-content: end;
+    position:fixed;
+    right:0;
+    bottom:2rem;
+    z-index:999;
+}
+.sns_menu_inner{
+    text-align: center;
+}
+.insta_icon{
+    margin-bottom:2.2rem;
+    
+
+}
+.insta_icon img{
+    mix-blend-mode: multiply; 
+}
+.insta_icon a{
+    display:inline-block;
+}
+.insta_icon p{
+margin-top:0.4rem;
+line-height: 1.1rem;;
+}
+.facebook_icon{
+    width:100%;
+    margin:0 auto 2.4rem;
+}
+
+.facebook_icon a{
+    display: inline-block;
+}
+.facebook_icon p{
+    line-height: 1.1rem;
+}
+.page-top_reserve_btn{
+    position:relative;
+}
+.page-top{
+    position:absolute;
+    width:5.3rem;
+    height:5.3rem;
+    background-color: #EAEAEA;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    right:14rem;
+    bottom:0rem;
+}
+.page-top:before{
+    content:"";
+    left: 2.2rem;
+    width: 1rem;
+    height: 1rem;
+    top:2.3rem;
+    border-top: 2px solid #707070;
+    border-right: 2px solid #707070;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position:absolute;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+/* 宿泊予約ボタン */
+.hotel_reserve_btn{
+    width:10.1rem;
+    box-shadow: 0px 0px 12px #00000029;
+}
+.hotel_reserve_btn p{
+    line-height: 2.5rem;
+    letter-spacing: 0.36rem;
+
+}
+.hotel_reserve_btn p:first-child{
+    padding:4rem 0 1.1rem;
+}
+.hotel_reserve_btn p:last-child{
+    padding-bottom:3.7rem;
+    letter-spacing: 0.2rem;
+}
+
+
+
+
+
 /* トップページ */
 .body_inner{
     position: relative;
@@ -1068,6 +1185,12 @@ body img{
     transform: translateY(-6px) rotate(45deg);
     width: 50%;
     background-color: #ADADAD;	
+}
+
+.nav_btn {
+    margin-top: 4.6rem;
+    position: absolute;
+    right: 15rem;
 }
 
 @media screen and ( max-width:767px ){
