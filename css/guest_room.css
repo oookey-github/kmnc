@@ -117,15 +117,19 @@ body{
 }
 .guest_room_guidance_inner .menu .flex{
     justify-content: center;
-    width:100%;
+
+    width:114rem;
 }
 .guest_room_guidance_inner .menu p{
-    margin:0 3.2rem 0;
-    font-size:2.6rem;
+    margin:0rem 3.2rem 0;
+    letter-spacing: 0.12rem;
+    width:22rem;
+    
 }
 .guest_room_guidance_inner .menu p span{
-    line-height: 2.6rem;
+    
     font-size: 1.4rem;
+    line-height: 4rem;
 }
 .guest_room_guidance_inner .menu .border-l,
 .guest_room_guidance_inner .menu .border-r{
