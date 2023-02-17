@@ -1,4 +1,19 @@
+// ページ内リンクスクロール
+$('#page-link a[href*="#"]').click(function () {//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
+	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+	var pos = $(elmHash).offset().top;	//idの上部の距離を取得
+	$('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+	return false;
+});
 
+// ページトップボタン
+const pagetopBtn = document.querySelector('.page-top');
+pagetopBtn.addEventListener('click',  function(){
+    window.scrollTo({
+        top:0,
+        behavior: "smooth"
+    })
+})
 // ボタンを表示させる
 // window.addEventListener("scroll", scroll_event);
 // function scroll_event(){
@@ -8,8 +23,6 @@
 //         pagetopBtn.style.opacity = "0";
 //     }
 // }
-
-
 
 // ハンバーガーメニュー
 $(".openbtn").click(function () {//ボタンがクリックされたら
@@ -40,7 +53,7 @@ $(function(){
               breakpoint: 767, // 500px未満で・・・
               settings: "unslick", // スライダーを無効
             },
-        ],
+          ],
         
     });
 });
@@ -66,42 +79,6 @@ $(function(){
 // 熊野の過ごし方
 // スムーススクロール
 $(function(){
-
-    $('.text-slider').slick({
-        speed: 1100,//スライドのスピード。初期値は300。
-        infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-        dots: false,//下部ドットナビゲーションの表示
-        draggable:false,         //追加（ドラッグでのスライド禁止
-        arrows:false             //追加（矢印非表示
-    });
-});
-// アンカーリンク内リンクスクロール
-$(function () {
-    var animeSpeed = 80;
-    $("a[href^='#']").on({
-        "click":function(){
-            var href = $(this).attr("href");
-            var target = $(href == "#" || href === "" ? "html" : href); 
-            var position;
-            position = target.offset().top;
-            $("body, html").stop().animate({
-                scrollTop:position
-            },animeSpeed, 'swing');
-            return false;
-        }
-    });
-});
-// ページトップ
-$(function(){
-    var pagetop = $('#page-top, #page-top-sp');
-    var backSpeed = 100;
-    var position;
-    position = $("html, body")
-
-    pagetop.click(function() {
-        $("html,body").animate({scrollTop: 0},backSpeed );
-    });
-
     $('a[href^="#"]').click(function(){
     var speed = 500;
     var href= $(this).attr("href");
@@ -110,5 +87,4 @@ $(function(){
     $("html, body").animate({scrollTop:position}, speed, "swing");
     return false;
 });
-
 });
