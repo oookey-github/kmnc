@@ -6,6 +6,7 @@
 	.pc{display: none;}
 	.sp{display: inherit;}
 }
+html {scroll-behavior: smooth;}
 html{font-size: 62.5%;}
 body{
 	font-size:1.4em;
@@ -172,7 +173,7 @@ body{
     margin-top: 0;
 }
 .guest_room section{
-    padding-top:15.5rem;
+    padding-top:10rem;
 }
 
 

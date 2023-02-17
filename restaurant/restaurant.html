@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/restaurant.css">
-    <link rel="stylesheet" href="../css/top.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script src="../js/main.js"></script>
 
     <title>お食事のご案内</title>
 </head>
@@ -73,7 +74,7 @@
                     </div>
                     <div class="flex page-top_reserve_btn">
                         
-                        <div class="page-top">
+                        <div class="page-top" id="page-top">
                             <a href="#"></a>
                         </div>
                         
@@ -106,7 +107,7 @@
                     </div>
                 </div>
                 
-                    <div class="page-top">
+                    <div class="page-top" id="page-top-sp">
                         <a href="#"></a>
                     </div>
                 
@@ -166,17 +167,17 @@
         <div class="pc">
             <div class="flex menu">
                 <div class="border-l"></div>
-                <a href="">
+                <a href="#restaurant1">
                     <p class="fs22">御食国会席<br><span class="fs12">−みけつくにかいせき−</span></p>
                 </a>
                 <div class="border-l"></div>
     
-                <a href="">
+                <a href="#restaurant2">
                     <p class="fs22">熊野の味覚三昧会席<br><span class="fs12">−みかくざんまいかいせき−</span></p>
                 </a>
                 <div class="border-l"></div>
         
-                <a href="">
+                <a href="#restaurant3">
 
                     <p class="fs22">伊勢海老のオーブン焼き付<br>ハーフブッフェ</p>
                 </a>
@@ -187,21 +188,21 @@
             <div class="menu">
                 <div class="flex menu_sp">
                     <div class="border-l"></div>
-                    <a href="">
+                    <a href="#restaurant1">
                         <p class="fs22">御食国会席<br><span class="fs12">−みけつくにかいせき−</span></p>
                     </a>
                     <div class="border-r"></div>
                 </div>
                 <div class="flex menu_sp">
                     <div class="border-l"></div>
-                    <a href="">
+                    <a href="#restaurant2">
                         <p class="fs22">熊野の味覚三昧会席<br><span class="fs12">−みかくざんまいかいせき−</span></p>
                     </a>
                     <div class="border-r"></div>
                 </div>
                 <div class="flex menu_sp">
                     <div class="border-l"></div>
-                    <a href="">
+                    <a href="#restaurant3">
                         <p class="fs22">伊勢海老のオーブン焼き付<br>ハーフブッフェ</p>
                     </a>
                     <div class="border-r"></div>
