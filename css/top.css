@@ -815,14 +815,14 @@ body img{
     width: 78rem;
     margin: 6.7rem auto 0;
 }
-.googlemap  iframe{
+/* .googlemap  iframe{
     filter: grayscale(100%);
     transition: filter 0.5s ease-in-out;
 } 
 .googlemap  iframe:hover{
     filter: grayscale(0%);
     filter: hue-rotate(180deg);
-} 
+}  */
 
 
 
