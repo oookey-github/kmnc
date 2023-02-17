@@ -211,6 +211,13 @@ body{
 #room4 .title .border_div .border{
     bottom:-1rem
 }
+footer .each_page{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+footer .each_page a{
+    margin-right:3.2rem;
+}
 @media screen and ( max-width:767px ){
     /* 全ページ共通 右側メニュー */
     .sns_menu_inner{

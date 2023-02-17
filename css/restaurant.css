@@ -108,14 +108,7 @@ body{
 .flex{
     display:flex;
 }
-/* ボタン */
-.btn{
-    width:14.5rem;
-    height:3.1rem;
-    justify-content: center;
-    align-items: center;
-    margin-right:5.7rem;
-}
+
 /* ヘッダー */
 .header{
     width:100%;
@@ -134,11 +127,22 @@ body{
     width:16.4rem;
     height:15.2rem;
 }
+
+
+/* 右側メニュー */
+/* ボタン */
+.btn{
+    width:14.5rem;
+    height:3.1rem;
+    justify-content: center;
+    align-items: center;
+    margin-right:5.7rem;
+}
+/* 宿泊プラン一覧ボタン　客室情報ボタン */
 .nav_btn{
     margin-top:4.6rem;
     position:absolute;
     right:8rem;
-    
 }
 .nav_link{
     font-family: 'Noto Sans JP', sans-serif;
@@ -150,9 +154,7 @@ body{
 .nav_link p:last-child{
     padding:0 1.2rem;
 }
-
-/* 右側メニュー */
-
+/* ============================== */
 .sns_menu{
     justify-content: end;
     position:fixed;
@@ -220,6 +222,7 @@ line-height: 1.1rem;;
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
 }
+/* 宿泊予約ボタン */
 .hotel_reserve_btn{
     width:10.1rem;
     box-shadow: 0px 0px 12px #00000029;
@@ -236,6 +239,7 @@ line-height: 1.1rem;;
     padding-bottom:3.7rem;
     letter-spacing: 0.2rem;
 }
+/* ============================== */
 /*お食事のご案内*/
 .oshokuji{
     width: 80%;
@@ -406,6 +410,7 @@ line-height: 1.1rem;;
 }
 .restaurant_name.iseebi p:first-child{
     margin-bottom: 0.9rem;
+    margin-top:-1rem;
 }
 .restaurant_name.iseebi p:nth-child(2){
     margin-bottom: 0.9rem;
@@ -438,7 +443,6 @@ line-height: 1.1rem;;
 }
 .meal_menu{
     border-top:1px solid #BCBCBC;
-    border-bottom:1px solid #BCBCBC;
     padding-top:2.1rem;
     padding-bottom:2.4rem;
     width:78.8rem;
@@ -821,6 +825,58 @@ min-width:130rem;
 .personal_information a:first-child{
     margin-right:4rem;
 }
+/*アコーディオンメニュー*/
+    .accordion {
+    max-width: 60vw;
+    }
+    .toggle {
+    display: none;
+    }
+    .option {
+    position: relative;
+    }
+    .accordion_title,
+    .accordion_content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all 0.3s;
+    }
+    .accordion_title {
+    display: block;
+    }
+    .accordion_title::after,
+    .accordion_title::before {
+    content: "";
+    position: absolute;
+    right: 1.25em;
+    top: 1.25em;
+    width: 2px;
+    height: 0.75em;
+    background-color: #999;
+    transition: all 0.3s;
+    }
+    .accordion_title::after {
+    transform: rotate(90deg);
+    }
+    .accordion_content {
+    max-height: 0;
+    overflow: hidden;
+    }
+    .accordion_content p {
+    margin: 0;
+    padding: 0.5em 1em 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+    }
+    .toggle:checked + .accordion_title + .accordion_content {
+    max-height: 100rem;
+    transition: all 1.5s;
+    }
+    .toggle:checked + .accordion_title::before {
+    transform: rotate(90deg) !important;
+    }
+/* ================ */
 @media screen and ( max-width:767px ){
     .sns_menu_inner{
         width:5.4rem;
