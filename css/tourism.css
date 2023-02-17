@@ -211,15 +211,18 @@ body{
         margin: 0 auto;
     }
     .tourism_btn ul{
-        font-size: 1.5rem;
-        width: 30rem;
-        letter-spacing: 0.2rem;
+        font-size: 1.5rem !important;
+        width: 34rem !important;
+        letter-spacing: 0.1rem;
         justify-content: space-between;
     }
     .tourism_btn{
         margin-top: 5rem;
     }
     .tourism_btn li{
-        width: 14rem;
+        width: 16.6rem !important;
+    }
+    .tourism_list ul{
+        width: 39rem;
     }
 }

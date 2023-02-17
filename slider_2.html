@@ -13,44 +13,20 @@
     <script src="./js/slick.min.js"></script>
     <script src="./js/slick.js"></script>
 
-
-    <!-- <link rel="stylesheet" href="./slick/ajax-loader.gif">
-    <link rel="stylesheet" href="./slick/slick.svg">
-    <link rel="stylesheet" href="./slick/slick.eot">
-    <link rel="stylesheet" href="./slick/slick.ttf">
-    <link rel="stylesheet" href="./slick/slick.woff"> -->
-
     <style>
         ul.slick_exp {
-            /* margin: 0 calc(50vw - 660px); */
         }
         .slick_exp li {
             width: 660px !important;
-            height: 390px;
-            margin:0 auto;
+            height: auto;
+            margin:0 40px;
             padding: 0;
         }
         .slick_exp li img{
             width: 100%;
+            height: 390px !important;
             height: auto;
-        }
-        /* .slick-list{
-            padding: 0 !important;
-            width: 100%;
-        }
-        .slick-track{
-            margin: 0 auto;
-        } */
-
-        /* 透明にして大きくする */
-        .slick_exp .slick-slide {
-            transform: scale(0.8);/*左右の画像のサイズを80%に*/
-            transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
-            opacity: 0.5;/*透過50%*/
-        }
-        .slick_exp .slick-slide.slick-center{
-            transform: scale(1);/*中央の画像のサイズだけ等倍に*/
-            opacity: 1;/*透過なし*/
+            object-fit: cover;
         }
 
         /* 矢印 ドットナビゲーション */
@@ -146,17 +122,6 @@
             background:#333;/*ドットボタンの現在地表示の色*/
         }
 
-        /* 文字 */
-        .text-slider{
-            width: 660px;
-            margin: 0 auto ;
-            top: -620px;
-        }
-        .text-slider .txt{
-            margin: 0 auto;
-            width: 660px !important;
-        }
-
     </style>
 
     <script>
@@ -164,8 +129,8 @@
             $('.slick_exp').slick({
                 autoplay: true,//自動的に動き出すか。初期値はfalse。
                 infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-                speed: 1100,//スライドのスピード。初期値は300。
-                autoplaySpeed:1700,
+                speed: 600,//スライドのスピード。初期値は300。
+                autoplaySpeed:800,
                 slidesToShow: 1,//スライドを画面に3枚見せる
                 slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
                 prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
@@ -174,19 +139,7 @@
                 variableWidth: true,//幅の違う画像の高さを揃えて表示
                 dots: true,//下部ドットナビゲーションの表示
                 dotsClass: "slick_exp-dots",
-                asNavFor:".text-slider"
-            });
-        });
-    </script>
-
-    <script>
-        $(function(){
-            $('.text-slider').slick({
-                speed: 1100,//スライドのスピード。初期値は300。
-                infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-                dots: false,//下部ドットナビゲーションの表示
-                draggable:false,         //追加（ドラッグでのスライド禁止
-                arrows:false             //追加（矢印非表示
+                // asNavFor:".text-slider"
             });
         });
     </script>
@@ -197,32 +150,24 @@
     <ul class="slick_exp">
         <li>
             <a href="">
-                <img src="./image/exp_1.png" alt="" width="660px" height="390x">
+                <img src="./image/exp_1.png" alt="">
+                <p class="txt">熊野の真髄に迫るプレミアムツアー　〈ご宿泊者限定〉<br>丸山千枚田をはじめとした、熊野の見処を巡ります。</p>
             </a>
         </li>
         <li>
             <a href="">
-                <img src="./image/exp_2.png" alt="" width="660px" height="390x">
+                <img src="./image/exp_2.png" alt="">
+                <p>熊野の真髄に迫るプレミアムツアー　〈ご宿泊者限定〉<br>丸山千枚田をはじめとした、熊野の見処を巡ります。</p>
             </a>
         </li>
         <li>
             <a href="">
-                <img src="./image/exp_3.png" alt="" width="660px" height="390x">
+                <img src="./image/exp_3.png" alt="">
+                <p>星空鑑賞会<br>見上げれば、満天の星。静寂の中、澄み切った夜空をお愉しみください。</p>
             </a>
         </li>
     </ul>
 
-    <div class="text-slider">
-        <p class="txt">
-            熊野の真髄に迫るプレミアムツアー　〈ご宿泊者限定〉<br>丸山千枚田をはじめとした、熊野の見処を巡ります。
-        </p>
-        <p class="txt">
-            熊野の真髄に迫るプレミアムツアー　〈ご宿泊者限定〉<br>丸山千枚田をはじめとした、熊野の見処を巡ります。
-        </p>
-        <p class="txt">
-            星空鑑賞会<br>見上げれば、満天の星。静寂の中、澄み切った夜空をお愉しみください。
-        </p>
-    </div>
     
 </body>
 </html>
