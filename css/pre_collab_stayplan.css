@@ -342,6 +342,9 @@ body{
     .nav_link p:nth-child(2){
         padding:0 1.2rem;
     }
+    .pre_collab_stayplan .nav_link{
+        margin-left:1rem;
+    }
     /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
     .introduction{
         min-width: auto;
@@ -389,9 +392,9 @@ body{
     }
     .introduction_loccitane{
         flex-wrap: wrap;
-        flex-direction: column-reverse;
+        flex-direction: column;
         width:100%;
-        margin:2.3rem auto 0;
+        margin:0 auto 0;
     }
     .introduction_loccitane img{
         width:18.5rem;
@@ -512,7 +515,7 @@ body{
     }
     .aft .introduction_img{
         width:80%;
-        margin:6rem auto;
+        margin:6.8rem auto 0;
     }
     .aft .introduction_img img{
         width:100%;
@@ -522,6 +525,14 @@ body{
         width:100%;
         object-fit: cover;
     }
+    .aft_menu.introduction_loccitane{
+        flex-direction: column-reverse;
+        margin:8.4rem auto 0;
+    }
+    .aft_menu.reserve_btn2{
+        margin:6.7rem auto 0;
+    }
+
     .introduction_img_2{
         margin-left:0;
     }
@@ -544,7 +555,7 @@ body{
     }
     .aft .introduction_loccitane .introduction_p p{
         letter-spacing: 0.15rem;
-        margin-top:3.9rem;
+        margin-top:3.2rem;
         margin-bottom: 0;
     }
     #collabo2{
@@ -554,7 +565,7 @@ body{
         padding-top:9rem;
     }
     #collabo3 .loccitane_royal_suite.aft.club .explanation{
-        margin: 4.6rem auto 0;
+        margin: 4.1rem auto 0;
     }
     .club.aft.loccitane_royal_suite .explanation p{
         margin-bottom:0;
@@ -563,6 +574,7 @@ body{
         padding-top:0;
         margin-top: 0;
     }
+    .club_bar.
 }
 @media screen and ( max-width:375px ){
     .introduction .title p:nth-child(2){
