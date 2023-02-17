@@ -119,9 +119,6 @@ body{
     background-position: 80% 20%;
     background-size: cover;
     position:relative;
-    min-width:130rem;
-
-
 }
 .logo_icon{
     width:16.4rem;
@@ -184,14 +181,16 @@ body{
     height:53.1rem;
     margin-top:4rem;
 }
-.restaurant_info .vertical_text{
+#restaurant_guide .restaurant_info .vertical_text{
     writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: vertical-rl;
     line-height: 42px;
     margin-left:5.9rem;
+    position:static;
+    text-align: inherit;
 }
-.vertical_text p{
+#restaurant_guide .vertical_text p{
     line-height: 4.2rem;
     margin-left:2rem;
     letter-spacing: 1.2rem;
@@ -332,30 +331,32 @@ body{
 }
 .meal_menu{
     border-top:1px solid #BCBCBC;
-    padding-top:2.1rem;
+    
     padding-bottom:2.4rem;
     width:78.8rem;
     margin-top:7rem;
 }
-.meal_menu p{
-    text-align: center;
-}
+
 .meal_menu_text{
     text-align: left;
-    margin-left:4.1rem;
-    margin-top:5rem;
     border-bottom: 1px solid #BCBCBC;
+
 }
 .meal_menu_text_inner:first-child{
-    padding-top:0;
+    padding-top:5rem;
+    border-top:1px solid #BCBCBC;
 }
 .meal_menu_text_inner {
     padding-top:3rem
 }
-.meal_menu_text_inner p{
+.meal_menu_text_inner p:first-child{
+    padding-left:1em;
+}
+.meal_menu_text_inner p:last-child{
     font-size: 1.8rem;
     letter-spacing:0.54rem;
     line-height: 2.4rem;
+    padding-left:2em;
 
 }
 .meal_menu_text_inner:last-child{
@@ -733,13 +734,16 @@ min-width:130rem;
     }
     .accordion_title {
     display: block;
+    text-align: center;
+    font-size:1.8rem;
+    padding:2.5rem 0;
     }
     .accordion_title::after,
     .accordion_title::before {
     content: "";
     position: absolute;
     right: 1.25em;
-    top: 1.25em;
+    top:2.8rem;
     width: 2px;
     height: 0.75em;
     background-color: #999;
@@ -752,12 +756,7 @@ min-width:130rem;
     max-height: 0;
     overflow: hidden;
     }
-    .accordion_content p {
-    margin: 0;
-    padding: 0.5em 1em 1em;
-    font-size: 0.9em;
-    line-height: 1.5;
-    }
+    
     .toggle:checked + .accordion_title + .accordion_content {
     max-height: 100rem;
     transition: all 1.5s;
@@ -915,8 +914,14 @@ min-width:130rem;
         margin-top:4.6rem;
         padding-right:1rem;
     }
-    .restaurant_info .vertical_text{
-        margin:0 2.8rem 0 0;
+    #restaurant_guide .restaurant_info .vertical_text{
+        margin:0;
+    }
+    #restaurant_guide .vertical_text p{
+        font-size: 2rem;
+        margin-left:0;
+        line-height: 3.2rem;
+        
     }
     .border{
         padding-left:5.5rem
@@ -950,12 +955,7 @@ min-width:130rem;
     .restaurant_guide .title p:last-child{
         margin-bottom:1.7rem;
     }
-    .vertical_text p{
-        font-size: 2rem;
-        margin-left:0;
-        line-height: 3.2rem;
-        
-    }
+    
     .restaurant_info_text{
         padding-top:4.3rem;
         margin:0 auto 7.3rem;
@@ -970,6 +970,9 @@ min-width:130rem;
         font-size: 1.4rem;
         letter-spacing: 0.1rem;
         
+    }
+    #restaurant_guide .restaurant_info .vertical_text{
+        position:static;
     }
     .restaurant1 .flex,
     .restaurant2 .flex,
@@ -1056,6 +1059,12 @@ min-width:130rem;
         margin-bottom:3.5rem;
         width:100%;
     }
+    .toggle:checked + .accordion_title + .accordion_content{
+        max-height:150rem;
+    }
+    .restaurant_info .border{
+        bottom:-0.8rem;
+    }
     
     .restaurant1 .meal_inner,.restaurant2 .meal_inner,.restaurant3 .meal_inner{
         justify-content: center;
@@ -1071,11 +1080,12 @@ min-width:130rem;
     }
     .meal_menu{
         width:90%;
+        max-width:100%;
         margin:7rem auto 0;
     }
     .meal_menu_text{
-        width:90%;
-        margin:7rem auto;
+        width:100%;
+        margin:0 auto;
     }
     .restaurant_name.iseebi{
         margin-top:2.6rem;
@@ -1089,6 +1099,7 @@ min-width:130rem;
     .restaurant2 .meal{
         padding-top:0;
     }
+    
     .restaurant_name.iseebi{
         margin-top:-1.4rem;
         letter-spacing: 0.2rem;
@@ -1096,6 +1107,9 @@ min-width:130rem;
     }
     .restaurant_name.iseebi p{
         line-height: 3.2rem;
+    }
+    .restaurant3 .border{
+        bottom:0.9rem;
     }
     .restaurant3 .restaurant_guide .title{
         margin-left:4rem;
@@ -1161,7 +1175,6 @@ min-width:130rem;
         font-size: 1.19rem;
         letter-spacing: 0.1rem;
     }
-   
     .indoor_view iframe{
         width:100%
     }
