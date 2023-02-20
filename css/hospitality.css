@@ -1,0 +1,72 @@
+.order5{
+    order:5;
+}
+.order6{
+    order: 6;
+}
+.border_div{
+    position:relative;
+}
+.omotenashi .title .border_div .border {
+    left:0rem;
+}
+.omotenashi .title p{
+    margin-left:12rem;
+    line-height: 2.4rem;
+}
+.omotenashi .title p:last-child{
+    letter-spacing: 0.3rem;
+    line-height: 3.8rem;
+}
+#omotenashi_text{
+    margin-top:5.5rem;
+}
+.main_text.omotenashi{
+    text-align: center;
+}
+.main_text_div{
+    margin-bottom:8rem;
+}
+.main_text_div p:first-child{
+    line-height: 5rem;
+    letter-spacing: 0.1rem;
+}
+.main_text_div p:last-child{
+    letter-spacing: 0.3rem;
+    line-height: 5rem;
+}
+.sub_text p{
+    line-height: 3.2rem;
+    letter-spacing: 0.3rem;
+}
+.sub_text p:first-child{
+margin-bottom:4rem;
+}
+#omotenashi_1{
+    padding-top:12.9rem;
+}
+
+.omotenashi_1{
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width:95%;
+}
+.hospitality_img{
+    width:68.6rem;
+}
+.hospitality_img img{
+    width:100%;
+}
+.omotenashi_img_view{
+    width:68.6rem;
+}
+#omotenashi_1 .border_div{
+    width:10%;
+}
+#omotenashi_1 .border{
+    bottom:0;
+    top:1rem;
+    height:1px;
+    left:2rem
+}
