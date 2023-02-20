@@ -913,7 +913,7 @@ min-width:130rem;
         height:36.8rem;
         object-fit: cover;
         margin-top:4.6rem;
-        padding-right:1rem;
+        padding-right:0rem;
     }
     #restaurant_guide .restaurant_info .vertical_text{
         margin:0;
@@ -1347,5 +1347,9 @@ min-width:130rem;
     .restaurant_info .vertical_text{
         font-size:3rem;
         margin:0 0.9rem 0 0;
+    }
+    .oyado.accordion_title{
+        text-align: left;
+        padding-left:1em;
     }
 }
