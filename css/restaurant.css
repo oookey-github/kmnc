@@ -901,8 +901,13 @@ min-width:130rem;
     }
     .border{
         left:0;
+        bottom:-1rem;
+    }
+    #restaurant_guide .border_div .border{
+        left:0;
         padding-left:1.9rem;
         bottom:-1rem;
+
     }
     .restaurant_info_inner{
         min-width:auto;
@@ -925,20 +930,17 @@ min-width:130rem;
         line-height: 3.2rem;
         
     }
-    .border{
-        padding-left:5.5rem
-    }
+    
     .restaurant_info .title p:last-child{
         font-size:1.3rem;
         margin-left:-3.5rem;
     }
-    .restaurant_guide .title p:nth-child(2){
-        font-size:2.8rem;
-        margin-left:-3.5rem;
-        margin-bottom:1rem;
+    #restaurant_guide .title p:first-child{
+        font-size:2rem;
+
     }
-    .restaurant_guide .title p:first-child{
-        font-size:1.3rem;
+    #restaurant_guide .title p{
+        margin-left:3rem;
     }
     .flex_box{
         padding-bottom:0;
@@ -951,9 +953,7 @@ min-width:130rem;
         font-size:2rem;
         letter-spacing: 0.3rem;
     }
-    .restaurant_guide .title{
-        margin-left:7rem
-    }
+    
     .restaurant_guide .title p:last-child{
         margin-bottom:1.7rem;
     }
@@ -976,15 +976,48 @@ min-width:130rem;
     #restaurant_guide .restaurant_info .vertical_text{
         position:static;
     }
+    #restaurant1 .border,
+    #restaurant2 .border,
+    #restaurant3 .border{
+        padding-left: 5.5rem;
+    }
+    #restaurant1 .title p:nth-child(2),
+    #restaurant2 .title p:nth-child(2),
+    #restaurant3 .title p:nth-child(2){
+        font-size:2.8rem;
+        margin-left:-3.5rem;
+        margin-bottom:1rem;
+    }
+    #restaurant1 .title,
+    #restaurant2 .title{
+        
+        margin-left:6.5rem;
+    }
+    .title p:first-child{
+        font-size: 1.3rem;
+    }
     .restaurant1 .flex,
     .restaurant2 .flex,
     .restaurant3 .flex{
         justify-content:space-between;
     }
+    #restaurant3 .title{
+        margin-left:4.5rem;
+    }
+    .restaurant_name.iseebi p:first-child{
+        font-size:1.3rem;
+    }
+    .restaurant_name.iseebi p:nth-child(3){
+        text-indent: 0em;
+    }
+    .restaurant_name.iseebi p:nth-child(4){
+        text-indent: -1em;
+    }
     .restaurant3 .iseebi_explanation{
         width:90%;
         margin:0 auto;
     }
+    
     .menu{
         min-width:auto;
         width:85%;
@@ -1100,6 +1133,7 @@ min-width:130rem;
     .restaurant_name.iseebi p{
         font-size: 2.8rem;
     }
+    
     #restaurant2{
         margin-top:8.3rem;
     }
