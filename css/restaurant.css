@@ -189,6 +189,7 @@ body{
     margin-left:5.9rem;
     position:static;
     text-align: inherit;
+    margin-right:0.9rem;
 }
 #restaurant_guide .vertical_text p{
     line-height: 4.2rem;
@@ -916,6 +917,7 @@ min-width:130rem;
     }
     #restaurant_guide .restaurant_info .vertical_text{
         margin:0;
+        margin-right:0.9rem;
     }
     #restaurant_guide .vertical_text p{
         font-size: 2rem;
@@ -1086,6 +1088,11 @@ min-width:130rem;
     .meal_menu_text{
         width:100%;
         margin:0 auto;
+    }
+    .meal_menu_text_inner p:first-child,
+    .meal_menu_text_inner p:last-child{
+        font-size:1.5rem;
+        letter-spacing: 0.3rem;
     }
     .restaurant_name.iseebi{
         margin-top:2.6rem;
@@ -1316,6 +1323,24 @@ min-width:130rem;
     }
     .each_page a{
         margin-right:2.2rem
+    }
+    .oyado.accordion_title{
+        text-align: left;
+        padding-left:1em;
+    }
+    .hotel_net:first-child{
+        border-top: 1px solid #BCBCBC;
+        padding-top:2.3rem;
+    }
+    .hotel_net{
+        width:100%;
+        margin-top:6rem;
+        margin:0rem 4rem 0 0;
+        padding-bottom:0rem;
+        padding-left:1em;
+    }
+    .hotel_net:last-child{
+        padding-bottom:3.6rem;
     }
 }
 @media screen and ( max-width:375px ){
