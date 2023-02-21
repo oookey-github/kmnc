@@ -112,7 +112,6 @@ body{
     margin-top:4.2rem;
     justify-content: space-between;
     margin:4.2rem auto 0;
-    padding-bottom:15.2rem;
     min-width:0;
 }
 .guest_room_guidance_inner .menu .flex{
@@ -155,7 +154,14 @@ body{
 }
 .guest_room .guest_room_guidance_inner .title{
     margin-top:0;
-    width:80%;
+    width:50%;
+}
+.guest_room .main_content{
+    display:inline-block;
+}
+.guest_room_guidance_inner.room .main_content .float-l{
+    width:30%;
+    margin-left:10%;
 }
 .main_content.mc_2{
     flex-wrap: wrap;
@@ -165,11 +171,12 @@ body{
     width:100%;
 }
 .mc_2 .mc_text.room{
-    width:80%;
+    width:50%;
     margin-right:0;
 }
 .mc_2.room{
     margin-top: 0;
+    width:100%;
 }
 .guest_room section{
     padding-top:10rem;
@@ -330,7 +337,7 @@ footer .each_page a{
     /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
     .guest_room .guest_room_guidance_inner .title:first-child{
         margin-top:2.9rem;
-        margin-left:2.8rem;
+        margin-left:3.8rem;
     }
     #guest_room_guidance .title p:first-child{
         font-size:2rem;
@@ -343,8 +350,11 @@ footer .each_page a{
         order:1;
         letter-spacing: 0.5rem;
         line-height:4.2rem;
+        width:auto;
     }
-    
+    .guest_room .guest_room_guidance_inner .title.sp{
+        margin-left:7.8rem;
+    }
     .guest_room .guest_room_guidance_inner .title p:nth-child(2){
         font-size:1.4rem;
         line-height: 2.4rem;
@@ -356,6 +366,10 @@ footer .each_page a{
         text-indent: -1.2em;
         margin-top:1.6rem;
         margin-bottom:0;
+    }
+    .guest_room .guest_room_guidance_inner.title .sp {
+        margin-left:7.8rem;
+
     }
     .guest_room .guest_room_guidance_inner .title p:nth-child(4){
         font-size:1.6rem;
@@ -378,7 +392,6 @@ footer .each_page a{
     }
     .guest_room_guidance_inner .menu{
         margin:0rem auto;
-        padding-bottom:9.2rem;
     }
     .guest_room .menu_sp{
         padding-bottom:5.3rem;
@@ -455,6 +468,10 @@ footer .each_page a{
         flex-wrap: wrap;
         justify-content: flex-end!important;
         white-space: normal;
+    }
+    .guest_room_guidance_inner.room .main_content .float-l{
+        width:100%;
+        margin-left:0;
     }
     .view.room{
         width:100%;
