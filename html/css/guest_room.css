@@ -315,11 +315,11 @@ footer .each_page a{
         line-height: 2rem;
     }
     .pankuzu{
-        margin-left:2rem;
+        margin-left:1rem;
     }
     .guest_room .nav_link{
         justify-content: center;
-        margin-left:2rem;
+        margin-left:1rem;
     }
     .nav_link p:last-child{
         padding:0;
