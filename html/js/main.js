@@ -14,6 +14,14 @@ pagetopBtn.addEventListener('click',  function(){
         behavior: "smooth"
     })
 })
+// ページトップボタン
+$('#page-top-sp').click(function () {
+    $('body,html').animate({
+        scrollTop: 0//ページトップまでスクロール
+    }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
+});
+
 // ボタンを表示させる
 // window.addEventListener("scroll", scroll_event);
 // function scroll_event(){
@@ -28,6 +36,7 @@ pagetopBtn.addEventListener('click',  function(){
 $(".openbtn").click(function () {//ボタンがクリックされたら
 	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
     $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+    $("#g-nav").next().slideToggle(100);
 });
 
 $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
@@ -99,3 +108,12 @@ $(".hotel_reserve_inner a").click(function () {//ナビゲーションのリン�
     $(".hotel_reserve_btn").removeClass('active');//ボタンの activeクラスを除去し
     $(".hotel_reserve_inner").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
+
+// パララックス
+var image = document.getElementsByClassName('parallax');
+new simpleParallax(image, {
+	scale: 1.2,
+    delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)'
+});
+  

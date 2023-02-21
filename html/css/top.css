@@ -224,9 +224,9 @@ line-height: 1.1rem;;
     left: 0;
     width: 100%;
     height: 83rem;
+    color: #fff;
     background-position: center;
     background-size: cover;
-    color: #fff;
 }
 .mv_inner{
     height: 83rem;
@@ -372,6 +372,14 @@ line-height: 1.1rem;;
 }
 
 /* ===================================== */
+.mc_img_1{
+    background-position: center;
+    background-size: cover;
+}
+.mc_img_2,.mc_img_3,.mc_img_4{
+    background-position: center;
+    background-size: cover;
+}
 /* メインコンテンツ */
 .main_content{
     display: flex;
@@ -388,11 +396,8 @@ line-height: 1.1rem;;
     height: 74rem;
     width: 47rem;
 }
-.mc_img_1{
-    background-image: url(../image/mc_1.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
+.mc_img_1 img{
+    width: 100%;
 }
 /* 縦書き */
 .vertical_text{
@@ -444,11 +449,10 @@ line-height: 1.1rem;;
     position: absolute;
     right: 0;
 }
-.mc_img_2{
-    background-image: url(../image/mc_2.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
+.mc_img_2 img{
+    height: 54rem;
+    width: 100%;
+    object-fit: cover;
 }
 .mc_2 .mc_text{
     margin-right: 60rem;
@@ -471,12 +475,6 @@ line-height: 1.1rem;;
     margin-bottom: 1rem;
 }
 /* mc3 */
-.mc_img_3{
-    background-image: url(../image/mc_3.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-}
 .mc_3{
     flex-direction: row-reverse;
     margin-top: 38rem;
@@ -487,6 +485,11 @@ line-height: 1.1rem;;
     min-width: 55rem;
     position: absolute;
     left: 0;
+}
+.mc_item_3 img{
+    height: 54rem;
+    width: 100%;
+    object-fit: cover;
 }
 .mc_3 .mc_text{
     margin-left: 60rem;
@@ -502,13 +505,17 @@ line-height: 1.1rem;;
 /* mc4 */
 .mc_4{
     background-image: url(../image/mc_4-bg.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 100%;
-    margin-top: 43rem;
+    margin-top: 30rem;
+    padding-top: 13rem;
+    background-position-x: calc(50% - 36rem);
 }
-.mc_4 .mc_img_2{
-    background-image: url(../image/mc_4-1.png);
+.mc_4 .mc_img_4 img{
+    height: 54rem;
+    width: 100%;
+    object-fit: cover;
 }
 .mc_4 .horiz_text{
     bottom: 34rem;
@@ -604,6 +611,10 @@ line-height: 1.1rem;;
     font-family: 'Noto Sans JP', sans-serif;
     max-width: 60rem;
     margin-bottom: 4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .news dd a{
     position: absolute;
@@ -804,7 +815,7 @@ line-height: 1.1rem;;
 }
 .circle_img img{
     width: 100%;
-    height: 100%;
+    height: 60rem;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -1006,7 +1017,25 @@ line-height: 1.1rem;;
     height: 100vh;/*表示する高さ*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+
 }
+#g-nav.panelactive #g-nav-list{
+    animation-name:fadeInAnime;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+@keyframes fadeInAnime{
+    0% {
+      opacity: 0;
+    }
+    40% {
+        opacity: 0;
+      }
+    100% {
+      opacity: 1;
+    }
+  }
 
 /*ナビゲーション*/
 #g-nav ul {
@@ -1442,6 +1471,23 @@ line-height: 1.1rem;;
     }
     .mc_3 .mc_text .circle_btn_top{
         margin-bottom: 0;
+    }
+    .mc_4{
+        background-image: none;
+        padding: 0;
+    }
+    .mc_4 .mc_title{
+        font-size: 3.2rem !important;
+    }
+    .mc_4 .mc_text{
+        background-image: url(../image/mc_4-bg.png);
+        padding: 0rem 5.5rem;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mc_4 .horiz_text{
+        left: -1rem;
     }
     /* ロクシタンバナー */
     .loccitane_banner{
