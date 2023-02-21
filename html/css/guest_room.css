@@ -272,7 +272,7 @@ footer .each_page a{
         opacity:0.9;
     }
     .page-top{
-        right:0.5rem;
+        right:0.5rem!important;
         opacity:0.9;
     }
     .ai_btn{
