@@ -1,0 +1,603 @@
+@charset "utf-8";
+/* CSS Document */
+.pc{display: inherit;}
+.sp{display: none;}
+@media screen and ( max-width:767px ){
+	.pc{display: none;}
+	.sp{display: inherit;}
+}
+html{font-size: 62.5%;}
+body{
+	font-size:1.4em;
+	font-style: normal;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    color: #292929;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+@media (min-width: 768px) {
+    body {
+        min-width: 1024px;
+    }
+    
+}
+
+@media only screen and (max-width: 767px){
+	html{font-size: calc( 1000vw /430px  );}
+}
+.header{
+    background: url(../image/header_pre_collabo_stayplan.png) no-repeat;
+
+}
+.introduction{
+    width:100%;
+    margin-top:7.4rem;
+    min-width:100%;
+}
+.introduction .img{
+    width:100%;
+    margin-bottom:5rem;
+}
+.introduction .title{
+    max-width:126rem;
+    width:100%;
+    margin:0 auto 4.7rem;
+}
+.introduction .title p:nth-child(2){
+    margin-bottom:1.5rem;
+}
+
+.introduction .loccintane_logo{
+    width:50%;
+    height:50.4rem;
+}
+.introduction .loccintane_logo img{
+    width:100%;
+    object-fit: cover;
+}
+.introduction .kumano_logo{
+    width:50%;
+    height:50.4rem;
+    object-fit: cover;
+}
+.introduction .kumano_logo img{
+    width:100%;
+    object-fit: cover;
+}   
+.introduction .text_center.text p{
+    line-height: 3.8rem;
+    letter-spacing: 0.5rem;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+.introduction_loccitane{
+    width:100%;
+    max-width:126rem;
+    margin:7.7rem auto 6rem;
+    
+}
+.introduction_loccitane:last-child{
+    align-items: center;
+}
+.introduction_loccitane img{
+    width:42.6rem;
+    margin-right:5.7rem;
+}
+.introduction_p p{
+    line-height: 2.8rem;
+    letter-spacing: 0.2rem;
+}
+.introduction_p:last-child{
+    margin-top:0rem;
+    margin-right:7rem;
+}
+.introduction_img_2 {
+    align-items: baseline;
+    margin-left:5.7rem
+}
+.introduction_img_2 img:first-child{
+    width:24.4rem;
+    height:24.4rem
+}
+.introduction_img_2 img:last-child{
+    height:19.5rem;
+    width:19.5rem;
+}
+#collabo1{
+    width:100%;
+    padding-top:15rem;
+    max-width:126rem;
+    margin:0 auto;
+}
+
+.loccitane_royal_suite .title{
+    text-align: center;
+    margin-bottom: 3.3rem;
+}
+.title2{
+    display: inline-block;
+}
+.border_div{
+    display: inline-block;
+}
+.title2 .border_div .border{
+    bottom: -2.5rem;
+    left: -35rem;
+}
+.border_right{
+    border: solid 0.01rem #292929;
+    padding-left: 10rem;
+    margin-right: 2rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 25rem
+}
+.loccitane_royal_suite_mv{
+    width:100%;
+    margin:0 auto;
+}
+.loccitane_royal_suite_mv img{
+    width:100%;
+    height:54rem;
+}
+.loccitane_royal_suite .explanation{
+    text-align: center;
+    margin-bottom:10rem;
+    margin-top:4.6rem;
+    justify-content: center;
+}
+.loccitane_royal_suite .explanation p{
+    line-height: 3.2rem;
+    letter-spacing: 0.2rem;
+}
+.loccitane_royal_suite_flex{
+    width:100%;
+    margin:0 auto;
+
+}
+.loccitane_royal_suite_flex .box{
+    justify-content: space-between;
+}
+.flex_box{
+    width:38.8rem;
+}
+.flex_box img{
+    width:100%;
+}
+.loccitane_royal_suite_introduction p:first-child{
+    margin-top:3.4rem;
+    margin-bottom:6.3rem;
+    line-height: 3.2rem;
+}
+.loccitane_royal_suite_introduction p:last-child,
+.loccitane_royal_suite_introduction_reset_selam p:last-child
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 2.6rem;
+    letter-spacing: 0.2rem;
+}
+.loccitane_royal_suite_introduction_reset_selam p:first-child{
+    margin-top:3.4rem;
+    margin-bottom:3.1rem;
+    line-height: 3.2rem;
+}
+.reserve_btn2{
+    background-color: #FFB500;
+    width:52.1rem;
+    margin: 9rem auto 0;
+    height:7.2rem;
+}
+.reserve_btn2 p{
+    line-height: 2.8rem;
+    letter-spacing: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+#collabo2{
+    padding-top:11.9rem;
+    max-width:126rem;
+    margin:0 auto;
+}
+.title2 .border_div .border .aft{
+    left:-35rem;
+}
+.aft .title p:last-child{
+    margin-bottom:5.6rem;
+}
+.aft .introduction_loccitane{
+    width:100%;
+    padding-top:5.1rem;
+    justify-content: space-between;
+}
+.aft .introduction_p p:first-child{
+    margin-bottom:4.5rem;
+}
+.aft .introduction_img_2 img{
+    width:60.9rem;
+    height:34.2rem;
+}
+#collabo3{
+    padding-top:13.7rem;
+    max-width:126rem;
+    margin:0 auto;
+    padding-bottom:10rem;
+}
+.club.aft.loccitane_royal_suite .explanation p{
+    line-height: 3.6rem;
+}
+.club.aft .introduction_loccitane{
+    padding-top:10rem;
+}
+
+@media screen and ( max-width:767px ){
+    /* 全ページ共通 右側メニュー */
+    .sns_menu_inner{
+        width:5.4rem;
+        text-align: center;
+        position:absolute;
+        top:-25rem;
+        background-color:rgba(255, 255, 255, 0.65);
+        border-radius: 0.4rem 0 0 0.4rem;
+        -webkit-border-radius: 0.4rem 0 0 0.4rem;
+        -moz-border-radius: 0.4rem 0 0 0.4rem;
+        -ms-border-radius: 0.4rem 0 0 0.4rem;
+        -o-border-radius: 0.4rem 0 0 0.4rem;
+}
+    .insta_icon{
+        margin: 1.2rem 0.9rem 2.2rem;
+    }
+    .insta_icon p,.facebook_icon p{
+        font-size:0.7rem;
+    }
+    .facebook_icon{
+        margin:0rem 0.9rem 1.5rem;
+        display:inline-block;
+        width:auto;
+    }
+    .ai_btn_set{
+        background-color: #EAEAEA;
+        position:absolute;
+        top:-9rem;
+        width:10rem;
+        right:4.5rem;
+        border-radius: 0.4rem;
+        -webkit-border-radius: 0.4rem;
+        -moz-border-radius: 0.4rem;
+        -ms-border-radius: 0.4rem;
+        -o-border-radius: 0.4rem;
+        opacity:0.9;
+}
+    .ai_btn_set p{
+        font-size:0.9rem;
+        line-height: 2.2rem;
+        text-align: center;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .ai_btn_set::before{
+        content:"";
+        position:absolute;
+        top:100%;
+        left: 53%;
+        margin-left:-1.5rem;
+        border: 0.7rem solid transparent;
+        border-top: 0.8rem solid #EAEAEA;
+        opacity:0.9;
+    }
+    .page-top{
+        right:0.5rem;
+        opacity:0.9;
+    }
+    .ai_btn{
+        width:5.3rem;
+        height:5.3rem;
+        background-color: #EAEAEA;
+        position:absolute;
+        right:3rem;
+        margin-top:1.5rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        opacity:0.9;
+}
+    .ai_btn img{
+        display:flex;
+        justify-content: center;
+        margin:1.5rem auto;
+        width:2.4rem;
+    }
+    .pre_collab_stayplan .hotel_reserve_btn.bg3 {
+        position:fixed;
+        z-index:999;
+        bottom:0;
+        width:8.8rem;
+    }
+    .pre_collab_stayplan .hotel_reserve_btn p{
+        text-align: center;
+        font-size:1.5rem;
+    }
+    .pre_collab_stayplan .hotel_reserve_btn p:first-child{
+        padding:2.6rem 0 0.9rem;
+        line-height: 2.1rem;
+    }
+    .pre_collab_stayplan .hotel_reserve_btn p:last-child{
+        padding-bottom:0.8rem;
+        font-size:0.9rem;
+        line-height: 2rem;
+    }
+    .pankuzu{
+        justify-content: center;
+        margin-left:0;
+    }
+    .nav_link{
+        justify-content: center;
+    }
+    .nav_link p:last-child{
+        padding:0;
+    }
+    .nav_link p:nth-child(2){
+        padding:0 1.2rem;
+    }
+    .pre_collab_stayplan .nav_link{
+        margin-left:1rem;
+    }
+    /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+    .introduction{
+        min-width: auto;
+        
+        margin:7.4rem auto 0;
+    }
+    #pre_collabo_stayplan_1{
+        width:90%;
+        margin:0 auto;
+    }
+    .introduction .title{
+        margin-bottom:3.7rem;
+    }
+    .introduction .title p:nth-child(2){
+        font-size: 2.6rem;
+        margin-bottom:1rem;
+    }
+    .introduction .title p:nth-child(3){
+        font-size:1.5rem;
+        letter-spacing: 0.3rem;
+        line-height: 2.4rem;
+
+    }
+    .introduction .img{
+        flex-wrap: wrap;
+    }
+    .introduction .loccintane_logo,.introduction .kumano_logo{
+        width:100%;
+        height:18rem;
+        display:flex;
+        justify-content: center;
+    }
+    .introduction .loccintane_logo img,.introduction .kumano_logo img{
+        left:7.5rem;
+        top:28%;
+    }
+    .introduction .text_center.text p{
+        font-size:2rem;
+        letter-spacing: 0.2rem;
+        line-height: 2.9rem;
+        
+    }
+    .introduction_p{
+        text-align: center;
+    }
+    .introduction_loccitane{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width:100%;
+        margin:0 auto 0;
+    }
+    .introduction_loccitane img{
+        width:18.5rem;
+        margin-right: 0.4rem;
+        height:12.2rem;
+    }
+    
+    .introduction_p p{
+        margin-right:0;
+        margin-bottom:6rem;
+        font-size:1.6rem;
+        margin-right:0;
+    }
+    .introduction_p:last-child{
+        margin-right:0;
+    }
+    .introduction_img{
+        width:100%;
+        justify-content: space-between;
+        margin-top:6rem;
+    }
+    .flex3{
+        align-self:flex-end;
+    }
+    .flex2,.flex4{
+        margin-top: 0.4rem;
+    }
+    .align-self{
+        width:49.5%;
+    }
+    .align-self div,.align-self-right div{
+        max-width:18.5rem;
+    }
+    .align-self div img,.align-self-right div img{
+        width:100%;
+    }
+    .align-self-right{
+        margin-top:6.1rem;
+        flex-wrap: wrap;
+        width:49.5%;
+    }
+    
+    .introduction_loccitane:last-child{
+        margin-top:5rem;
+    }
+    .introduction_loccitane .introduction_p p{
+        margin-bottom:0;
+    }
+    #collabo1{
+        padding-top:9rem;
+        width:100%;
+    }
+    
+    .loccitane_royal_suite .title p:first-child{
+        font-size:1.4rem;
+        letter-spacing: 0.2rem;
+        margin-bottom:1.2rem;
+    }
+    .loccitane_royal_suite .explanation p:first-child{
+        margin-bottom:3.6rem;
+    }
+    .loccitane_royal_suite_introduction p:last-child,
+    .loccitane_royal_suite_introduction_reset_selam p:last-child
+    {
+        
+        line-height: 2.4rem;
+        letter-spacing: 0.1rem;
+    }
+    .loccitane_royal_suite .title span{
+        font-size:2.2rem;
+        letter-spacing: 0.3rem;
+    }
+    .title2 p{
+        font-size:2.6rem;
+        letter-spacing: 0.3rem;
+        margin-bottom:3.7rem;
+    }
+    .title .border_div{
+        display:none;
+    }
+    .loccitane_royal_suite_mv img{
+        object-fit: cover;
+    }
+    .loccitane_royal_suite .explanation{
+        margin:4.6rem auto 10rem;
+        width:90%;
+    }
+    .loccitane_royal_suite_introduction p:first-child{
+        margin-top:3.9rem;
+        margin-bottom:3.9rem;
+        font-weight:bold;
+    }
+    .loccitane_royal_suite_introduction_reset_selam p:first-child{
+        font-weight: bold;
+        margin:3.9rem auto;
+    }
+    .loccitane_royal_suite .explanation p{
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+        line-height: 2.7rem;
+    }
+    .loccitane_royal_suite_flex .box{
+        flex-wrap: wrap;
+    }
+    .loccitane_royal_suite_flex{
+        width:90%;
+    }
+    .loccitane_royal_suite_flex .flex_box{
+        margin-bottom:9rem;
+    }
+    .loccitane_royal_suite_flex .flex_box:last-child{
+        margin-bottom: 0;
+    }
+    .reserve_btn2{
+        width:100%;
+        display:inline-block;
+
+    }
+    .aft .introduction_img{
+        width:80%;
+        margin:6.8rem auto 0;
+    }
+    .aft .introduction_img img{
+        width:100%;
+        height:100%;
+    }
+    .aft .introduction_img_2 img{
+        width:100%;
+        object-fit: cover;
+    }
+    .aft_menu.introduction_loccitane{
+        flex-direction: column-reverse;
+        margin:8.4rem auto 0;
+    }
+    .aft_menu.reserve_btn2{
+        margin:6.7rem auto 0;
+    }
+
+    .introduction_img_2{
+        margin-left:0;
+    }
+    .loccitane_royal_suite.aft .title2 p{
+        letter-spacing: 0.1rem;
+        margin-bottom:1.2rem;
+    }
+    .aft .title p:last-child{
+        margin-bottom:3.8rem;
+    }
+    .introduction_p:last-child{
+        margin-top:0;
+
+    }
+    .aft .introduction_loccitane{
+        padding-top:0;
+    }
+    .aft .introduction_p p:first-child{
+        letter-spacing:0.2rem
+    }
+    .aft .introduction_loccitane .introduction_p p{
+        letter-spacing: 0.15rem;
+        margin-top:3.2rem;
+        margin-bottom: 0;
+    }
+    #collabo2{
+        padding-top:9rem;
+    }
+    #collabo3{
+        padding-top:9rem;
+    }
+    #collabo3 .loccitane_royal_suite.aft.club .explanation{
+        margin: 4.1rem auto 0;
+    }
+    .club.aft.loccitane_royal_suite .explanation p{
+        margin-bottom:0;
+    }
+    .club.aft .introduction_loccitane{
+        padding-top:0;
+        margin-top: 0;
+    }
+    .club_bar.
+}
+@media screen and ( max-width:375px ){
+    .introduction .title p:nth-child(2){
+        font-size: 2rem;
+        font-weight:800;
+    }
+    .introduction .title p:nth-child(3){
+        letter-spacing: 0.19rem;
+    }
+    .introduction .text_center.text p{
+        font-size: 1.65rem;
+        letter-spacing: 0.1rem;
+    }
+    .title2 p{
+        font-size:2.4rem;
+    }
+    .loccitane_royal_suite .explanation p{
+        font-size:1.5rem
+    }
+    .loccitane_royal_suite_introduction p:first-child{
+        font-size:1.9rem
+    }
+    .introduction_loccitane .introduction_p p{
+        letter-spacing: 0.15rem;
+    }
+}

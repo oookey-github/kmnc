@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+.pc{display: inherit;}
+.sp{display: none;}
+@media screen and ( max-width:767px ){
+	.pc{display: none;}
+	.sp{display: inherit;}
+}
+html{font-size: 62.5%;}
+body{
+	font-size:1.6em;
+	font-style: normal;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    color: #292929
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+@media (min-width: 768px) {
+    body {
+        min-width: 1024px;
+    }
+}
+@media only screen and (max-width: 767px){
+	html{font-size: calc( 1000vw / 430vw );}
+}
+
+.experience .header{
+    background-image: url(../image/header_experience.png);
+}
+
+/* 体験プラン */
+.exp_list{
+    
+}
+.exp_li_content{
+    margin-top: 10rem;
+}
+.exp_list ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8rem auto 0rem;
+    width: 126rem;
+}
+.exp_list li{
+    width: 38rem;
+    margin: 0rem 2rem 8rem;
+}
+.exp_list ul img{
+    height: 22rem;
+    width: 100%;
+    object-fit: cover;
+}
+.exp_list ul h2{
+    font-size: 2rem;
+    margin: 2rem 0 1.5rem;
+    font-weight: bold;
+}
+.exp_list ul p{
+    letter-spacing: 0.2rem;
+}
+.exp_list ul .btn{
+    width: fit-content;
+    margin-right: 0;
+    border-bottom: 0.1rem solid;
+    margin-top: 2rem;
+}
+.experience .title {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    letter-spacing: 0.7rem;
+    line-height: 3rem;
+}
+.experience .title span{
+    font-size: 3.6rem;
+    line-height: 5rem;
+}
+.experience .title::before,
+.experience .title::after {
+    content: '';
+    flex-grow: 0.1;/* 余白を分け与える */
+    height: 0.1rem;
+    background-color: #292929;
+}
+.experience .title::before {
+    margin-right: 5rem;
+}
+.experience .title::after {
+    margin-left: 5rem;
+}
+
+@media screen and (max-width: 767px){
+    .experience .title{
+        margin-left: 0;
+        line-height: 2.7rem;
+        letter-spacing: 0.4rem;
+    }
+    .exp_list ul{
+        width: 30rem;
+        margin: 6rem auto;
+    }
+    .exp_list li{
+        width: 30rem;
+        margin: 0rem auto 7rem;
+    }
+    .experience .title span{
+        font-size: 2.6rem;
+    }
+    .experience .title span{
+        line-height: 3.5rem;
+    }
+    .experience .title::before {
+        margin-right: 3rem;
+    }
+    .experience .title::after {
+        margin-left: 3rem;
+    }
+}

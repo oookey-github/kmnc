@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180.082" height="505.371" viewBox="0 0 180.082 505.371">
+  <defs>
+    <filter id="星_空_鑑_賞_会" x="0" y="139.371" width="78" height="366" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#35526f"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_839" data-name="グループ 839" transform="translate(-654.959 -570.629)">
+    <path id="線_55" data-name="線 55" d="M.5,54h-1V0h1Z" transform="translate(829.041 570.629)" fill="#fff"/>
+    <path id="線_199" data-name="線 199" d="M.5,54h-1V0h1Z" transform="translate(770 956.629)" fill="#fff"/>
+    <g transform="matrix(1, 0, 0, 1, 654.96, 570.63)" filter="url(#星_空_鑑_賞_会)">
+      <text id="星_空_鑑_賞_会-2" data-name="星
+空
+鑑
+賞
+会" transform="translate(18 194.37)" fill="#fff" font-size="42" font-family="YuMin-Medium, YuMincho" font-weight="500" letter-spacing="0.3em"><tspan x="0" y="0">星</tspan><tspan x="0" y="72">空</tspan><tspan x="0" y="144">鑑</tspan><tspan x="0" y="216">賞</tspan><tspan x="0" y="288">会</tspan></text>
+    </g>
+    <text id="S_t_a_r_r_y_" data-name="S
+t
+a
+r
+r
+y
+" transform="translate(829.041 660.643)" fill="#fff" font-size="18" font-family="YuMin-Medium, YuMincho" font-weight="500" letter-spacing="0.2em"><tspan x="-5.031" y="0">S</tspan><tspan x="-3.042" y="22">t</tspan><tspan x="-4.212" y="44">a</tspan><tspan x="-3.402" y="66">r</tspan><tspan x="-3.402" y="88">r</tspan><tspan x="-4.383" y="110">y</tspan><tspan x="0" y="132"></tspan></text>
+    <text id="S_k_y" data-name="S
+k
+y" transform="translate(800 760.129)" fill="#fff" font-size="18" font-family="YuMin-Medium, YuMincho" font-weight="500" letter-spacing="0.2em"><tspan x="-5.031" y="0">S</tspan><tspan x="-4.482" y="22">k</tspan><tspan x="-4.383" y="44">y</tspan></text>
+    <text id="V_i_e_w_i_n_g" data-name="V
+i
+e
+w
+i
+n
+g" transform="translate(770 794.629)" fill="#fff" font-size="18" font-family="YuMin-Medium, YuMincho" font-weight="500" letter-spacing="0.2em"><tspan x="-6.381" y="0">V</tspan><tspan x="-2.511" y="22">i</tspan><tspan x="-4.302" y="44">e</tspan><tspan x="-6.507" y="66">w</tspan><tspan x="-2.511" y="88">i</tspan><tspan x="-5.148" y="110">n</tspan><tspan x="-4.527" y="132">g</tspan></text>
+  </g>
+</svg>
