@@ -58,7 +58,6 @@ body{
     padding-bottom:4.5rem;
 }
 #guest_room_guidance .title p:last-child{
-    margin-top:1.2rem;
     margin-bottom:0;
 }
 .guest_room .header{
@@ -318,8 +317,9 @@ footer .each_page a{
     .pankuzu{
         margin-left:2rem;
     }
-    .nav_link{
+    .guest_room .nav_link{
         justify-content: center;
+        margin-left:2rem;
     }
     .nav_link p:last-child{
         padding:0;
@@ -331,6 +331,9 @@ footer .each_page a{
     .guest_room .guest_room_guidance_inner .title:first-child{
         margin-top:2.9rem;
         margin-left:2.8rem;
+    }
+    #guest_room_guidance .title p:first-child{
+        font-size:2rem;
     }
     .guest_room section{
         padding-top:0;

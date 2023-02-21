@@ -1,8 +1,13 @@
-.order5{
-    order:5;
+.float-r{
+    float:right;
+    
 }
-.order6{
-    order: 6;
+.float-l{
+    float:left;
+    
+}
+.header{
+    background: url(../image/hospitality_header.png) no-repeat!important;
 }
 .border_div{
     position:relative;
@@ -10,9 +15,13 @@
 .omotenashi .title .border_div .border {
     left:0rem;
 }
+.omotenashi .title{
+    margin-top:6.1rem;
+}
 .omotenashi .title p{
     margin-left:12rem;
     line-height: 2.4rem;
+    margin-bottom:1.8rem;
 }
 .omotenashi .title p:last-child{
     letter-spacing: 0.3rem;
@@ -20,6 +29,7 @@
 }
 #omotenashi_text{
     margin-top:5.5rem;
+    padding-top:0;
 }
 .main_text.omotenashi{
     text-align: center;
@@ -42,31 +52,133 @@
 .sub_text p:first-child{
 margin-bottom:4rem;
 }
-#omotenashi_1{
-    padding-top:12.9rem;
+section{
+    padding-top:20.1rem;
 }
 
 .omotenashi_1{
+    width:90%;
+    margin:0 auto;
+    clear: both;
+}
+.omotenashi_1 .image{
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
-    width:95%;
+    align-content: baseline;
+    width:50%;
 }
 .hospitality_img{
-    width:68.6rem;
+    max-width:68.6rem;
 }
 .hospitality_img img{
     width:100%;
 }
 .omotenashi_img_view{
-    width:68.6rem;
+    width:45%;
+    overflow: hidden;
+    height:22rem;
 }
-#omotenashi_1 .border_div{
-    width:10%;
+.omotenashi_img_view img{
+    width:25.8rem;
+    margin-top:6.1rem;
+    margin-left:5.9rem;
+    
 }
-#omotenashi_1 .border{
+.border_div{
+    width:10rem;
+}
+.border{
     bottom:0;
-    top:1rem;
+    top:1.5rem;
     height:1px;
-    left:2rem
+    left:3.5rem;
+}
+.right_text{
+    width:50%;
+}
+.right_text_inner{
+    width:100%;
+}
+.right_text .title{
+    margin-left:7rem;
+    margin-top:0;
+    width:60%;
+}
+.right_text .title p{
+    letter-spacing: 0.6rem;
+    line-height: 4.2rem;
+    margin-left:0;
+    margin-bottom:0;
+}
+
+.omotenashi_1 .title .title_inner{
+    margin-top:5.5rem;
+}
+.omotenashi_1 .title .title_inner p{
+    letter-spacing: 0.3rem;
+    line-height: 2.6rem;
+    margin:0 auto 3rem;
+}
+.omotenashi_1 .title .title_inner .reserve_btn p{
+    margin-bottom:0; 
+}
+
+#omotenashi_2 .omotenashi_img_view img,
+#omotenashi_4 .omotenashi_img_view img,
+#omotenashi_6 .omotenashi_img_view img{
+    margin-right:5.9rem;
+    margin-left:0;
+}
+#omotenashi_2 .omotenashi_img_view,
+#omotenashi_4 .omotenashi_img_view,
+#omotenashi_6 .omotenashi_img_view{
+    justify-content: flex-end;
+}
+#omotenashi_7{
+    padding-bottom:16.6rem;
+}
+.right_text .title .small_text,
+.omotenashi .title p:last-child{
+    letter-spacing: 0.15rem;
+    line-height: 2.6rem;
+}
+.kome{
+    padding-left:1em;
+    text-indent: -1em;
+}
+@media screen and (max-width: 767px){
+    .nav_link{
+        margin-left:2rem;
+    }
+    .omotenashi .title{
+        margin-top:3rem;
+    }
+    .omotenashi .title p{
+        margin-left:5rem;
+    }
+    .omotenashi .title .border_div{
+        display:inline-block;
+    }
+    .border{
+        padding-left:4rem;
+    }
+    .omotenashi_1{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .omotenashi_1 .image{
+        width:100%;
+    }
+    .hospitality_img{
+        width:100%;
+    }
+    .border_div{
+        width:auto;
+    }
+    .right_text .title{
+        margin-left:0;
+    }
+    .right_text_inner{
+        width:100%;
+    }
 }
