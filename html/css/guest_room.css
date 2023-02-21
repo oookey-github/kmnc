@@ -383,11 +383,17 @@ footer .each_page a{
     .guest_room .menu_sp{
         padding-bottom:5.3rem;
         
-    }.guest_room_guidance_inner .menu .flex{
+    }
+    .guest_room .menu_sp p{
+        font-size:2.8rem;
+        margin-top:0.5rem;
+    }
+    .guest_room_guidance_inner .menu .flex{
         width:30.1rem;
         margin:0 auto;
         justify-content: space-between;
     }
+
     #guest_room_guidance{
         width:100%;
         padding: 0;
