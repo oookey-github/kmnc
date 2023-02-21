@@ -516,6 +516,7 @@ body{
     .aft .introduction_img{
         width:97%;
         margin:6.8rem auto 0;
+        order:1;
     }
     .aft .introduction_img img{
         width:100%;
@@ -574,9 +575,15 @@ body{
     }
     .club.aft .introduction_loccitane{
         padding-top:0;
-        margin-top: 0;
+        margin-top: 6.4rem;
+        flex-direction: column-reverse;
     }
-    .club_bar.
+    .pre_collab_stayplan footer .each_page{
+        justify-content: right!important;
+    }
+    .pre_collab_stayplan footer .each_page a{
+        margin-right: 4.2rem;
+    }
 }
 @media screen and ( max-width:375px ){
     .introduction .title p:nth-child(2){
@@ -602,4 +609,5 @@ body{
     .introduction_loccitane .introduction_p p{
         letter-spacing: 0.15rem;
     }
+    
 }
