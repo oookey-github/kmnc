@@ -37,11 +37,6 @@ body{
     height: auto;
 }
 .tourism .kumano_banner .inner{
-    width: auto;
-    height: auto;
-    margin: auto;
-    display: block;
-    position:static;
 }
 .tourism .kumano_banner .multiply{
     background-color: transparent;
@@ -78,7 +73,7 @@ body{
 }
 .tourism .kumano_banner .right{
     bottom: 8rem;
-    right: 5%;
+    right: -4rem;
 }
 
 /* タイトル */
@@ -190,16 +185,16 @@ body{
         height: 79rem;
     }
     .tourism .kumano_banner .inner{
-        position: relative;
+
     }
     .tourism .kumano_banner .left h2{
         font-size: 3.4rem;
         top: 13%;
     }
     .tourism .kumano_banner .right{
-        margin: -27rem auto;
+        margin: 0rem auto;
         width: 100%;
-        bottom: auto;
+        bottom: 6rem;
         right: auto;
     }
     .tourism .kumano_banner .vertical_text{
@@ -223,6 +218,6 @@ body{
         width: 16.6rem !important;
     }
     .tourism_list ul{
-        width: 39rem;
+        width: 37rem;
     }
 }

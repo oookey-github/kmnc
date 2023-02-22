@@ -96,6 +96,8 @@ body img{
 }
 .sns_menu_inner{
     text-align: center;
+    letter-spacing: normal;
+    line-height: normal;
 }
 .insta_icon{
     margin-bottom:2.2rem;
