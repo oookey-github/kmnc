@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="../css/top.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/restaurant.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="../js/jquery-3.6.3.min.js"></script>
     <script src="../js/simpleParallax.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/slick.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
     <title>お食事のご案内</title>
     <script>
         // スムーススクロール
@@ -256,14 +261,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="meal">
-                    <div class="meal_inner flex fadein">
-                        <img src="../image/meal_1.png">
-                        <img src="../image/meal_2.png">
-                        <img src="../image/meal_3.png">
+                <ul class="meal">
+                    <div class="meal_inner fadein">
+                        <ul class="slick-sp-pc">
+                        <li><img src="../image/meal_1.png"></li>
+                        <li><img src="../image/meal_2.png"></li>
+                        <li><img src="../image/meal_3.png"></li>
+                        <li><img src="../image/meal_1.png"></li>
+                        <li><img src="../image/meal_2.png"></li>
+                        <li><img src="../image/meal_3.png"></li>
+                        </ul>
                     </div>
                     <div class=""></div>
-                </div>
+                </ul>
                 <div class="accordion meal_menu fadein">
                     <div class="option">
                         <input type="checkbox" class="toggle" id="toggle1" >
@@ -336,55 +346,57 @@
                     </div>
                     
                 </div>
-                <div class="">
-                    <div class="meal">
-                        <div class="meal_inner flex fadein">
-                            <img src="../image/meal_4.png">
-                            <img src="../image/meal_5.png">
-                            <img src="../image/meal_6.png">
-                        </div>
-                        <div class=""></div>
+                <div class="meal">
+                    <div class="meal_inner fadein">
+                        <ul class="slick-sp-pc">
+                            <li><img src="../image/meal_4.png"></li>
+                            <li><img src="../image/meal_5.png"></li>
+                            <li><img src="../image/meal_6.png"></li>
+                            <li><img src="../image/meal_4.png"></li>
+                            <li><img src="../image/meal_5.png"></li>
+                            <li><img src="../image/meal_6.png"></li>
+                        </ul>
                     </div>
-                    <div class="accordion meal_menu">
-                        <div class="option">
-                            <input type="checkbox" class="toggle" id="toggle2" >
-                                <label class="accordion_title" for="toggle2">御品書き</label>
-                            <div class="fs18 meal_menu_text accordion_content">
-                                <div class="meal_menu_text_inner">
-                                    <p>・輝き</p>
-                                    <p class="pd-1">三重県産 大豆のムース　<br class="sp">真珠貝のカクテル仕立て <br>伊勢湾の冬景色の<br class="sp">イメージで</p>
-                                </div>
-                                <div class="meal_menu_text_inner">
-                                    <p>・海と山</p>
-                                    <p class="pd-1">熊野産 河豚のフリット<br>地元産 沢庵と大内山<br class="sp">ヨーグルトの燻製ソース</p>
-                                </div>
-                                <div class="meal_menu_text_inner">
-                                    <p>・里山</p>
-                                    <p class="pd-1">熊野地鶏の自家製摘入と<br class="sp">三重なばなの清まし汁<br>白トリュフの香り</p> 
-                                </div>
-                                <div class="meal_menu_text_inner">
-                                    <p>・熊野灘 </p>
-                                    <p class="pd-1">三重県産 伊勢海老と熊野<br class="sp">本鮪の御造里<br>伊勢二見ヶ浦　薪窯焼きの天然塩　<br class="sp">岩戸の塩<br>熊野地方　冬の風物詩　サンズポン酢</p> 
-                                </div>
-                                <div class="meal_menu_text_inner">
-                                    <p>・季節</p>
-                                    <p class="pd-1">鳥羽産　ブランド牡蠣　<br class="sp">桃こまち <br class="pc">湯浅ワイナリーの白ワイン<br class="sp">ソース</p>
-                                </div>
-                                <div class="meal_menu_text_inner">
-                                    <p>・三重ブランド</p>
-                                    <p class="pd-1">松阪牛の里　オーシャンファームの<br class="sp">松阪牛<br class="pc">和歌山県無形民俗文化財　<br class="sp">紀州備長炭焼き<br>マイヤーレモンステーキソース　<br class="sp">山葵　白トリュフ塩</p>
-                                </div>
-                                <div class="meal_menu_text_inner">
-                                    <p>・日本最古</p><p class="pd-1">世界遺産　花の窟神社奉納米　<br class="sp">イザナミ米御飯<br>高菜漬け　沢庵糠漬け　紀州南高梅　<br class="sp">紀和味噌汁<br class="pc">自家製 秋刀魚魚醤胡麻</p> 
-                                </div>
-                                <div class="meal_menu_text_inner">
-                                    <p>・温州蜜柑 </p><p class="pd-1">温州蜜柑とチーズテリーヌ<br class="pc">大内山酪農の<br class="sp">ミルクアイス添え</p>
-                                </div>
+                    <div class=""></div>
+                </div>
+                <div class="accordion meal_menu">
+                    <div class="option">
+                        <input type="checkbox" class="toggle" id="toggle2" >
+                            <label class="accordion_title" for="toggle2">御品書き</label>
+                        <div class="fs18 meal_menu_text accordion_content">
+                            <div class="meal_menu_text_inner">
+                                <p>・輝き</p>
+                                <p class="pd-1">三重県産 大豆のムース　<br class="sp">真珠貝のカクテル仕立て <br>伊勢湾の冬景色の<br class="sp">イメージで</p>
+                            </div>
+                            <div class="meal_menu_text_inner">
+                                <p>・海と山</p>
+                                <p class="pd-1">熊野産 河豚のフリット<br>地元産 沢庵と大内山<br class="sp">ヨーグルトの燻製ソース</p>
+                            </div>
+                            <div class="meal_menu_text_inner">
+                                <p>・里山</p>
+                                <p class="pd-1">熊野地鶏の自家製摘入と<br class="sp">三重なばなの清まし汁<br>白トリュフの香り</p> 
+                            </div>
+                            <div class="meal_menu_text_inner">
+                                <p>・熊野灘 </p>
+                                <p class="pd-1">三重県産 伊勢海老と熊野<br class="sp">本鮪の御造里<br>伊勢二見ヶ浦　薪窯焼きの天然塩　<br class="sp">岩戸の塩<br>熊野地方　冬の風物詩　サンズポン酢</p> 
+                            </div>
+                            <div class="meal_menu_text_inner">
+                                <p>・季節</p>
+                                <p class="pd-1">鳥羽産　ブランド牡蠣　<br class="sp">桃こまち <br class="pc">湯浅ワイナリーの白ワイン<br class="sp">ソース</p>
+                            </div>
+                            <div class="meal_menu_text_inner">
+                                <p>・三重ブランド</p>
+                                <p class="pd-1">松阪牛の里　オーシャンファームの<br class="sp">松阪牛<br class="pc">和歌山県無形民俗文化財　<br class="sp">紀州備長炭焼き<br>マイヤーレモンステーキソース　<br class="sp">山葵　白トリュフ塩</p>
+                            </div>
+                            <div class="meal_menu_text_inner">
+                                <p>・日本最古</p><p class="pd-1">世界遺産　花の窟神社奉納米　<br class="sp">イザナミ米御飯<br>高菜漬け　沢庵糠漬け　紀州南高梅　<br class="sp">紀和味噌汁<br class="pc">自家製 秋刀魚魚醤胡麻</p> 
+                            </div>
+                            <div class="meal_menu_text_inner">
+                                <p>・温州蜜柑 </p><p class="pd-1">温州蜜柑とチーズテリーヌ<br class="pc">大内山酪農の<br class="sp">ミルクアイス添え</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </section>
         <section class="restaurant3" id="restaurant3">
@@ -423,10 +435,16 @@
                     
                 </div>
                 <div class="meal">
-                    <div class="meal_inner flex fadein">
-                        <img src="../image/meal_7.png">
-                        <img src="../image/meal_8.png">
-                        <img src="../image/meal_9.png">
+                    <div class="meal_inner fadein">
+                        <ul class="slick-sp-pc">
+                            <li><img src="../image/meal_7.png"></li>
+                            <li><img src="../image/meal_8.png"></li>
+                            <li><img src="../image/meal_9.png"></li>
+                            <li><img src="../image/meal_7.png"></li>
+                            <li><img src="../image/meal_8.png"></li>
+                            <li><img src="../image/meal_9.png"></li>
+                        </ul>
+                        
                     </div>
                     <div class=""></div>
                 </div>

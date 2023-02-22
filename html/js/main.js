@@ -58,6 +58,22 @@ $(function(){
         
     });
 });
+/**スマホ版とPC両用スライダー */
+$(function(){
+    $('.slick-sp-pc').slick({
+        autoplay: true,
+        dots: true,
+        dotsClass: "slick_exp-dots",
+        infinite: true,
+        speed: 1500,
+        slidesToShow: 3,
+        centerMode: true,
+        variableWidth: true,
+        initialSlide:5,
+        autoplaySpeed:2000,
+        arrows:false,             //追加（矢印非表示        
+    });
+});
 
 // 心揺さぶる体験
 $(function(){
