@@ -103,7 +103,21 @@ $(".hotel_reserve_inner a").click(function () {//ナビゲーションのリン�
 // パララックス
 var image = document.getElementsByClassName('parallax');
 new simpleParallax(image, {
-	scale: 1.2,
+	scale: 1.3,
     delay: .6,
 	transition: 'cubic-bezier(0,0,0,1)'
+});
+
+$(function () {
+  $(window).scroll(function () {
+    const windowHeight = $(window).height();
+    const scroll = $(window).scrollTop();
+
+    $('.fadein').each(function () {
+      const targetPosition = $(this).offset().top;
+      if (scroll > targetPosition - windowHeight + 200) {
+        $(this).addClass("is-fadein");
+      }
+    });
+  });
 });
