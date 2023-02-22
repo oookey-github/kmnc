@@ -242,12 +242,16 @@ body{
 }
 .restaurant_info_img_2{
     position:absolute;
-    left:34%;
+    left:42%;
     top:1rem;
+    width:79.6rem;
+    height:51.3rem;
 }
 .restaurant_info_img_2 img{
-    width:79.6rem;
     margin-left:6.25rem;
+    width:100%;
+    height:100%;
+    object-fit: cover;
 }
 .restaurant_info_explanation_text{
     flex-wrap: wrap;
