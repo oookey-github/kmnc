@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/restaurant.css">
     <link rel="stylesheet" href="../css/guest_room.css">
@@ -13,13 +12,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="../js/jquery-3.6.3.min.js"></script>
-    <script rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-    <script src="../js/main.js"></script>
-
     <title>客室のご案内</title>
+
+    <script>
+        // スムーススクロール
+    $(function(){
+        $('a[href^="#"]').click(function(){
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, 500);
+        return false;
+    });
+    });
+
+    </script>
 </head>
-<body>
-    <div class="guest_room" id="page-top-sp">
+<body id="top">
+    <div class="guest_room">
         <header>
             <!--------------全ページ共通-------------->
             <div class="flex header">
@@ -78,7 +88,7 @@
                     <div class="flex page-top_reserve_btn">
                         
                         <div class="page-top">
-                            <a href="#page-top-sp"></a>
+                            <a href="#top"></a>
                         </div>
                         
                         <div class="hotel_reserve_btn bg3">
@@ -110,7 +120,7 @@
                     </div>
                 </div>
                 
-                    <div class="page-top" id="page-top-sp">
+                    <div class="page-top">
                         <a href="#top"></a>
                     </div>
                 
@@ -684,7 +694,8 @@
         
             </div>
         </footer>
-        </body>
-        </html>
-        <script src="../js/main.js"></script>
-        <link rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js">
+    <script rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
