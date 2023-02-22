@@ -58,22 +58,6 @@ $(function(){
         
     });
 });
-/**スマホ版とPC両用スライダー */
-$(function(){
-    $('.slick-sp-pc').slick({
-        autoplay: true,
-        dots: true,
-        dotsClass: "slick_exp-dots",
-        infinite: true,
-        speed: 1500,
-        slidesToShow: 3,
-        centerMode: true,
-        variableWidth: true,
-        initialSlide:5,
-        autoplaySpeed:2000,
-        arrows:false,             //追加（矢印非表示        
-    });
-});
 
 // 心揺さぶる体験
 $(function(){
@@ -105,7 +89,7 @@ $(function(){
 // });
 // });
 
-// 宿泊予約
+// 宿泊予約PC
 $(".hotel_reserve").hover(function () {//ボタンがクリックされたら
 	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
     $(".hotel_reserve_inner").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
@@ -114,6 +98,16 @@ $(".hotel_reserve").hover(function () {//ボタンがクリックされたら
 $(".hotel_reserve_inner a").click(function () {//ナビゲーションのリンクがクリックされたら
     $(".hotel_reserve").removeClass('active');//ボタンの activeクラスを除去し
     $(".hotel_reserve_inner").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+});
+// 宿泊予約SP
+$(".pre_collab_stayplan").click(function () {//ボタンがクリックされたら
+	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+    $(".hotel_reserve_inner_sp").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+});
+
+$(".hotel_reserve_inner_sp a").scroll(function () {//ナビゲーションのリンクがクリックされたら
+    $(".pre_collab_stayplan").removeClass('active');//ボタンの activeクラスを除去し
+    $(".hotel_reserve_inner_sp").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
 
 // パララックス
