@@ -46,6 +46,19 @@ body img{
 	overflow: auto;
 }
 
+.fadein {
+    /* 最初は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5rem);
+    transition: opacity 1.7s, visibility 1.7s, transform 1.7s;
+  }
+  /* フェードイン時に入るクラス */
+  .is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
 
 /* 右側メニュー */
 /* ボタン */
@@ -125,8 +138,14 @@ line-height: 1.1rem;;
     -o-border-radius: 50%;
     right:14rem;
     bottom:0rem;
+    cursor: pointer;
 }
-.page-top:before{
+.page-top a{
+    display:inline-block;
+    height:5.3rem;
+    width:5.3rem;
+}
+.page-top a:before{
     content:"";
     left: 2.2rem;
     width: 1rem;
@@ -812,12 +831,12 @@ line-height: 1.1rem;;
     width: 60rem;
     height: 60rem;
     margin-bottom: 6.5rem;
+    clip-path: circle(30rem at center);
 }
 .circle_img img{
     width: 100%;
     height: 60rem;
     object-fit: cover;
-    border-radius: 50%;
 }
 .kumano_circle .title{
     margin-bottom: 6.5rem;
@@ -837,18 +856,16 @@ line-height: 1.1rem;;
 }
 /* 日本書紀に遡る… */
 .kumano_banner{
-    background-image: url(../image/kumano_banner.png);
     position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    color: #fff;
     width: 100%;
     height: 69rem;
-    background-position: center;
-    background-size: cover;
-
-    color: #fff;
+    object-fit: cover;
+}
+.kumano_banner .parallax img{
+    width: 100%;
+    height: 69rem;
+    object-fit: cover;
 }
 .kumano_banner .inner{
     width: 120rem;
@@ -856,7 +873,12 @@ line-height: 1.1rem;;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
 }
 .kumano_banner .left{
 
@@ -1404,7 +1426,7 @@ line-height: 1.1rem;;
         width: 30vh;
         min-width: 30rem;
         height: 52vh;
-        min-height: 52rem;
+        min-height: 49rem;
     }
     .mc_text{
         margin: 0 auto;
@@ -1429,13 +1451,17 @@ line-height: 1.1rem;;
         margin-bottom: 0;
     }
     .mc_2{
-        margin-top: 16rem;
+        /* margin-top: 16rem; */
+        margin-top: 13rem;
     }
     .mc_item_2{
         height: 49rem;
         width: 36rem;
         min-width: 35rem;
         position: static;
+    }
+    .mc_img_2 img,.mc_item_3 img,.mc_img_4 img{
+        height: 50rem !important;
     }
     .mc_2 .mc_title{
         margin-top: 10rem;
@@ -1449,7 +1475,8 @@ line-height: 1.1rem;;
         left: -6.5rem;
     }
     .mc_3{
-        margin-top: 16rem;
+        /* margin-top: 16rem; */
+        margin-top: 12rem;
         flex-direction: inherit;
     }
     .mc_item_3{
@@ -1475,6 +1502,7 @@ line-height: 1.1rem;;
     .mc_4{
         background-image: none;
         padding: 0;
+        margin-top: 10rem;
     }
     .mc_4 .mc_title{
         font-size: 3.2rem !important;
@@ -1672,6 +1700,10 @@ line-height: 1.1rem;;
         width: 30rem;
         height: 30rem;
         margin-bottom: 4rem;
+        clip-path: circle(15rem at center);
+    }
+    .circle_img img{
+        height: 30rem;
     }
     /* 熊野バナー */
     .kumano_banner{
