@@ -1,19 +1,11 @@
-// ページ内リンクスクロール
-$('#page-link a[href*="#"]').click(function () {//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
-	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
-	var pos = $(elmHash).offset().top;	//idの上部の距離を取得
-	$('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
-	return false;
-});
+// // ページ内リンクスクロール
+// $('#page-link a[href*="#"]').click(function () {//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
+// 	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+// 	var pos = $(elmHash).offset().top;	//idの上部の距離を取得
+// 	$('body,html').animate({scrollTop: pos}, 400); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+// 	return false;
+// });
 
-// ページトップボタン
-const pagetopBtn = document.querySelector('.page-top');
-pagetopBtn.addEventListener('click',  function(){
-    window.scrollTo({
-        top:0,
-        behavior: "smooth"
-    })
-})
 // ページトップボタン
 $('#page-top-sp').click(function () {
     $('body,html').animate({
@@ -62,7 +54,7 @@ $(function(){
               breakpoint: 767, // 500px未満で・・・
               settings: "unslick", // スライダーを無効
             },
-          ],
+        ],
         
     });
 });
@@ -89,11 +81,10 @@ $(function(){
 // スムーススクロール
 $(function(){
     $('a[href^="#"]').click(function(){
-    var speed = 500;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
     var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+    $("html, body").animate({scrollTop:position}, 500);
     return false;
 });
 });
@@ -116,4 +107,3 @@ new simpleParallax(image, {
     delay: .6,
 	transition: 'cubic-bezier(0,0,0,1)'
 });
-  

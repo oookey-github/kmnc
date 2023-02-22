@@ -12,14 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/jquery-3.6.3.min.js"></script>
     <script rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script src="../js/main.js"></script>
 
     <title>客室のご案内</title>
 </head>
 <body>
-    <div class="guest_room">
+    <div class="guest_room" id="page-top-sp">
         <header>
             <!--------------全ページ共通-------------->
             <div class="flex header">
@@ -77,8 +77,8 @@
                     </div>
                     <div class="flex page-top_reserve_btn">
                         
-                        <div class="page-top"  id="page-top">
-                            <a href=""></a>
+                        <div class="page-top">
+                            <a href="#page-top-sp"></a>
                         </div>
                         
                         <div class="hotel_reserve_btn bg3">
@@ -514,7 +514,7 @@
                     </div>
                     <div>
                         
-                        <div class="each_page flex">
+                        <div class="each_page flex guest_room">
                             <div class="each_page_inner">
                                 <div class="page_btn">
                                     <a href="" class="flex">
