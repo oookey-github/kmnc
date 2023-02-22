@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/reset.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/top.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/restaurant.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/news.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/custom.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/slick.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/slick-theme.css">
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=M+PLUS+1p:wght@100;300;400;500;700&display=swap" rel="stylesheet">
