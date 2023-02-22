@@ -1289,10 +1289,11 @@ min-width:130rem;
     .each_page{
         margin-top:6rem;
         width:100%;
+        justify-content: center;
     }
-    .each_page_inner:first-child{
+    /* .each_page_inner:first-child{
         width:42%;
-    }
+    } */
     .each-page_inner:last-child{
         width:60%;
     }
