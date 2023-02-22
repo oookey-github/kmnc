@@ -1001,6 +1001,9 @@ min-width:130rem;
     .restaurant3 .flex{
         justify-content:space-between;
     }
+    #restaurant3{
+        margin-top:9.9rem;
+    }
     #restaurant3 .title{
         margin-left:4.5rem;
     }
@@ -1170,9 +1173,7 @@ min-width:130rem;
     .venue .text .restaurant_guide .title p:first-child{
         font-size:2.3rem;
     }
-    .venue .time.flex{
-        justify-content: space-between;
-    }
+    
     .venue_img{
         width:37.4rem;
         margin-right:0;
@@ -1213,6 +1214,7 @@ min-width:130rem;
     #dinner .time.aft p:last-child,
     #cafe .time.aft p:last-child
     {
+        margin-left:1rem;
         font-size: 1.19rem;
         letter-spacing: 0.1rem;
     }
@@ -1277,10 +1279,12 @@ min-width:130rem;
     .adress p:last-child{
         margin-top:3.5rem;
     }
+    .restaurant_guide .each_page{
+        justify-content: center;
+    }
     .each_page{
         margin-top:6rem;
         width:100%;
-        justify-content: end;
     }
     .each_page_inner:first-child{
         width:42%;
