@@ -3,7 +3,7 @@
 function custom_pagination_html( $template ) {
     $template = '
     <ul class="Pagination">
-    <li class="Pagination-Item">%2$s</li>
+    <li class="Pagination-Item"><span>%2$s</span></li>
         %3$s
     </ul>';
     return $template;
