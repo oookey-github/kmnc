@@ -46,27 +46,39 @@ get_header(); ?>
 
                 <!----- ページ送り ------>
                 <div class="wrap pagination">
+
+                <?php
+                $args = array(
+                    'mid_size' => 1,
+                    'prev_text' => '&lt;&lt;前へ',
+                    'next_text' => '次へ&gt;&gt;',
+                    'screen_reader_text' => ' ',
+                );
+                the_posts_pagination($args);
+                ?>
+
+
                     <?php 
-                    global $wp_rewrite;
-                    $paginate_base = get_pagenum_link(1);
-                    if(strpos($paginate_base, '?') || ! $wp_rewrite->using_permalinks()){
-                        $paginate_format = '';
-                        $paginate_base = add_query_arg('paged','%#%');
-                    }
-                    else{
-                        $paginate_format = (substr($paginate_base,-1,1) == '/' ? '' : '/') .
-                        user_trailingslashit('page/%#%/','paged');;
-                        $paginate_base .= '%_%';
-                    }
-                    echo paginate_links(array(
-                        'base' => $paginate_base,
-                        'format' => $paginate_format,
-                        'total' => $wp_query->max_num_pages,
-                        'mid_size' => 1,
-                        'current' => ($paged ? $paged : 1),
-                        'prev_text' => '<svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" /></svg>',
-                        'next_text' => '<svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>',
-                    )); 
+                    // global $wp_rewrite;
+                    // $paginate_base = get_pagenum_link(1);
+                    // if(strpos($paginate_base, '?') || ! $wp_rewrite->using_permalinks()){
+                    //     $paginate_format = '';
+                    //     $paginate_base = add_query_arg('paged','%#%');
+                    // }
+                    // else{
+                    //     $paginate_format = (substr($paginate_base,-1,1) == '/' ? '' : '/') .
+                    //     user_trailingslashit('page/%#%/','paged');;
+                    //     $paginate_base .= '%_%';
+                    // }
+                    // echo paginate_links(array(
+                    //     'base' => $paginate_base,
+                    //     'format' => $paginate_format,
+                    //     'total' => $wp_query->max_num_pages,
+                    //     'mid_size' => 1,
+                    //     'current' => ($paged ? $paged : 1),
+                    //     'prev_text' => '<svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" /></svg>',
+                    //     'next_text' => '<svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>',
+                    // )); 
                     ?>
                 </div>
                 <?php
