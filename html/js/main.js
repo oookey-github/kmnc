@@ -58,11 +58,11 @@ $(function(){
         
     });
 });
-
+/**breakepointなし */
 $(function(){
     $('.slick-sp-pc').slick({
         autoplay: true,
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 1500,
         slidesToShow: 3,

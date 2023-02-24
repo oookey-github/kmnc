@@ -161,6 +161,7 @@ body{
 }
 .restaurant_info_inner{
     display: inline-block;
+    margin-top:3rem;
 }
 /*float clear*/
 .clear{
@@ -339,23 +340,36 @@ body{
     width:24rem !important;
     height:24rem!important;
 }
-.meal_inner .slick-sp-pc .slick_exp-dots{
-    display:flex;
-    width:11rem!important;
-    margin:3.4rem auto 0;
-    justify-content: center;
 
+.meal_inner .slick-sp-pc .slick-dots{
+    display:flex;
+    margin:0 auto;
+    justify-content: center;
+    width:100%!important;
 }
-.meal_inner .slick_exp-dots button{
+.meal_inner .slick-sp-pc .slick-dots li{
+    width:2rem!important;
+    display:inline-block;
+    margin:0;
+}
+.meal_inner  .slick-dots button{
     width:0.3rem;
     height:0.3rem;
     
 }
-.meal_inner .slick-sp-pc .slick_exp-dots .slick-active button {
-    width:0.8rem;
-    height:0.8rem;
-    background:#333;
-    margin-top:-0.35rem;
+.meal_inner .slick-active button:before{
+    display:none;
+}
+.meal_inner .slick-sp-pc .slick-dots .slick-active button{
+    width:0.8rem!important;
+    height:0.8rem!important;
+    background-color:#333;
+    margin-top:0.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 .meal_menu{
     border-top:1px solid #BCBCBC;
