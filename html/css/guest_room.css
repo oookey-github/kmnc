@@ -40,15 +40,6 @@ body{
 .order4{
     order:4;
 }
-/* パララックスcss */
-.parallax_box{
-    overflow: hidden;
-}
-.parallax{
-    width:100%;
-    height:50vw;
-    object-fit: cover;
-}
 #guest_room_guidance{
     margin:0 auto;
     width:114rem;
@@ -170,6 +161,7 @@ body{
 }
 .mc_img_2.room{
     width:100%;
+    height:44.7rem;
 }
 .mc_2 .mc_text.room{
     width:50%;
@@ -189,8 +181,8 @@ body{
     
     margin:12.4rem auto 10rem;
 }
-.view.room .flex{
-    justify-content: space-between;
+.view.room li{
+    margin:0 2.6rem 0 0;
 }
 .view.room img{
     width:32rem;
@@ -431,8 +423,8 @@ footer .each_page a{
         font-size:1.5rem;
     }
     .mc_item_2 {
-        width:100%!important;
-        height:23.7rem!important;
+        height:100%!important;
+        width:39rem!important;
         min-width:auto!important;
         margin-bottom:3.7rem;
         position: inherit!important;
@@ -443,12 +435,12 @@ footer .each_page a{
     }
     .mc_img_2.room{
         max-width:38.5rem;
-        position:absolute;
-        right:0;
         height:23.7rem;
-        margin-bottom:3.7rem;
-        width:92%;
         object-fit: cover;
+    }
+    .mc_img_2.room img{
+        object-position: center;
+        width:100%;
     }
     .mc_2 .mc_text.room{
         margin-right:0;
