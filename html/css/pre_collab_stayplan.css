@@ -80,14 +80,19 @@ body{
 }
 .introduction_loccitane:last-child{
     align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.introduction_loccitane:last-child p{
+margin-left:0;
 }
 .introduction_loccitane img{
     width:42.6rem;
-    margin-right:5.7rem;
 }
 .introduction_p p{
     line-height: 2.8rem;
     letter-spacing: 0.2rem;
+    margin-left:5rem;
 }
 .introduction_p:last-child{
     margin-top:0rem;
@@ -200,6 +205,19 @@ body{
     padding-top:11.9rem;
     max-width:126rem;
     margin:0 auto;
+}
+#collabo2 .introduction_img .simpleParallax:first-child,
+#collabo3 .introduction_img .simpleParallax:first-child{
+    border-radius: 50%;
+    height:100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#collabo2 .introduction_img:first-child{
+    width:36.5rem;
+    height:36.5rem;
 }
 .title2 .border_div .border .aft{
     left:-35rem;
@@ -394,28 +412,45 @@ body{
         flex-wrap: wrap;
         flex-direction: column;
         width:100%;
-        margin:0 auto 0;
+        margin:3.7rem auto;
     }
     .introduction_loccitane img{
-        width:18.5rem;
+        width:31rem;
         margin-right: 0.4rem;
-        height:12.2rem;
+        height:20.1rem;
+        margin-bottom:4.6rem;
     }
     
     .introduction_p p{
         margin-right:0;
         margin-bottom:6rem;
         font-size:1.6rem;
-        margin-right:0;
+        margin-left:0;
     }
     .introduction_p:last-child{
         margin-right:0;
+        text-align: center;
+    }
+    .introduction_img_2 img:first-child{
+        width:16rem;
+        margin-right:2rem;
+        height:16rem;
+    }
+    .introduction_img_2 img:last-child{
+        width:15.1rem;
+        height:15.1rem;
     }
     .introduction_img{
         width:100%;
         justify-content: space-between;
         margin-top:6rem;
-    }
+        background: white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
     .flex3{
         align-self:flex-end;
     }
@@ -439,9 +474,12 @@ body{
     
     .introduction_loccitane:last-child{
         margin-top:5rem;
+        justify-content: center;
+        text-align: center;
     }
     .introduction_loccitane .introduction_p p{
         margin-bottom:0;
+        text-align: center;
     }
     #collabo1{
         padding-top:9rem;
@@ -552,6 +590,9 @@ body{
     .aft .introduction_loccitane{
         padding-top:0;
     }
+    .aft .introduction_loccitane:first-child{
+        flex-direction: column-reverse;
+    }
     .aft .introduction_p p:first-child{
         letter-spacing:0.2rem
     }
@@ -559,9 +600,16 @@ body{
         letter-spacing: 0.15rem;
         margin-top:3.7rem;
         margin-bottom: 0;
+        margin-left:0;
+        text-align: left;
     }
     #collabo2{
         padding-top:9rem;
+    }
+    #collabo2 .simpleParallax {
+        width:32.7rem;
+        height:32.7rem;
+        margin:0 auto;
     }
     #collabo3{
         padding-top:9rem;
