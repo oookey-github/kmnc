@@ -1,14 +1,14 @@
 <?php
 // ページネーションのHTMLカスタマイズ
-function custom_pagination_html( $template ) {
-    $template = '
-    <ul class="Pagination">
-    <li class="Pagination-Item">%2$s</li>
-        %3$s
-    </ul>';
-    return $template;
-}
-add_filter('navigation_markup_template','custom_pagination_html');
+// function custom_pagination_html( $template ) {
+//     $template = '
+//     <ul class="Pagination">
+//     <li class="Pagination-Item">%2$s</li>
+//         %3$s
+//     </ul>';
+//     return $template;
+// }
+// add_filter('navigation_markup_template','custom_pagination_html');
 
 // ページ表示件数の設定
 function custom_posts_per_page($query) {
@@ -16,7 +16,7 @@ function custom_posts_per_page($query) {
         return;
     }
     // 制作実績
-    if($query->is_archive('works')) {
+    if($query->is_archive('news')) {
         $query->set('posts_per_page', '2');
     }
 }

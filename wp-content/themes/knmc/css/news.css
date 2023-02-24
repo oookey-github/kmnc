@@ -91,17 +91,17 @@ body{
     transform: translateX(-25%) rotate(-135deg);
 }
 
-/* ページネーション */
-.Pagination {
+/* ページネーション .Pagination */
+.page-numbers {
     font-family: 'Noto Sans JP', sans-serif;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     }
-    .Pagination > * + * {
+    .page-numbers > * + * {
     margin-left: 0.5rem;
     }
-    .Pagination-Item-Link {
+    .page-numbers li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,13 +115,13 @@ body{
     .Pagination-Item-Link-Icon {
     width: 1.3rem;
     }
-    .Pagination-Item-Link.isActive {
+    .page-numbers li.current {
     pointer-events: none;
     background: #292929;
     color: #fff;
     padding-left: 0.25rem;
     }
-    .Pagination-Item-Link:not(.isActive):hover {
+    .page-numbers li:not(.current):hover {
     background:  #292929;
     color: #fff;
     }
@@ -139,7 +139,7 @@ body{
         .newspage .news dl{
             margin: 1.7rem auto;
         }
-        .Pagination{
+        .page-numbers {
             min-width: 30rem;
             width: 80%;
             margin: 0 auto;
