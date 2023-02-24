@@ -17,7 +17,7 @@ function custom_posts_per_page($query) {
     }
     // 制作実績
     if($query->is_archive('works')) {
-        $query->set('posts_per_page', '20');
+        $query->set('posts_per_page', '2');
     }
 }
 add_action('pre_get_posts', 'custom_posts_per_page');

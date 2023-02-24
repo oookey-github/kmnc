@@ -130,7 +130,7 @@ get_header(); ?>
                     <dd>
                         <div>
                             <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
-                            <p><?php the_field('news_detail'); ?></p>
+                            <p><?php the_field('news_info'); ?></p>
                         </div>
                         <a href="<?php echo get_permalink(); ?>"><p><span class="arrow"></span>詳しく見る</p></a>
                     </dd>
