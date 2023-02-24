@@ -59,6 +59,21 @@ $(function(){
     });
 });
 
+$(function(){
+    $('.slick-sp-pc').slick({
+        autoplay: true,
+        dots: false,
+        infinite: true,
+        speed: 1500,
+        slidesToShow: 3,
+        centerMode: true,
+        variableWidth: true,
+        initialSlide:5,
+        autoplaySpeed:1500,
+        arrows:false,             //追加（矢印非表示
+    });
+});
+
 // 心揺さぶる体験
 $(function(){
     $('.slick_exp').slick({
