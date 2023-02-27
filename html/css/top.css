@@ -52,13 +52,13 @@ body img{
     visibility: hidden;
     transform: translateY(5rem);
     transition: opacity 1.7s, visibility 1.7s, transform 1.7s;
-  }
-  /* フェードイン時に入るクラス */
-  .is-fadein {
+}
+/* フェードイン時に入るクラス */
+.is-fadein {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
-  }
+}
 
 /* 右側メニュー */
 /* ボタン */

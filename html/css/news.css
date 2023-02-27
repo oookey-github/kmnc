@@ -128,7 +128,7 @@ body{
 
     @media screen and (max-width: 767px){
         .newspage .news{
-            margin-top: 4rem;
+            margin-top: 8rem;
         }
         .newspage .news h2{
             margin: 0px auto 4rem;

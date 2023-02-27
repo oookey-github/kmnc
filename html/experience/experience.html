@@ -6,10 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>心揺さぶる体験</title>
     <link rel="stylesheet" href="../css/reset.css">
+    <script src="../js/jquery-3.6.3.min.js"></script>
     <link rel="stylesheet" href="../css/top.css">
     <link rel="stylesheet" href="../css/restaurant.css">
     <link rel="stylesheet" href="../css/experience.css">
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=M+PLUS+1p:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="../js/simpleParallax.js"></script>
+    <script>
+    // スムーススクロール
+    $(function(){
+        $('a[href^="#"]').click(function(){
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, 500);
+        return false;
+    });
+    });
+
+    </script>
 
 </head>
 <body>
@@ -110,10 +125,12 @@
                     </div>
                     
                 </div>
-                <div class="nav_link flex">
-                    <a href="../index.html"><p class="fs12">トップ</p></a>
-                    <p>&gt;</p>
-                    <a href=""><p class="fs12">心揺さぶる体験</p></a>
+                <div class="pc">
+                    <div class="nav_link flex">
+                        <a href="../index.html"><p class="fs12">トップ</p></a>
+                        <p>&gt;</p>
+                        <a href=""><p class="fs12">心揺さぶる体験</p></a>
+                    </div>
                 </div>
             </header>
 
@@ -511,6 +528,11 @@
     
         </div>
     </footer>
-    
+<!-- スムーススクロール -->
+<script rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+<!--自作のJS-->
+<script src="../js/main.js"></script>
+<!-- simpleParallax -->
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
 </body>
 </html>

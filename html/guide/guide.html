@@ -6,13 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ホテル案内</title>
     <link rel="stylesheet" href="../css/reset.css">
+    <script src="../js/jquery-3.6.3.min.js"></script>
     <link rel="stylesheet" href="../css/top.css">
     <link rel="stylesheet" href="../css/restaurant.css">
     <link rel="stylesheet" href="../css/guide.css">
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=M+PLUS+1p:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <script src="../js/simpleParallax.js"></script>
+    <script>
+        // スムーススクロール
+        $(function(){
+            $('a[href^="#"]').click(function(){
+            var href= $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $("html, body").animate({scrollTop:position}, 500);
+            return false;
+        });
+        });
+    
+        </script>
+    
+    </head>
+    <body  id="top">
     <div class="guide">
         <div class="body_inner">
             <header>
@@ -42,10 +57,13 @@
                     </div>
                     
                 </div>
-                <div class="nav_link flex">
-                    <a href="../index.html"><p class="fs12">トップ</p></a>
-                    <p>&gt;</p>
-                    <a href=""><p class="fs12">ホテル案内</p></a>
+                <div class="pc">
+                    <div class="nav_link flex">
+                        <a href="../index.html"><p class="fs12">トップ</p></a>
+                        <p>&gt;</p>
+                        <a href=""><p class="fs12">ホテル案内</p></a>
+                    </div>
+                    
                 </div>
             </header>
             <!-- 右側メニュー -->
@@ -141,6 +159,10 @@
                                 </div>
                             </div>
                             <div class="map">
+                                <div class="guide_line">
+                                    <p>施設マップ</p>
+                                    <img src="../image/guide_line.svg" alt="">
+                                </div>
                                 <map name="hotel_map">
                                     <area shape="rect" coords="412,44,545,100" href="#" alt="駐車場" />
                                     <area shape="rect" coords="433,181,538,243" href="#" alt="フロント" />
@@ -158,10 +180,13 @@
                                 </map>
                                 <img usemap="#hotel_map" src="../image/hotel_map.png" alt="" class="">
                             </div>
+                            <div class="guide_attent">
+                                <p>※マップ上の施設をクリックすると<br>該当の施設の詳しい情報がご覧いただけます。</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="introduction">
+                    <div class="introduction fadein">
                         <div class="introduction_inner">
                             <div class="introduction_title">
                                 <div class="introduction_title_inner">

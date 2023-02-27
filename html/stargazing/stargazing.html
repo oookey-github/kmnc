@@ -10,8 +10,22 @@
     <link rel="stylesheet" href="../css/top.css">
     <link rel="stylesheet" href="../css/restaurant.css">
     <link rel="stylesheet" href="../css/style_special.css">
+    <script src="../js/simpleParallax.js"></script>
+    <script>
+    // スムーススクロール
+    $(function(){
+        $('a[href^="#"]').click(function(){
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, 500);
+        return false;
+    });
+    });
+
+    </script>
 </head>
-<body>
+<body id="top">
     <div class="stargazing">
         <div class="body_inner">
             <header>
@@ -41,10 +55,12 @@
                     </div>
                     
                 </div>
-                <div class="nav_link flex">
-                    <a href="../index.html"><p class="fs12">トップ</p></a>
-                    <p>&gt;</p>
-                    <a href=""><p class="fs12">星空鑑賞会</p></a>
+                <div class="pc">
+                    <div class="nav_link flex">
+                        <a href="../index.html"><p class="fs12">トップ</p></a>
+                        <p>&gt;</p>
+                        <a href=""><p class="fs12">星空鑑賞会</p></a>
+                    </div>
                 </div>
             </header>
             <!-- 右側メニュー -->
@@ -129,13 +145,13 @@
                 </div>
             </div>
 
-            <div class="text_c">
+            <div class="text_c fadein">
                 <p>見上げれば、満天の星<br>静寂の中、澄み切った夜空に星々の瞬きを<br>バータイムとともにお愉しみください　
                     <br>一年を通し、その時期の一番の見どころを<br>星空案内人がご案内いたします
                     <br> 特別な旅のひとときをお愉しみください</p>
             </div>
 
-            <div class="section">
+            <div class="section fadein">
                 <div class="title">
                     <h2>星空鑑賞会</h2>
                 </div>
@@ -153,7 +169,7 @@
                 </div>
             </div>
             
-            <div class="section">
+            <div class="section fadein">
                 <div class="title">
                     <h2>熊野の星空<br>観光スポット</h2>
                 </div>
@@ -178,7 +194,7 @@
                 </div>
             </div>
 
-            <div class="section">
+            <div class="section fadein">
                 <div class="title">
                     <h2>星空撮影</h2>
                 </div>
@@ -420,5 +436,11 @@
     
         </div>
     </footer>
+<!-- スムーススクロール -->
+<script rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+<!--自作のJS-->
+<script src="../js/main.js"></script>
+<!-- simpleParallax -->
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
 </body>
 </html>
