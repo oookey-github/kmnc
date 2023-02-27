@@ -426,6 +426,11 @@ footer .each_page a{
         bottom:-1rem;
         
     }
+    .view.room .slick-sp-pc .slick-dots .slick-active button,
+    .view.room .slick-dots li button:hover{ 
+        margin-top:0.55rem;
+
+    }
     .guest_room .text p:last-child{
         padding-bottom:7rem;
     }
@@ -542,6 +547,7 @@ footer .each_page a{
         font-size: 2rem;
         letter-spacing: 0.31rem;
     }
+
     #introduction2 .introduction_text2 p:last-child,
     #introduction3 .introduction_text2 p:last-child{
         padding-top:0;
