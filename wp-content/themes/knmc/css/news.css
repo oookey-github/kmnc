@@ -92,16 +92,16 @@ body{
 }
 
 /* ページネーション .Pagination */
-.page-numbers {
+.Pagination {
     font-family: 'Noto Sans JP', sans-serif;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     }
-    .page-numbers > * + * {
+    .Pagination > * + * {
     margin-left: 0.5rem;
     }
-    .page-numbers li {
+    .Pagination-Item-Link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,13 +115,13 @@ body{
     .Pagination-Item-Link-Icon {
     width: 1.3rem;
     }
-    .page-numbers li.current {
+    .Pagination-Item-Link.isActive {
     pointer-events: none;
     background: #292929;
     color: #fff;
     padding-left: 0.25rem;
     }
-    .page-numbers li:not(.current):hover {
+    .Pagination-Item-Link:not(.isActive):hover {
     background:  #292929;
     color: #fff;
     }
@@ -139,7 +139,7 @@ body{
         .newspage .news dl{
             margin: 1.7rem auto;
         }
-        .page-numbers {
+        .Pagination{
             min-width: 30rem;
             width: 80%;
             margin: 0 auto;
