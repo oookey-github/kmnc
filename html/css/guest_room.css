@@ -428,8 +428,7 @@ footer .each_page a{
     }
     .view.room .slick-sp-pc .slick-dots .slick-active button,
     .view.room .slick-dots li button:hover{ 
-        margin-top:0.5rem;
-
+        margin-top:0.45rem;
     }
     .guest_room .text p:last-child{
         padding-bottom:7rem;
