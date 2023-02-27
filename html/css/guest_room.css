@@ -44,6 +44,7 @@ body{
     margin:0 auto;
     width:114rem;
     padding:6.1rem 0;
+    min-width:130rem;
 }
 #guest_room_guidance .title{
     padding-bottom:4.5rem;
@@ -92,7 +93,6 @@ body{
     line-height: 4rem;
     letter-spacing: 0.84rem;
     margin-bottom:4.6rem;
-
 }
 .text p:last-child{
     line-height: 2.6rem;
@@ -140,9 +140,7 @@ body{
 }
 .guest_room_guidance_inner .img img{
     width:50%;
-    position:absolute;
     height: 44rem;
-    right: 0;
 }
 .guest_room .guest_room_guidance_inner .title{
     margin-top:0;
@@ -160,16 +158,19 @@ body{
     flex-direction: column-reverse;
 }
 .mc_img_2.room{
-    width:100%;
+    
     height:44.7rem;
 }
 .mc_2 .mc_text.room{
-    width:50%;
+    width:100%;
     margin-right:0;
 }
 .mc_2.room{
     margin-top: 0;
     width:100%;
+}
+.room .mc_item_2{
+    min-width:auto;
 }
 .guest_room section{
     padding-top:10rem;
@@ -204,12 +205,16 @@ body{
 .mc_text.room .border_div{
     top:-0.5rem;
 }
+#room1,#room2,#room3,#room4{
+    min-width:130rem;
+}
 #room1 .title .border_div .border,
 #room2 .title .border_div .border,
 #room3 .title .border_div .border,
 #room4 .title .border_div .border{
     bottom:-1rem
 }
+
 footer .each_page{
     flex-wrap: nowrap;
     justify-content: space-between;
