@@ -340,7 +340,9 @@ body{
     width:24rem !important;
     height:24rem!important;
 }
-
+.meal_inner .slick-dots li button:before{
+    font-size:22px;
+}
 .meal_inner .slick-sp-pc .slick-dots{
     display:flex;
     margin:0 auto;
@@ -355,22 +357,23 @@ body{
 .meal_inner  .slick-dots button{
     width:0.3rem;
     height:0.3rem;
-    
+    margin:0 auto;
 }
 .meal_inner .slick-active button:before{
     display:none;
 }
-.meal_inner .slick-sp-pc .slick-dots .slick-active button{
-    width:0.8rem!important;
+.meal_inner .slick-sp-pc .slick-dots .slick-active button,
+.slick-dots li button:hover{
     height:0.8rem!important;
     background-color:#333;
-    margin-top:0.5rem;
+    margin-top:0.65rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
 .meal_menu{
     border-top:1px solid #BCBCBC;
     

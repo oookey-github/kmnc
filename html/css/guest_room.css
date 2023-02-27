@@ -27,6 +27,9 @@ body{
 @media only screen and (max-width: 767px){
 	html{font-size: calc( 1000vw /430px  );}
 }
+.header{
+    min-width:130rem;
+}
 /*flex 順番*/
 .order1{
     order:1;
@@ -199,6 +202,40 @@ body{
     line-height: 4.2rem;
     letter-spacing: 0.4rem;
 }
+.view.room .slick-dots li button:before{
+    font-size:22px;
+}
+.view.room .slick-sp-pc .slick-dots{
+    display:flex;
+    margin:0 auto;
+    justify-content: center;
+    width:100%!important;
+}
+.view.room .slick-sp-pc .slick-dots li{
+    width:2rem!important;
+    display:inline-block;
+    margin:0;
+}
+.view.room .slick-dots button{
+    width:0.6rem;
+    height:0.6rem;
+    margin:0 auto;
+}
+.view.room .slick-active button:before{
+    display:none;
+}
+.view.room .slick-sp-pc .slick-dots .slick-active button,
+.view.room .slick-dots li button:hover{
+    width:0.8rem!important;
+    height:0.8rem!important;
+    background-color:#333;
+    margin-top:0.65rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
 #introduction3.room{
     padding-bottom:17.6rem;
 }
@@ -333,10 +370,14 @@ footer .each_page a{
         padding:0 1.2rem;
     }
     /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+    .header{
+        min-width:auto;
+    }
     .guest_room .guest_room_guidance_inner .title:first-child{
         margin-top:2.9rem;
         margin-left:3.8rem;
     }
+
     #guest_room_guidance .title p:first-child{
         font-size:2rem;
     }
@@ -408,6 +449,7 @@ footer .each_page a{
     #guest_room_guidance{
         width:100%;
         padding: 0;
+        min-width:auto;
     }
     #guest_room_guidance .title{
         padding-bottom:0;
@@ -419,6 +461,9 @@ footer .each_page a{
     .guest_room_mv img{
         height:32.3rem;
         object-fit: cover;
+    }
+    #room1,#room2,#room3,#room4{
+        min-width:auto;
     }
     .text p:first-child{
         font-size:2.4rem;
@@ -437,6 +482,9 @@ footer .each_page a{
     }
     .explanation{
         width:100%;
+    }
+    .room .mc_item_2{
+        padding-left:4.5rem;
     }
     .mc_img_2.room{
         max-width:38.5rem;
@@ -479,9 +527,6 @@ footer .each_page a{
     }
     .view.room .flex{
         justify-content: center;
-    }
-    .view.room img{
-        margin-right:2.4rem;
     }
     .guest_room_guidance_inner .name p:first-child, .guest_room_guidance_inner .name p:last-child{
         text-indent: 0!important;
