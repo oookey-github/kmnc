@@ -482,6 +482,7 @@ footer .each_page a{
     }
     #guest_room_guidance .title{
         padding-bottom:0;
+        margin-left:3rem;
     }
     .guest_room_mv{
         width:100%;
