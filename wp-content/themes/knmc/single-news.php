@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!------------- HEADER ------------->
 
-<body>
+<body id="top">
     
     <!-- フィックスメニュー -->
     <?php get_sidebar('flex_menu'); ?>
@@ -14,12 +14,14 @@
                 <!-- メインメニュー -->
                 <?php get_sidebar('main_menu'); ?>
 
-                <div class="nav_link flex">
-                    <a href="<?php bloginfo('url'); ?>"><p class="fs12">トップ</p></a>
-                    <p>&gt;</p>
-                    <a href="<?php bloginfo('url'); ?>/news/"><p class="fs12">お知らせ一覧</p></a>
-                    <p>&gt;</p>
-                    <a href=""><p class="fs12">【GWを世界遺産リゾート熊野倶楽部で】Special Event のご案内</p></a>
+                <div class="pc">
+                    <div class="nav_link flex">
+                        <a href="<?php bloginfo('url'); ?>"><p class="fs12">トップ</p></a>
+                        <p>&gt;</p>
+                        <a href="<?php bloginfo('url'); ?>/news/"><p class="fs12">お知らせ一覧</p></a>
+                        <p>&gt;</p>
+                        <a href=""><p class="fs12">【GWを世界遺産リゾート熊野倶楽部で】Special Event のご案内</p></a>
+                    </div>
                 </div>
             </header>
 

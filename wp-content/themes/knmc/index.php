@@ -30,7 +30,7 @@
             </div>
 
             <div class="content_inner">
-                <div class="content_section">
+                <div class="content_section fadein">
                     <div class="banner">
                         <a href="<?php bloginfo('url'); ?>/guest_room/guest_room.html" class="banner_img">
                             <img src="<?php bloginfo('template_directory'); ?>/image/banner_1.png" alt="" class="pc">
@@ -40,9 +40,9 @@
                 </div>
 
                 <div class="content_section cs_mc">
-                    <div class="main_content mc_1">
+                    <div class="main_content mc_1 fadein">
                         <div class="mc_item_1">
-                            <div class="mc_img_1"></div>
+                            <a href="<?php bloginfo('url'); ?>/experience/"><div class="mc_img_1 parallax"><img src="./image/mc_1.png" alt=""></div></a>
                         </div>
                         <div class="mc_text">
                             <div class="vertical_text">
@@ -51,32 +51,32 @@
                             </div>
                             <h2 class="mc_title">熊野の隠れ家<br class="sp">リゾートで<br>癒しの時間を。</h2>
                             <p>世界遺産リゾート 熊野倶楽部は伊勢から<br class="sp">熊野へむかう路にあり<br>山・海・里に抱かれた熊野の自然に佇む<br class="sp">大人のリゾート。<br><br>峻厳な山々に降り注ぐ雨が大地に染み込み<br>清流として恵みをもたらします。</p>
-                            <a href="<?php bloginfo('url'); ?>/experience/experience.html" class="circle_btn_top">
+                            <a href="<?php bloginfo('url'); ?>/experience/" class="circle_btn_top">
                                 <img src="<?php bloginfo('template_directory'); ?>/image/circle_btn_b.svg" alt="">
                                 <p class="circle_btn_text"><span class="arrow"></span>特別な体験一覧へ</p>
                             </a>
                         </div>
                     </div>
                     <div class="main_content mc_2">
-                        <div class="mc_item_2">
-                            <div class="mc_img_2"></div>
+                        <div class="mc_item_2 fadein">
+                            <a href="<?php bloginfo('url'); ?>/guest_room/"><div class="mc_img_2 parallax"><img src="./image/mc_2.png" alt=""></div></a>
                         </div>
-                        <div class="mc_text">
+                        <div class="mc_text fadein">
                             <div class="horiz_text">
                                 <span class="text_line_h"></span>
                                 <p class="">客室はオールスイート</p>
                             </div>
                             <h2 class="mc_title">熊野杉が香る<br class="sp">癒しの客室で<br>上質の寛ぎを。</h2>
                             <p>恵まれた自然を五感で感じ、癒されるよう<br>熊野杉などを用いて造られた客室は、<br class="sp">日常を忘れる<br class="pc">ひとときの癒やし空間</p>
-                            <a href="<?php bloginfo('url'); ?>/guest_room/guest_room.html"  class="circle_btn_top">
+                            <a href="<?php bloginfo('url'); ?>/guest_room/"  class="circle_btn_top">
                                 <img src="<?php bloginfo('template_directory'); ?>/image/circle_btn_b.svg" alt="">
                                 <p class="circle_btn_text"><span class="arrow"></span>客室のご案内</p>
                             </a>
                         </div>
                     </div>
-                    <div class="main_content mc_3">
+                    <div class="main_content mc_3 fadein">
                         <div class="mc_item_3">
-                            <div class="mc_img_3"></div>
+                            <a href="<?php bloginfo('url'); ?>/restaurant/"><div class="mc_img_3 parallax"><img src="./image/mc_3.png" alt=""></div></a>
                         </div>
                         <div class="mc_text">
                             <div class="vertical_text">
@@ -85,17 +85,17 @@
                             </div>
                             <h2 class="mc_title">自然讃美<br>様式にとらわれない､<br>滋味の探究。</h2>
                             <p>いずれのお食事にも、一品一品に熊野の恵み<br>をふんだんに取り入れ心の感性を呼び覚ます、<br>五味自在の逸品をご提供いたします。</p>
-                            <a href="<?php bloginfo('url'); ?>/restaurant/restaurant.html" class="circle_btn_top">
+                            <a href="<?php bloginfo('url'); ?>/restaurant/" class="circle_btn_top">
                                 <img src="<?php bloginfo('template_directory'); ?>/image/circle_btn_b.svg" alt="">
                                 <p class="circle_btn_text"><span class="arrow"></span>お食事一覧へ</p>
                             </a>
                         </div>
                     </div>
                     <div class="main_content mc_2 mc_4">
-                        <div class="mc_item_2">
-                            <div class="mc_img_2"></div>
+                        <div class="mc_item_2 fadein">
+                            <a href=""><div class="mc_img_4 parallax"><img src="./image/mc_4-1.png" alt=""></div></a>
                         </div>
-                        <div class="mc_text">
+                        <div class="mc_text fadein">
                             <div class="horiz_text">
                                 <span class="text_line_h"></span>
                                 <p class="">静謐に心洗われる</p>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
 
-                <div class="content_section">
+                <div class="content_section fadein">
                     <div class="loccitane_banner">
                         <h2 class="bold">Premium <br class="sp">Collaboration<br>Stay Plan</h2>
                         <p>L'OCCITANEと熊野倶楽部の<br class="sp">スペシャルコラボレーションプラン。<br>特別なご滞在をお愉しみください</p>
@@ -121,7 +121,7 @@
                     </div>
                 </div>
 
-                <div class="content_section">
+                <div class="content_section fadein">
                     <div class="plan_list">
                         <h2>特別プラン</h2>
                         <ul class="slick">
@@ -159,7 +159,7 @@
                     </div>
                 </div>
 
-                <div class="content_section">   
+                <div class="content_section fadein">   
                     <div class="news">
                         <div class="news_inner">
                             <h2 class="vertical">お知らせ</h2>
@@ -205,7 +205,7 @@
                     </div>
                 </div>
 
-                <div class="content_section">
+                <div class="content_section fadein">
                     <div class="hospitality_list">
                         <h2>潤いの歓待</h2>
                         <ul>
@@ -249,7 +249,7 @@
                     </div>
                 </div>
 
-                <div class="content_section">
+                <div class="content_section fadein">
                     <div class="experience_list">
                         <h2>熊野を五感で感じる<br>心揺さぶる体験</h2>
                         <ul class="slick_exp">
@@ -287,7 +287,7 @@
                     </div>
                 </div>
 
-                <div class="content_section">
+                <div class="content_section fadein">
                     <div class="kumano_circle">
                         <div class="title">
                             <img src="<?php bloginfo('template_directory'); ?>/image/logo_brown.svg" alt="">
@@ -295,7 +295,7 @@
                             <p>人はなぜ熊野に惹かれるのか。<br class="sp">心の故郷が、ここにある</p>
                         </div>
                         <div class="circle_img">
-                            <img src="<?php bloginfo('template_directory'); ?>/image/circle.png" alt="">
+                            <img class="parallax" src="<?php bloginfo('template_directory'); ?>/image/circle.png" alt="">
                         </div>
                         <div>
                             <p>
@@ -310,9 +310,10 @@
                     </div>
                 </div>
                 
-                <div class="content_section">
+                <div class="content_section fadein">
                     <div class="kumano_banner">
                         <a href="<?php bloginfo('url'); ?>/tourism/tourism.html">
+                        <img class="parallax kumano_banner" src="<?php bloginfo('template_directory'); ?>/image/kumano_banner.png" alt="">
                             <div class="inner">
                                 <!-- <div class="multiply"></div> -->
                                 <div class="left">
@@ -331,7 +332,7 @@
                     </div>
                 </div>
 
-                <div class="content_section">
+                <div class="content_section fadein">
                     <div class="photo_spot">
                         <h2>熊野倶楽部周辺の<br class="sp">フォトスポット</h2>
                         <ul>
@@ -355,7 +356,7 @@
                     </div>
                 </div>
 
-                <div class="content_section">
+                <div class="content_section fadein">
                     <div class="instagram">
                         <h2>Instagram<br><span>#熊野日和</span></h2>
                         <ul>
@@ -372,7 +373,7 @@
                     </div>
                 </div>
 
-                <div class="content_section" id="access">
+                <div class="content_section fadein" id="access">
                     <div class="access_map">
                         <h2>アクセスマップ</h2>
                         <div class="googlemap">

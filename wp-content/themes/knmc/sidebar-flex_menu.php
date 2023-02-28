@@ -66,5 +66,8 @@
         <p class="fs18 c1">宿泊<br>予約</p>
         <p class="fs10 c2">Search</p>
         </div>
+        <nav class="hotel_reserve_inner_sp">
+                <a href=""><img src="<?php bloginfo('template_directory'); ?>/image/yoyaku_menu_sp.png" alt=""></a>
+            </nav>
     </div>
 </div>

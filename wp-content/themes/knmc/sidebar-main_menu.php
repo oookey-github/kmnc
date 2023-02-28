@@ -25,7 +25,7 @@
                     <div class="nav_inner">
                         <div class="nav_bg"></div>
                         <div class="nav_access">
-                            <img src="<?php bloginfo('template_directory'); ?>/image/logo_menu.png" alt="">
+                            <img src="<?php bloginfo('template_directory'); ?>/image/logo_menu.svg" alt="">
                             <p>
                                 世界遺産リゾート熊野倶楽部
                                 <br><br>

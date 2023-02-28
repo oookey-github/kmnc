@@ -16,6 +16,8 @@
     <script src="<?php bloginfo('template_directory'); ?>/js/jquery-3.6.3.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/slick.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/slick.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/jquery.easing.1.3.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/simpleParallax.js"></script>
 
 <?php wp_head(); ?>
 </head>

@@ -223,8 +223,10 @@
 
 <!--自作のJS-->
 <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
-
-
+<!-- simpleParallax -->
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
+<!-- スムーススクロール -->
+<script rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 
 <?php wp_footer(); ?>
 </body>
