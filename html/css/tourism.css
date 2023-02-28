@@ -73,7 +73,7 @@ body{
 }
 .tourism .kumano_banner .right{
     bottom: 8rem;
-    right: -4rem;
+    right: 0rem;
 }
 
 /* タイトル */
@@ -225,6 +225,7 @@ body{
     }
     .official_site .tourism_btn ul{
         width: 34rem !important;
+        margin-bottom: 18rem;
     }
     .official_site .tourism_btn li{
         width: 16rem !important;
