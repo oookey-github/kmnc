@@ -1370,6 +1370,7 @@ width:100%;
     
     .btn_box{
         flex-direction: column;
+        align-items: center;
     }
     .personal_information.flex{
         flex-direction: column;
