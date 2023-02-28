@@ -1850,5 +1850,6 @@ line-height: 1.1rem;;
     .access_map p{
         width: 30rem;
         margin: 4rem auto 0;
+        display: block;
     }
 }
