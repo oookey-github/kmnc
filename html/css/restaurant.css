@@ -263,14 +263,17 @@ body{
     width:37rem;
     height:5rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     margin:4.6rem 0;
 }
 .reserve_btn p{
     letter-spacing: 4.8px;
+    margin-right: 7.5rem;
 }
-
+.reserve_btn .arrow{
+    margin-right:3rem;
+}
 .explanation{
     letter-spacing: 1.6px;
     line-height: 2.6rem;
