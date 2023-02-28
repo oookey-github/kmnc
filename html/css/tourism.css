@@ -136,7 +136,7 @@ body{
 }
 .tourism_list li{
     width: 30rem;
-    margin: 4.5rem;
+    margin: 4.5rem auto;
     padding-top: 5rem;
 }
 .tourism_list li img{
@@ -174,12 +174,13 @@ body{
         width: auto;
     }
     .tourism .mc_title{
-        margin-left: 5.8rem;
+        margin-left: 4.2rem;
         font-size: 1.2rem !important;
         margin-top: 5.7rem;
     }
     .tourism .horiz_text{
-        font-size: 2.2rem;
+        font-size: 2rem;
+        left: -8rem;
     }
     .tourism_inner{
         height: 79rem;
@@ -207,17 +208,25 @@ body{
     }
     .tourism_btn ul{
         font-size: 1.5rem !important;
-        width: 34rem !important;
+        width: 30rem !important;
         letter-spacing: 0.1rem;
         justify-content: space-between;
+        margin: 0 auto;
     }
     .tourism_btn{
         margin-top: 5rem;
     }
     .tourism_btn li{
-        width: 16.6rem !important;
+        width: 13rem !important;
     }
     .tourism_list ul{
         width: 37rem;
+        margin-top: -8rem;
+    }
+    .official_site .tourism_btn ul{
+        width: 34rem !important;
+    }
+    .official_site .tourism_btn li{
+        width: 16rem !important;
     }
 }
