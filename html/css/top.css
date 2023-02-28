@@ -1507,7 +1507,7 @@ line-height: 1.1rem;;
         font-size: 2.2rem;
         left:auto;
         bottom: auto;
-        right: -1.3rem;
+        right: 0rem;
         top: -49rem;
     }
     .mc_text .circle_btn_top{
@@ -1553,7 +1553,7 @@ line-height: 1.1rem;;
         margin: 0 auto;
     }
     .mc_3 .vertical_text{
-        right: -0.6em;
+        right: 0em;
         bottom: auto;
         top: -47rem;
     }
@@ -1686,6 +1686,9 @@ line-height: 1.1rem;;
     }
     .slick_exp-dots{
         margin: 3rem auto 0;
+        display: flex;
+        width: 50%;
+        justify-content: center;
     }
 
     /* 矢印 ドットナビゲーション */
@@ -1817,7 +1820,7 @@ line-height: 1.1rem;;
         height: 20rem;
     }
     .photo_spot li p{
-        margin-top: 1.8rem;
+        margin-top: 1rem;
         letter-spacing: 0.2rem;
     }
     /* インスタグラム */
