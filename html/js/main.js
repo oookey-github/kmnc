@@ -1,28 +1,10 @@
-// ページ内リンクスクロール
-$('#page-link a[href*="#"]').click(function () {//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
-	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
-	var pos = $(elmHash).offset().top;	//idの上部の距離を取得
-	$('body,html').animate({scrollTop: pos}, 400); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
-	return false;
-});
-
-// // ページトップボタン
-// $('#page-top-sp').click(function () {
-//     $('body,html').animate({
-//         scrollTop: 0//ページトップまでスクロール
-//     }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
-//     return false;//リンク自体の無効化
+// // ページ内リンクスクロール
+// $('#page-link a[href*="#"]').click(function () {//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
+// 	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+// 	var pos = $(elmHash).offset().top;	//idの上部の距離を取得
+// 	$('body,html').animate({scrollTop: pos}, 400); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+// 	return false;
 // });
-
-// ボタンを表示させる
-// window.addEventListener("scroll", scroll_event);
-// function scroll_event(){
-//     if(window.pageYOffset > 100){
-//         pagetopBtn.style.opacity = "1";
-//     }else if (window.pageYOffset < 100){
-//         pagetopBtn.style.opacity = "0";
-//     }
-// }
 
 // ハンバーガーメニュー
 $(".openbtn").click(function () {//ボタンがクリックされたら
@@ -91,18 +73,6 @@ $(function(){
         dotsClass: "slick_exp-dots",
     });
 });
-
-// 熊野の過ごし方
-// // スムーススクロール
-// $(function(){
-//     $('a[href^="#"]').click(function(){
-//     var href= $(this).attr("href");
-//     var target = $(href == "#" || href == "" ? 'html' : href);
-//     var position = target.offset().top;
-//     $("html, body").animate({scrollTop:position}, 500);
-//     return false;
-// });
-// });
 
 // 宿泊予約PC
 $(".hotel_reserve").hover(function () {//ボタンがクリックされたら

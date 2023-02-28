@@ -497,10 +497,6 @@ line-height: 1.1rem;;
     border: solid 0.01rem;
     transform: rotate(90deg);
     padding-top: 7rem;
-    position: relative;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
 }
 /* mc文章 */
 .mc_text{
@@ -1514,6 +1510,9 @@ line-height: 1.1rem;;
         right: 2%;
         top: -49rem;
         text-align: center;
+    }
+    .text_line_v{
+        margin-left: 2rem;
     }
     .mc_text .circle_btn_top{
         margin-top: 4rem;
