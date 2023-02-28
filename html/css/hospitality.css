@@ -26,6 +26,7 @@
 .omotenashi .title p:last-child{
     letter-spacing: 0.3rem;
     line-height: 3.8rem;
+    font-size:1.2rem;
 }
 #omotenashi_text{
     margin-top:5.5rem;
@@ -156,11 +157,14 @@ section{
     section{
         padding-top:5rem;
     }
+    
     .omotenashi .title{
         margin-top:3rem;
     }
     .omotenashi .title p{
         margin-left:5rem;
+        margin-bottom:0;
+
     }
     .omotenashi .title .border_div{
         display:inline-block;
@@ -170,9 +174,27 @@ section{
         padding-left:4rem;
         left:0;
     }
+    .main_text_div p:first-child{
+        font-size:1.8rem;
+    }
+    .main_text_div p:last-child{
+        font-size:2.4rem;
+        letter-spacing: 0.1rem;
+    }
+    .main_text_div{
+        margin-bottom:5.3rem;
+    }
+    .sub_text p{
+        font-size:1.6rem;
+        letter-spacing: 0.1rem;;
+    }
     .omotenashi_1{
         flex-wrap: wrap;
         flex-direction: column-reverse;
+    }
+    .omotenashi_1 .border{
+        left:-2rem;
+        padding-left:4rem;
     }
     .omotenashi_1 .image{
         width:100%;
@@ -182,7 +204,16 @@ section{
         width:100%;
     }
     .omotenashi_1 .title.sp{
-        margin-left:5rem;
+        margin-left:4rem;
+        letter-spacing:0.3rem;
+        line-height: 4.2rem;
+        font-weight:normal;
+        margin-bottom:4rem;
+    }
+    .omotenashi_1 .title .title_inner p{
+        font-size:1.6rem;
+        letter-spacing: 0.04rem;
+        line-height: 2.4rem;;
     }
     .right_text{
         width:100%;
