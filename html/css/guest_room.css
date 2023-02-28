@@ -27,10 +27,7 @@ body{
 @media only screen and (max-width: 767px){
 	html{font-size: calc( 1000vw /430px  );}
 }
-.header{
-    width:100%;
-    min-width:148rem;
-}
+
 /*flex 順番*/
 .order1{
     order:1;
@@ -50,6 +47,7 @@ body{
 }
 #guest_room_guidance .title{
     padding-bottom:4.5rem;
+    margin-left:12rem;
 }
 #guest_room_guidance .title p:last-child{
     margin-bottom:0;
@@ -61,8 +59,12 @@ body{
     margin-top:12rem;
 }
 .guest_room_guidance_inner{
-    width:148rem;
+    max-width:148rem;
+    width:100%;
     margin:0 auto;
+}
+#guest_room_guidance .guest_room_guidance_inner .border{
+    left:0;
 }
 .explanation.room.inner{
     flex-direction: column;
@@ -80,8 +82,7 @@ body{
     letter-spacing: 0.5rem;
 }
 .guest_room_mv{
-    width:114rem;
-    height:41.7rem;
+    width:90%;
     margin:0 auto 5.6rem;;
 }
 .guest_room_mv img{
@@ -102,7 +103,7 @@ body{
     padding-bottom:5.2rem;
 }
 .guest_room_guidance_inner .menu{
-    width:100%;
+    width:80%;
     margin-top:4.2rem;
     justify-content: space-between;
     margin:4.2rem auto 0;
@@ -135,7 +136,9 @@ body{
 .guest_room_guidance_inner .name p:last-child{
     margin-bottom:3.1rem;
 }
-
+section .guest_room_guidance_inner .border{
+    left:-12rem;
+}
 .guest_room_guidance_inner .img img{
     width:90.8rem;
 }
@@ -155,8 +158,8 @@ body{
     flex-direction: column-reverse;
 }
 .mc_img_2.room{
-    
-    height:44.7rem;
+    width:90.8rem;
+    overflow: hidden;
 }
 .mc_2 .mc_text.room{
     width:100%;
@@ -169,7 +172,7 @@ body{
 .room .mc_item_2{
     min-width:auto;
     position:inherit;
-    width:auto;
+    width:50%;
 }
 .guest_room section{
     padding-top:10rem;
@@ -248,17 +251,18 @@ body{
 #room4 .title .border_div .border{
     bottom:-1rem
 }
-.introduction.room{
-    width:100%;
-    min-width:148rem;
-}
 .introduction_inner {
     width:100%;
     min-width:auto;
 }
+.introduction{
+    min-width:auto;
+}
 footer{
-    width:100%;
-    min-width:148rem;
+    min-width:auto;
+}
+.footer_img{
+min-width:auto;
 }
 footer .each_page{
     flex-wrap: nowrap;
@@ -266,6 +270,12 @@ footer .each_page{
 }
 footer .each_page a{
     margin-right:3.2rem;
+}
+.footer2_inner{
+    min-width:auto;
+    width: 100%;
+    max-width: 130rem;
+    min-width:auto;
 }
 @media screen and ( max-width:767px ){
     /* 全ページ共通 右側メニュー */
@@ -499,9 +509,7 @@ footer .each_page a{
     .explanation{
         width:100%;
     }
-    .room .mc_item_2{
-        padding-left:4.5rem;
-    }
+    
     .mc_img_2.room{
         max-width:38.5rem;
         height:23.7rem;
@@ -566,6 +574,9 @@ footer .each_page a{
     #introduction3.room{
         padding-bottom:11.9rem;
     }
+    .introduction_inner{
+        width:90%;
+    }
     .guest_room.each_page{
         justify-content: center;
     }
@@ -575,4 +586,10 @@ footer .each_page a{
     footer{
         width:100%;
     }
+    @media screen and ( max-width:375px ){
+        .room .mc_item_2{
+            padding-left:4.5rem;
+        }
+    }
 }
+
