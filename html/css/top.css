@@ -60,6 +60,44 @@ body img{
     transform: translateX(0);
 }
 
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:2.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+.fadeUp_header{
+    animation-name:fadeUpAnime;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+        
+    @keyframes fadeUpAnime{
+          from {
+            opacity: 0;
+            transform: translateY(3px);
+          }
+        
+          to {
+            opacity: 1;
+            transform: translateY(0px);
+          }
+        }
+    
+
 /* 右側メニュー */
 /* ボタン */
 .btn{
@@ -693,7 +731,8 @@ line-height: 1.1rem;;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 120rem;
+    max-width: 120rem;
+    width: 100%;
     margin: 5.5rem auto 0;
 }
 .hospitality_list li{
@@ -799,7 +838,7 @@ line-height: 1.1rem;;
 /* next */
 
 .slick-next {
-    right: -14rem !important;
+    right: -9rem !important
 }
 .slick-next::after {
     right: 3.2rem;
@@ -809,7 +848,7 @@ line-height: 1.1rem;;
 /* prev */
 
 .slick-prev {
-    left: -14rem !important;
+    left: -9rem !important
 }
 .slick-prev::after {
     left: 3.2rem;
@@ -892,7 +931,8 @@ line-height: 1.1rem;;
     object-fit: cover;
 }
 .kumano_banner .inner{
-    width: 120rem;
+    width: 100%;
+    max-width: 120rem;
     height: 69rem;
     margin: 0 auto;
     display: flex;
@@ -954,7 +994,7 @@ line-height: 1.1rem;;
 .photo_spot ul{
     display: flex;
     justify-content: center;
-    width: 120rem;
+    width: 100%;
     margin: 5.5rem auto 0;
 }
 .photo_spot li{
