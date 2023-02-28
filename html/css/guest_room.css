@@ -6,7 +6,7 @@
 	.pc{display: none;}
 	.sp{display: inherit;}
 }
-html {scroll-behavior: smooth;}
+/* html {scroll-behavior: smooth;} */
 html{font-size: 62.5%;}
 body{
 	font-size:1.4em;
