@@ -459,6 +459,7 @@ footer .each_page a{
     }
     .guest_room_guidance_inner .menu{
         margin:0rem auto;
+        flex-wrap: wrap;
     }
     .guest_room .menu_sp{
         padding-bottom:5.3rem;
@@ -481,6 +482,7 @@ footer .each_page a{
     }
     #guest_room_guidance .title{
         padding-bottom:0;
+        margin-left:3rem;
     }
     .guest_room_mv{
         width:100%;
