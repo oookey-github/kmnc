@@ -267,6 +267,34 @@ body{
 		font-size: 1.2rem;
 		right: auto;
 	}
+	/* モーダルウィンドウ */
+	/*モーダルウィンドウをはじめは非表示*/
+	.modaal-container img{
+		width: 28rem;
+		height: 20rem;
+	}
+	/*モーダルの横幅を変更したい場合*/
+	.modaal-container{
+		width: 34rem;
+	}
+	.modaal-inner-wrapper{
+		padding: 0;
+	}
+	/* 閉じるボタン */
+	.modaal-close{
+		height: 3rem;
+		width: 3rem;
+		right: 3.5rem;
+		top: 1.5rem;
+		color: transparent;
+	}
+	.modaal-wrapper .modaal-close:hover{
+		background-color: transparent;
+	}
+	.modaal-close:after, .modaal-close:before{
+		height: 3rem;
+		width: 0.3rem;
+	}
 	/* 施設リスト */
 	.guide .map_list_inner{
 		padding-bottom: 7rem;
