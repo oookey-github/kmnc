@@ -221,6 +221,7 @@ margin-left:0;
 #collabo2 .introduction_img:first-child{
     width:36.5rem;
     height:36.5rem;
+    clip-path: circle(19rem at center);
 }
 .title2 .border_div .border .aft{
     left:-35rem;
@@ -245,6 +246,9 @@ margin-left:0;
     max-width:126rem;
     margin:0 auto;
     padding-bottom:10rem;
+}
+#collabo3 .introduction_img:first-child{
+    clip-path: circle(19rem at center);
 }
 .club.aft.loccitane_royal_suite .explanation p{
     line-height: 3.6rem;
@@ -633,6 +637,10 @@ margin-left:0;
     #collabo2 .introduction_img:first-child{
         height:31rem;
         width:90%;
+        clip-path: circle(15rem at center);
+    }
+    #collabo3 .introduction_img:first-child{
+        clip-path: circle(15rem at center);
     }
     #collabo3{
         padding-top:9rem;
