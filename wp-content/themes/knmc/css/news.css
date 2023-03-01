@@ -131,9 +131,10 @@ body{
 
 /* お知らせ詳細 */
 .detail_inner .news_info{
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 .detail_inner .news_subtitle{
+    margin-top: 1rem;
     margin-bottom: 2.5rem;
     font-weight: bold;
 }
@@ -141,7 +142,8 @@ body{
     width: 100%;
     max-width: 43.3rem;
     height: auto;
-    margin-bottom: 4.1rem;
+    margin-bottom: 1.1rem;
+    text-align: right;
 }
 .detail_inner .news_img img{
     width: 100%;
@@ -150,10 +152,11 @@ body{
 }
 .detail_inner .news_img a{
     display: inline-block;
+    border: none;
+    margin-top: 0;
 }
 .detail_inner .news_img a.news_img_size p{
     font-size: 1.1rem;
-    text-align: right;
 }
 .detail_inner .news_img a.news_img_size p::before{
     content: "";
@@ -164,6 +167,8 @@ body{
     background-image: url(../image/lightbox/expansion_btn.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    vertical-align: middle;
+    vertical-align: -0.6rem;
 }
 .detail_inner .news_detail{
     margin-bottom: 2rem;
