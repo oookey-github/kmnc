@@ -112,14 +112,14 @@ body{
 .guest_room_guidance_inner .menu .flex{
     justify-content: center;
 }
-.guest_room_guidance_inner .menu p{
+.guest_room_guidance_inner .menu_sp p{
     margin:0rem auto 0;
     letter-spacing: 0.12rem;
     margin:0 3.5rem;
     
 }
+
 .guest_room_guidance_inner .menu p span{
-    
     font-size: 1.4rem;
     line-height: 4rem;
 }
