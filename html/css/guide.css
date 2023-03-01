@@ -32,8 +32,9 @@ body{
 .guide .mc_text{
 	margin-top: 7rem;
 	margin-right: 0rem;
-	justify-content: normal;
 	margin-right: 6rem;
+	left: 6rem;
+    display: block;
 }
 .guide .horiz_text{
 	bottom: auto;
@@ -52,6 +53,7 @@ body{
 	display: flex;
     margin: 0 auto;
     justify-content: space-between;
+	flex-wrap: wrap;
 }
 .guide .mc_text .inner h2{
 	font-size: 2.4rem;
@@ -63,9 +65,15 @@ body{
 /* 施設のご案内 */
 .guide .introduction{
 	background-color: #F4F8F8;
-	margin-top: 20rem;
+	margin-top: 15rem;
+	min-width: auto;
+}
+.guide .introduction_inner{
+	max-width: 117rem;
+	width: auto;
 }
 /* マップ */
+
 .map{
 	width: 70rem;
 	height: auto;
@@ -74,6 +82,7 @@ body{
 .map img{
 	width: 100%;
 	height: auto;
+	object-fit: cover;
 }
 .map .guide_line{
 	font-size: 1.8rem;
@@ -95,6 +104,67 @@ body{
 	font-size: 1.3rem;
 }
 
+/* モーダルウィンドウ */
+/*モーダルウィンドウをはじめは非表示*/
+.modal{
+	display: none;
+}
+.modaal-container{
+	color: #292929;
+	box-shadow: 0 0px 16px rgb(0 0 0 / 17%);
+	letter-spacing: 0.2rem;
+	line-height: 2.6rem;
+}
+.modaal-container img{
+	width: 33rem;
+	height: 24rem;
+	object-fit: cover;
+}
+.modaal-container h2{
+    font-size: 1.8rem;
+	font-weight: bold;
+	margin: 2.7rem 0 1.5rem;
+}
+/*モーダルの横幅を変更したい場合*/
+.modaal-container{
+    width: 39rem;
+}
+
+.modaal-content-container{
+	padding: 30px 30px 100px 30px;
+}
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+	background:#707070;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#292929;
+}
+.modaal-overlay{
+	background: #fff !important;
+}
+/* 閉じるボタン */
+.modaal-close{
+	height: 5rem;
+	width: 5rem;
+	right: 5.5rem;
+    top: 3.5rem;
+	color: transparent;
+}
+.modaal-wrapper .modaal-close:hover{
+	background-color: transparent;
+}
+.modaal-close:after, .modaal-close:before{
+	height: 5rem;
+	width: 0.3rem;
+}
+
 /* 施設リスト */
 .guide .map_list_inner{
 	padding-top: 24rem;
@@ -111,7 +181,7 @@ body{
 }
 .guide .map_list ul{
 	display: flex;
-    justify-content: center;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	margin: 0 auto;
 }
@@ -144,9 +214,31 @@ body{
 
 }
 
+@media screen and (max-width: 1169px){
+	.guide .introduction_inner{
+		max-width: 78rem;
+	}
+	.map{
+		width: 50rem;
+		margin: 0 auto;
+		margin-left: -4rem;
+		margin-top: 8rem;
+	}
+	.guide_attent{
+		right: calc(50% - -6.6rem);
+		bottom: 11rem;
+	}
+	.guide .introduction{
+		margin-top: 12rem;
+	}
+}
+
 
 
 @media screen and (max-width: 767px){
+	.guide .mc_2{
+		max-width: 68rem;
+	}
 	/* マップ */
 	.guide .mc_2 .content_inner{
 		flex-wrap: wrap;
@@ -169,7 +261,7 @@ body{
 	}
 	.guide_attent{
 		position: absolute;
-		left: 3.7rem;
+		left: 4.7rem;
 		bottom: -37rem;
 		letter-spacing: 0.2rem;
 		font-size: 1.2rem;
@@ -182,6 +274,9 @@ body{
 	.guide .map_list h2{
 		width: 33rem;
 		margin: 0rem auto 2rem;
+	}
+	.guide .map_list ul{
+		justify-content: center;
 	}
 	.guide .map_list li{
 		margin-bottom: 4rem;
@@ -205,7 +300,7 @@ body{
 	}
 	.guide .mc_text{
 		margin-top: 0;
-		margin-left: 0;
+		margin-left: -4.7rem;
 	}
 	.guide .mc_text .inner h2{
 		margin-left: 3.7rem;
@@ -214,7 +309,7 @@ body{
 	.guide .mc_text .inner p{
 		position: absolute;
 		bottom: -76rem;
-		margin-left: 3.7rem;
+		margin-left: 3.3rem;
 	}
 	.guide .introduction{
 		margin-top: 50rem;

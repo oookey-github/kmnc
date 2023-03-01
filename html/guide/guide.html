@@ -7,6 +7,7 @@
     <title>ホテル案内</title>
     <link rel="stylesheet" href="../css/reset.css">
     <script src="../js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="../css/modaal.min.css">
     <link rel="stylesheet" href="../css/top.css">
     <link rel="stylesheet" href="../css/restaurant.css">
     <link rel="stylesheet" href="../css/guide.css">
@@ -163,26 +164,92 @@
                                     <p>施設マップ</p>
                                     <img src="../image/guide_line.svg" alt="">
                                 </div>
-                                <map name="hotel_map">
-                                    <area shape="rect" coords="412,44,545,100" href="#" alt="駐車場" />
-                                    <area shape="rect" coords="433,181,538,243" href="#" alt="フロント" />
-                                    <area shape="rect" coords="243,86,406,152" href="#" alt="紀南幸商店街" />
-                                    <area shape="rect" coords="185,159,370,206" href="#" alt="匠工房" />
-                                    <area shape="rect" coords="122,308,232,342" href="#" alt="新姫庵" />
-                                    <area shape="rect" coords="88,349,245,383" href="#" alt="湯浴みぼっこ" />
-                                    <area shape="rect" coords="317,348,418,396" href="#" alt="馳走庵" />
-                                    <area shape="rect" coords="483,457,714,511" href="#" alt="Tha Club Lounge" />
-                                    <area shape="rect" coords="467,527,555,567" href="#" alt="穀雨" />
-                                    <area shape="rect" coords="373,574,544,636" href="#" alt="安らぎの座" />
-                                    <area shape="rect" coords="12,520,132,560" href="#" alt="新月庵" />
-                                    <area shape="rect" coords="9,653,173,693" href="#" alt="はなれ 咲ら村" />
-                                    <area shape="rect" coords="104,744,213,793" href="#info" alt=" 満月庵" />
-                                </map>
+
                                 <img usemap="#hotel_map" src="../image/hotel_map.png" alt="" class="">
+                                <map name="hotel_map">
+                                    <area shape="rect" coords="754,90,958,165" href="#parking" alt="駐車場" class="modal-open"/>
+                                    <area shape="rect" coords="442,165,721,263" href="#front" alt="フロント" class="modal-open" />
+                                    <area shape="rect" coords="341,285,634,357" href="#shopping" alt="紀南幸商店" class="modal-open"/>
+                                    <area shape="rect" coords="783,333,949,420" href="#workshop" alt="匠工房" class="modal-open"/>
+                                    <area shape="rect" coords="215,549,418,611" href="#salon" alt="新姫庵" class="modal-open"/>
+                                    <area shape="rect" coords="160,620,441,682" href="#bathing" alt="湯浴みぼっこ" class="modal-open"/>
+                                    <area shape="rect" coords="557,626,759,702" href="#chisoan" alt="馳走庵" class="modal-open"/>
+                                    <area shape="rect" coords="867,811,1288,910" href="#lounge" alt="Tha Club Lounge" class="modal-open"/>
+                                    <area shape="rect" coords="823,944,984,1006" href="#koku" alt="穀雨" class="modal-open"/>
+                                    <area shape="rect" coords="678,1012,974,1121" href="#shukubo" alt="やすらぎの座" class="modal-open"/>
+                                    <area shape="rect" coords="40,928,223,991" href="#newmoon" alt="新月庵" class="modal-open"/>
+                                    <area shape="rect" coords="14,1166,305,1221" href="#detached" alt="はなれ 咲ら村" class="modal-open"/>
+                                    <area shape="rect" coords="186,1325,374,1409" href="#fullmoon" alt="満月庵" class="modal-open"/>
+                                </map>
+                                
                             </div>
                             <div class="guide_attent">
                                 <p>※マップ上の施設をクリックすると<br>該当の施設の詳しい情報がご覧いただけます。</p>
                             </div>
+
+                            <!-- モーダルウィンドウ -->
+                            <section id="parking" class="modal">
+                                <img src="../image/header_bg_guide.png" alt="">
+                                <h2>駐車場</h2>
+                                <p>サンプルテキストです。</p>
+                            </section>
+                            <section id="front" class="modal">
+                                <img src="../image/guide_li_5.png" alt="">
+                                <h2>四方八方帳場－よもやもちょうば－<br>フロント</h2>
+                                <p>帳付け、勘定の場である、フロント「四方八方帳場」。駐車場の目の前にございます。観光先のご案内などもいたしておりますので、お気軽にお立ち寄りください。</p>
+                            </section>
+                            <section id="shopping" class="modal">
+                                <img src="../image/guide_li_4.png" alt="">
+                                <h2>紀南幸商店－きなんさきわい－</h2>
+                                <p>「集いの郷」は、熊野倶楽部に訪れた方が、まず足を踏み入れる玄関口のエリアでございます。紀南幸商店では、モノづくりが盛んな紀南の特産品を、豊富に取り揃えています。</p>
+                            </section>
+                            <section id="workshop" class="modal">
+                                <img src="../image/guide_li_6.png" alt="">
+                                <h2>匠工房－たくみこうぼう－</h2>
+                                <p>熊野周辺、自然にまつわる工芸体験プログラムを各種開催しています。</p>
+                            </section>
+                            <section id="salon" class="modal">
+                                <img src="../image/guide_li_2.png" alt="">
+                                <h2>香療処 新姫庵－にいひめあん－</h2>
+                                <p>アロマサロン「新姫庵」では、自然の恵みの力で体の内側から本来の美しさを引き出していきます。リラクゼーションに使用するホットストーンは、キメが細かく、滑らかな肌触りが特徴の熊野の奥地で産出される那智黒石を採用しています。</p>
+                            </section>
+                            <section id="bathing" class="modal">
+                                <h2>湯浴みぼっこ</h2>
+                                <p>サンプルテキストです。</p>
+                            </section>
+                            <section id="chisoan" class="modal">
+                                <img src="../image/guide_li_8.png" alt="">
+                                <h2>旬菜食房 馳走庵－ちそうあん－</h2>
+                                <p>お部屋から、お食事会場「馳走庵」までの散策で心と体を目覚めさせ、熊野の郷土料理を愉しむことができる朝食をご提供しております。熊野で取れた野菜や魚で作られた出来立てのお料理。一品一品が体に染み渡り1日の活力を生み出します。</p>
+                            </section>
+                            <section id="lounge" class="modal">
+                                <img src="../image/guide_li_1.png" alt="">
+                                <h2>The Club Lounge やすらぎの座</h2>
+                                <p>窓を開け放つと、山々の稜線、夕景、満点の星空。熊野の自然に抱かれ、お好きなお酒とともに、まさに特別なひとときをお過ごしください</p>
+                            </section>
+                            <section id="koku" class="modal">
+                                <img src="../image/guide_li_7.png" alt="">
+                                <h2>料亭 穀雨－こくう－</h2>
+                                <p>田畑の準備が整い、それに合わせて春の雨の降るころ穀雨により、穀物はたくましく成長します。食物への感謝を込めた、熊野倶楽部のメインダイニング「穀雨」。心ゆくまでお食事をお愉しみください。</p>
+                            </section>
+                            <section id="shukubo" class="modal">
+                                <h2>宿坊やすらぎの座</h2>
+                                <p>サンプルテキストです。</p>
+                            </section>
+                            <section id="newmoon" class="modal">
+                                <img src="../image/guest_room_2.png" alt="">
+                                <h2>新月庵−しんげつのいおり−</h2>
+                                <p>室内のお風呂には光が差し込み、リビング、ローベッドの寝室の一体感により、ゆったりとお寛ぎいただけます。</p>
+                            </section>
+                            <section id="detached" class="modal">
+                                <h2>はなれ 咲ら村</h2>
+                                <p>サンプルテキストです。</p>
+                            </section>
+                            <section id="fullmoon" class="modal">
+                                <img src="../image/guest_room_1.png" alt="">
+                                <h2>満月庵−まんげつのいおり−</h2>
+                                <p>熊野杉を使用した広々とした空間で、自然との調和を感じ、心和むひとときを</p>
+                            </section>
                         </div>
                     </div>
 
@@ -502,9 +569,15 @@
     </div>
 </footer>
 
-<!-- マップ  -->
+<!-- マップレスポンシブ -->
+<script src="../js/imageMapResizer.min.js"></script>
+<script>
+    imageMapResize();
+</script>
+<!-- モーダルウィンドウ -->
+<script src="../js/modaal.min.js"></script>
+<script src="../js/jquery.cookie.js"></script>
+<!-- 自作のJS  -->
 <script src="../js/main.js"></script>
-<script src="../js/jquery.rwdImageMaps.min.js"></script>
-
 </body>
 </html>
