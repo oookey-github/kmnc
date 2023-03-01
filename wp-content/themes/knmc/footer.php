@@ -221,6 +221,8 @@
     </div>
 </footer>
 
+<!-- LightBox -->
+<script src="<?php bloginfo('template_directory'); ?>/js/lightbox.min.js"></script>
 <!-- スムーススクロール -->
 <script rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 <!--自作のJS-->

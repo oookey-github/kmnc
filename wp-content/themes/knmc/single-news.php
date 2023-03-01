@@ -20,7 +20,7 @@
                         <p>&gt;</p>
                         <a href="<?php bloginfo('url'); ?>/news/"><p class="fs12">お知らせ一覧</p></a>
                         <p>&gt;</p>
-                        <a href=""><p class="fs12">【GWを世界遺産リゾート熊野倶楽部で】Special Event のご案内</p></a>
+                        <p class="fs12"><?php the_title(); ?></p>
                     </div>
                 </div>
             </header>
@@ -32,16 +32,37 @@
                 <div>
                     <div class="detail">
                         <div class="detail_title">
-                            <p>2022.11.12</p>
-                            <h2>【GWを世界遺産リゾート熊野倶楽部で】Special Event のご案内</h2>
+                            <p><?php the_time('Y.m.d'); ?></p>
+                            <h2><?php the_title(); ?></h2>
                         </div>
+
                         <div class="detail_inner">
-                            <p>世界遺産リゾート熊野倶楽部では年末年始期間中、連日趣向を凝らしたイベント&エンターテイメントをご用意。世界遺産リゾート熊野倶楽部で心がはずむ 贅沢な時間と体験を心行くまでお愉しみくださいませ。
-                                <br><br>
-                                世界遺産リゾート熊野倶楽部では年末年始期間中、連日趣向を凝らしたイベント&エンターテイメントをご用意。世界遺産リゾート熊野倶楽部で心がはずむ 贅沢な時間と体験を心行くまでお愉しみくださいませ。
-                                <br><br>
-                                世界遺産リゾート熊野倶楽部では年末年始期間中、連日趣向を凝らしたイベント&エンターテイメントをご用意。世界遺産リゾート熊野倶楽部で心がはずむ 贅沢な時間と体験を心行くまでお愉しみくださいませ。
-                            </p>
+                            <?php if( get_field('news_info') ) { ?>
+								<p class="news_info"><?php the_field('news_info'); ?></p>
+							<?php } ?>
+
+                            <?php if(have_rows('news_inner')): ?>
+								<?php while(have_rows('news_inner')): the_row(); ?>
+
+                                <?php if( get_sub_field('news_subtitle') ) { ?>
+                                    <h4 class="news_subtitle"><?php the_sub_field('news_subtitle'); ?></h4>
+                                <?php } ?>
+
+                                <?php if( get_sub_field('news_img') ) { ?>
+                                    <div class="news_img">
+                                        <img src="<?php the_sub_field('news_img'); ?>">
+                                        <a href="<?php the_sub_field('news_img'); ?>" data-lightbox="img" data-title="<?php the_sub_field('news_img_info'); ?>" class="news_img_size">
+                                            <p>画像を拡大</p>
+                                        </a>
+                                    </div>
+                                <?php } ?>
+
+                                <?php if( get_sub_field('news_detail') ) { ?>
+                                    <p class="news_detail"><?php the_sub_field('news_detail'); ?></p>
+                                <?php } ?>
+
+                                <?php endwhile; ?>
+							<?php endif; ?>
                         </div>
                     </div>
                     <a href="<?php bloginfo('url'); ?>/news/"><span class="arrow"></span>一覧へ戻る</a>

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/custom.css?ver=<?php echo date('YmdHis'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/slick.css?ver=<?php echo date('YmdHis'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/slick-theme.css?ver=<?php echo date('YmdHis'); ?>">
+    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/lightbox.css?ver=<?php echo date('YmdHis'); ?>">
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=M+PLUS+1p:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <script src="<?php bloginfo('template_directory'); ?>/js/jquery-3.6.3.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/slick.min.js"></script>
