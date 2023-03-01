@@ -141,6 +141,9 @@ section{
 .right_text_inner{
     width:70%;
 }
+.right_text_flex{
+    width:90%;
+}
 .right_text .title{
     margin-left:7rem;
     margin-top:0;
@@ -300,6 +303,9 @@ footer{
         height:auto;
     }
     .right_text_inner{
+        width:100%;
+    }
+    .right_text_flex{
         width:100%;
     }
     .omotenashi_img_view{

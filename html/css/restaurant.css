@@ -19,7 +19,8 @@ body{
 }
 @media (min-width: 768px) {
     body {
-        min-width: 1024px;
+        /* min-width: 1024px; */
+        min-width: 768px;
     }
     
 }
