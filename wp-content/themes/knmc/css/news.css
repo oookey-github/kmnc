@@ -125,10 +125,14 @@ body{
     background:  #292929;
     color: #fff;
     }
+    .Pagination-Item-Link span{
+        margin-left: 0.2rem;
+    }
 
     @media screen and (max-width: 767px){
         .newspage .news{
             margin-top: 4rem;
+            margin-bottom: 10rem;
         }
         .newspage .news h2{
             margin: 0px auto 4rem;

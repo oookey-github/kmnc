@@ -37,11 +37,6 @@ body{
     height: auto;
 }
 .tourism .kumano_banner .inner{
-    width: auto;
-    height: auto;
-    margin: auto;
-    display: block;
-    position:static;
 }
 .tourism .kumano_banner .multiply{
     background-color: transparent;
@@ -78,7 +73,7 @@ body{
 }
 .tourism .kumano_banner .right{
     bottom: 8rem;
-    right: 5%;
+    right: 0rem;
 }
 
 /* タイトル */
@@ -141,7 +136,7 @@ body{
 }
 .tourism_list li{
     width: 30rem;
-    margin: 4.5rem;
+    margin: 4.5rem auto;
     padding-top: 5rem;
 }
 .tourism_list li img{
@@ -179,27 +174,28 @@ body{
         width: auto;
     }
     .tourism .mc_title{
-        margin-left: 5.8rem;
+        margin-left: 4.2rem;
         font-size: 1.2rem !important;
         margin-top: 5.7rem;
     }
     .tourism .horiz_text{
-        font-size: 2.2rem;
+        font-size: 2rem;
+        left: -8rem;
     }
     .tourism_inner{
         height: 79rem;
     }
     .tourism .kumano_banner .inner{
-        position: relative;
+
     }
     .tourism .kumano_banner .left h2{
         font-size: 3.4rem;
         top: 13%;
     }
     .tourism .kumano_banner .right{
-        margin: -27rem auto;
+        margin: 0rem auto;
         width: 100%;
-        bottom: auto;
+        bottom: 6rem;
         right: auto;
     }
     .tourism .kumano_banner .vertical_text{
@@ -212,17 +208,26 @@ body{
     }
     .tourism_btn ul{
         font-size: 1.5rem !important;
-        width: 34rem !important;
+        width: 30rem !important;
         letter-spacing: 0.1rem;
         justify-content: space-between;
+        margin: 0 auto;
     }
     .tourism_btn{
         margin-top: 5rem;
     }
     .tourism_btn li{
-        width: 16.6rem !important;
+        width: 13rem !important;
     }
     .tourism_list ul{
-        width: 39rem;
+        width: 37rem;
+        margin-top: -8rem;
+    }
+    .official_site .tourism_btn ul{
+        width: 34rem !important;
+        margin-bottom: 18rem;
+    }
+    .official_site .tourism_btn li{
+        width: 16rem !important;
     }
 }

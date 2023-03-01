@@ -46,6 +46,57 @@ body img{
 	overflow: auto;
 }
 
+.fadein {
+    /* 最初は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5rem);
+    transition: opacity 1.7s, visibility 1.7s, transform 1.7s;
+}
+/* フェードイン時に入るクラス */
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:2.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+.fadeUp_header{
+    animation-name:fadeUpAnime;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+        
+    @keyframes fadeUpAnime{
+          from {
+            opacity: 0;
+            transform: translateY(3px);
+          }
+        
+          to {
+            opacity: 1;
+            transform: translateY(0px);
+          }
+        }
+    
 
 /* 右側メニュー */
 /* ボタン */
@@ -83,6 +134,8 @@ body img{
 }
 .sns_menu_inner{
     text-align: center;
+    letter-spacing: normal;
+    line-height: normal;
 }
 .insta_icon{
     margin-bottom:2.2rem;
@@ -125,8 +178,14 @@ line-height: 1.1rem;;
     -o-border-radius: 50%;
     right:14rem;
     bottom:0rem;
+    cursor: pointer;
 }
-.page-top:before{
+.page-top a{
+    display:inline-block;
+    height:5.3rem;
+    width:5.3rem;
+}
+.page-top a:before{
     content:"";
     left: 2.2rem;
     width: 1rem;
@@ -184,6 +243,28 @@ line-height: 1.1rem;;
     right: 7rem;
 }
 
+.hotel_reserve_inner_sp{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 998;
+    /*ナビのスタート位置と形状*/
+	bottom: 0;
+    left: -120%;
+	width:43rem;
+    height: auto;/*ナビの高さ*/
+    /*動き*/
+	transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+.hotel_reserve_inner_sp.panelactive{
+    left: 8rem;
+}
+.hotel_reserve_inner_sp img{
+    width: 42.5rem;
+    height: auto;
+}
+
 
 
 
@@ -224,9 +305,9 @@ line-height: 1.1rem;;
     left: 0;
     width: 100%;
     height: 83rem;
+    color: #fff;
     background-position: center;
     background-size: cover;
-    color: #fff;
 }
 .mv_inner{
     height: 83rem;
@@ -372,6 +453,14 @@ line-height: 1.1rem;;
 }
 
 /* ===================================== */
+.mc_img_1{
+    background-position: center;
+    background-size: cover;
+}
+.mc_img_2,.mc_img_3,.mc_img_4{
+    background-position: center;
+    background-size: cover;
+}
 /* メインコンテンツ */
 .main_content{
     display: flex;
@@ -388,11 +477,8 @@ line-height: 1.1rem;;
     height: 74rem;
     width: 47rem;
 }
-.mc_img_1{
-    background-image: url(../image/mc_1.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
+.mc_img_1 img{
+    width: 100%;
 }
 /* 縦書き */
 .vertical_text{
@@ -444,11 +530,10 @@ line-height: 1.1rem;;
     position: absolute;
     right: 0;
 }
-.mc_img_2{
-    background-image: url(../image/mc_2.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
+.mc_img_2 img{
+    height: 54rem;
+    width: 100%;
+    object-fit: cover;
 }
 .mc_2 .mc_text{
     margin-right: 60rem;
@@ -471,12 +556,6 @@ line-height: 1.1rem;;
     margin-bottom: 1rem;
 }
 /* mc3 */
-.mc_img_3{
-    background-image: url(../image/mc_3.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-}
 .mc_3{
     flex-direction: row-reverse;
     margin-top: 38rem;
@@ -487,6 +566,11 @@ line-height: 1.1rem;;
     min-width: 55rem;
     position: absolute;
     left: 0;
+}
+.mc_item_3 img{
+    height: 54rem;
+    width: 100%;
+    object-fit: cover;
 }
 .mc_3 .mc_text{
     margin-left: 60rem;
@@ -502,13 +586,17 @@ line-height: 1.1rem;;
 /* mc4 */
 .mc_4{
     background-image: url(../image/mc_4-bg.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 100%;
-    margin-top: 43rem;
+    margin-top: 30rem;
+    padding-top: 13rem;
+    background-position-x: calc(50% - 36rem);
 }
-.mc_4 .mc_img_2{
-    background-image: url(../image/mc_4-1.png);
+.mc_4 .mc_img_4 img{
+    height: 54rem;
+    width: 100%;
+    object-fit: cover;
 }
 .mc_4 .horiz_text{
     bottom: 34rem;
@@ -604,6 +692,10 @@ line-height: 1.1rem;;
     font-family: 'Noto Sans JP', sans-serif;
     max-width: 60rem;
     margin-bottom: 4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .news dd a{
     position: absolute;
@@ -639,7 +731,8 @@ line-height: 1.1rem;;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 120rem;
+    max-width: 120rem;
+    width: 100%;
     margin: 5.5rem auto 0;
 }
 .hospitality_list li{
@@ -745,7 +838,7 @@ line-height: 1.1rem;;
 /* next */
 
 .slick-next {
-    right: -14rem !important;
+    right: -9rem !important
 }
 .slick-next::after {
     right: 3.2rem;
@@ -755,7 +848,7 @@ line-height: 1.1rem;;
 /* prev */
 
 .slick-prev {
-    left: -14rem !important;
+    left: -9rem !important
 }
 .slick-prev::after {
     left: 3.2rem;
@@ -801,12 +894,12 @@ line-height: 1.1rem;;
     width: 60rem;
     height: 60rem;
     margin-bottom: 6.5rem;
+    clip-path: circle(30rem at center);
 }
 .circle_img img{
     width: 100%;
-    height: 100%;
+    height: 60rem;
     object-fit: cover;
-    border-radius: 50%;
 }
 .kumano_circle .title{
     margin-bottom: 6.5rem;
@@ -826,26 +919,30 @@ line-height: 1.1rem;;
 }
 /* 日本書紀に遡る… */
 .kumano_banner{
-    background-image: url(../image/kumano_banner.png);
     position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    color: #fff;
     width: 100%;
     height: 69rem;
-    background-position: center;
-    background-size: cover;
-
-    color: #fff;
+    object-fit: cover;
+}
+.kumano_banner .parallax img{
+    width: 100%;
+    height: 69rem;
+    object-fit: cover;
 }
 .kumano_banner .inner{
-    width: 120rem;
+    width: 100%;
+    max-width: 120rem;
     height: 69rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
 }
 .kumano_banner .left{
 
@@ -897,7 +994,7 @@ line-height: 1.1rem;;
 .photo_spot ul{
     display: flex;
     justify-content: center;
-    width: 120rem;
+    width: 100%;
     margin: 5.5rem auto 0;
 }
 .photo_spot li{
@@ -1006,7 +1103,25 @@ line-height: 1.1rem;;
     height: 100vh;/*表示する高さ*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+
 }
+#g-nav.panelactive #g-nav-list{
+    animation-name:fadeInAnime;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+@keyframes fadeInAnime{
+    0% {
+      opacity: 0;
+    }
+    40% {
+        opacity: 0;
+      }
+    100% {
+      opacity: 1;
+    }
+  }
 
 /*ナビゲーション*/
 #g-nav ul {
@@ -1375,7 +1490,7 @@ line-height: 1.1rem;;
         width: 30vh;
         min-width: 30rem;
         height: 52vh;
-        min-height: 52rem;
+        min-height: 49rem;
     }
     .mc_text{
         margin: 0 auto;
@@ -1392,21 +1507,29 @@ line-height: 1.1rem;;
         font-size: 2.2rem;
         left:auto;
         bottom: auto;
-        right: -1.3rem;
+        right: -4%;
         top: -49rem;
+        text-align: center;
+        width: 2.7rem;
+    }
+    .text_line_v{
     }
     .mc_text .circle_btn_top{
         margin-top: 4rem;
         margin-bottom: 0;
     }
     .mc_2{
-        margin-top: 16rem;
+        /* margin-top: 16rem; */
+        margin-top: 13rem;
     }
     .mc_item_2{
         height: 49rem;
         width: 36rem;
         min-width: 35rem;
         position: static;
+    }
+    .mc_img_2 img,.mc_item_3 img,.mc_img_4 img{
+        height: 50rem !important;
     }
     .mc_2 .mc_title{
         margin-top: 10rem;
@@ -1420,7 +1543,8 @@ line-height: 1.1rem;;
         left: -6.5rem;
     }
     .mc_3{
-        margin-top: 16rem;
+        /* margin-top: 16rem; */
+        margin-top: 12rem;
         flex-direction: inherit;
     }
     .mc_item_3{
@@ -1433,7 +1557,6 @@ line-height: 1.1rem;;
         margin: 0 auto;
     }
     .mc_3 .vertical_text{
-        right: -0.6em;
         bottom: auto;
         top: -47rem;
     }
@@ -1442,6 +1565,24 @@ line-height: 1.1rem;;
     }
     .mc_3 .mc_text .circle_btn_top{
         margin-bottom: 0;
+    }
+    .mc_4{
+        background-image: none;
+        padding: 0;
+        margin-top: 10rem;
+    }
+    .mc_4 .mc_title{
+        font-size: 3.2rem !important;
+    }
+    .mc_4 .mc_text{
+        background-image: url(../image/mc_4-bg.png);
+        padding: 0rem 5.5rem;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mc_4 .horiz_text{
+        left: -1rem;
     }
     /* ロクシタンバナー */
     .loccitane_banner{
@@ -1548,6 +1689,9 @@ line-height: 1.1rem;;
     }
     .slick_exp-dots{
         margin: 3rem auto 0;
+        display: flex;
+        width: 50%;
+        justify-content: center;
     }
 
     /* 矢印 ドットナビゲーション */
@@ -1626,6 +1770,10 @@ line-height: 1.1rem;;
         width: 30rem;
         height: 30rem;
         margin-bottom: 4rem;
+        clip-path: circle(15rem at center);
+    }
+    .circle_img img{
+        height: 30rem;
     }
     /* 熊野バナー */
     .kumano_banner{
@@ -1675,7 +1823,7 @@ line-height: 1.1rem;;
         height: 20rem;
     }
     .photo_spot li p{
-        margin-top: 1.8rem;
+        margin-top: 1rem;
         letter-spacing: 0.2rem;
     }
     /* インスタグラム */
@@ -1708,5 +1856,6 @@ line-height: 1.1rem;;
     .access_map p{
         width: 30rem;
         margin: 4rem auto 0;
+        display: block;
     }
 }

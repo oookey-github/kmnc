@@ -1,25 +1,44 @@
-.order5{
-    order:5;
+
+.float-r{
+    float:right;
+    
 }
-.order6{
-    order: 6;
+.float-l{
+    float:left;
+    
+}
+.header{
+    background: url(../image/hospitality_header.png) no-repeat!important;
 }
 .border_div{
     position:relative;
 }
+.omotenashi{
+    margin:0 auto;
+    width:148rem;
+}
 .omotenashi .title .border_div .border {
     left:0rem;
+}
+.omotenashi .title{
+    margin-top:6.1rem;
 }
 .omotenashi .title p{
     margin-left:12rem;
     line-height: 2.4rem;
+    margin-bottom:1.8rem;
+}
+.omotenashi .title p:first-child{
+
 }
 .omotenashi .title p:last-child{
     letter-spacing: 0.3rem;
     line-height: 3.8rem;
+    font-size:1.2rem;
 }
 #omotenashi_text{
     margin-top:5.5rem;
+    padding-top:0;
 }
 .main_text.omotenashi{
     text-align: center;
@@ -42,31 +61,282 @@
 .sub_text p:first-child{
 margin-bottom:4rem;
 }
-#omotenashi_1{
-    padding-top:12.9rem;
+section{
+    padding-top:20.1rem;
 }
 
 .omotenashi_1{
+    width:90%;
+    margin:0 auto;
+    clear: both;
+}
+.omotenashi_1 .image{
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
-    width:95%;
+    align-content: baseline;
+    width:50%;
 }
 .hospitality_img{
-    width:68.6rem;
+    max-width:68.6rem;
 }
 .hospitality_img img{
     width:100%;
 }
 .omotenashi_img_view{
-    width:68.6rem;
+    width:45%;
+    overflow: hidden;
+    height:22rem;
 }
-#omotenashi_1 .border_div{
-    width:10%;
+.omotenashi_img_view img{
+    width:25.8rem;
+    margin-top:6.1rem;
+    margin-left:5.9rem;
+    
 }
-#omotenashi_1 .border{
+.omotenashi_img_view .slick-dots li button:before{
+    font-size:22px;
+}
+.omotenashi_img_view.slick-sp-pc .slick-dots{
+    display:flex;
+    margin:0 auto;
+    justify-content: center;
+    width:100%!important;
+}
+.omotenashi_img_view.slick-sp-pc .slick-dots li{
+    width:2rem!important;
+    display:inline-block;
+    margin:0;
+}
+.omotenashi_img_view .slick-dots button{
+    width:0.3rem;
+    height:0.3rem;
+    margin:0 auto;
+}
+.omotenashi_img_view .slick-active button:before{
+    display:none;
+}
+.omotenashi_img_view.slick-sp-pc .slick-dots .slick-active button,
+.slick-dots li button:hover{
+    height:0.8rem!important;
+    background-color:#333;
+    margin-top:0.65rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.border_div{
+    width:10rem;
+}
+.border{
     bottom:0;
-    top:1rem;
+    top:1.5rem;
     height:1px;
-    left:2rem
+    left:1.5rem;
+}
+.right_text{
+    width:50%;
+}
+.right_text_inner{
+    width:70%;
+}
+.right_text .title{
+    margin-left:7rem;
+    margin-top:0;
+    width:100%;
+    margin-bottom:20rem;
+}
+.right_text .title p{
+    letter-spacing: 0.6rem;
+    line-height: 4.2rem;
+    margin-left:0;
+    margin-bottom:0;
+}
+
+.omotenashi_1 .title .title_inner{
+    margin-top:5.5rem;
+}
+.omotenashi_1 .title .title_inner p{
+    letter-spacing: 0.3rem;
+    line-height: 2.6rem;
+    margin:0 auto 3rem;
+}
+.omotenashi_1 .title .title_inner .reserve_btn p{
+    margin-bottom:0; 
+}
+#omotenashi_2 .right_text .title{
+    height:43rem;
+}
+#omotenashi_2 .omotenashi_img_view img,
+#omotenashi_4 .omotenashi_img_view img,
+#omotenashi_6 .omotenashi_img_view img{
+    margin-right:5.9rem;
+    margin-left:0;
+}
+#omotenashi_2 .omotenashi_img_view,
+#omotenashi_4 .omotenashi_img_view,
+#omotenashi_6 .omotenashi_img_view{
+    justify-content: flex-end;
+}
+#omotenashi_5 .reserve_btn p{
+    margin-right:6rem;
+}
+#omotenashi_7{
+    padding-bottom:16.6rem;
+}
+.right_text .title .small_text,
+.omotenashi .title p:last-child{
+    letter-spacing: 0.15rem;
+    line-height: 2.6rem;
+}
+.kome{
+    padding-left:1em;
+    text-indent: -1em;
+}
+.sm_note{
+    font-size:1.6rem;
+    margin-left:0;
+}
+@media screen and (max-width: 767px){
+    .nav_link{
+        margin-left:2rem;
+    }
+    section{
+        padding-top:5rem;
+    }
+    .omotenashi{
+        width:100%;
+    }
+    .omotenashi .title{
+        margin-top:3rem;
+    }
+    .omotenashi .title .fs30{
+        font-size:2rem!important;
+    }
+    .omotenashi .title p{
+        margin-left:5rem;
+        margin-bottom:0;
+
+    }
+    .omotenashi .title .border_div{
+        display:inline-block;
+        width:auto;
+    }
+    .omotenashi .title p:last-child{
+        margin-bottom:0;
+        padding-bottom:0;
+        font-size:1.6rem;
+    }
+    .border{
+        padding-left:4rem;
+        left:0;
+    }
+    .main_text_div p:first-child{
+        font-size:1.8rem;
+    }
+    .main_text_div p:last-child{
+        font-size:2.4rem;
+        letter-spacing: 0.1rem;
+    }
+    .main_text_div{
+        margin-bottom:5.3rem;
+    }
+    .sub_text p{
+        font-size:1.6rem;
+        letter-spacing: 0.1rem;;
+    }
+    .omotenashi_1{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .omotenashi_1 .border{
+        left:-2rem;
+        padding-left:4rem;
+    }
+    .omotenashi_1 .image{
+        width:100%;
+        float: none;
+    }
+    .hospitality_img{
+        width:100%;
+    }
+    .omotenashi_1 .title.sp{
+        margin-left:4rem;
+        letter-spacing:0.17rem;
+        line-height: 4.2rem;
+        font-weight:normal;
+        margin-bottom:4rem;
+    }
+
+    .omotenashi_1 .title .title_inner p{
+        font-size:1.6rem;
+        letter-spacing: 0.02rem;
+        line-height: 2.4rem;;
+    }
+    .right_text{
+        width:100%;
+    }
+
+    .right_text .title{
+        margin-left:0;
+        width:100%;
+        margin-bottom:0;
+    }
+    #omotenashi_2 .right_text .title{
+        height:auto;
+    }
+    .right_text_inner{
+        width:100%;
+    }
+    .omotenashi_img_view{
+        width:100%;
+    }
+    .omotenashi_img_view img{
+        margin-left:1rem;
+        width:24rem;
+        margin-top:0;
+        object-fit: cover;
+    }
+    .omotenashi .title .reserve_btn p{
+        margin-left:0;
+        font-size: 1.8rem;;
+    }
+    #omotenashi_3 .title p:last-child{
+        margin-left:0;
+    }
+    #omotenashi_3 .omotenashi_1 .title .title_inner p{
+        letter-spacing: 0.18rem;
+    }
+    .sm_note{
+        font-size:1.6rem;
+        margin-left:0!important;
+        padding-bottom:3.5rem;
+        margin-top:0;
+    }
+    #omotenashi_6 .omotenashi_1 .sp.title{
+        font-size:2.7rem;
+        letter-spacing: 0;
+    }
+    #omotenashi_7 .omotenashi_1 .title{
+        font-size:2.4rem!important;
+    }
+    #omotenashi_7 .right_text .title .small_text{
+        font-size:1.6rem;
+        padding-bottom:0;
+    }
+    #omotenashi_7{
+        padding-bottom:10rem
+    }
+    .omotenashi footer .each_page{
+        justify-content: center;
+    }
+    .omotenashi_img_view{
+        padding-top:3.5rem;
+        font-size:1.3rem;
+    }
+    .omotenashi .slick-dots{
+        bottom:0.5rem;
+    }
 }

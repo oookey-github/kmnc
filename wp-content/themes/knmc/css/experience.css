@@ -41,7 +41,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin: 8rem auto 0rem;
-    width: 126rem;
+    max-width: 126rem;
 }
 .exp_list li{
     width: 38rem;

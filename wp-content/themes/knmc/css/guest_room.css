@@ -6,7 +6,7 @@
 	.pc{display: none;}
 	.sp{display: inherit;}
 }
-html {scroll-behavior: smooth;}
+/* html {scroll-behavior: smooth;} */
 html{font-size: 62.5%;}
 body{
 	font-size:1.4em;
@@ -27,6 +27,7 @@ body{
 @media only screen and (max-width: 767px){
 	html{font-size: calc( 1000vw /430px  );}
 }
+
 /*flex 順番*/
 .order1{
     order:1;
@@ -40,25 +41,15 @@ body{
 .order4{
     order:4;
 }
-/* パララックスcss */
-.parallax_box{
-    overflow: hidden;
-}
-.parallax{
-    width:100%;
-    height:50vw;
-    object-fit: cover;
-}
 #guest_room_guidance{
     margin:0 auto;
-    width:114rem;
     padding:6.1rem 0;
 }
 #guest_room_guidance .title{
     padding-bottom:4.5rem;
+    margin-left:12rem;
 }
 #guest_room_guidance .title p:last-child{
-    margin-top:1.2rem;
     margin-bottom:0;
 }
 .guest_room .header{
@@ -68,8 +59,12 @@ body{
     margin-top:12rem;
 }
 .guest_room_guidance_inner{
+    max-width:148rem;
     width:100%;
     margin:0 auto;
+}
+#guest_room_guidance .guest_room_guidance_inner .border{
+    left:0;
 }
 .explanation.room.inner{
     flex-direction: column;
@@ -87,12 +82,12 @@ body{
     letter-spacing: 0.5rem;
 }
 .guest_room_mv{
-    width:114rem;
-    height:41.7rem;
+    width:90%;
     margin:0 auto 5.6rem;;
 }
 .guest_room_mv img{
     width:100%;
+    height:100%;
 }
 .text_center{
     text-align: center;
@@ -101,7 +96,6 @@ body{
     line-height: 4rem;
     letter-spacing: 0.84rem;
     margin-bottom:4.6rem;
-
 }
 .text p:last-child{
     line-height: 2.6rem;
@@ -111,24 +105,21 @@ body{
 .guest_room_guidance_inner .menu{
     width:100%;
     margin-top:4.2rem;
-    justify-content: space-between;
+    justify-content: center;
     margin:4.2rem auto 0;
-    padding-bottom:15.2rem;
     min-width:0;
 }
 .guest_room_guidance_inner .menu .flex{
     justify-content: center;
-
-    width:114rem;
 }
-.guest_room_guidance_inner .menu p{
-    margin:0rem 3.2rem 0;
+.guest_room_guidance_inner .menu_sp p{
+    margin:0rem auto 0;
     letter-spacing: 0.12rem;
-    width:22rem;
+    margin:0 3.5rem;
     
 }
+
 .guest_room_guidance_inner .menu p span{
-    
     font-size: 1.4rem;
     line-height: 4rem;
 }
@@ -145,32 +136,43 @@ body{
 .guest_room_guidance_inner .name p:last-child{
     margin-bottom:3.1rem;
 }
-.guest_room_guidance_inner .img{
-    width:90.8rem;
+section .guest_room_guidance_inner .border{
+    left:-12rem;
 }
 .guest_room_guidance_inner .img img{
-    width:50%;
-    position:absolute;
-    height: 44rem;
-    right: 0;
+    width:90.8rem;
 }
 .guest_room .guest_room_guidance_inner .title{
     margin-top:0;
-    width:80%;
+    width:50%;
+}
+.guest_room .main_content{
+    display:inline-block;
+}
+.guest_room_guidance_inner.room .main_content .float-l{
+    width:27%;
+    margin-left:10%;
 }
 .main_content.mc_2{
     flex-wrap: wrap;
     flex-direction: column-reverse;
 }
 .mc_img_2.room{
-    width:100%;
+    width:90.8rem;
+    overflow: hidden;
 }
 .mc_2 .mc_text.room{
-    width:80%;
+    width:100%;
     margin-right:0;
 }
 .mc_2.room{
     margin-top: 0;
+    width:100%;
+}
+.room .mc_item_2{
+    min-width:auto;
+    position:inherit;
+    width:50%;
 }
 .guest_room section{
     padding-top:10rem;
@@ -182,8 +184,8 @@ body{
     
     margin:12.4rem auto 10rem;
 }
-.view.room .flex{
-    justify-content: space-between;
+.view.room li{
+    margin:0 2.6rem 0 0;
 }
 .view.room img{
     width:32rem;
@@ -199,6 +201,44 @@ body{
     line-height: 4.2rem;
     letter-spacing: 0.4rem;
 }
+.view.room .slick-dots li button:before{
+    font-size:22px;
+}
+.view.room .slick-sp-pc .slick-dots{
+    display:flex;
+    margin:0 auto;
+    justify-content: center;
+    width:100%!important;
+}
+.view.room .slick-sp-pc .slick-dots li{
+    width:2rem!important;
+    display:inline-block;
+    margin:0;
+}
+.view.room .slick-dots button{
+    width:0.6rem;
+    height:0.6rem;
+    margin:0 auto;
+}
+.view.room .slick-active button:before{
+    display:none;
+}
+.view.room .slick-sp-pc .slick-dots .slick-active button,
+.view.room .slick-dots li button:hover{
+    width:0.8rem!important;
+    height:0.8rem!important;
+    background-color:#333;
+    margin-top:0.65rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.slick-dotted.slick-slider{
+    display:flex;
+    justify-content: center;
+}
 #introduction3.room{
     padding-bottom:17.6rem;
 }
@@ -211,12 +251,31 @@ body{
 #room4 .title .border_div .border{
     bottom:-1rem
 }
+.introduction_inner {
+    width:100%;
+    min-width:auto;
+}
+.introduction{
+    min-width:auto;
+}
+footer{
+    min-width:auto;
+}
+.footer_img{
+min-width:auto;
+}
 footer .each_page{
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 footer .each_page a{
     margin-right:3.2rem;
+}
+.footer2_inner{
+    min-width:auto;
+    width: 100%;
+    max-width: 130rem;
+    min-width:auto;
 }
 @media screen and ( max-width:767px ){
     /* 全ページ共通 右側メニュー */
@@ -273,7 +332,7 @@ footer .each_page a{
         opacity:0.9;
     }
     .page-top{
-        right:0.5rem;
+        right:0.5rem!important;
         opacity:0.9;
     }
     .ai_btn{
@@ -316,10 +375,11 @@ footer .each_page a{
         line-height: 2rem;
     }
     .pankuzu{
-        margin-left:2rem;
+        margin-left:1rem;
     }
-    .nav_link{
+    .guest_room .nav_link{
         justify-content: center;
+        margin-left:1rem;
     }
     .nav_link p:last-child{
         padding:0;
@@ -328,20 +388,34 @@ footer .each_page a{
         padding:0 1.2rem;
     }
     /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+    .header{
+        min-width:auto;
+        width:100%;
+    }
     .guest_room .guest_room_guidance_inner .title:first-child{
         margin-top:2.9rem;
-        margin-left:2.8rem;
+        margin-left:3.8rem;
+    }
+
+    #guest_room_guidance .title p:first-child{
+        font-size:2rem;
     }
     .guest_room section{
         padding-top:0;
+    }
+    .guest_room_guidance_inner{
+        width:100%;
     }
     .guest_room .guest_room_guidance_inner .title{
         margin-bottom:2.4rem;
         order:1;
         letter-spacing: 0.5rem;
         line-height:4.2rem;
+        width:auto;
     }
-    
+    .guest_room .guest_room_guidance_inner .title.sp{
+        margin-left:7.8rem;
+    }
     .guest_room .guest_room_guidance_inner .title p:nth-child(2){
         font-size:1.4rem;
         line-height: 2.4rem;
@@ -353,6 +427,10 @@ footer .each_page a{
         text-indent: -1.2em;
         margin-top:1.6rem;
         margin-bottom:0;
+    }
+    .guest_room .guest_room_guidance_inner.title .sp {
+        margin-left:7.8rem;
+
     }
     .guest_room .guest_room_guidance_inner .title p:nth-child(4){
         font-size:1.6rem;
@@ -370,35 +448,50 @@ footer .each_page a{
         bottom:-1rem;
         
     }
+    .view.room .slick-sp-pc .slick-dots .slick-active button,
+    .view.room .slick-dots li button:hover{ 
+        margin-top:0.35rem;
+    }
     .guest_room .text p:last-child{
         padding-bottom:7rem;
     }
     .guest_room_guidance_inner .menu{
         margin:0rem auto;
-        padding-bottom:9.2rem;
+        flex-wrap: wrap;
     }
     .guest_room .menu_sp{
         padding-bottom:5.3rem;
         
-    }.guest_room_guidance_inner .menu .flex{
+    }
+    .guest_room .menu_sp p{
+        font-size:2.8rem;
+        margin-top:0.5rem;
+    }
+    .guest_room_guidance_inner .menu .flex{
         width:30.1rem;
         margin:0 auto;
         justify-content: space-between;
     }
+
     #guest_room_guidance{
         width:100%;
         padding: 0;
+        min-width:auto;
     }
     #guest_room_guidance .title{
         padding-bottom:0;
+        margin-left:3rem;
     }
     .guest_room_mv{
         width:100%;
         height:32.3rem;
     }
     .guest_room_mv img{
-        height:100%;
+        height:32.3rem;
         object-fit: cover;
+    }
+    #room1,#room2,#room3,#room4{
+        min-width:auto;
     }
     .text p:first-child{
         font-size:2.4rem;
@@ -408,8 +501,8 @@ footer .each_page a{
         font-size:1.5rem;
     }
     .mc_item_2 {
-        width:100%!important;
-        height:23.7rem!important;
+        height:100%!important;
+        width:39rem!important;
         min-width:auto!important;
         margin-bottom:3.7rem;
         position: inherit!important;
@@ -418,14 +511,15 @@ footer .each_page a{
     .explanation{
         width:100%;
     }
+    
     .mc_img_2.room{
         max-width:38.5rem;
-        position:absolute;
-        right:0;
         height:23.7rem;
-        margin-bottom:3.7rem;
-        width:92%;
         object-fit: cover;
+    }
+    .mc_img_2.room img{
+        object-position: center;
+        width:100%;
     }
     .mc_2 .mc_text.room{
         margin-right:0;
@@ -447,6 +541,10 @@ footer .each_page a{
         justify-content: flex-end!important;
         white-space: normal;
     }
+    .guest_room_guidance_inner.room .main_content .float-l{
+        width:100%;
+        margin-left:0;
+    }
     .view.room{
         width:100%;
         overflow: hidden;
@@ -455,9 +553,6 @@ footer .each_page a{
     }
     .view.room .flex{
         justify-content: center;
-    }
-    .view.room img{
-        margin-right:2.4rem;
     }
     .guest_room_guidance_inner .name p:first-child, .guest_room_guidance_inner .name p:last-child{
         text-indent: 0!important;
@@ -473,6 +568,7 @@ footer .each_page a{
         font-size: 2rem;
         letter-spacing: 0.31rem;
     }
+
     #introduction2 .introduction_text2 p:last-child,
     #introduction3 .introduction_text2 p:last-child{
         padding-top:0;
@@ -480,10 +576,22 @@ footer .each_page a{
     #introduction3.room{
         padding-bottom:11.9rem;
     }
+    .introduction_inner{
+        width:90%;
+    }
     .guest_room.each_page{
         justify-content: center;
     }
     .guest_room.each_page a{
         margin-right:-1rem;
     }
+    footer{
+        width:100%;
+    }
+    @media screen and ( max-width:375px ){
+        .room .mc_item_2{
+            padding-left:4.5rem;
+        }
+    }
 }
+
