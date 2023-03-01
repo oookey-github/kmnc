@@ -16,7 +16,7 @@
 }
 .omotenashi{
     margin:0 auto;
-    width:148rem;
+    max-width:148rem;
 }
 .omotenashi .title .border_div .border {
     left:0rem;
@@ -84,9 +84,10 @@ section{
     width:100%;
 }
 .omotenashi_img_view{
-    width:45%;
+    width:66rem;
     overflow: hidden;
     height:22rem;
+    margin-left:7.5rem;
 }
 .omotenashi_img_view img{
     width:25.8rem;
@@ -175,11 +176,13 @@ section{
 #omotenashi_6 .omotenashi_img_view img{
     margin-right:5.9rem;
     margin-left:0;
+
 }
 #omotenashi_2 .omotenashi_img_view,
 #omotenashi_4 .omotenashi_img_view,
 #omotenashi_6 .omotenashi_img_view{
     justify-content: flex-end;
+    margin-left:0;
 }
 #omotenashi_5 .reserve_btn p{
     margin-right:7rem;
@@ -304,6 +307,7 @@ footer{
     }
     .omotenashi_img_view{
         width:100%;
+        margin-left:0;
     }
     .omotenashi_img_view img{
         margin-left:1rem;
