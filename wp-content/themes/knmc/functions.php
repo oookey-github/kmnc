@@ -4,7 +4,7 @@ function custom_pagination_html( $template ) {
     $template = '
     <ul class="Pagination">
     <h2 class="screen-reader-text">%2$s</h2>
-    <li class="Pagination-Item">%3$s</li>
+    %3$s
     </ul>';
     return $template;
 }
