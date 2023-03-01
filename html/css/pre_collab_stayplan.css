@@ -426,7 +426,7 @@ margin-left:0;
     .introduction_loccitane{
         flex-wrap: wrap;
         flex-direction: column;
-        width:100%;
+        width:90%;
         margin:3.7rem auto;
     }
     .introduction_loccitane img{
@@ -443,7 +443,7 @@ margin-left:0;
     .introduction_p p{
         margin-right:0;
         margin-bottom:6rem;
-        font-size:1.6rem;
+        font-size:1.4rem;
         margin-left:0;
     }
     .introduction_p:last-child{

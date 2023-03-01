@@ -28,14 +28,11 @@
     margin-left:12rem;
     line-height: 2.4rem;
     margin-bottom:1.8rem;
-}
-.omotenashi .title p:first-child{
 
 }
 .omotenashi .title p:last-child{
     letter-spacing: 0.3rem;
     line-height: 3.8rem;
-    font-size:1.2rem;
 }
 #omotenashi_text{
     margin-top:5.5rem;
