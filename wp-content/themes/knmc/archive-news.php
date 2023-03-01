@@ -68,6 +68,17 @@ get_header(); ?>
                 </dl>
 
                 <!-- ページネーション -->
+                <?php
+                $args = array(
+                    'mid_size'      => 1, // 現在ページの左右に表示するページ番号の数
+                    'prev_next'     => true, // 「前へ」「次へ」のリンクを表示する場合はtrue
+                    'prev_text'     => __( '<svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" /></svg>'), // 「前へ」リンクのテキスト
+                    'next_text'     => __( '<svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>'), // 「次へ」リンクのテキスト
+                    // 'type'          => 'list', // 戻り値の指定 (plain/list)
+                );
+                the_posts_pagination($args);
+                ?>
+
                 <!-- <ul class="Pagination">
                     <li class="Pagination-Item">
                     <a class="Pagination-Item-Link" href="news_list.html">
