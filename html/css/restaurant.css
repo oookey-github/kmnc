@@ -301,6 +301,7 @@ body{
 }
 .explanation .reserve_btn p{
     margin-top:0;
+    margin-right:9.5rem;
 }
 .explanation.guide{
     justify-content: flex-end;
@@ -1140,6 +1141,7 @@ width:100%;
     }
     .explanation .reserve_btn p{
         font-size: 1.8rem;
+        margin-right:6rem;
     }
     .reserve_btn{
         height:6rem;
