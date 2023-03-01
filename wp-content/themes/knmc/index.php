@@ -42,7 +42,7 @@
                 <div class="content_section cs_mc">
                     <div class="main_content mc_1 fadein">
                         <div class="mc_item_1">
-                            <a href="<?php bloginfo('url'); ?>/experience/"><div class="mc_img_1 parallax"><img src="./image/mc_1.png" alt=""></div></a>
+                            <a href="<?php bloginfo('url'); ?>/experience/"><div class="mc_img_1 parallax"><img src="<?php bloginfo('template_directory'); ?>/image/mc_1.png" alt=""></div></a>
                         </div>
                         <div class="mc_text">
                             <div class="vertical_text">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="main_content mc_2">
                         <div class="mc_item_2 fadein">
-                            <a href="<?php bloginfo('url'); ?>/guest_room/"><div class="mc_img_2 parallax"><img src="./image/mc_2.png" alt=""></div></a>
+                            <a href="<?php bloginfo('url'); ?>/guest_room/"><div class="mc_img_2 parallax"><img src="<?php bloginfo('template_directory'); ?>/image/mc_2.png" alt=""></div></a>
                         </div>
                         <div class="mc_text fadein">
                             <div class="horiz_text">
@@ -76,7 +76,7 @@
                     </div>
                     <div class="main_content mc_3 fadein">
                         <div class="mc_item_3">
-                            <a href="<?php bloginfo('url'); ?>/restaurant/"><div class="mc_img_3 parallax"><img src="./image/mc_3.png" alt=""></div></a>
+                            <a href="<?php bloginfo('url'); ?>/restaurant/"><div class="mc_img_3 parallax"><img src="<?php bloginfo('template_directory'); ?>/image/mc_3.png" alt=""></div></a>
                         </div>
                         <div class="mc_text">
                             <div class="vertical_text">
@@ -93,7 +93,7 @@
                     </div>
                     <div class="main_content mc_2 mc_4">
                         <div class="mc_item_2 fadein">
-                            <a href=""><div class="mc_img_4 parallax"><img src="./image/mc_4-1.png" alt=""></div></a>
+                            <a href=""><div class="mc_img_4 parallax"><img src="<?php bloginfo('template_directory'); ?>/image/mc_4-1.png" alt=""></div></a>
                         </div>
                         <div class="mc_text fadein">
                             <div class="horiz_text">
