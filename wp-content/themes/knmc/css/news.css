@@ -134,7 +134,7 @@ body{
     margin-bottom: 3rem;
 }
 .detail_inner .news_subtitle{
-    margin-top: 1rem;
+    margin-top: 4rem;
     margin-bottom: 2.5rem;
     font-weight: bold;
 }
@@ -142,7 +142,7 @@ body{
     width: 100%;
     max-width: 43.3rem;
     height: auto;
-    margin-bottom: 1.1rem;
+    margin-bottom: 3rem;
     text-align: right;
 }
 .detail_inner .news_img img{
