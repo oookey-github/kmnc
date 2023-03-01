@@ -12,7 +12,7 @@ $(function(){
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
     var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, 500);
+    $("html, body").animate({scrollTop:position}, 1500);
     return false;
 });
 });
@@ -115,7 +115,7 @@ new simpleParallax(image, {
     delay: .6,
 	transition: 'cubic-bezier(0,0,0,1)'
 });
-
+// フェードイン
 $(window).on('scroll',function () {
     const windowHeight = $(window).height();
     const scroll = $(window).scrollTop();
@@ -127,6 +127,21 @@ $(window).on('scroll',function () {
     }
     });
 }).trigger('scoll');
+// fvフェードイン
+$(function(){
+    var wHeight = $(document).height();
+    var scrollAmount = $(document).scrollTop();
+
+// フェードインアニメーション
+    $('.fv_fadein').each(function () {
+        var targetPosition = $(this).offset().top;
+        console.log(targetPosition);
+        if(scrollAmount > targetPosition - wHeight + 200) {
+            $(this).addClass("fv_is-fadein");
+        }
+    });
+
+});
 
 // モーダルウィンドウ
 //モーダル表示

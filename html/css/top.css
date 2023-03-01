@@ -59,8 +59,21 @@ body img{
     visibility: visible;
     transform: translateX(0);
 }
+.fv_fadein {
+    /* 最初は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5rem);
+    transition: opacity 1.7s, visibility 1.7s, transform 1.7s;
+}
+/* フェードイン時に入るクラス */
+.fv_is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
 
-.fadeUp{
+/* .fadeUp{
     animation-name:fadeUpAnime;
     animation-duration:2.5s;
     animation-fill-mode:forwards;
@@ -96,7 +109,7 @@ body img{
             transform: translateY(0px);
           }
         }
-    
+     */
 
 /* 右側メニュー */
 /* ボタン */
