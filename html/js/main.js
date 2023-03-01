@@ -116,19 +116,17 @@ new simpleParallax(image, {
 	transition: 'cubic-bezier(0,0,0,1)'
 });
 
-$(function () {
-    $(window).scroll(function () {
-        const windowHeight = $(window).height();
-        const scroll = $(window).scrollTop();
+$(window).on('scroll',function () {
+    const windowHeight = $(window).height();
+    const scroll = $(window).scrollTop();
 
-        $('.fadein').each(function () {
-        const targetPosition = $(this).offset().top;
-        if (scroll > targetPosition - windowHeight + 200) {
-            $(this).addClass("is-fadein");
-        }
-        });
+    $('.fadein').each(function () {
+    const targetPosition = $(this).offset().top;
+    if (scroll > targetPosition - windowHeight + 200) {
+        $(this).addClass("is-fadein");
+    }
     });
-});
+}).trigger('scoll');
 
 // モーダルウィンドウ
 //モーダル表示
