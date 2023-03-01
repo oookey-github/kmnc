@@ -224,7 +224,7 @@
 <!-- スムーススクロール -->
 <script rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 <!--自作のJS-->
-<script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/main.js?ver=<?php echo date('YmdHis'); ?>"></script>
 <!-- simpleParallax -->
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
 

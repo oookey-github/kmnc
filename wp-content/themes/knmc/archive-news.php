@@ -44,8 +44,30 @@ get_header(); ?>
                 the_posts_pagination($args);
                 ?>
 
+                <dl>
 
+                    <?php
+                    if (have_posts()) : query_posts('post_type=news&posts_per_page=999&paged='.$paged);
+                    while (have_posts()) : the_post();
+                    ?>
+                    <dt><?php the_time('Y.m.d'); ?></dt>
+                    <dd>
+                        <div>
+                            <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
+                            <p><?php the_field('news_info'); ?></p>
+                        </div>
+                        <a href="<?php echo get_permalink(); ?>"><p><span class="arrow"></span>詳しく見る</p></a>
+                    </dd>
 
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php
+                    wp_reset_query();
+                    ?>
+
+                </dl>
+
+                <!-- ページネーション -->
                 <!-- <ul class="Pagination">
                     <li class="Pagination-Item">
                     <a class="Pagination-Item-Link" href="news_list.html">
@@ -78,61 +100,6 @@ get_header(); ?>
                     </li>
                 </ul> -->
 
-                <dl>
-
-                    <?php
-                    if (have_posts()) : query_posts('post_type=news&posts_per_page=999&paged='.$paged);
-                    while (have_posts()) : the_post();
-                    ?>
-                    <dt><?php the_time('Y.m.d'); ?></dt>
-                    <dd>
-                        <div>
-                            <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
-                            <p><?php the_field('news_info'); ?></p>
-                        </div>
-                        <a href="<?php echo get_permalink(); ?>"><p><span class="arrow"></span>詳しく見る</p></a>
-                    </dd>
-
-                    <?php endwhile; ?>
-                    <?php endif; ?>
-                    <?php
-                    wp_reset_query();
-                    ?>
-
-                </dl>
-
-                <!-- ページネーション -->
-                <ul class="Pagination">
-                    <li class="Pagination-Item">
-                    <a class="Pagination-Item-Link" href="news_list.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
-                    </svg>
-                    </a>
-                    </li>
-                    <li class="Pagination-Item">
-                    <a class="Pagination-Item-Link isActive" href="news_list.html"><span>1</span></a>
-                    </li>
-                    <li class="Pagination-Item">
-                    <a class="Pagination-Item-Link" href="news_list.html"><span>2</span></a>
-                    </li>
-                    <li class="Pagination-Item">
-                    <a class="Pagination-Item-Link" href="news_list.html"><span>3</span></a>
-                    </li>
-                    <li class="Pagination-Item">
-                    <a class="Pagination-Item-Link" href="news_list.html"><span>4</span></a>
-                    </li>
-                    <li class="Pagination-Item">
-                    <a class="Pagination-Item-Link" href="news_list.html"><span>5</span></a>
-                    </li>
-                    <li class="Pagination-Item">
-                    <a class="Pagination-Item-Link" href="news_list.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-                    </svg>
-                    </a>
-                    </li>
-                </ul>
                 </div>
 
             </div>

@@ -164,42 +164,28 @@
                         <div class="news_inner">
                             <h2 class="vertical">お知らせ</h2>
                             <dl>
-                                <dt>2022.11.12</dt>
+
+                            <?php
+                                if (have_posts()) : query_posts('post_type=news&posts_per_page=999&paged='.$paged);
+                                while (have_posts()) : the_post();
+                            ?>
+
+                                <dt><?php the_time('Y.m.d'); ?></dt>
                                 <dd>
                                     <div>
-                                        <h2><a href="/news/news_detail.html">【GWを世界遺産リゾート熊野倶楽部で】Special Event のご案内</a></h2>
-                                        <p>世界遺産リゾート熊野倶楽部では年末年始期間中、連日趣向を凝らしたイベント&エンターテイメントをご用意。世界遺産リゾート熊野倶楽部で心がはずむ 贅沢な時間と体験を心行くまでお愉しみくださいませ。</p>
+                                        <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                        <p><?php the_field('news_info'); ?></p>
                                     </div>
-                                    <a href="./news/news_detail.html"><p><span class="arrow"></span>詳しく見る</p></a>
+                                    <a href="<?php echo get_permalink(); ?>"><p><span class="arrow"></span>詳しく見る</p></a>
                                 </dd>
-                                <dt>2022.11.12</dt>
-                                <dd>
-                                    <div>
-                                        <h2><a href="./news/news_detail.html">【奇跡の蝶】アサギマダラ復活プロジェクト</a></h2>
-                                        <p>毎週土曜日はラグジュアリーなクラブラウンジを。<br>
-                                            聖地熊野の自然を望みながら、心地よく優しいギターの音色に癒される特別なひと時をお過ごしください。</p>
-                                    </div>
-                                    <a href="./news/news_detail.html"><p><span class="arrow"></span>詳しく見る</p></a>
-                                </dd>
-                                <dt>2022.11.12</dt>
-                                <dd>
-                                    <div>
-                                        <h2><a href="./news/news_detail.html">【SDGs】夕食コース「ハーフブッフェ」でのご予約に関するご案内</a></h2>
-                                        <p>世界遺産リゾート熊野倶楽部では年末年始期間中、連日趣向を凝らしたイベント&エンターテイメントをご用意。世界遺産リゾート熊野倶楽部で心がはずむ 贅沢な時間と体験を心行くまでお愉しみくださいませ。</p>
-                                    </div>
-                                    <a href="./news/news_detail.html"><p><span class="arrow"></span>詳しく見る</p></a>
-                                </dd>
-                                <dt>2022.11.12</dt>
-                                <dd>
-                                    <div>
-                                        <h2><a href="./news/news_detail.html">【川渕皓平様プロデュース】世界遺産リゾート熊野俱楽部を彩る竹あかり</a></h2>
-                                        <p>世界遺産リゾート熊野倶楽部では年末年始期間中、連日趣向を凝らしたイベント&エンターテイメントをご用意。世界遺産リゾート熊野倶楽部で心がはずむ 贅沢な時間と体験を心行くまでお愉しみくださいませ。</p>
-                                    </div>
-                                    <a href="./news/news_detail.html"><p><span class="arrow"></span>詳しく見る</p></a>
-                                </dd>
+
+                            <?php endwhile; ?>
+                            <?php endif; ?>
+                            <?php wp_reset_query(); ?>
+
                             </dl>
                         </div>
-                        <a href="./news/news_list.html" class="btn">
+                        <a href="<?php bloginfo('url'); ?>/news/" class="btn">
                             <span class="arrow"></span>全てのお知らせはこちら
                         </a>
                     </div>
