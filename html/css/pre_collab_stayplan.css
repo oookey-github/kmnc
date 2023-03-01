@@ -87,7 +87,10 @@ body{
 margin-left:0;
 }
 .introduction_loccitane img{
-    width:42.6rem;
+    width:36.5rem;
+    height:36.5rem;
+    object-fit: cover;
+    object-position: center;
 }
 .introduction_p p{
     line-height: 2.8rem;
@@ -249,6 +252,9 @@ margin-left:0;
 .club.aft .introduction_loccitane{
     padding-top:10rem;
 }
+#collabo2 .introduction_img .simpleParallax:first-child, #collabo3 .introduction_img .simpleParallax:first-child{
+    width:36.5rem;
+}
 
 @media screen and ( max-width:767px ){
     /* 全ページ共通 右側メニュー */
@@ -407,6 +413,11 @@ margin-left:0;
     }
     .introduction_p{
         text-align: left;
+        margin-top:5rem;
+    }
+    #pre_collabo_stayplan_1 .introduction_loccitane img{
+        height:auto;
+        margin-bottom:0;
     }
     .introduction_loccitane{
         flex-wrap: wrap;
@@ -420,7 +431,6 @@ margin-left:0;
         width:100%;
     }
     #collabo2 .introduction_loccitane img{
-        height:auto;
         width:100%;
     }
     #collabo2 .simpleParallax{
@@ -433,7 +443,7 @@ margin-left:0;
         margin-left:0;
     }
     .introduction_p:last-child{
-        margin-right:0;
+        margin:5rem auto 0;
         text-align: center;
     }
     .introduction_img_2 img:first-child{
@@ -455,7 +465,7 @@ margin-left:0;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
-}
+    }
     .flex3{
         align-self:flex-end;
     }
@@ -506,6 +516,9 @@ margin-left:0;
         line-height: 2.4rem;
         letter-spacing: 0.1rem;
     }
+    .loccitane_royal_suite_introduction:last-child{
+        margin-bottom:9rem;
+    }
     .loccitane_royal_suite .title span{
         font-size:2.2rem;
         letter-spacing: 0.3rem;
@@ -513,16 +526,17 @@ margin-left:0;
     .title2 p{
         font-size:2.6rem;
         letter-spacing: 0.3rem;
-        margin-bottom:3.7rem;
+        
     }
     .title .border_div{
         display:none;
     }
     .loccitane_royal_suite_mv img{
         object-fit: cover;
+        height:42rem;
     }
     .loccitane_royal_suite .explanation{
-        margin:4.6rem auto 10rem;
+        margin:4.6rem auto;
         width:90%;
     }
     .loccitane_royal_suite_introduction p:first-child{
@@ -554,7 +568,7 @@ margin-left:0;
     .reserve_btn2{
         width:100%;
         display:inline-block;
-
+        margin:0;
     }
     .aft .introduction_img{
         margin:6.8rem auto 0;
@@ -592,22 +606,19 @@ margin-left:0;
     .aft .title p:last-child{
         margin-bottom:3.8rem;
     }
-    .introduction_p:last-child{
-        margin-top:0;
-
-    }
     .aft .introduction_loccitane{
         padding-top:0;
     }
     .aft .introduction_loccitane:first-child{
         flex-direction: column-reverse;
+        padding-top:0;
+        margin-top:0;
     }
     .aft .introduction_p p:first-child{
         letter-spacing:0.2rem
     }
     .aft .introduction_loccitane .introduction_p p{
         letter-spacing: 0.15rem;
-        margin-top:3.7rem;
         margin-bottom: 0;
         margin-left:0;
         text-align: left;
@@ -633,21 +644,28 @@ margin-left:0;
     #collabo3.introduction_img{
         width:100%;
     }
+    #collabo2 .introduction_img .simpleParallax:first-child, #collabo3 .introduction_img .simpleParallax:first-child{
+        border-radius: 50%;
+        background-color: white;
+        width: 100%;
+        object-fit: cover;
+}
 
-    .club.aft.loccitane_royal_suite .explanation p{
-        margin-bottom:0;
-    }
-    .club.aft .introduction_loccitane{
-        padding-top:0;
-        margin-top: 6.4rem;
-        flex-direction: column-reverse;
-    }
-    .pre_collab_stayplan footer .each_page{
-        justify-content: right!important;
-    }
-    .pre_collab_stayplan footer .each_page a{
-        margin-right: 4.2rem;
-    }
+.club.aft.loccitane_royal_suite .explanation p{
+    margin-bottom:0;
+}
+.club.aft .introduction_loccitane.club_bar{
+    padding-top:0;
+    margin-top: 6.4rem;
+    flex-direction: column-reverse;
+}
+.pre_collab_stayplan footer .each_page{
+    justify-content: right!important;
+}
+.pre_collab_stayplan footer .each_page a{
+    margin-right: 4.2rem;
+}
+    
 }
 @media screen and ( max-width:375px ){
     .introduction .title p:nth-child(2){
