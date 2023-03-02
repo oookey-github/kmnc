@@ -1442,7 +1442,7 @@ width:100%;
         width:19.1rem;
     }
     .btn_box{
-        width:47%;
+        width:47%!important;
         margin:4rem auto 0;
 
     }

@@ -87,8 +87,8 @@ body{
 margin-left:0;
 }
 .introduction_loccitane img{
-    width:36.5rem;
-    height:36.5rem;
+    width:42.6rem;
+    height:27.7rem;
     object-fit: cover;
     object-position: center;
 }
@@ -198,17 +198,25 @@ margin-left:0;
     height:7.2rem;
     align-items: center;
 }
+.reserve_btn2 a{
+    width:100%;
+    height:100%;
+    justify-content: center;
+}
 .reserve_btn2 p{
     line-height: 2.8rem;
     letter-spacing: 0.3rem;
     justify-content: center;
     align-items: center;
     height:100%;
-    margin:0 6rem 0 12rem;
+    font-size:2rem
 }
 .reserve_btn2 .arrow{
     width:0.8em;
     height:0.8em;
+    position:absolute;
+    top:3rem;
+    right:1rem;
 }
 #collabo2{
     padding-top:11.9rem;
