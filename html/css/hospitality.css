@@ -83,6 +83,7 @@ section{
 .omotenashi_img_view{
     width:66rem;
     margin-left:7.5rem;
+    display:flex!important;
 }
 .omotenashi_img_view img{
     width:25.8rem;
