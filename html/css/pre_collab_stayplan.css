@@ -450,6 +450,7 @@ margin-left:0;
     }
     #collabo2 .introduction_loccitane img{
         width:100%;
+        height:100%;
     }
     #collabo2 .simpleParallax{
         height:auto;
@@ -665,6 +666,10 @@ margin-left:0;
     }
     #collabo3.introduction_img{
         width:100%;
+    }
+    #collabo3 .introduction_img img{
+        width:100%;
+        height:100%;
     }
     #collabo2 .introduction_img .simpleParallax:first-child, #collabo3 .introduction_img .simpleParallax:first-child{
         border-radius: 50%;
