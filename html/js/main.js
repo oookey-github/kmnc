@@ -46,7 +46,7 @@ $(function(){
         arrows:false,             //追加（矢印非表示
         responsive: [
             {
-              breakpoint: 767, // 500px未満で・・・
+              breakpoint: 768, // 500px未満で・・・
               settings: "unslick", // スライダーを無効
             },
         ],

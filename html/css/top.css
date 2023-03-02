@@ -699,6 +699,7 @@ line-height: 1.1rem;;
 }
 .news dd div h2{
     margin-bottom: 1rem;
+    max-width: ;
 }
 .news dd div p{
     font-size: 1.4rem;
@@ -1056,6 +1057,8 @@ line-height: 1.1rem;;
 .access_map h2{
     text-align: center;
     margin-bottom: 5rem;
+    padding-top: 5rem;
+    margin-top: -5rem;
 }
 .googlemap{
     width: 100%;
@@ -1174,7 +1177,9 @@ line-height: 1.1rem;;
     top: 12rem;
     left: 74rem;
     color: #292929;
-    width: 50rem;
+    width: 38%;
+    min-width: 44rem;
+    max-width: 53rem;
 }
 #g-nav .nav_content .flex{
     justify-content: space-between;
@@ -1182,7 +1187,7 @@ line-height: 1.1rem;;
 #g-nav .horiz_text{
     position: static;
     flex-wrap: wrap;
-    width: 30rem;
+    width: 28rem;
 }
 #g-nav .nav_mc li{
     margin-bottom: 3rem;
@@ -1342,10 +1347,6 @@ line-height: 1.1rem;;
     transform: translateY(-6px) rotate(45deg);
     width: 40%;
     background-color: #ADADAD;
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
 }
 
 /* ヘッダー */
@@ -1353,14 +1354,45 @@ line-height: 1.1rem;;
     padding: 0;
 }
 .toppage .logo_icon{
-    width: 11.2rem;
-}
-.toppage .logo_icon img{
-    width: 100%;
+    width: 16rem;
+    margin-left: 9rem;
 }
     /* ハンバーガーメニュー */
 /*========= ナビゲーションのためのCSS ===============*/
-
+@media screen and ( max-width:1260px ){
+    #g-nav .nav_access{
+        font-size: 1.4rem;
+    }
+    #g-nav .nav_access img{
+        width: 12rem;
+    }
+    #g-nav .nav_content{
+        left: 68rem;
+    }
+}
+@media screen and ( max-width:1130px ){
+    #g-nav .nav_access{
+        left: 28rem;
+        top: 5rem;
+    }
+    #g-nav .nav_access p{
+        line-height: 2rem;
+        margin-left: 3rem;
+        position: absolute;
+        top: 94rem;
+        width: 20rem;
+        padding-bottom: 10rem;
+    }
+    #g-nav .nav_content{
+        width: 44rem;
+        left: 30rem;
+        top: 22rem;
+    }
+    #g-nav .nav_bg{
+        width: 25rem;
+    }
+}
+@media screen and ( max-width:767px ){
 #g-nav .nav_bg{
     width: 8rem;
 }
@@ -1368,6 +1400,11 @@ line-height: 1.1rem;;
     width: 24rem;
     top: 17rem;
     left: 11rem;
+    min-width: auto;
+}
+#g-nav .nav_access p{
+    margin-left: 0;
+    top: auto;
 }
 #g-nav .nav_inner{
     position: static;
@@ -1460,6 +1497,7 @@ line-height: 1.1rem;;
     margin-left: 0;
     margin-top: 3rem;
 }
+}
 @media screen and ( max-width:1126px ){
     .mc_text{
         margin-left: 5rem;
@@ -1484,6 +1522,12 @@ line-height: 1.1rem;;
     .news dl{
         width: 69rem;
     }
+    .news dd div p{
+        max-width: 57rem;
+    }
+    .news .vertical{
+        margin-right: 5rem;
+    }
     .access_map p{
         width: 66rem;
     }
@@ -1506,9 +1550,6 @@ line-height: 1.1rem;;
 @media screen and ( max-width:1003px ){
     .toppage .banner{
         min-width: 76rem;
-    }
-    .news h2{
-        margin-right: 5rem;
     }
     .loccitane_banner img{
         min-width: 76rem;
@@ -1545,7 +1586,12 @@ line-height: 1.1rem;;
 }
 
 @media screen and ( max-width:767px ){
-
+    .toppage .logo_icon{
+        margin-left: 0;
+    }
+    .toppage .logo_icon img{
+        width: 10rem;
+    }
     .content_section {
         padding-bottom: 12rem;
     }
@@ -1604,10 +1650,8 @@ line-height: 1.1rem;;
         align-items: flex-start;
     }
     .mc_item_1{
-        width: 30vh;
-        min-width: 30rem;
-        height: 52vh;
-        min-height: 49rem;
+        width: 30rem;
+        height: 48rem;
     }
     .mc_img_1 img{
         height: auto;
@@ -1644,7 +1688,7 @@ line-height: 1.1rem;;
     }
     .mc_item_2{
         height: 49rem;
-        width: 36rem;
+        width: 33rem;
         min-width: 35rem;
         position: static;
     }
@@ -1720,7 +1764,7 @@ line-height: 1.1rem;;
         margin-top: 0;
     }
     .loccitane_banner img{
-        width: 35rem;
+        width: 33rem;
         min-width: 35rem;
     }
     /* 特別プラン */
@@ -1754,6 +1798,9 @@ line-height: 1.1rem;;
     .news h2{
         margin: 0 auto 5rem;
         writing-mode: inherit;
+    }
+    .news .vertical{
+        margin-right: auto;
     }
     .news dl{
         min-width: 30rem;
