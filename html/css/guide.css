@@ -31,8 +31,7 @@ body{
 /* タイトル */
 .guide .mc_text{
 	margin-top: 7rem;
-	margin-right: 0rem;
-	margin-right: 6rem;
+	margin-right: 6rem !important;
 	left: 6rem;
     display: block;
 }
@@ -232,8 +231,6 @@ body{
 		margin-top: 12rem;
 	}
 }
-
-
 
 @media screen and (max-width: 767px){
 	.guide .mc_2{

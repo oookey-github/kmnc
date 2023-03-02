@@ -7,24 +7,12 @@
     <title>心揺さぶる体験</title>
     <link rel="stylesheet" href="../css/reset.css">
     <script src="../js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/top.css">
     <link rel="stylesheet" href="../css/restaurant.css">
     <link rel="stylesheet" href="../css/experience.css">
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=M+PLUS+1p:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <script src="../js/simpleParallax.js"></script>
-    <script>
-    // スムーススクロール
-    // $(function(){
-    //     $('a[href^="#"]').click(function(){
-    //     var href= $(this).attr("href");
-    //     var target = $(href == "#" || href == "" ? 'html' : href);
-    //     var position = target.offset().top;
-    //     $("html, body").animate({scrollTop:position}, 500);
-    //     return false;
-    // });
-    // });
-
-    </script>
 
 </head>
 <body id="top">
@@ -97,7 +85,6 @@
 
     <div class="experience">
         <div class="body_inner">
-
             <header>
                 <div class="flex header">
                     <div class="logo_icon">
@@ -134,7 +121,42 @@
                 </div>
             </header>
 
-            <div class="exp_list">
+            <div class="content_inner fv_fadein">
+                <div class="mc_text">
+                    <div class="horiz_text">
+                        <span class="text_line_h"></span>
+                        <p class="">心揺さぶる体験</p>
+                    </div>
+                    <h2 class="mc_title">特別な心の満足を</h2>
+                </div>
+            </div>
+
+            <div class="exp_fv fv_fadein ">
+                <ul class="fv_slider parallax">
+                    <li class="slider-item"><img src="../image/exp_fv_1.png" alt=""></li>
+                    <li class="slider-item"><img src="../image/exp_fv_2.png" alt=""></li>
+                    <li class="slider-item"><img src="../image/exp_fv_3.png" alt=""></li>
+                    <li class="slider-item"><img src="../image/exp_fv_4.png" alt=""></li>
+                    <li class="slider-item"><img src="../image/exp_fv_5.png" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="fadein" style="text-align: center; margin: 8.5rem auto 6rem;">
+                <p>
+                    今、やってみたいあの体験をかなえるご旅行へ
+                    <br><br>
+                    心を満たすアクティビティに出会い
+                    <br>
+                    心を癒す滞在をお届けいたします。
+                    <br><br>
+                    暮らすように過ごすリゾートステイをもっと贅沢に
+                    <br>
+                    アクティビティがもつ不思議な力に癒されてみませんか
+
+                </p>
+            </div>
+
+            <div class="exp_list fadein">
                 <div class="exp_li_content">
                     <div class="title">
                         <h2>心揺さぶる体験<br>&#10005;<br><span>宿泊</span></h2>
@@ -528,6 +550,11 @@
     
         </div>
     </footer>
+
+    
+<!-- スライダー -->
+<script src="../js/slick.min.js"></script>
+<script src="../js/exp_slider.js"></script>
 <!-- スムーススクロール -->
 <script rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 <!--自作のJS-->

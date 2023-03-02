@@ -699,7 +699,6 @@ line-height: 1.1rem;;
 }
 .news dd div h2{
     margin-bottom: 1rem;
-    max-width: ;
 }
 .news dd div p{
     font-size: 1.4rem;
@@ -1528,6 +1527,15 @@ line-height: 1.1rem;;
     .news .vertical{
         margin-right: 5rem;
     }
+    .kumano_banner .left{
+        position: relative;
+    }
+    .kumano_banner .vertical_text{
+        left: 28rem;
+    }
+    .kumano_banner .left h2{
+        left: 12rem;
+    }
     .access_map p{
         width: 66rem;
     }
@@ -1544,6 +1552,7 @@ line-height: 1.1rem;;
     }
     .each_page{
         width: 51rem !important;
+        font-size: 1.4rem;
     }
 }
 
@@ -1573,9 +1582,6 @@ line-height: 1.1rem;;
     }
     .mc_item_2{
         min-width: auto;
-    }
-    .mc_2 .mc_text{
-        margin-right: 48rem;
     }
     .mc_2 .mc_text{
         margin-right: 40rem !important;

@@ -29,10 +29,41 @@ body{
 .experience .header{
     background-image: url(../image/header_experience.png);
 }
+.experience .mc_text {
+    height: 14rem;
+}
+.experience .horiz_text{
+    bottom: auto;
+    top: 4rem;
+    font-size: 3rem;
+}
+.experience .mc_title {
+    font-size: 1.8rem !important;
+    letter-spacing: 0.5rem;
+    margin-bottom: auto;
+    margin-top: 6.5rem;
+}
+/* スライダー */
+/*==================================================
+スライダーのためのcss
+===================================*/
+.fv_slider {
+    position:relative;
+	z-index: 1;
+	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+	height: 46rem;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    max-width: 120rem;
+    width: 70%;
+    margin: 0 auto;
+}
+.slider-item img{
+    width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+    object-fit: cover;
+}
 
 /* 体験プラン */
 .exp_list{
-    
+    margin-bottom: 15rem;
 }
 .exp_li_content{
     margin-top: 10rem;
@@ -93,8 +124,30 @@ body{
 .experience .title::after {
     margin-left: 5rem;
 }
+@media screen and (max-width: 1260px){
+    .exp_list ul{
+        max-width: 84rem;
+    }
+    .fv_slider {
+        height: 35rem;
+    }
+}
 
 @media screen and (max-width: 767px){
+    .experience .mc_text{
+        width: auto;
+        margin-left:0;
+    }
+    .experience .horiz_text{
+        font-size: 2rem;
+        left: -8rem;
+    }
+    .experience .mc_title {
+        margin-left: 4.2rem;
+        font-size: 1.2rem !important;
+        margin-top: 5.7rem;
+    }
+
     .experience .title{
         margin-left: 0;
         line-height: 2.7rem;
