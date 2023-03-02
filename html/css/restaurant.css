@@ -454,10 +454,8 @@ body{
 }
 #restaurant1{
     margin-top:12.4rem;
-    width:80%;
-    margin:0 auto;
 }
-section{
+#restaurant1,#restaurant2,#restaurant3{
     width:80%;
     margin:0 auto;
 }
@@ -885,8 +883,9 @@ width:100%;
     }
 /* ================ */
 @media screen and ( max-width:767px ){
-    section{
+    #restaurant1,#restaurant2,#restaurant3{
         width:90%;
+        margin:0 auto;
     }
     .sns_menu_inner{
         width:5.4rem;
