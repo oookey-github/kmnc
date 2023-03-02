@@ -407,7 +407,7 @@ footer .each_page a{
         width:100%;
     }
     .guest_room .guest_room_guidance_inner .title{
-        margin-bottom:2.4rem;
+        margin-bottom:1.8rem;
         order:1;
         letter-spacing: 0.5rem;
         line-height:4.2rem;
@@ -465,7 +465,6 @@ footer .each_page a{
     }
     .guest_room .menu_sp p{
         font-size:2.8rem;
-        margin-top:0.5rem;
     }
     .guest_room_guidance_inner .menu .flex{
         width:30.1rem;
@@ -485,6 +484,7 @@ footer .each_page a{
     .guest_room_mv{
         width:100%;
         height:32.3rem;
+        margin:0 auto 4.5rem;
     }
     .guest_room_mv img{
         height:32.3rem;
@@ -496,6 +496,7 @@ footer .each_page a{
     .text p:first-child{
         font-size:2.4rem;
         letter-spacing: 0.3rem;
+        margin-bottom:3.9rem;
     }
     .text p:last-child{
         font-size:1.5rem;
@@ -531,6 +532,9 @@ footer .each_page a{
         width:85%;
         margin:0 auto;
     }
+    .explanation p:first-child{
+        margin-bottom:2.6rem;
+    }
     
     .mc_2 .mc_text{
         margin-right:0;
@@ -557,6 +561,12 @@ footer .each_page a{
     .guest_room_guidance_inner .name p:first-child, .guest_room_guidance_inner .name p:last-child{
         text-indent: 0!important;
     }
+    #room1 .explanation .reserve_btn{
+        margin-top:4rem;
+    }
+    .explanation .reserve_btn p{
+        margin-bottom:0;
+    }
     .explanation .reserve_btn{
         margin:3.7rem auto 3.5rem;
         width:100%;
@@ -568,7 +578,9 @@ footer .each_page a{
         font-size: 2rem;
         letter-spacing: 0.31rem;
     }
-
+    .guest_room .introduction_text2 p:first-child{
+        line-height: 4.3rem;
+    }
     #introduction2 .introduction_text2 p:last-child,
     #introduction3 .introduction_text2 p:last-child{
         padding-top:0;
@@ -577,7 +589,7 @@ footer .each_page a{
         padding-bottom:11.9rem;
     }
     .introduction_inner{
-        width:90%;
+        width:95%;
     }
     .guest_room.each_page{
         justify-content: center;
