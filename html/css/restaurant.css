@@ -128,11 +128,13 @@ body{
 
 /* ============================== */
 /*お食事のご案内*/
+.restaurant_info{
+    width:148rem;
+}
 .oshokuji{
     width: 80%;
     margin: 0 auto;
     max-width: 120rem;
-    min-width: 130rem;
 }
 .border_div{
     position:relative;
@@ -223,7 +225,6 @@ body{
     justify-content: center;
     text-align: center;
     width:100%;
-    min-width:125rem;
     margin-bottom:10.3rem;
 }
 .menu p{
@@ -261,12 +262,12 @@ body{
     width:30%;
 }
 .reserve_btn{
-    width:100%;
+    width:33.2rem;
     height:5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:4.6rem 0;
+    margin:3.5rem 0;
 }
 .reserve_btn a{
     width:100%;
@@ -283,6 +284,11 @@ body{
     margin-right:3rem;
     position:absolute;
     bottom:2rem;
+    right:1rem;
+}
+.restaurant_info_explanation_text .reserve_btn .arrow{
+    bottom:0;
+    top:2.2rem;
     right:1rem;
 }
 .explanation{
@@ -312,7 +318,6 @@ body{
 }
 .explanation .reserve_btn p{
     margin-top:0;
-    margin-right:9.5rem;
 }
 .explanation.guide{
     justify-content: flex-end;
@@ -348,7 +353,7 @@ body{
     margin-top:7.7rem;
 }
 .meal_inner .slick-sp-pc li {
-    margin:0 3.4rem;
+    margin:0 3.4rem 0 0;
     width:24rem !important;
 }
 .meal_inner li img{
@@ -378,7 +383,7 @@ body{
     display:none;
 }
 .meal_inner .slick-sp-pc .slick-dots .slick-active button,
-.slick-dots li button:hover{
+.meal_inner .slick-dots li button:hover{
     height:0.8rem!important;
     background-color:#333;
     margin-top:0.65rem;
@@ -471,7 +476,47 @@ body{
     margin-right:3.2rem;
 }
 .venue_img img{
-    width:100%;
+    width:42.1rem;
+}
+.venue_img .slick-dots{
+    top:28rem;
+}
+.venue_img .slick-sp-pc li {
+    margin:0 3.4rem 0 0;
+    width:24rem !important;
+}
+
+.venue_img .slick-dots li button:before{
+    font-size:22px;
+}
+.venue_img .slick-sp-pc .slick-dots{
+    display:flex;
+    margin:0 auto;
+    justify-content: center;
+    width:100%!important;
+}
+.venue_img .slick-sp-pc .slick-dots li{
+    width:2rem!important;
+    display:inline-block;
+    margin:0;    
+}
+.venue_img .slick-dots button{
+    width:0.3rem;
+    height:0.3rem;
+    margin:0 auto;
+    display:inline-block;
+}
+
+.venue_img .slick-dots .slick-active button,
+.venue_img .slick-dots li button:hover{
+    height:0.8rem!important;
+    background-color:#333;
+    margin-top:0rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 .venue .title{
     letter-spacing: 0.25rem;
@@ -538,7 +583,6 @@ body{
     margin-top: 16.4rem;
     position:relative;
     width:100%;
-    min-width:130rem;
 }
 .introduction_inner{
     width: 100%;
@@ -792,6 +836,7 @@ width:100%;
     text-align: center;
     font-size:1.8rem;
     padding:2.5rem 0;
+    letter-spacing: 0.3rem;
     }
     .accordion_title::after,
     .accordion_title::before {
@@ -929,15 +974,15 @@ width:100%;
         padding:0 1.2rem;
     }
     /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-    
+    .oshokuji{
+        width:100%;
+    }
 	.restaurant{
         width:100%;
-        min-width:auto;
         max-width:100%
     }
     .header{
         height:8.8rem;
-        min-width:auto;
         padding:0 0 0 2.8rem;
         width:100%;
     }
@@ -950,9 +995,6 @@ width:100%;
     .nav_link{
         margin-left:0;
     }
-    .oshokuji{
-        min-width:100%;
-    }
     .border{
         left:0;
         bottom:-1rem;
@@ -964,7 +1006,6 @@ width:100%;
 
     }
     .restaurant_info_inner{
-        min-width:auto;
         width:100%
     }
     .restaurant_info_img img{
@@ -994,9 +1035,6 @@ width:100%;
         font-size:2rem;
 
     }
-    #restaurant_guide .title p{
-        margin-left:3rem;
-    }
     .flex_box{
         padding-bottom:0;
     }
@@ -1004,13 +1042,14 @@ width:100%;
         margin:2.5rem 0 0 0;
     }
     .restaurant_guide .title p{
-        margin-bottom:1.2rem;
+        margin-bottom:2.6rem;
         font-size:2rem;
         letter-spacing: 0.3rem;
+
     }
     
     .restaurant_guide .title p:last-child{
-        margin-bottom:1.7rem;
+        margin-bottom:2.6rem;
     }
     
     .restaurant_info_text{
@@ -1051,22 +1090,19 @@ width:100%;
     .title p:first-child{
         font-size: 1.3rem;
     }
-    .restaurant1 .flex,
-    .restaurant2 .flex,
-    .restaurant3 .flex{
-        justify-content:space-between;
-    }
     #restaurant3{
         margin-top:9.9rem;
     }
     #restaurant3 .title{
         margin-left:4.5rem;
     }
+    
     .restaurant_name.iseebi p:first-child{
         font-size:1.3rem;
     }
     .restaurant_name.iseebi p:nth-child(3){
         text-indent: 0em;
+        margin-bottom:1rem;
     }
     .restaurant_name.iseebi p:nth-child(4){
         text-indent: -1em;
@@ -1077,7 +1113,6 @@ width:100%;
     }
     
     .menu{
-        min-width:auto;
         width:85%;
         margin:0 auto;
         justify-content: center;
@@ -1106,18 +1141,21 @@ width:100%;
     }
     
     .explanation{
-        width:90%;
+        width:100%;
         margin:0 auto;
     }
     .explanation.syokuji{
         flex-wrap: wrap;
         width:90%;
     }
+    #restaurant3 .explanation.syokuji{
+        width:100%;
+    }
     .restaurant_info_img_2{
         position:static;
         width:100%;
         margin:0 auto;
-        height:25rem;
+        height:auto;
     }
     .restaurant_info_img_2 img{
         width:100%;
@@ -1137,7 +1175,7 @@ width:100%;
         margin-top:0;
     }
     #restaurant3 .restaurant_info_explanation_text{
-        margin-top:2rem
+        margin-top:4rem;
     }
     .name p:first-child{
         font-size:2.8rem;
@@ -1152,7 +1190,6 @@ width:100%;
     }
     .explanation .reserve_btn p{
         font-size: 1.8rem;
-        margin-right:6rem;
     }
     .reserve_btn{
         height:6rem;
@@ -1161,6 +1198,9 @@ width:100%;
     }
     .reserve_btn .arrow{
         bottom:2.5rem
+    }
+    .restaurant_info_explanation_text .reserve_btn .arrow{
+        top:2.7rem;
     }
     .toggle:checked + .accordion_title + .accordion_content{
         max-height:150rem;
@@ -1184,7 +1224,8 @@ width:100%;
     .meal_menu{
         width:90%;
         max-width:100%;
-        margin:7rem auto 0;
+        margin:3.5rem auto 0;
+        padding-bottom:0;
     }
     .meal_inner .slick_exp-dots li{
         margin:-0.5rem auto;
@@ -1232,19 +1273,36 @@ width:100%;
     #bf_viking_aft {
         margin-top:7.2rem;
     }
+    #bf_viking_aft p:first-child{
+        margin-bottom:0!important;
+    }
     .venue {
         flex-wrap: wrap;
         justify-content: center;
         width:90%;
         margin:0 auto;
+        padding-top:4.5rem;
+        padding-bottom:0;
+    }
+    .venue .text{
+        margin-left:0;
+        margin-top:3rem;
     }
     .venue .text .restaurant_guide .title p:first-child{
         font-size:2.3rem;
     }
     
     .venue_img{
-        width:37.4rem;
+        width:100%;
         margin-right:0;
+    }
+    .venue_img img{
+        width:100%;
+        height:23rem;
+    }
+    .venue_img .slick-dots{
+        top:24rem;
+        margin-bottom:3rem;
     }
     .venue .flex{
         flex-wrap:wrap;
@@ -1257,6 +1315,16 @@ width:100%;
     }
     .p_size {
         font-size:2.3rem;
+    }
+    #dinner .venue{
+        padding-top:2.8rem;
+    }
+    #dinner .venue .explanation p:first-child,
+    #cafe .venue .explanation p:first-child{
+        margin-top:0;
+    }
+    #cafe .venue{
+        padding-top:2.4rem;
     }
     #bf_viking_aft p:first-child,
     #dinner p:first-child,
@@ -1286,14 +1354,14 @@ width:100%;
         font-size: 1.19rem;
         letter-spacing: 0.1rem;
     }
+    .introduction{
+        margin-top:10.3rem;
+    }
     .indoor_view iframe{
         width:100%
     }
-    .introduction {
-        min-width:auto;
-    }
     .introduction_inner{
-        width:90%;
+        width:95%;
     }
     .introduction_inner.flex{
         flex-wrap: wrap;
@@ -1322,7 +1390,10 @@ width:100%;
         flex-direction: column;
     }
     #introduction2,#introduction3,#introduction4{
-        padding-top:12.5rem;
+        padding-top:12rem;
+    }
+    #introduction4{
+        padding-bottom:12.5rem;
     }
     .introduction_text2 p:last-child, .introduction_text2 p{
         letter-spacing: 0.25rem;
@@ -1330,10 +1401,9 @@ width:100%;
     .introduction_text2 p:first-child{
         padding-bottom: 2.5rem;
         font-size:2.3rem;
+        line-height: 2.3rem;
     }
-    footer{
-        min-width:auto;
-    }
+
     .footer1_inner{
         padding-bottom:5.9rem;
     }
@@ -1371,9 +1441,7 @@ width:100%;
         margin:4rem auto 0;
 
     }
-    .footer_img{
-        min-width:auto;
-    }
+
     .footer_img{
         width:100%;
     }
@@ -1401,9 +1469,7 @@ width:100%;
         padding-top: 6.4rem;
         padding-bottom:15.9rem;
     }
-    .footer2_inner{
-        min-width:auto;
-    }
+
     .footer2_title{
         width:5.7rem;
         margin:0 auto;
