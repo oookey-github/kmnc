@@ -129,13 +129,15 @@ body{
 /* ============================== */
 /*お食事のご案内*/
 .restaurant_info{
-    width:148rem;
+    max-width:148rem;
+    width:100%;
+    margin:0 auto;
 }
 .oshokuji{
-    width: 80%;
+    width:80%;
     margin: 0 auto;
-    max-width: 120rem;
 }
+
 .border_div{
     position:relative;
 }
@@ -165,6 +167,8 @@ body{
 .restaurant_info_inner{
     display: inline-block;
     margin-top:3rem;
+    width:100%;
+    max-width:148rem;
 }
 /*float clear*/
 .clear{
@@ -179,10 +183,12 @@ body{
     float:left;
 }
 
-
+.restaurant_info_img{
+    width:70%;
+    max-width:94.9rem;
+}
 .restaurant_info_img img{
-    width:94.9rem;
-    height:53.1rem;
+    width:100%;
     margin-top:4rem;
 }
 #restaurant_guide .restaurant_info .vertical_text{
@@ -190,10 +196,11 @@ body{
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: vertical-rl;
     line-height: 42px;
-    margin-left:5.9rem;
+    margin-left:0;
     position:static;
     text-align: inherit;
     margin-right:0.9rem;
+    width:20%;
 }
 #restaurant_guide .vertical_text p{
     line-height: 4.2rem;
@@ -228,8 +235,10 @@ body{
     margin-bottom:10.3rem;
 }
 .menu p{
-    margin:0 8.6rem;
+    width:33.7rem;
+    margin:0 auto;
     letter-spacing:0.22rem;
+    text-align: center;
 }
 .border-l{
     border-left: 1px solid #707070;
@@ -244,22 +253,18 @@ body{
     margin-bottom:0;
 }
 .restaurant_info_img_2{
-    position:absolute;
-    left:42%;
-    top:1rem;
-    width:79.6rem;
-    height:51.3rem;
+    width:50%;
+    max-width:79.6rem;
 }
 .restaurant_info_img_2 img{
-    margin-left:6.25rem;
-    width:100%;
-    height:100%;
+    height:51.3rem;
+    width:79.6rem;
     object-fit: cover;
 }
 .restaurant_info_explanation_text{
     flex-wrap: wrap;
     flex-direction: column;
-    width:30%;
+    width:50%;
 }
 .reserve_btn{
     width:33.2rem;
@@ -299,15 +304,18 @@ body{
     flex-direction: row-reverse;
     width:100%;
 }
-.flex_box{
+/* .flex_box{
     padding-bottom:7.7rem;
-}
+} */
 .syokuji.flex{
     flex-wrap: wrap;
+    width:50%;
 }
 .explanation.syokuji{
     flex-wrap: nowrap;
     justify-content: flex-end;
+    width:100%;
+    margin-top:-10rem;
 
 }
 .explanation p:first-child{
@@ -446,12 +454,21 @@ body{
 }
 #restaurant1{
     margin-top:12.4rem;
+    width:80%;
+    margin:0 auto;
+}
+section{
+    width:80%;
+    margin:0 auto;
 }
 .restaurant1,.restaurant2,.restaurant3{
     position:relative;
 }
 #restaurant2{
     margin-top:12.4rem;
+}
+#restaurant2 .explanation.syokuji{
+    margin-top:-19rem;
 }
 #restaurant3{
     margin-top:15.9rem;
@@ -537,6 +554,8 @@ body{
 }
 .aft.time p:last-child{
     margin-left:0;
+    margin-bottom:0;
+    padding-bottom:0;
 }
 .venue  .aft.time .flex{
     justify-content: flex-start;
@@ -866,6 +885,9 @@ width:100%;
     }
 /* ================ */
 @media screen and ( max-width:767px ){
+    section{
+        width:90%;
+    }
     .sns_menu_inner{
         width:5.4rem;
         text-align: center;
@@ -1042,6 +1064,8 @@ width:100%;
     }
     .flex_box{
         padding-bottom:0;
+        flex-wrap: wrap;
+        width:100%;
     }
     .guid{
         margin:2.5rem 0 0 3rem;
@@ -1092,6 +1116,9 @@ width:100%;
         
         margin-left:6.5rem;
     }
+    #restaurant2 .explanation.syokuji{
+        margin-top:3rem;
+    }
     .title p:first-child{
         font-size: 1.3rem;
     }
@@ -1121,9 +1148,11 @@ width:100%;
         width:85%;
         margin:0 auto;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .menu p{
         font-size: 1.8rem;
+        width:auto;
     }
     .menu span{
         font-size:1rem;
@@ -1144,7 +1173,12 @@ width:100%;
     .menu p:first-child{
         margin:0 3rem;
     }
-    
+    #restaurant1{
+        width:90%;
+    }
+    .syokuji.flex{
+        width:100%;
+    }
     .explanation{
         width:100%;
         margin:0 auto;
@@ -1152,6 +1186,7 @@ width:100%;
     .explanation.syokuji{
         flex-wrap: wrap;
         width:90%;
+        margin-top:3rem;
     }
     #restaurant3 .explanation.syokuji{
         width:100%;
@@ -1164,6 +1199,7 @@ width:100%;
     }
     .restaurant_info_img_2 img{
         width:100%;
+        height:auto;
         margin-left:0;
     }
     .restaurant_info {
