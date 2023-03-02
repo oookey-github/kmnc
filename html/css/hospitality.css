@@ -83,7 +83,6 @@ section{
 .omotenashi_img_view{
     width:66rem;
     margin-left:7.5rem;
-    display:inline-block;
 }
 .omotenashi_img_view img{
     width:25.8rem;
@@ -182,6 +181,8 @@ section{
 #omotenashi_6 .omotenashi_img_view{
     justify-content: flex-end;
     margin-left:0;
+    display:flex;
+
 }
 #omotenashi_5 .reserve_btn p{
     font-size:1.8rem;
