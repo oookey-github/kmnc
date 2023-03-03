@@ -1093,7 +1093,7 @@ line-height: 1.1rem;;
 #g-nav{
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position:fixed;
-    z-index: 999;
+    z-index: 998;
     /*ナビのスタート位置と形状*/
 	top:0;
     right: -120%;
@@ -2048,4 +2048,100 @@ line-height: 1.1rem;;
     .each_page{
         width: 100% !important;
     }
+}
+
+@media screen and ( max-width:360px ){
+    .toppage.mv_news{
+        min-width: auto;
+    }
+    .toppage .banner{
+        width: 100%;
+        min-width: auto;
+    }
+    .toppage h2,.toppage p{
+        white-space: break-spaces;
+        word-break: break-all;
+    }
+    .toppage .cs_mc br{
+        display: none;
+    }
+    .toppage .mc_text{
+        width: 90%;
+    }
+    .toppage .mc_item_1,.mc_item_3{
+        width: 70%;
+        min-width: auto;
+    }
+    .toppage .mc_img_1 img{
+        height: 48rem;
+    }
+    .toppage .mc_item_2{
+        width: 100%;
+        min-width: auto;
+    }
+    .toppage .mc_2_inner{
+        width: 90%;
+    }
+    .toppage .mc_4_inner{
+        width: 100%;
+    }
+    .toppage .mc_4 .mc_text{
+        padding: 0 1rem;
+    }
+    .toppage .horiz_text{
+        left: -11rem !important;
+    }
+    .toppage .loccitane_banner img{
+        width: 100%;
+        min-width: auto;
+    }
+    .toppage .slick li{
+        width: 100% !important;
+    }
+    .toppage .news dl{
+        min-width: auto;
+    }
+    .toppage .news .btn{
+        width: 80%;
+        white-space: inherit;
+    }
+    .toppage .hospitality_list li{
+        width: 100%;
+        height: auto;
+    }
+    .toppage .slick-next {
+        right: 50vw !important;
+    }
+    .toppage .slick-next::after {
+        right: 1.5rem;
+        transform: rotate(45deg);
+    }
+    /* prev */
+
+    .toppage .slick-prev {
+        left: 50vw !important;
+    }
+    .toppage .slick-prev::after {
+        left: 1.5rem;
+        transform: rotate(-135deg);
+    }
+    .toppage .circle_img img{
+        height: 30rem;
+        clip-path: circle(30% at center);
+    }
+    .toppage .circle_img{
+        width: 100%;
+        height: auto;
+    }
+    .toppage .photo_spot ul{
+        width: auto;
+    }
+    .toppage .instagram ul{
+        width: 50%;
+    }
+    .toppage .access_map p{
+        width: 80%;
+        word-break: break-all;
+    }
+    
 }

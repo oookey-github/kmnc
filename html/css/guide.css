@@ -242,7 +242,7 @@ body{
 		position: relative;
 	}
 	.map{
-		width: 37rem;
+		width: 36rem;
 		margin: 0 auto;
 	}
 	.map .guide_line{
@@ -340,4 +340,52 @@ body{
 		margin-top: 50rem;
 	}
 
+}
+@media screen and ( max-width:360px ){
+	.map{
+		width: 100%;
+	}
+	.map .guide_line{
+		font-size: 1.1rem;
+		left: calc(50% - 13.8rem);
+	}
+	.map .guide_line img{
+		width: 9rem;
+	}
+	.map .guide_line p {
+		margin-bottom: -1.8rem;
+	}
+	.guide .mc_text .inner p{
+		margin: 0 auto;
+		width: 90%;
+		bottom: auto;
+		top: 60rem;
+	}
+	.guide_attent{
+		width: 90%;
+		bottom: auto;
+		top: 86rem;
+		left: 1rem;
+		white-space: break-spaces;
+	}
+	.guide .map_list li{
+		width: 90%;
+	}
+	.guide .map_list h2{
+		width: 80%;
+	}
+	.guide .map_list img{
+		width: 100%;
+	}
+	.guide .map_list li h2{
+		white-space: inherit;
+		width: 100%;
+	}
+
+	.modaal-container{
+		width: 90%;
+	}
+	.modaal-container img{
+		width: 100%;
+	}
 }
