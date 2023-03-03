@@ -17,7 +17,7 @@ function custom_posts_per_page($query) {
     }
     // お知らせ
     if($query->is_archive('news')) {
-        $query->set('posts_per_page', '20');
+        $query->set('posts_per_page', '2');
     }
 }
 add_action('pre_get_posts', 'custom_posts_per_page');
