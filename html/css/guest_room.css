@@ -69,6 +69,9 @@ body{
 .explanation.room.inner{
     flex-direction: column;
 }
+.room .explanation p:last-child{
+    margin-top:0;
+}
 .guest_room .guest_room_guidance_inner .title p:nth-child(2){
     margin-bottom:1.2rem;
     letter-spacing: 0.6rem;
@@ -533,7 +536,7 @@ footer .each_page a{
 
     }
     .explanation.mc_text.room.inner{
-        width:85%;
+        width:86%;
         margin:0 auto;
     }
     .explanation p:first-child{
@@ -617,8 +620,8 @@ footer .each_page a{
     footer{
         width:100%;
     }
-    .page_btn{
-        margin-right:2rem;
+    footer .each_page{
+        justify-content: center;
     }
     @media screen and ( max-width:375px ){
         .room .mc_item_2{

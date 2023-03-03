@@ -369,7 +369,11 @@ footer{
     .omotenashi footer .each_page{
         justify-content: end;
     }
-    footer .each_page{
-        justify-content: center;
+    .omotenashi .page_btn{
+        margin-right:0!important;
+        margin-left:1rem;
+    }
+    .omotenashi footer .each_page{
+        width:90%;
     }
 }
