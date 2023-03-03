@@ -47,7 +47,7 @@ get_header(); ?>
                 <dl>
 
                     <?php
-                    if (have_posts()) : query_posts('post_type=news&posts_per_page=999&paged='.$paged);
+                    if (have_posts()) : query_posts('post_type=news&posts_per_page=10&paged='.$paged);
                     while (have_posts()) : the_post();
                     ?>
                     <dt><?php the_time('Y.m.d'); ?></dt>
