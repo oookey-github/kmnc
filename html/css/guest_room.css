@@ -520,6 +520,7 @@ footer .each_page a{
         max-width:38.5rem;
         height:23.7rem;
         object-fit: cover;
+        width:90%;
     }
     .mc_img_2.room img{
         object-position: center;
