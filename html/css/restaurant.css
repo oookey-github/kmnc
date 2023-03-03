@@ -159,7 +159,7 @@ body{
     margin-bottom:1.8rem;
 }
 .restaurant_guide .title p:last-child{
-    letter-spacing: 0.54rem;
+    letter-spacing: 0.3rem;
 }
 .restaurant_info{
     margin-top:6rem;
@@ -250,7 +250,7 @@ body{
     margin-bottom:2.2rem
 }
 .restaurant_guide .title p:last-child{
-    margin-bottom:0;
+    margin-bottom:4.6rem;
 }
 .restaurant_info_img_2{
     width:90%;
@@ -264,7 +264,7 @@ body{
 .restaurant_info_explanation_text{
     flex-wrap: wrap;
     flex-direction: column;
-    width:76%;
+    width:80%;
 }
 .restaurant_guide .reserve_btn{
     margin-top:0;
@@ -318,6 +318,7 @@ body{
 .syokuji.flex{
     flex-wrap: wrap;
     width:50%;
+    padding-right:5.8rem;
 }
 .explanation.syokuji{
     flex-wrap: nowrap;
@@ -326,7 +327,7 @@ body{
 
 }
 .explanation p:first-child{
-    letter-spacing: 2.2px;
+    letter-spacing: 1.4px;
 }
 .explanation p:last-child{
     margin-top:2.2rem;
@@ -448,13 +449,14 @@ body{
     text-indent:2.75em;
 }
 .restaurant_name.iseebi p{
-    letter-spacing:0.68rem;
+    letter-spacing:0.5rem;
     line-height: 4.2rem;
 }
 
 .restaurant_name.iseebi p:last-child{
     margin-top:0;
     text-indent: 1.5em;
+    margin-bottom:4.6rem;
 
 }
 #restaurant1{
@@ -1219,6 +1221,7 @@ width:100%;
     }
     .syokuji.flex{
         width:100%;
+        padding-right: 0;
     }
     .explanation{
         width:100%;
