@@ -130,11 +130,11 @@ body{
 /*お食事のご案内*/
 .restaurant_info{
     max-width:148rem;
-    width:100%;
+    width:95%;
     margin:0 auto;
 }
 .oshokuji{
-    width:80%;
+    width:100%;
     margin: 0 auto;
 }
 
@@ -167,7 +167,7 @@ body{
 .restaurant_info_inner{
     display: inline-block;
     margin-top:3rem;
-    width:100%;
+    width:90%;
     max-width:148rem;
 }
 /*float clear*/
@@ -253,7 +253,7 @@ body{
     margin-bottom:0;
 }
 .restaurant_info_img_2{
-    width:50%;
+    width:90%;
     max-width:79.6rem;
 }
 .restaurant_info_img_2 img{
@@ -264,7 +264,15 @@ body{
 .restaurant_info_explanation_text{
     flex-wrap: wrap;
     flex-direction: column;
-    width:50%;
+    width:76%;
+}
+.restaurant_guide .reserve_btn{
+    margin-top:0;
+    margin-bottom:5.5rem;
+}
+#restaurant2 .restaurant_info .reserve_btn{
+    margin-bottom:3.5rem;
+    margin-top:3.5rem;
 }
 .reserve_btn{
     width:33.2rem;
@@ -315,7 +323,6 @@ body{
     flex-wrap: nowrap;
     justify-content: flex-end;
     width:100%;
-    margin-top:-10rem;
 
 }
 .explanation p:first-child{
@@ -352,9 +359,7 @@ body{
 .meal{
     max-width:78.8rem;
 }
-.restaurant2 .meal{
-    padding-top:8.2rem;
-}
+
 
 .meal_inner{
     justify-content: space-between;
@@ -456,7 +461,8 @@ body{
     margin-top:12.4rem;
 }
 #restaurant1,#restaurant2,#restaurant3{
-    width:80%;
+    width: 80%;
+    max-width:148rem;
     margin:0 auto;
 }
 .restaurant1,.restaurant2,.restaurant3{
@@ -477,11 +483,22 @@ body{
 #bf_viking_aft{
     margin-top:17.45rem;
 }
-.venue{
+.venue:first-child{
     border-top:1px solid #707070;
-    border-bottom:1px solid #707070;
+    border-bottom:none;
+}
+.venue{
     padding:8.75rem 0 4.85rem 0rem;
     justify-content: center;
+}
+#dinner .venue{
+    border-top:none;
+    border-bottom:none;
+}
+.venue:last-child{
+    border-bottom:1px solid #707070;
+    width:80%;
+    margin:0 auto;
 }
 .venue .flex{
     justify-content: center;
@@ -555,12 +572,33 @@ body{
     margin-bottom:0;
     padding-bottom:0;
 }
+#bf_viking_aft .text p:last-child,
+#dinner .text p:last-child,
+#cafe .text p:last-child{
+    padding-bottom:0;
+}
+#bf_viking_aft .text .title p,
+#dinner .text .title p,
+#cafe .text .title p{
+    line-height: 3.8rem;
+}
+#bf_viking_aft .text p:first-child,
+#dinner .text p:first-child,
+#cafe .text p:first-child{
+    margin-bottom:0;
+    
+}
 .venue  .aft.time .flex{
     justify-content: flex-start;
 }
 .venue .time.flex{
     justify-content: flex-start;
+    align-items: center;
 }
+.venue .time.flex p{
+    margin-bottom:0;
+}
+
 .time{
     border-top:1px solid #E0E0E0;
     border-bottom:1px solid #E0E0E0;
@@ -687,7 +725,10 @@ body{
 {
     padding-top:3rem;
 }
-
+#introduction3 .introduction_inner.flex{
+    flex-direction: row-reverse;
+    padding-bottom:18.4rem;
+}
 #introduction4{
     padding-bottom:18.4rem;
 }
@@ -1021,7 +1062,7 @@ width:100%;
         bottom:-1rem;
     }
     #restaurant_guide .border_div .border{
-        left:0;
+        left:-3rem;
         padding-left:1.9rem;
         bottom:-1rem;
     }
@@ -1029,7 +1070,7 @@ width:100%;
         margin-left:-0.5rem;
     }
     .restaurant_info_inner{
-        width:100%
+        width:100%;
     }
     .restaurant_info_img img{
         width:27rem;
@@ -1125,7 +1166,7 @@ width:100%;
         margin-top:9.9rem;
     }
     #restaurant3 .title{
-        margin-left:4.5rem;
+        margin-left:6.5rem;
     }
     
     .restaurant_name.iseebi p:first-child{
@@ -1136,7 +1177,8 @@ width:100%;
         margin-bottom:1rem;
     }
     .restaurant_name.iseebi p:nth-child(4){
-        text-indent: -1em;
+        text-indent: 0em;
+        font-size:2.8rem;
     }
     .restaurant3 .iseebi_explanation{
         width:90%;
@@ -1184,8 +1226,11 @@ width:100%;
     }
     .explanation.syokuji{
         flex-wrap: wrap;
-        width:90%;
-        margin-top:3rem;
+        width:100%;
+    }
+    #restaurant2 .explanation p:last-child,
+    #restaurant3 .explanation p:last-child{
+        margin-bottom:0;
     }
     #restaurant3 .explanation.syokuji{
         width:100%;
@@ -1262,7 +1307,7 @@ width:100%;
         margin-left:3.5rem;
     }
     .meal_menu{
-        width:90%;
+        width:100%;
         max-width:100%;
         margin:3.5rem auto 0;
         padding-bottom:0;
@@ -1316,6 +1361,9 @@ width:100%;
     #bf_viking_aft p:first-child{
         margin-bottom:0!important;
     }
+    .venue:last-child{
+        width:90%;
+    }
     .venue {
         flex-wrap: wrap;
         justify-content: center;
@@ -1352,6 +1400,7 @@ width:100%;
     }
     .venue .explanation{
         width:100%;
+        margin-top:2.4rem;
     }
     .p_size {
         font-size:2.3rem;
@@ -1386,7 +1435,6 @@ width:100%;
     {
         font-size: 1.6rem;
     }
-    #bf_viking_aft .time.aft p:last-child,
     #dinner .time.aft p:last-child,
     #cafe .time.aft p:last-child
     {
@@ -1431,6 +1479,15 @@ width:100%;
     }
     #introduction2,#introduction3,#introduction4{
         padding-top:12rem;
+    }
+    #introduction2 .introduction_text2 p:last-child,
+    #introduction3 .introduction_text2 p:last-child,
+    #introduction4 .introduction_text2 p:last-child{
+        padding-top:3rem!important;
+    }
+    #introduction3 .introduction_inner.flex{
+        flex-direction: column;
+        padding-bottom:12.5rem;
     }
     #introduction4{
         padding-bottom:12.5rem;
