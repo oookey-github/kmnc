@@ -19,13 +19,21 @@
                         <div class="logo_white"><img src="<?php bloginfo('template_directory'); ?>/image/logo_white.svg" alt=""></div>
                         <h2 class="front_title">伊勢神宮と<br>熊野古道をつなぐ<br>隠れ家リゾート</h2>
                     </div>
-                    <a href="<?php bloginfo('url'); ?>/news/news_list.html" class="mv_news">
-                        <h2>お知らせ：</h2>
-                        <dl>
-                            <dt>2022/11/12</dt>
-                            <dd>熊野倶楽部ウェブサイトをリニューアルしました。</dd>
-                        </dl>
-                    </a>
+
+                    <?php
+                    query_posts('post_type=news&posts_per_page=1');
+                    while (have_posts()) : the_post();
+                    ?>
+                        <a href="<?php echo get_permalink(); ?>" class="mv_news">
+                            <h2>お知らせ：</h2>
+                            <dl>
+                                <dt><?php the_time('Y.m.d'); ?></dt>
+                                <dd><?php the_title(); ?></dd>
+                            </dl>
+                        </a>
+                    <?php endwhile; ?>
+                    <?php wp_reset_query(); ?>
+
                 </div>
             </div>
 
@@ -44,13 +52,13 @@
                             <?php } ?>
                             <?php if( get_field('top_banner_sp') ) { ?>
                                 <img src="<?php the_field('top_banner_sp'); ?>" alt="<?php the_title(); ?>" class="sp">
+                            <?php } else { ?>
+                                <img src="<?php the_field('top_banner_pc'); ?>" alt="<?php the_title(); ?>" class="sp">
                             <?php } ?>
                         </a>
 
                         <?php endwhile; ?>        
-                        <?php
-                        wp_reset_query();
-                        ?>
+                        <?php wp_reset_query(); ?>
 
                     </div>
                 </div>
@@ -186,8 +194,8 @@
                             <dl>
 
                             <?php
-                                if (have_posts()) : query_posts('post_type=news&posts_per_page=999&paged='.$paged);
-                                while (have_posts()) : the_post();
+                            query_posts('post_type=news&posts_per_page=4');
+                            while (have_posts()) : the_post();
                             ?>
 
                                 <dt><?php the_time('Y.m.d'); ?></dt>
@@ -200,7 +208,6 @@
                                 </dd>
 
                             <?php endwhile; ?>
-                            <?php endif; ?>
                             <?php wp_reset_query(); ?>
 
                             </dl>
