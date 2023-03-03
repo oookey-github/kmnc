@@ -116,7 +116,7 @@ body{
     margin:0rem auto 0;
     letter-spacing: 0.12rem;
     margin:0 3.5rem;
-    
+    width:auto;
 }
 
 .guest_room_guidance_inner .menu p span{
@@ -182,7 +182,7 @@ section .guest_room_guidance_inner .border{
 .view.room{
     width:102.9rem;
     
-    margin:12.4rem auto 10rem;
+    margin:6rem auto 10rem;
 }
 .view.room li{
     margin:0 2.6rem 0 0;
@@ -244,6 +244,9 @@ section .guest_room_guidance_inner .border{
 }
 .mc_text.room .border_div{
     top:-0.5rem;
+}
+.room #introduction3 .introduction_inner.flex{
+    flex-direction: initial;
 }
 #room1 .title .border_div .border,
 #room2 .title .border_div .border,
@@ -552,7 +555,7 @@ footer .each_page a{
     .view.room{
         width:100%;
         overflow: hidden;
-        margin:7.8rem auto 11.9rem;
+        margin:0 auto 11.9rem;
         
     }
     .view.room .flex{
@@ -585,8 +588,21 @@ footer .each_page a{
     #introduction3 .introduction_text2 p:last-child{
         padding-top:0;
     }
+    #introduction2 .guest_room .introduction_text2 p:first-child{
+        padding-bottom:0;
+    }
+    .room #introduction2 .introduction_text2 p:last-child{
+        padding-top:0!important;
+    }
     #introduction3.room{
         padding-bottom:11.9rem;
+    }
+    .room #introduction3 .introduction_inner.flex{
+        flex-direction: column-reverse;
+        padding-bottom:0;
+    }
+    .room #introduction3 .introduction_text2 p:first-child{
+        padding-bottom:0;
     }
     .introduction_inner{
         width:95%;
@@ -599,6 +615,9 @@ footer .each_page a{
     }
     footer{
         width:100%;
+    }
+    .page_btn{
+        margin-right:2rem;
     }
     @media screen and ( max-width:375px ){
         .room .mc_item_2{
