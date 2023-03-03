@@ -32,10 +32,26 @@
             <div class="content_inner">
                 <div class="content_section fadein">
                     <div class="banner">
-                        <a href="<?php bloginfo('url'); ?>/guest_room/guest_room.html" class="banner_img">
-                            <img src="<?php bloginfo('template_directory'); ?>/image/banner_1.png" alt="" class="pc">
-                            <img src="<?php bloginfo('template_directory'); ?>/image/banner_1_sp.png" alt="" class="sp">
+
+                        <?php
+                        query_posts('post_type=top_banner&posts_per_page=1');
+                        while (have_posts()) : the_post();
+                        ?>
+
+                        <a href="<?php the_field('top_banner_url'); ?>" target="<?php the_field('top_banner_blank'); ?>" class="banner_img">
+                            <?php if( get_field('top_banner_pc') ) { ?>
+                                <img src="<?php the_field('top_banner_pc'); ?>" alt="<?php the_title(); ?>" class="pc">
+                            <?php } ?>
+                            <?php if( get_field('top_banner_sp') ) { ?>
+                                <img src="<?php the_field('top_banner_sp'); ?>" alt="<?php the_title(); ?>" class="sp">
+                            <?php } ?>
                         </a>
+
+                        <?php endwhile; ?>        
+                        <?php
+                        wp_reset_query();
+                        ?>
+
                     </div>
                 </div>
 
@@ -62,16 +78,18 @@
                             <a href="<?php bloginfo('url'); ?>/guest_room/"><div class="mc_img_2 parallax"><img src="<?php bloginfo('template_directory'); ?>/image/mc_2.png" alt=""></div></a>
                         </div>
                         <div class="mc_text fadein">
-                            <div class="horiz_text">
-                                <span class="text_line_h"></span>
-                                <p class="">客室はオールスイート</p>
+                            <div class="mc_2_inner">
+                                <div class="horiz_text">
+                                    <span class="text_line_h"></span>
+                                    <p class="">客室はオールスイート</p>
+                                </div>
+                                <h2 class="mc_title">熊野杉が香る<br class="sp">癒しの客室で<br>上質の寛ぎを。</h2>
+                                <p>恵まれた自然を五感で感じ、癒されるよう<br>熊野杉などを用いて造られた客室は、<br class="sp">日常を忘れる<br class="pc">ひとときの癒やし空間</p>
+                                <a href="<?php bloginfo('url'); ?>/guest_room/guest_room.html"  class="circle_btn_top">
+                                    <img src="<?php bloginfo('template_directory'); ?>/image/circle_btn_b.svg" alt="">
+                                    <p class="circle_btn_text"><span class="arrow"></span>客室のご案内</p>
+                                </a>
                             </div>
-                            <h2 class="mc_title">熊野杉が香る<br class="sp">癒しの客室で<br>上質の寛ぎを。</h2>
-                            <p>恵まれた自然を五感で感じ、癒されるよう<br>熊野杉などを用いて造られた客室は、<br class="sp">日常を忘れる<br class="pc">ひとときの癒やし空間</p>
-                            <a href="<?php bloginfo('url'); ?>/guest_room/"  class="circle_btn_top">
-                                <img src="<?php bloginfo('template_directory'); ?>/image/circle_btn_b.svg" alt="">
-                                <p class="circle_btn_text"><span class="arrow"></span>客室のご案内</p>
-                            </a>
                         </div>
                     </div>
                     <div class="main_content mc_3 fadein">
@@ -96,16 +114,18 @@
                             <a href=""><div class="mc_img_4 parallax"><img src="<?php bloginfo('template_directory'); ?>/image/mc_4-1.png" alt=""></div></a>
                         </div>
                         <div class="mc_text fadein">
-                            <div class="horiz_text">
-                                <span class="text_line_h"></span>
-                                <p class="">静謐に心洗われる</p>
+                            <div class="mc_4_inner">
+                                <div class="horiz_text">
+                                    <span class="text_line_h"></span>
+                                    <p class="">静謐に心洗われる</p>
+                                </div>
+                                <h2 class="mc_title">天仰ぐ湯処</h2>
+                                <p>何も考えず、流れゆく雲を眺め、<br class="sp">かすかに聞こえる<br class="pc">風の音を聴きただひたすら<br class="sp">湯につかるひととき。</p>
+                                <a href=""  class="circle_btn_top">
+                                    <img src="<?php bloginfo('template_directory'); ?>/image/circle_btn_b.svg" alt="">
+                                    <p class="circle_btn_text"><span class="arrow"></span>露天風呂のご紹介</p>
+                                </a>
                             </div>
-                            <h2 class="mc_title">天仰ぐ湯処</h2>
-                            <p>何も考えず、流れゆく雲を眺め、<br class="sp">かすかに聞こえる<br class="pc">風の音を聴きただひたすら<br class="sp">湯につかるひととき。</p>
-                            <a href=""  class="circle_btn_top">
-                                <img src="<?php bloginfo('template_directory'); ?>/image/circle_btn_b.svg" alt="">
-                                <p class="circle_btn_text"><span class="arrow"></span>露天風呂のご紹介</p>
-                            </a>
                         </div>
                     </div>
                 </div>
