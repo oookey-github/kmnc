@@ -25,7 +25,7 @@ body{
     
 }
 @media only screen and (max-width: 767px){
-	html{font-size: calc( 1000vw /43px);}
+	html{font-size: calc( 1000vw /430vw);}
 }
 /* ====== 色 ====== */
 .bg1{
@@ -94,6 +94,9 @@ body{
 }
 .fs30{
     font-size:3rem;
+}
+.fs31{
+    font-size:3.1rem;
 }
 .fs34{
     font-size:3.4rem;
