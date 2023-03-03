@@ -52,13 +52,39 @@ body{
 	z-index: 1;
 	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
 	height: 46rem;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
-    max-width: 120rem;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 .slider-item img{
     width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
     object-fit: cover;
+}
+/* スライダー上の文 */
+.exp_fv{
+    position: relative;
+    max-width: 120rem;
+    width: 70%;
+    margin: 0 auto;
+}
+.exp_fv p{
+    font-size: 2.6rem;
+    background-color: #fff;
+    position: absolute;
+    letter-spacing: 0.6rem;
+    line-height: 4rem;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    padding: 2.5rem 2rem 4rem 2rem;
+}
+
+/* ボタン */
+.experience .tourism_btn ul{
+    width: 74rem;
+}
+.experience .tourism_btn li{
+    width: auto;
+    margin-left: 6rem;
 }
 
 /* 体験プラン */
@@ -66,7 +92,8 @@ body{
     margin-bottom: 15rem;
 }
 .exp_li_content{
-    margin-top: 10rem;
+    margin-top: 5rem;
+    padding-top: 5rem;
 }
 .exp_list ul{
     display: flex;

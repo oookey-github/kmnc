@@ -131,8 +131,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 78rem;
-    margin: 0 auto;
+    width: 110rem;
+    margin: -7rem auto 0;
+    letter-spacing: 0.15rem;
+    font-size: 1.5rem;
 }
 .tourism_list li{
     width: 30rem;
@@ -153,6 +155,19 @@ body{
 .tourism_list li h2 span{
     font-size: 1.8rem;
 }
+.tourism_list #tourism_1,#tourism_2{
+    width: 48rem;
+}
+.tourism_list #tourism_1 img,#tourism_2 img{
+    width: 100%;
+    height: 30rem;
+}
+.tourism_list #tourism_3,#tourism_5,#tourism_7,#tourism_9,#tourism_11,#tourism_13,#tourism_15{
+    margin-left: 21rem;
+}
+.tourism_list #tourism_4,#tourism_6,#tourism_8,#tourism_10,#tourism_12,#tourism_14,#tourism_16{
+    margin-right: 21rem;
+}
 .tourism .circle_btn{
     border: 1px solid #292929;
 }
@@ -167,6 +182,27 @@ body{
 }
 .official_site .tourism_btn li{
     width: 23.3rem;
+}
+
+@media screen and (max-width: 1100px){
+    .tourism .pc_br{display: none}
+    .tourism_list ul{
+        width: 78rem;
+        margin: -7rem auto 0;
+    }
+    .tourism_list #tourism_1,#tourism_2{
+        width: 30rem;
+    }
+    .tourism_list #tourism_1 img,#tourism_2 img{
+        width: 100%;
+        height: 48rem;
+    }
+    .tourism_list #tourism_3,#tourism_5,#tourism_7,#tourism_9,#tourism_11,#tourism_13,#tourism_15{
+        margin-left: auto;
+    }
+    .tourism_list #tourism_4,#tourism_6,#tourism_8,#tourism_10,#tourism_12,#tourism_14,#tourism_16{
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 767px){

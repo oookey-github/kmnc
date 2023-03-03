@@ -402,14 +402,14 @@ line-height: 1.1rem;;
     top: 0;
     left: 0;
     right: 0;
-    height: 0.1em;
+    height: 0.08em;
 }
   
 .arrow::after {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 0.1em;
+    width: 0.08em;
 }
 .circle_btn_top {
     display: flex;
@@ -1002,6 +1002,8 @@ line-height: 1.1rem;;
 /* フォトスポット */
 .photo_spot{
     text-align: center;
+    padding-top: 5rem;
+    margin-top: -5rem;
 }
 .photo_spot ul{
     display: flex;
@@ -1296,7 +1298,7 @@ line-height: 1.1rem;;
 ===== ボタンのためのCSS ===============*/
 .openbtn{
 	position:fixed;
-    z-index: 9999;/*ボタンを最前面に*/
+    z-index: 999;/*ボタンを最前面に*/
     top: 0rem;
     right: 0rem;
 	cursor: pointer;

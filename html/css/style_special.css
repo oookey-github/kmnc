@@ -44,19 +44,25 @@ body{
     margin-top: 6.5rem;
 }
 .star_banner{
-    background-image: url(../image/stargazing_banner.png);
-    height: 65rem;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    width: 100%;
+}
+.star_banner_bg{
+    height: 65rem;
+    width: 100%;
+}
+.star_banner_bg img{
+    height: 65rem;
+    width: 100%;
+    object-fit: cover;
 }
 .star_banner .inner {
     margin-bottom: 4rem;
+    position: absolute;
 }
 .star_banner .inner img{
     width: 16rem;
