@@ -20,6 +20,7 @@
 }
 .omotenashi .title .border_div .border {
     left:0rem;
+    top:0;
 }
 .omotenashi .title{
     margin-top:6.1rem;
@@ -27,7 +28,8 @@
 .omotenashi .title p{
     margin-left:12rem;
     line-height: 2.4rem;
-    margin-bottom:1.8rem;
+    margin-bottom:1.3rem;
+    margin-top:-1rem;
 
 }
 .omotenashi .title p:last-child{

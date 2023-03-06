@@ -33,7 +33,7 @@ body{
 }
 .introduction{
     width:100%;
-    margin-top:7.4rem;
+    margin-top:6.1rem;
     min-width:100%;
 }
 .introduction .img{
@@ -43,10 +43,14 @@ body{
 .introduction .title{
     max-width:126rem;
     width:100%;
-    margin:0 auto 4.7rem;
+    margin:0 0 4.7rem 22rem;
+}
+.introduction .title .border{
+    bottom:-0.2rem;
 }
 .introduction .title p:nth-child(2){
-    margin-bottom:1.5rem;
+    margin-bottom:0;
+    margin-top:-2rem;
 }
 
 .introduction .loccintane_logo{
@@ -454,6 +458,9 @@ margin-left:0;
     #pre_collabo_stayplan_1 .introduction_loccitane img{
         height:auto;
         margin-bottom:0;
+    }
+    .pre_collab_stayplan .border_div .border{
+        bottom:-0.2rem;
     }
     .introduction_loccitane{
         flex-wrap: wrap;

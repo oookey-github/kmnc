@@ -135,6 +135,7 @@ body{
     max-width:148rem;
     width:95%;
     margin:0 auto;
+    margin-top:6.1rem;
 }
 .oshokuji{
     width:100%;
@@ -145,7 +146,7 @@ body{
     position:relative;
 }
 .restaurant_info .border{
-    bottom:-1rem;
+    bottom:-1.5rem;
 }
 .border{
     border: solid 0.01rem #292929;
@@ -153,23 +154,23 @@ body{
     margin-right: 2rem;
     position:absolute;
     bottom:-1.5rem;
-    left:-12rem;
+    left:0rem;
 }
 .restaurant_guide .title{
     display:inline-block;
+    margin:0 0 0 12rem;
 }
 .restaurant_guide .title p{
-    margin-bottom:1.8rem;
+    margin-bottom:0.5rem;
 }
 .restaurant_guide .title p:last-child{
     letter-spacing: 0.3rem;
 }
-.restaurant_info{
-    margin-top:6rem;
-}
+
+
+
 .restaurant_info_inner{
     display: inline-block;
-    margin-top:3rem;
     width:90%;
     max-width:148rem;
 }
@@ -249,11 +250,11 @@ body{
 .border-r{
     border-right:1px solid #707070;
 }
-.restaurant_guide .title p:nth-child(2){
+/* .restaurant_guide .title p:nth-child(2){
     margin-bottom:2.2rem
-}
+} */
 .restaurant_guide .title p:last-child{
-    margin-bottom:4.6rem;
+    margin-bottom:3rem;
 }
 .restaurant_info_img_2{
     width:90%;
