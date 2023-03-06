@@ -529,6 +529,19 @@ line-height: 1.1rem;;
     margin-top: 6rem;
     margin-bottom: 6.5rem;
 }
+.page_title{
+    width: 100%;
+    max-width: 148rem;
+    margin: 0 auto;
+    margin-top: 6.1rem;
+    margin-bottom: 4.5rem;
+}
+.horiz_text_title{
+    position: static !important;
+}
+.mc_page_title{
+    margin-left: 12rem;
+}
 
 /* ===================================== */
 /* mc2 */
@@ -1500,6 +1513,9 @@ line-height: 1.1rem;;
 }
 }
 @media screen and ( max-width:1126px ){
+    .page_title{
+        margin-left: 0 !important;
+    }
     .mc_text{
         margin-left: 5rem;
     }
@@ -1518,7 +1534,7 @@ line-height: 1.1rem;;
         margin-right: 48rem;
     }
     .mc_item_3{
-       min-width: auto;
+        min-width: auto;
     }
     .news dl{
         width: 69rem;
