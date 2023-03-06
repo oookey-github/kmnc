@@ -119,7 +119,7 @@ body{
     height:27.5rem;
     background: url(../image/header_bg_oshokuji.png) no-repeat;
     justify-content: space-between;
-    padding:0 4.4rem 0 11rem;
+    padding:0 4.4rem 0 9rem;
     background-position: 80% 20%;
     background-size: cover;
     position:relative;
