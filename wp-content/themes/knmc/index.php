@@ -372,7 +372,8 @@
                 <div class="content_section fadein">
                     <div class="instagram">
                         <h2>Instagram<br><span>#熊野日和</span></h2>
-                        <ul>
+                        <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+                        <!-- <ul>
                             <li><img src="<?php bloginfo('template_directory'); ?>/image/insta_1.png" alt=""></li>
                             <li><img src="<?php bloginfo('template_directory'); ?>/image/insta_2.png" alt=""></li>
                             <li><img src="<?php bloginfo('template_directory'); ?>/image/insta_3.png" alt=""></li>
@@ -382,7 +383,7 @@
                             <li><img src="<?php bloginfo('template_directory'); ?>/image/insta_7.png" alt=""></li>
                             <li><img src="<?php bloginfo('template_directory'); ?>/image/insta_8.png" alt=""></li>
                             <li><img src="<?php bloginfo('template_directory'); ?>/image/insta_9.png" alt=""></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
 
