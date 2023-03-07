@@ -537,9 +537,11 @@ body{
 }
 .venue_img img{
     width:42.1rem;
+    padding-bottom:2.8rem;
 }
 .venue_img .slick-dots{
     top:28rem;
+    margin-top:2.8rem;
 }
 .venue_img .slick-sp-pc li {
     margin:0 3.4rem 0 0;
