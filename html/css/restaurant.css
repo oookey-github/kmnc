@@ -146,15 +146,13 @@ body{
 .border_div{
     position:relative;
 }
-.restaurant_info .border{
-    bottom:-1.5rem;
-}
+
 .border{
     border: solid 0.01rem #292929;
     padding-left: 10rem;
     margin-right: 2rem;
     position:absolute;
-    bottom:-1.5rem;
+    bottom:-1rem;
     left:0rem;
 }
 .restaurant_guide .title{
