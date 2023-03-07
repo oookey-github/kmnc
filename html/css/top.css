@@ -538,9 +538,13 @@ line-height: 1.1rem;;
 }
 .horiz_text_title{
     position: static !important;
+    font-size: 3rem !important;
 }
 .mc_page_title{
-    margin-left: 12.3rem;
+    margin-left: 12rem;
+    font-size: 1.8rem !important;
+    letter-spacing: 0.5rem;
+    margin-bottom: 0;
 }
 
 /* ===================================== */
@@ -1669,10 +1673,14 @@ line-height: 1.1rem;;
         margin-top: 3rem !important;
         margin-bottom: 2rem !important;
     }
-    .mc_page_title{
+    .mc_title.mc_page_title{
         margin-top: 0 !important;
         line-height: 2.8rem;
         margin-left: 4.3rem;
+        font-size: 1.2rem !important;
+    }
+    .horiz_text_title{
+        font-size: 2rem !important;
     }
     .horiz_text_title .text_line_h{
         padding-left: 2rem;
