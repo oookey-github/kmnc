@@ -1189,7 +1189,7 @@ width:100%;
     #restaurant1 .border,
     #restaurant2 .border,
     #restaurant3 .border{
-        padding-left: 5.5rem;
+        padding-left: 7.5rem;
     }
     #restaurant1 .title p:nth-child(2),
     #restaurant2 .title p:nth-child(2),
@@ -1308,6 +1308,7 @@ width:100%;
     }
     .restaurant_info .title p:first-child{
         letter-spacing: 0.3rem;
+        text-indent: -1em;
     }
     #restaurant2 .restaurant_info_explanation_text{
         margin-top:0;
@@ -1673,6 +1674,9 @@ width:100%;
     }
     .hotel_net:last-child{
         padding-bottom:3.6rem;
+    }
+    footer .meal_menu{
+        width:90%;
     }
 }
 @media screen and ( max-width:375px ){
