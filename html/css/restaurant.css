@@ -399,6 +399,7 @@ body{
 .meal_inner li img{
     width:24rem !important;
     height:24rem!important;
+    margin-bottom:2.8rem;
 }
 .meal_inner .slick-dots li button:before{
     font-size:22px;
