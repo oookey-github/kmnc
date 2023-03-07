@@ -26,9 +26,6 @@ body{
 	html{font-size: calc( 1000vw / 430vw );}
 }
 
-.experience .header{
-    background-image: url(../image/header_experience.png);
-}
 .experience .horiz_text{
     bottom: auto;
     top: 4rem;

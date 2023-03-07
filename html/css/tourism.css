@@ -1,4 +1,4 @@
-@charset "utf-8";
+z@charset "utf-8";
 /* CSS Document */
 .pc{display: inherit;}
 .sp{display: none;}
@@ -29,14 +29,6 @@ body{
 /* MV */
 .tourism .header {
     background-image: url(../image/header_tourism.png);
-}
-.tourism .mv{
-    background-image: url(../image/kumano_banner.png);
-}
-.tourism .mv_front{
-    height: auto;
-}
-.tourism .kumano_banner .inner{
 }
 .tourism .kumano_banner .multiply{
     background-color: transparent;

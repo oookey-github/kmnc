@@ -26,9 +26,6 @@ body{
 	html{font-size: calc( 1000vw / 430vw );}
 }
 
-.header{
-    background-image: url(../image/header_star.png);
-}
 .stargazing .horiz_text{
     bottom: auto;
     top: 4rem;

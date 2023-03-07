@@ -1040,6 +1040,10 @@ line-height: 1.1rem;;
 .instagram h2 span{
     font-size: 2rem;
 }
+.instagram_wrap{
+    width: 80rem;
+    margin: 0 auto;
+}
 .instagram ul{
     margin-top: 5.5rem;
     display: flex;
@@ -2050,6 +2054,10 @@ line-height: 1.1rem;;
     /* インスタグラム */
     .instagram{
         margin-top: -8rem;
+    }
+    .instagram_wrap{
+        width: 32rem;
+        margin: 0 auto;
     }
     .instagram ul{
         width: 32rem;

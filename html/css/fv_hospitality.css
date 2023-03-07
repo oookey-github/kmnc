@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+.pc{display: inherit !important;}
+.sp{display: none !important;}
+@media screen and ( max-width:767px ){
+	.pc{display: none !important;}
+	.sp{display: inherit !important;}
+}
+html{font-size: 62.5%;}
+body{
+	font-size:1.6em;
+	font-style: normal;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    color: #292929
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+@media (min-width: 768px) {
+    body {
+        min-width: 1024px;
+    }
+}
+@media only screen and (max-width: 767px){
+	html{font-size: calc( 1000vw / 430vw );}
+}
+
+/*　WebP対応の場合　*/
+.webp .header{
+    background-image: url(../image/webp/hospitality_header.webp);
+}
+/*　WebP非対応の場合　*/
+.no-webp .guide .header{
+    background-image: url(../image/hospitality_header.png);
+}
