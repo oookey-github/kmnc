@@ -29,36 +29,45 @@ body{
     background-image: url(../image/header_bg_guide.png);
 }
 /* タイトル */
+.guide .main_content .mc_text{
+	margin-right: 0;
+}
 .guide .mc_text{
-	margin-top: 7rem;
+	/* margin-top: 7rem;
 	margin-right: 6rem !important;
-	left: 6rem;
+	left: 6rem; */
     display: block;
 }
 .guide .horiz_text{
 	bottom: auto;
-    font-size: 3.2rem;
+    font-size: 3rem;
     top: -3.5rem;
 }
 .guide .mc_title{
 	font-size: 1.8rem !important;
 	letter-spacing: 0.7rem;
-	margin-bottom: 6rem;
+	/* margin-bottom: 6rem; */
+	margin-bottom: auto;
 }
 .guide .mc_2{
-	margin-top: 6rem;
+	margin-top: 4.5rem;
 }
 .guide .mc_2 .content_inner{
+	position: relative;
 	display: flex;
     margin: 0 auto;
     justify-content: space-between;
 	flex-wrap: wrap;
+	max-width: 148rem;
+    width: 100%;
+    padding: 0 12rem;
 }
 .guide .mc_text .inner h2{
 	font-size: 2.4rem;
-	margin-bottom: 4rem;
+	margin-bottom: 3rem;
     font-size: 2.4rem;
     line-height: 4rem;
+	letter-spacing: 0.6rem;
 }
 
 /* 施設のご案内 */
@@ -76,7 +85,8 @@ body{
 .map{
 	width: 70rem;
 	height: auto;
-	margin-top: 4rem;
+	margin-top: -10rem;
+    margin-left: -50rem;
 }
 .map img{
 	width: 100%;
@@ -87,7 +97,7 @@ body{
 	font-size: 1.8rem;
 	font-weight: bold;
 	position: absolute;
-	top: 18rem;
+	top: 3rem;
 }
 .map .guide_line p{
 	margin-bottom: -0.5rem;
@@ -97,7 +107,7 @@ body{
 }
 .guide_attent{
 	position: absolute;
-	right: calc(50% - 57rem);
+	right: 13rem;
     bottom: 14rem;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1.3rem;
@@ -152,8 +162,8 @@ body{
 .modaal-close{
 	height: 5rem;
 	width: 5rem;
-	right: 5.5rem;
-    top: 3.5rem;
+	right: 2.5rem;
+    top: 1rem;
 	color: transparent;
 }
 .modaal-wrapper .modaal-close:hover{
@@ -219,9 +229,9 @@ body{
 	}
 	.map{
 		width: 50rem;
-		margin: 0 auto;
-		margin-left: -4rem;
-		margin-top: 8rem;
+		/* margin: 0 auto;
+		margin-left: -4rem; */
+		margin-top: 0rem;
 	}
 	.guide_attent{
 		right: calc(50% - -6.6rem);
@@ -240,6 +250,7 @@ body{
 	.guide .mc_2 .content_inner{
 		flex-wrap: wrap;
 		position: relative;
+		padding: 0;
 	}
 	.map{
 		width: 36rem;
@@ -258,7 +269,7 @@ body{
 	}
 	.guide_attent{
 		position: absolute;
-		left: 4.7rem;
+		left: 4rem;
 		bottom: -37rem;
 		letter-spacing: 0.2rem;
 		font-size: 1.2rem;
@@ -281,8 +292,8 @@ body{
 	.modaal-close{
 		height: 3rem;
 		width: 3rem;
-		right: 3.5rem;
-		top: 1.5rem;
+		right: 3rem;
+		top: 0.7rem;
 		color: transparent;
 	}
 	.modaal-wrapper .modaal-close:hover{
@@ -309,12 +320,10 @@ body{
 	.guide .horiz_text{
 		font-size: 2rem;
 		top: -1rem;
-		margin-left: -6.5rem;
 	}
 	.guide .mc_title{
-		font-size: 1.8rem !important;
-		letter-spacing: 0.7rem;
-		margin-bottom: 6rem;
+		font-size: 1.4rem !important;
+		letter-spacing: 0.4rem;
 	}
 	.guide .mc_2 .mc_title{
 		margin-top: 1rem;
@@ -325,16 +334,14 @@ body{
 	}
 	.guide .mc_text{
 		margin-top: 0;
-		margin-left: -4.7rem;
+		margin-left: 4rem;
 	}
 	.guide .mc_text .inner h2{
-		margin-left: 3.7rem;
 		font-size: 2rem;
 	}
 	.guide .mc_text .inner p{
 		position: absolute;
 		bottom: -76rem;
-		margin-left: 3.3rem;
 	}
 	.guide .introduction{
 		margin-top: 50rem;
@@ -365,7 +372,7 @@ body{
 		width: 90%;
 		bottom: auto;
 		top: 86rem;
-		left: 1rem;
+		left: 2rem;
 		white-space: break-spaces;
 	}
 	.guide .map_list li{
@@ -387,5 +394,8 @@ body{
 	}
 	.modaal-container img{
 		width: 100%;
+	}
+	.guide .mc_text{
+		margin-left: 2rem;
 	}
 }

@@ -540,7 +540,7 @@ line-height: 1.1rem;;
     position: static !important;
 }
 .mc_page_title{
-    margin-left: 12rem;
+    margin-left: 12.3rem;
 }
 
 /* ===================================== */
@@ -1665,6 +1665,18 @@ line-height: 1.1rem;;
         margin: 4rem auto 0rem;
     }
     /* メインコンテンツ */
+    .page_title{
+        margin-top: 3rem !important;
+        margin-bottom: 2rem !important;
+    }
+    .mc_page_title{
+        margin-top: 0 !important;
+        line-height: 2.8rem;
+        margin-left: 4.3rem;
+    }
+    .horiz_text_title .text_line_h{
+        padding-left: 2rem;
+    }
     .main_content{
         flex-wrap: wrap;
         justify-content: flex-start;

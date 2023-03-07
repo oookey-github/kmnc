@@ -29,9 +29,6 @@ body{
 .experience .header{
     background-image: url(../image/header_experience.png);
 }
-.experience .mc_text {
-    height: 14rem;
-}
 .experience .horiz_text{
     bottom: auto;
     top: 4rem;
@@ -72,8 +69,8 @@ body{
     letter-spacing: 0.6rem;
     line-height: 4rem;
     z-index: 2;
-    bottom: 0;
-    left: 0;
+    bottom: -1rem;
+    left: -1rem;
     padding: 2.5rem 2rem 4rem 2rem;
 }
 
