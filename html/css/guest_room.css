@@ -43,14 +43,15 @@ body{
 }
 #guest_room_guidance{
     margin:0 auto;
-    padding:6.1rem 0;
+    padding:0;
 }
 #guest_room_guidance .title{
-    padding-bottom:4.5rem;
+    padding-bottom:3rem;
     margin-left:12rem;
 }
 #guest_room_guidance .title p:last-child{
     margin-bottom:0;
+    line-height: 3.5rem;;
 }
 .guest_room .header{
     background-image: url(../image/header_guest_room.png);
@@ -62,9 +63,6 @@ body{
     max-width:148rem;
     width:100%;
     margin:0 auto;
-}
-#guest_room_guidance .guest_room_guidance_inner .border{
-    left:0;
 }
 .explanation.room.inner{
     flex-direction: column;
@@ -85,7 +83,7 @@ body{
     letter-spacing: 0.5rem;
 }
 .guest_room_mv{
-    width:90%;
+    width:84%;
     margin:0 auto 5.6rem;;
 }
 .guest_room_mv img{
@@ -139,9 +137,7 @@ body{
 .guest_room_guidance_inner .name p:last-child{
     margin-bottom:3.1rem;
 }
-section .guest_room_guidance_inner .border{
-    left:-12rem;
-}
+
 .guest_room_guidance_inner .img img{
     width:90.8rem;
 }
@@ -161,7 +157,7 @@ section .guest_room_guidance_inner .border{
     flex-direction: column-reverse;
 }
 .mc_img_2.room{
-    width:90.8rem;
+    width:100%;
     overflow: hidden;
 }
 .mc_2 .mc_text.room{
@@ -246,9 +242,7 @@ section .guest_room_guidance_inner .border{
 #introduction3.room{
     padding-bottom:17.6rem;
 }
-.mc_text.room .border_div{
-    top:-0.5rem;
-}
+
 .room #introduction3 .introduction_inner.flex{
     flex-direction: initial;
 }
@@ -256,7 +250,8 @@ section .guest_room_guidance_inner .border{
 #room2 .title .border_div .border,
 #room3 .title .border_div .border,
 #room4 .title .border_div .border{
-    bottom:-1rem
+    bottom:-1rem;
+    left:-12rem;
 }
 .introduction_inner {
     width:100%;
@@ -488,6 +483,7 @@ footer .each_page a{
         padding-bottom:0;
         margin-left:3rem;
     }
+
     .guest_room_mv{
         width:100%;
         height:32.3rem;
@@ -500,6 +496,12 @@ footer .each_page a{
     #room1,#room2,#room3,#room4{
         min-width:auto;
     }
+    #room1 .title .border_div .border,
+    #room2 .title .border_div .border,
+    #room3 .title .border_div .border,
+    #room4 .title .border_div .border{
+    left:-8.5rem;
+}
     .text p:first-child{
         font-size:2.4rem;
         letter-spacing: 0.3rem;
