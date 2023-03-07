@@ -468,6 +468,8 @@ line-height: 1.1rem;;
     justify-content: center;
     align-items: flex-end;
     white-space: nowrap;
+    margin-top: -15rem;
+    padding-top: 15rem;
 }
 /* mc1 */
 .mc_1{

@@ -138,7 +138,7 @@ $(window).on('scroll',function () {
 
     $('.fadein').each(function () {
     const targetPosition = $(this).offset().top;
-    if (scroll > targetPosition - windowHeight + 50) {
+    if (scroll > targetPosition - windowHeight + 0) {
         $(this).addClass("is-fadein");
     }
     });
