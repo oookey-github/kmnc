@@ -153,7 +153,7 @@ body{
     margin-right: 2rem;
     position:absolute;
     bottom:-1rem;
-    left:0rem;
+    left:-4rem;
 }
 .restaurant_guide .title{
     display:inline-block;
@@ -166,14 +166,21 @@ body{
     letter-spacing: 0.3rem;
     margin-top:0;
 }
+#restaurant_guide .restaurant_info .title p:first-child{
+    text-indent: 0;
+}
+#restaurant_guide .border{
+    left:0;
+}
 .restaurant_info .title p:first-child{
     letter-spacing: 0.5rem;
+    text-indent:-2em;
 }
 .restaurant_info .title p:nth-child(2){
     margin-top:4rem;
 }
 #restaurant1 .restaurant_info .title p:nth-child(3){
-    text-indent: 2rem;
+    text-indent: 1.5em;
 }
 
 .restaurant_info_inner{
@@ -257,7 +264,8 @@ body{
     border-right:1px solid #707070;
 }
 .restaurant_guide .title p:nth-child(2){
-    margin-bottom:2.2rem
+    margin-bottom:2.2rem;
+    
 }
 .restaurant_guide .restaurant_info .title p:last-child{
     margin-bottom:3rem;
@@ -287,10 +295,10 @@ body{
     margin-top:3.5rem;
 }
 #restaurant2 .restaurant_info .title p:nth-child(3){
-    text-indent: -2rem;
+    text-indent: -2em;
 }
 #restaurant2 .restaurant_info .title p:nth-child(3){
-    text-indent:2rem;
+    text-indent:2.5em;
 }
 .reserve_btn{
     width:33.2rem;
@@ -1176,7 +1184,7 @@ width:100%;
         position:static;
     }
     #restaurant1 .restaurant_info .title p:nth-child(3){
-        text-indent: -2rem;
+        text-indent: -2em;
     }
     #restaurant1 .border,
     #restaurant2 .border,
