@@ -26,8 +26,15 @@ body{
 	html{font-size: calc( 1000vw / 430vw );}
 }
 
-.mv{
+/*　WebP対応の場合　*/
+.webp .mv{
+    background-image: url(../image/webp/mv.webp);
+}
+/*　WebP非対応の場合　*/
+.no-webp .mv{
     background-image: url(../image/mv.png);
+}
+.mv{
     position: relative;
     top: 0;
     right: 0;
