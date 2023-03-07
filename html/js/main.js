@@ -127,7 +127,7 @@ $(".hotel_reserve_inner_sp a").scroll(function () {//ナビゲーションのリ
 // パララックス
 var image = document.getElementsByClassName('parallax');
 new simpleParallax(image, {
-	scale: 1.3,
+	scale: 1.1,
     delay: .6,
 	transition: 'cubic-bezier(0,0,0,1)'
 });
@@ -138,7 +138,7 @@ $(window).on('scroll',function () {
 
     $('.fadein').each(function () {
     const targetPosition = $(this).offset().top;
-    if (scroll > targetPosition - windowHeight + 200) {
+    if (scroll > targetPosition - windowHeight + 50) {
         $(this).addClass("is-fadein");
     }
     });

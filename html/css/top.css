@@ -118,13 +118,13 @@ body img{
     height: 4rem;
     justify-content: center;
     align-items: center;
-    margin-right:5.7rem;
+    margin-right:5rem;
 }
 /* 宿泊プラン一覧ボタン　客室情報ボタン */
 .nav_btn{
     margin-top:4.6rem;
     position:absolute;
-    right:8rem;
+    right:11rem;
     letter-spacing: 0.1rem;
 }
 .nav_link{
@@ -1321,8 +1321,20 @@ line-height: 1.1rem;;
 	cursor: pointer;
     width: 10rem;
     height:10rem;
-    background-color: rgba(255, 255, 255, 0.6);
     padding: 3rem;
+}
+.openbtn::before{
+    background: inherit;
+    content: '';
+    position: absolute;
+    filter: blur(35px);
+    top: -1rem;
+    right: -1rem;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-filter: blur(35px);
 }
 	
 /*×に変化*/	
