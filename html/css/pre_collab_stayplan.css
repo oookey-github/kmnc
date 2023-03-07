@@ -27,10 +27,6 @@ body{
 @media only screen and (max-width: 767px){
 	html{font-size: calc( 1000vw /430px  );}
 }
-.header{
-    background: url(../image/header_pre_collabo_stayplan.png) no-repeat;
-
-}
 .introduction{
     width:100%;
     margin-top:6.1rem;
@@ -39,6 +35,9 @@ body{
 .introduction .img{
     width:100%;
     margin-bottom:5rem;
+}
+.introduction .img img{
+    width:100%;
 }
 .introduction .title{
     max-width:126rem;
@@ -59,6 +58,7 @@ body{
 }
 .introduction .loccintane_logo img{
     width:100%;
+    height:100%;
     object-fit: cover;
 }
 .introduction .kumano_logo{
@@ -68,6 +68,7 @@ body{
 }
 .introduction .kumano_logo img{
     width:100%;
+    height:100%;
     object-fit: cover;
 }   
 .introduction .text_center.text p{
@@ -412,11 +413,20 @@ margin-left:0;
     .introduction{
         min-width: auto;
         
-        margin:7.4rem auto 0;
+        margin:0 auto;
     }
     #pre_collabo_stayplan_1{
-        width:90%;
+        width:100%;
         margin:0 auto;
+    }
+    #pre_collabo_stayplan_1 .mc_text{
+        width:100%;
+    }
+    #pre_collabo_stayplan_1 .mc_title.mc_page_title{
+        letter-spacing:0.3rem!important;
+    }
+    #pre_collabo_stayplan_1 .page_title{
+        margin-bottom:0!important;
     }
     .introduction .title{
         margin-bottom:3.7rem;
@@ -433,7 +443,8 @@ margin-left:0;
     }
     .introduction .img{
         flex-wrap: wrap;
-        margin-bottom:3.7rem;
+        width:90%;
+        margin:0 auto 3.7rem;
     }
     .introduction .loccintane_logo,.introduction .kumano_logo{
         width:100%;

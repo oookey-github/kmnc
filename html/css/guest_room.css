@@ -53,9 +53,7 @@ body{
     margin-bottom:0;
     line-height: 3.5rem;;
 }
-.guest_room .header{
-    background-image: url(../image/header_guest_room.png);
-}
+
 .guest_room .title{
     margin-top:12rem;
 }
