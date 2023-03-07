@@ -192,6 +192,7 @@ section .guest_room_guidance_inner .border{
 }
 .view.room img{
     width:32rem;
+    margin-bottom:3.8rem;
 }
 
 .indoor_view{
@@ -231,7 +232,7 @@ section .guest_room_guidance_inner .border{
     width:0.8rem!important;
     height:0.8rem!important;
     background-color:#333;
-    margin-top:0.65rem;
+    margin-top:0.7rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -456,7 +457,7 @@ footer .each_page a{
     }
     .view.room .slick-sp-pc .slick-dots .slick-active button,
     .view.room .slick-dots li button:hover{ 
-        margin-top:0.35rem;
+        margin-top:0.7rem;
     }
     .guest_room .text p:last-child{
         padding-bottom:7rem;
@@ -520,10 +521,10 @@ footer .each_page a{
     }
     
     .mc_img_2.room{
-        max-width:38.5rem;
+        max-width:39rem;
         height:23.7rem;
         object-fit: cover;
-        width:90%;
+        width:100%;
     }
     .mc_img_2.room img{
         object-position: center;
@@ -564,6 +565,9 @@ footer .each_page a{
     }
     .view.room .flex{
         justify-content: center;
+    }
+    .view.room img{
+        margin-bottom:1.7rem;
     }
     .guest_room_guidance_inner .name p:first-child, .guest_room_guidance_inner .name p:last-child{
         text-indent: 0!important;
