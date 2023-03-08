@@ -424,9 +424,11 @@ margin-left:0;
     }
     #pre_collabo_stayplan_1 .mc_title.mc_page_title{
         letter-spacing:0.3rem!important;
+        line-height: 1.8rem;
+        padding-top: 0.8rem;
     }
     #pre_collabo_stayplan_1 .page_title{
-        margin-bottom:0!important;
+        /* margin-bottom:0!important; */
     }
     .introduction .title{
         margin-bottom:3.7rem;
