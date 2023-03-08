@@ -59,8 +59,21 @@ body img{
     visibility: visible;
     transform: translateX(0);
 }
+.fv_fadein {
+    /* 最初は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5rem);
+    transition: opacity 1.7s, visibility 1.7s, transform 1.7s;
+}
+/* フェードイン時に入るクラス */
+.fv_is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
 
-.fadeUp{
+/* .fadeUp{
     animation-name:fadeUpAnime;
     animation-duration:2.5s;
     animation-fill-mode:forwards;
@@ -96,7 +109,7 @@ body img{
             transform: translateY(0px);
           }
         }
-    
+     */
 
 /* 右側メニュー */
 /* ボタン */
@@ -105,13 +118,13 @@ body img{
     height: 4rem;
     justify-content: center;
     align-items: center;
-    margin-right:5.7rem;
+    margin-right:5rem;
 }
 /* 宿泊プラン一覧ボタン　客室情報ボタン */
 .nav_btn{
     margin-top:4.6rem;
     position:absolute;
-    right:8rem;
+    right:11rem;
     letter-spacing: 0.1rem;
 }
 .nav_link{
@@ -296,19 +309,6 @@ line-height: 1.1rem;;
     background-image: none;
 }
 /* mv */
-.mv{
-    background-image: url(../image/mv.png);
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 83rem;
-    color: #fff;
-    background-position: center;
-    background-size: cover;
-}
 .mv_inner{
     height: 83rem;
 }
@@ -389,14 +389,14 @@ line-height: 1.1rem;;
     top: 0;
     left: 0;
     right: 0;
-    height: 0.1em;
+    height: 0.08em;
 }
   
 .arrow::after {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 0.1em;
+    width: 0.08em;
 }
 .circle_btn_top {
     display: flex;
@@ -468,6 +468,8 @@ line-height: 1.1rem;;
     justify-content: center;
     align-items: flex-end;
     white-space: nowrap;
+    margin-top: -15rem;
+    padding-top: 15rem;
 }
 /* mc1 */
 .mc_1{
@@ -516,12 +518,31 @@ line-height: 1.1rem;;
     margin-top: 6rem;
     margin-bottom: 6.5rem;
 }
+.page_title{
+    width: 100%;
+    max-width: 148rem;
+    margin: 0 auto;
+    margin-top: 6.1rem;
+    margin-bottom: 4.5rem;
+}
+.horiz_text_title{
+    position: static !important;
+    font-size: 3rem !important;
+    letter-spacing: 0.4rem;
+}
+.mc_page_title{
+    margin-left: 12rem;
+    font-size: 1.8rem !important;
+    letter-spacing: 0.5rem;
+    margin-bottom: 0;
+}
 
 /* ===================================== */
 /* mc2 */
 .mc_2{
     flex-direction: row-reverse;
-    margin-top: 32rem;
+    margin-top: 18rem;
+    padding-top: 17rem;
 }
 .mc_item_2{
     height: 54rem;
@@ -558,7 +579,8 @@ line-height: 1.1rem;;
 /* mc3 */
 .mc_3{
     flex-direction: row-reverse;
-    margin-top: 38rem;
+    margin-top: 16rem;
+    padding-top: 30rem;
 }
 .mc_item_3{
     height: 54rem;
@@ -589,7 +611,7 @@ line-height: 1.1rem;;
     background-size: contain;
     background-repeat: no-repeat;
     height: 100%;
-    margin-top: 30rem;
+    margin-top: 35rem;
     padding-top: 13rem;
     background-position-x: calc(50% - 36rem);
 }
@@ -719,7 +741,6 @@ line-height: 1.1rem;;
     width: auto;
     height: auto;
 }
-
 
 /* 潤いの歓待 */
 .hospitality_list h2{
@@ -990,6 +1011,8 @@ line-height: 1.1rem;;
 /* フォトスポット */
 .photo_spot{
     text-align: center;
+    padding-top: 5rem;
+    margin-top: -5rem;
 }
 .photo_spot ul{
     display: flex;
@@ -1022,12 +1045,16 @@ line-height: 1.1rem;;
 .instagram h2 span{
     font-size: 2rem;
 }
+.instagram_wrap{
+    width: 80rem;
+    margin: 0 auto;
+}
 .instagram ul{
     margin-top: 5.5rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80rem;
+    width: 74rem;
     margin: 2rem auto 0;
 }
 .instagram li{
@@ -1044,6 +1071,8 @@ line-height: 1.1rem;;
 .access_map h2{
     text-align: center;
     margin-bottom: 5rem;
+    padding-top: 5rem;
+    margin-top: -5rem;
 }
 .googlemap{
     width: 100%;
@@ -1077,7 +1106,7 @@ line-height: 1.1rem;;
 #g-nav{
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position:fixed;
-    z-index: 999;
+    z-index: 998;
     /*ナビのスタート位置と形状*/
 	top:0;
     right: -120%;
@@ -1162,7 +1191,9 @@ line-height: 1.1rem;;
     top: 12rem;
     left: 74rem;
     color: #292929;
-    width: 50rem;
+    width: 38%;
+    min-width: 44rem;
+    max-width: 53rem;
 }
 #g-nav .nav_content .flex{
     justify-content: space-between;
@@ -1170,7 +1201,7 @@ line-height: 1.1rem;;
 #g-nav .horiz_text{
     position: static;
     flex-wrap: wrap;
-    width: 30rem;
+    width: 28rem;
 }
 #g-nav .nav_mc li{
     margin-bottom: 3rem;
@@ -1280,12 +1311,14 @@ line-height: 1.1rem;;
 ===== ボタンのためのCSS ===============*/
 .openbtn{
 	position:fixed;
-    z-index: 9999;/*ボタンを最前面に*/
-    top: 4rem;
-    right: 4rem;
+    z-index: 999;/*ボタンを最前面に*/
+    top: 5rem;
+    right: 5rem;
 	cursor: pointer;
-    width: 6rem;
-    height:6rem;
+    width: 4rem;
+    height:3rem;
+    padding: 0rem;
+    mix-blend-mode: difference;
 }
 	
 /*×に変化*/	
@@ -1293,60 +1326,113 @@ line-height: 1.1rem;;
     display: inline-block;
     transition: all .4s;
     position: absolute;
-    left: 14px;
     height: 0.2rem;
     border-radius: 2px;
 	background-color: #fff;
-    width: 50%;
+    width: 100%;
 }
 
 .openbtn span:nth-of-type(1) {
-	top:10px;	
+	top:0.2rem;	
+    background-color: #000;
 }
 
 .openbtn span:nth-of-type(2) {
-	top:20px;
+	top:56%;
+    background-color: #000;
 }
 
 .openbtn span:nth-of-type(3) {
-	top:30px;
+	top:102%;
+    background-color: #000;
+}
+.openbtn span:nth-of-type(4) {
+	top:0;	
+}
+
+.openbtn span:nth-of-type(5) {
+	top:50%;
+}
+
+.openbtn span:nth-of-type(6) {
+	top:98%;
 }
 
 .openbtn.active span:nth-of-type(1) {
-    top: 18px;
-    left: 18px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 50%;
-    background-color: #ADADAD;	
+    top: 1rem;
+    transform: translateY(5px) rotate(-45deg);
+	opacity: 0;
 }
-
 .openbtn.active span:nth-of-type(2) {
 	opacity: 0;
-    background-color: #ADADAD;	
+}
+.openbtn.active span:nth-of-type(3) {
+    top: 2rem;
+    transform: translateY(-5px) rotate(45deg);
+	opacity: 0;
+}
+.openbtn.active span:nth-of-type(4) {
+    top: 1rem;
+    transform: translateY(5px) rotate(-45deg);
+    width: 100%;
+    background-color: #ADADAD;
 }
 
-.openbtn.active span:nth-of-type(3){
-    top: 3rem;
-    left: 18px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 50%;
-    background-color: #ADADAD;	
+.openbtn.active span:nth-of-type(5) {
+	opacity: 0;
 }
 
-@media screen and ( max-width:767px ){
+.openbtn.active span:nth-of-type(6){
+    top: 2rem;
+    transform: translateY(-5px) rotate(45deg);
+    width: 100%;
+    background-color: #ADADAD;
+}
+
 /* ヘッダー */
 .toppage .header{
     padding: 0;
 }
 .toppage .logo_icon{
-    width: 11.2rem;
-}
-.toppage .logo_icon img{
-    width: 100%;
+    width: 16rem;
+    margin-left: 9rem;
 }
     /* ハンバーガーメニュー */
 /*========= ナビゲーションのためのCSS ===============*/
-
+@media screen and ( max-width:1260px ){
+    #g-nav .nav_access{
+        font-size: 1.4rem;
+    }
+    #g-nav .nav_access img{
+        width: 12rem;
+    }
+    #g-nav .nav_content{
+        left: 68rem;
+    }
+}
+@media screen and ( max-width:1130px ){
+    #g-nav .nav_access{
+        left: 28rem;
+        top: 5rem;
+    }
+    #g-nav .nav_access p{
+        line-height: 2rem;
+        margin-left: 3rem;
+        position: absolute;
+        top: 94rem;
+        width: 20rem;
+        padding-bottom: 10rem;
+    }
+    #g-nav .nav_content{
+        width: 44rem;
+        left: 30rem;
+        top: 22rem;
+    }
+    #g-nav .nav_bg{
+        width: 25rem;
+    }
+}
+@media screen and ( max-width:767px ){
 #g-nav .nav_bg{
     width: 8rem;
 }
@@ -1354,13 +1440,36 @@ line-height: 1.1rem;;
     width: 24rem;
     top: 17rem;
     left: 11rem;
+    min-width: auto;
+}
+#g-nav .nav_access p{
+    margin-left: 0;
+    top: auto;
 }
 #g-nav .nav_inner{
     position: static;
 }
 .openbtn{
-    top: 2rem;
-    right: 2rem;
+    width: 7rem;
+    height: 7rem;
+    padding: 2.1rem;
+}
+.openbtn span:nth-of-type(1) {
+	top:2.4rem;	
+}
+
+.openbtn span:nth-of-type(2) {
+	top:3.4rem;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:4.4rem;
+}
+.openbtn.active span:nth-of-type(1) {
+    top: 2.8rem;
+}
+.openbtn.active span:nth-of-type(3){
+    top: 4rem;
 }
 #g-nav .nav_access{
     white-space: nowrap;
@@ -1428,11 +1537,111 @@ line-height: 1.1rem;;
     margin-left: 0;
     margin-top: 3rem;
 }
+}
+@media screen and ( max-width:1126px ){
+    .page_title{
+        margin-left: 0 !important;
+    }
+    .mc_text{
+        margin-left: 5rem;
+    }
+    .mc_item_1{
+        width: 42rem;
+    }
+    .main_content .mc_title{
+        font-size: 2.8rem !important;
+        letter-spacing: 0.5rem;
+        line-height: 4.5rem;
+    }
+    .mc_item_2{
+        min-width: auto;
+    }
+    .mc_2 .mc_text{
+        margin-right: 48rem;
+    }
+    .mc_item_3{
+        min-width: auto;
+    }
+    .news dl{
+        width: 69rem;
+    }
+    .news dd div p{
+        max-width: 57rem;
+    }
+    .news .vertical{
+        margin-right: 5rem;
+    }
+    .kumano_banner .left{
+        position: relative;
+    }
+    .kumano_banner .vertical_text{
+        left: 28rem;
+    }
+    .kumano_banner .left h2{
+        left: 12rem;
+    }
+    .access_map p{
+        width: 66rem;
+    }
+    /* フッター */
+    .white_btn{
+        margin-left: 0 !important;
+        margin-top: 2rem;
+    }
+    .btn_box{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 50rem;
+        margin-top: 0 !important;
+    }
+    .each_page{
+        width: 51rem !important;
+        font-size: 1.4rem;
+    }
+}
 
+@media screen and ( max-width:1003px ){
+    .toppage .banner{
+        min-width: 76rem;
+    }
+    .loccitane_banner img{
+        min-width: 76rem;
+    }
+    .mc_text{
+        margin-left: 5rem;
+        letter-spacing: 0.1rem;
+        font-size: 1.3rem;
+    }
+    .mc_item_1{
+        width: 42rem;
+    }
+    .mc_img_1 img{
+        height: 65rem;
+        object-fit: cover;
+    }
+    .main_content .mc_title{
+        font-size: 2.5rem !important;
+        letter-spacing: 0.5rem;
+        line-height: 4.5rem;
+    }
+    .mc_item_2{
+        min-width: auto;
+    }
+    .mc_2 .mc_text{
+        margin-right: 40rem !important;
+    }
+    .mc_3 .mc_text{
+        margin-left: 40rem;
+    }
 }
 
 @media screen and ( max-width:767px ){
-
+    .toppage .logo_icon{
+        margin-left: 0;
+    }
+    .toppage .logo_icon img{
+        width: 10rem;
+    }
     .content_section {
         padding-bottom: 12rem;
     }
@@ -1482,15 +1691,38 @@ line-height: 1.1rem;;
         margin: 4rem auto 0rem;
     }
     /* メインコンテンツ */
+    .page_title{
+        margin-top: 3rem !important;
+        margin-bottom: 2rem !important;
+    }
+    .mc_title.mc_page_title{
+        margin-top: 0 !important;
+        line-height: 2.8rem;
+        margin-left: 4.3rem;
+        font-size: 1.2rem !important;
+    }
+    .horiz_text_title{
+        font-size: 2rem !important;
+    }
+    .horiz_text_title .text_line_h{
+        padding-left: 2rem;
+    }
     .main_content{
         flex-wrap: wrap;
         justify-content: flex-start;
+        flex-direction: column;
+        margin-top: -8rem;
+        padding-top: 8rem;
+    }
+    .main_content.mc_1{
+        align-items: flex-start;
     }
     .mc_item_1{
-        width: 30vh;
-        min-width: 30rem;
-        height: 52vh;
-        min-height: 49rem;
+        width: 30rem;
+        height: 48rem;
+    }
+    .mc_img_1 img{
+        height: auto;
     }
     .mc_text{
         margin: 0 auto;
@@ -1498,7 +1730,7 @@ line-height: 1.1rem;;
         line-height: 2.6rem;
         width: 30rem;
     }
-    .mc_title{
+    .main_content .mc_title{
         font-size: 2.6rem !important;
         margin-bottom: 3.5rem;
         margin-top: 4rem;
@@ -1519,12 +1751,12 @@ line-height: 1.1rem;;
         margin-bottom: 0;
     }
     .mc_2{
-        /* margin-top: 16rem; */
-        margin-top: 13rem;
+        margin-top: 10rem;
+        padding-top: 1rem;
     }
     .mc_item_2{
         height: 49rem;
-        width: 36rem;
+        width: 33rem;
         min-width: 35rem;
         position: static;
     }
@@ -1536,16 +1768,23 @@ line-height: 1.1rem;;
     }
     .mc_2 .mc_text{
         margin: 0 auto;
+        margin-right: auto !important;
+        width: 100%;
+    }
+    .mc_2_inner{
+        width: 30rem;
+        margin: 0 auto;
     }
     .horiz_text{
         bottom: auto;
         top: 4rem;
-        left: -6.5rem;
+        left: -2rem;
     }
     .mc_3{
-        /* margin-top: 16rem; */
-        margin-top: 12rem;
-        flex-direction: inherit;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 9rem;
+        padding-top: 2rem;
     }
     .mc_item_3{
         height: 49rem;
@@ -1554,7 +1793,7 @@ line-height: 1.1rem;;
         position: static;
     }
     .mc_3 .mc_text{
-        margin: 0 auto;
+        margin: 2rem auto 0;
     }
     .mc_3 .vertical_text{
         bottom: auto;
@@ -1584,12 +1823,16 @@ line-height: 1.1rem;;
     .mc_4 .horiz_text{
         left: -1rem;
     }
+    .mc_4_inner{
+        width: 30rem;
+        margin: 0 auto;
+    }
     /* ロクシタンバナー */
     .loccitane_banner{
         margin-top: 0;
     }
     .loccitane_banner img{
-        width: 35rem;
+        width: 33rem;
         min-width: 35rem;
     }
     /* 特別プラン */
@@ -1623,6 +1866,9 @@ line-height: 1.1rem;;
     .news h2{
         margin: 0 auto 5rem;
         writing-mode: inherit;
+    }
+    .news .vertical{
+        margin-right: auto;
     }
     .news dl{
         min-width: 30rem;
@@ -1830,6 +2076,10 @@ line-height: 1.1rem;;
     .instagram{
         margin-top: -8rem;
     }
+    .instagram_wrap{
+        width: 32rem;
+        margin: 0 auto;
+    }
     .instagram ul{
         width: 32rem;
         margin: 1rem auto 0;
@@ -1858,4 +2108,104 @@ line-height: 1.1rem;;
         margin: 4rem auto 0;
         display: block;
     }
+    /* フッター */
+    .each_page{
+        width: 100% !important;
+    }
+}
+
+@media screen and ( max-width:360px ){
+    .toppage.mv_news{
+        min-width: auto;
+    }
+    .toppage .banner{
+        width: 100%;
+        min-width: auto;
+    }
+    .toppage h2,.toppage p{
+        white-space: break-spaces;
+        word-break: break-all;
+    }
+    .toppage .cs_mc br{
+        display: none;
+    }
+    .toppage .mc_text{
+        width: 90%;
+    }
+    .toppage .mc_item_1,.mc_item_3{
+        width: 70%;
+        min-width: auto;
+    }
+    .toppage .mc_img_1 img{
+        height: 48rem;
+    }
+    .toppage .mc_item_2{
+        width: 100%;
+        min-width: auto;
+    }
+    .toppage .mc_2_inner{
+        width: 90%;
+    }
+    .toppage .mc_4_inner{
+        width: 100%;
+    }
+    .toppage .mc_4 .mc_text{
+        padding: 0 1rem;
+    }
+    .toppage .horiz_text{
+        left: -11rem !important;
+    }
+    .toppage .loccitane_banner img{
+        width: 100%;
+        min-width: auto;
+    }
+    .toppage .slick li{
+        width: 100% !important;
+    }
+    .toppage .news dl{
+        min-width: auto;
+    }
+    .toppage .news .btn{
+        width: 80%;
+        white-space: inherit;
+    }
+    .toppage .hospitality_list li{
+        width: 100%;
+        height: auto;
+    }
+    .toppage .slick-next {
+        right: 50vw !important;
+    }
+    .toppage .slick-next::after {
+        right: 1.5rem;
+        transform: rotate(45deg);
+    }
+    /* prev */
+
+    .toppage .slick-prev {
+        left: 50vw !important;
+    }
+    .toppage .slick-prev::after {
+        left: 1.5rem;
+        transform: rotate(-135deg);
+    }
+    .toppage .circle_img img{
+        height: 30rem;
+        clip-path: circle(30% at center);
+    }
+    .toppage .circle_img{
+        width: 100%;
+        height: auto;
+    }
+    .toppage .photo_spot ul{
+        width: auto;
+    }
+    .toppage .instagram ul{
+        width: 50%;
+    }
+    .toppage .access_map p{
+        width: 80%;
+        word-break: break-all;
+    }
+    
 }
