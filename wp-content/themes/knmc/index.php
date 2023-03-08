@@ -15,7 +15,7 @@
                     <!-- メインメニュー -->
                     <?php get_sidebar('main_menu'); ?>
 
-                    <div class="mv_front">
+                    <div class="mv_front fv_fadein">
                         <div class="logo_white"><img src="<?php bloginfo('template_directory'); ?>/image/logo_white.svg" alt=""></div>
                         <h2 class="front_title">伊勢神宮と<br>熊野古道をつなぐ<br>隠れ家リゾート</h2>
                     </div>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="content_inner">
-                <div class="content_section fadein">
+                <div class="content_section fv_fadein">
                     <div class="banner">
 
                         <?php
