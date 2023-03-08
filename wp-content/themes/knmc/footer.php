@@ -223,6 +223,8 @@
 
 <!-- LightBox -->
 <script src="<?php bloginfo('template_directory'); ?>/js/lightbox.min.js"></script>
+<!-- webp -->
+<script src="../js/modernizr-custom.js?ver=<?php echo date('YmdHis'); ?>"></script>
 <!-- スムーススクロール -->
 <script rel="js" href="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 <!--自作のJS-->

@@ -26,12 +26,6 @@ body{
 	html{font-size: calc( 1000vw / 430vw );}
 }
 
-.header{
-    background-image: url(../image/header_star.png);
-}
-.stargazing .mc_text {
-    height: 14rem;
-}
 .stargazing .horiz_text{
     bottom: auto;
     top: 4rem;
@@ -41,22 +35,27 @@ body{
     font-size: 1.8rem !important;
     letter-spacing: 0.5rem;
     margin-bottom: auto;
-    margin-top: 6.5rem;
 }
 .star_banner{
-    background-image: url(../image/stargazing_banner.png);
-    height: 65rem;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    width: 100%;
+}
+.star_banner_bg{
+    height: 65rem;
+    width: 100%;
+}
+.star_banner_bg img{
+    height: 65rem;
+    width: 100%;
+    object-fit: cover;
 }
 .star_banner .inner {
     margin-bottom: 4rem;
+    position: absolute;
 }
 .star_banner .inner img{
     width: 16rem;
@@ -96,6 +95,7 @@ body{
 
 .stargazing .section .flex{
     justify-content: center;
+    margin-right: 7rem;
 }
 .stargazing .section .flex img{
     width: 60rem;
@@ -155,6 +155,11 @@ body{
     padding: 1rem 2.4rem;
     bottom: 2.5rem;
 }
+@media screen and (max-width: 1126px){
+    .stargazing .mc_text {
+        margin-left: 12rem;
+    }
+}
 @media screen and (max-width: 767px){
     .stargazing .section{
         margin-bottom: 10rem;
@@ -162,6 +167,7 @@ body{
     }
     .stargazing .mc_text{
         width: auto;
+        margin-left:0;
     }
     .stargazing .horiz_text{
         font-size: 2rem;
@@ -190,6 +196,7 @@ body{
     .stargazing .section .flex{
         flex-direction: column;
         align-items: center;
+        margin-right: 0;
     }
     .stargazing .section .flex img{
         width: 33rem;
