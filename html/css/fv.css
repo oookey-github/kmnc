@@ -46,3 +46,88 @@ body{
     background-position: center;
     background-size: cover;
 }
+
+/*　WebP対応の場合　*/
+.webp .restaurant .header{
+    background-image: url(../image/webp/header_bg_oshokuji.webp);
+    background-position: 80% 20%;
+}
+/*　WebP非対応の場合　*/
+.no-webp .restaurant .header{
+    background-image: url(../image/header_bg_oshokuji.png);
+    background-position: 80% 20%;
+}
+
+/*　WebP対応の場合　*/
+.webp .guest_room .header {
+    background-image: url(../image/webp/header_guest_room.webp);
+}
+/*　WebP非対応の場合　*/
+.no-webp .guest_room .header {
+    background-image: url(../image/header_guest_room.png);
+}
+
+/*　WebP対応の場合　*/
+.webp .pre_collab_stayplan .header {
+    background-image: url(../image/webp/header_pre_collabo_stayplan.webp);
+}
+/*　WebP非対応の場合　*/
+.no-webp.pre_collab_stayplan .header {
+    background-image: url(../image/header_pre_collabo_stayplan.png);
+}
+
+/*　WebP対応の場合　*/
+.webp .omotenashi .header{
+    background-image: url(../image/webp/hospitality_header.webp);
+}
+/*　WebP非対応の場合　*/
+.no-webp .omotenashi .header{
+    background-image: url(../image/hospitality_header.png);
+}
+
+/*　WebP対応の場合　*/
+.webp .guide .header{
+    background-image: url(../image/webp/header_bg_guide.webp);
+}
+/*　WebP非対応の場合　*/
+.no-webp .guide .header{
+    background-image: url(../image/header_bg_guide.png);
+}
+
+/*　WebP対応の場合　*/
+.webp .newspage .header{
+    background-image: url(../image/webp/header_tourism.webp);
+}
+/*　WebP非対応の場合　*/
+.no-webp .newspage .header{
+    background-image: url(../image/header_tourism.png);
+}
+
+/*　WebP対応の場合　*/
+.webp .tourism .header {
+    background-image: url(../image/webp/header_tourism.webp);
+}
+/*　WebP非対応の場合　*/
+.no-webp .tourism .header {
+    background-image: url(../image/header_tourism.png);
+}
+
+/*　WebP対応の場合　*/
+.webp .experience .header{
+    background-image: url(../image/webp/header_experience.webp);
+}
+/*　WebP非対応の場合　*/
+.no-webp .experience .header{
+    background-image: url(../image/header_experience.png);
+}
+
+/*　WebP対応の場合　*/
+.webp .stargazing .header{
+    background-image: url(../image/webp/header_star.webp);
+    background-position: center;
+}
+/*　WebP非対応の場合　*/
+.no-webp .stargazing .header{
+    background-image: url(../image/header_star.png);
+    background-position: center;
+}
