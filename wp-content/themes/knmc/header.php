@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>世界遺産リゾート 熊野倶楽部【公式】</title>
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/reset.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/fv.css?ver=<?php echo date('YmdHis'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/top.css?ver=<?php echo date('YmdHis'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/restaurant.css?ver=<?php echo date('YmdHis'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/news.css?ver=<?php echo date('YmdHis'); ?>">
