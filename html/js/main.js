@@ -1,3 +1,17 @@
+// ローディング
+$(function(){
+    //読み込みが完了したら実行する
+    $(window).on('load',function(){
+      //ローディングアニメーションをフェードアウト
+      $('#loader').delay(600).fadeOut(600);
+  });
+  
+    //ページの読み込みが完了してなくても5秒後にアニメーションを非表示にする
+    setTimeout(function(){
+      $('#loader').fadeOut(600);
+    },5000);
+  });
+
 // // ページ内リンクスクロール
 // $('#page-link a[href*="#"]').click(function () {//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
 // 	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
@@ -131,6 +145,13 @@ new simpleParallax(image, {
     delay: .6,
 	transition: 'cubic-bezier(0,0,0,1)'
 });
+// パララックス大きい動き
+var image = document.getElementsByClassName('parallax_l');
+new simpleParallax(image, {
+	scale: 1.2,
+    delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)'
+});
 // フェードイン
 $(window).on('scroll',function () {
     const windowHeight = $(window).height();
@@ -148,7 +169,7 @@ $(function(){
     var wHeight = $(document).height();
     var scrollAmount = $(document).scrollTop();
 
-// フェードインアニメーション
+    // フェードインアニメーション
     $('.fv_fadein').each(function () {
         var targetPosition = $(this).offset().top;
         console.log(targetPosition);
