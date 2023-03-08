@@ -10,9 +10,10 @@
 $(function(){
     $('a[href^="#"]').click(function(){
     var href= $(this).attr("href");
+    var speed = 1100;
     var target = $(href == "#" || href == "" ? 'html' : href);
     var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, 500);
+    $("html, body").animate({scrollTop:position}, speed, 'swing');
     return false;
 });
 });
@@ -46,7 +47,7 @@ $(function(){
         arrows:false,             //追加（矢印非表示
         responsive: [
             {
-              breakpoint: 767, // 500px未満で・・・
+              breakpoint: 768, // 500px未満で・・・
               settings: "unslick", // スライダーを無効
             },
         ],
@@ -58,6 +59,21 @@ $(function(){
     $('.slick-sp-pc').slick({
         autoplay: true,
         dots: true,
+        infinite: true,
+        speed: 1500,
+        slidesToShow: 3,
+        centerMode: true,
+        variableWidth: true,
+        initialSlide:5,
+        autoplaySpeed:1500,
+        arrows:false,             //追加（矢印非表示
+    });
+});
+/**breakepointなし slick-dotsなし */
+$(function(){
+    $('.slick_dots_none').slick({
+        autoplay: true,
+        dots: false,
         infinite: true,
         speed: 1500,
         slidesToShow: 3,
@@ -111,21 +127,47 @@ $(".hotel_reserve_inner_sp a").scroll(function () {//ナビゲーションのリ
 // パララックス
 var image = document.getElementsByClassName('parallax');
 new simpleParallax(image, {
-	scale: 1.3,
+	scale: 1.1,
     delay: .6,
 	transition: 'cubic-bezier(0,0,0,1)'
 });
+// フェードイン
+$(window).on('scroll',function () {
+    const windowHeight = $(window).height();
+    const scroll = $(window).scrollTop();
 
-$(function () {
-    $(window).scroll(function () {
-        const windowHeight = $(window).height();
-        const scroll = $(window).scrollTop();
-
-        $('.fadein').each(function () {
-        const targetPosition = $(this).offset().top;
-        if (scroll > targetPosition - windowHeight + 200) {
-            $(this).addClass("is-fadein");
-        }
-        });
+    $('.fadein').each(function () {
+    const targetPosition = $(this).offset().top;
+    if (scroll > targetPosition - windowHeight + 0) {
+        $(this).addClass("is-fadein");
+    }
     });
+}).trigger('scoll');
+// fvフェードイン
+$(function(){
+    var wHeight = $(document).height();
+    var scrollAmount = $(document).scrollTop();
+
+// フェードインアニメーション
+    $('.fv_fadein').each(function () {
+        var targetPosition = $(this).offset().top;
+        console.log(targetPosition);
+        if(scrollAmount > targetPosition - wHeight + 200) {
+            $(this).addClass("fv_is-fadein");
+        }
+    });
+
+});
+
+// モーダルウィンドウ
+//モーダル表示
+$(".modal-open").modaal({
+start_open:false, // ページロード時に表示するか
+overlay_close:true,//モーダル背景クリック時に閉じるか
+before_open:function(){// モーダルが開く前に行う動作
+    $('html').css('overflow-y','hidden');/*縦スクロールバーを出さない*/
+},
+after_close:function(){// モーダルが閉じた後に行う動作
+    $('html').css('overflow-y','scroll');/*縦スクロールバーを出す*/
+}
 });

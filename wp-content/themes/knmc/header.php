@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/top.css?ver=<?php echo date('YmdHis'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/restaurant.css?ver=<?php echo date('YmdHis'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/news.css?ver=<?php echo date('YmdHis'); ?>">
-    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/style_special.css?ver=<?php echo date('YmdHis'); ?>">
-    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/fv_star.css?ver=<?php echo date('YmdHis'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/custom.css?ver=<?php echo date('YmdHis'); ?>">
+    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/fv_star.css?ver=<?php echo date('YmdHis'); ?>">
+    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/style_special.css?ver=<?php echo date('YmdHis'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/slick.css?ver=<?php echo date('YmdHis'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/slick-theme.css?ver=<?php echo date('YmdHis'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/lightbox.css?ver=<?php echo date('YmdHis'); ?>">
