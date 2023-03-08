@@ -19,7 +19,7 @@ get_header(); ?>
 
                 <div class="pc">
                     <div class="nav_link flex">
-                        <a href="<?php bloginfo('url'); ?>">"><p class="fs12">トップ</p></a>
+                        <a href="<?php bloginfo('url'); ?>"><p class="fs12">トップ</p></a>
                         <p>&gt;</p>
                         <a href=""><p class="fs12">星空鑑賞会</p></a>
                     </div>
