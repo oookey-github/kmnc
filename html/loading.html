@@ -12,21 +12,21 @@
     <link rel="stylesheet" href="./css/top.css">
     <link rel="stylesheet" href="./css/restaurant.css">
 
-    <script>
+    <!-- <script>
         // ローディング
         $(function testFunc(callback){
-        //     //読み込みが完了したら実行する
-        //     $(window).on('load',function(){
-        //     //ローディングアニメーションをフェードアウト
-        //     $('#loader').delay(600).fadeOut(600);
-        //     callback();
-        // });
+            //読み込みが完了したら実行する
+            $(window).on('load',function(){
+            //ローディングアニメーションをフェードアウト
+            $('#loader').delay(600).fadeOut(600);
+            callback();
+        });
         
             //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
             setTimeout(function(){
             $('#loader').fadeOut(600);
             callback();
-            },2000);
+            },3000);
         });
         // fvフェードイン
         $(function myCallback(){
@@ -43,7 +43,33 @@
             });
         });
         testFunc(myCallback);
-    </script>
+    </script> -->
+
+<script>
+    // ローディング
+    $(function testFunc(callback){
+        //読み込みが完了したら実行する
+        $(window).on('load',function(){
+        //ローディングアニメーションをフェードアウト
+        $('#loader').delay(600).fadeOut(600);
+
+　　　　　　 //セットタイムアウトを使って、読み込み完了の1.2秒後にfadeIn実施
+        setTimeout(function(){
+        var wHeight = $(document).height();
+        var scrollAmount = $(document).scrollTop();
+
+        // フェードインアニメーション
+        $('.fv_fadein').each(function () {
+            var targetPosition = $(this).offset().top;
+            console.log(targetPosition);
+            if(scrollAmount > targetPosition - wHeight + 200) {
+                $(this).addClass("fv_is-fadein");
+            }
+        });
+        },1200);
+    });
+});
+</script>
 
 </head>
 
