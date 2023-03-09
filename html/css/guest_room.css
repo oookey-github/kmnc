@@ -150,7 +150,7 @@ body{
     width:27%;
     margin-left:10%;
 }
-.main_content.mc_2{
+.guest_room .main_content.mc_2{
     flex-wrap: wrap;
     flex-direction: column-reverse;
 }
@@ -233,7 +233,7 @@ body{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.slick-dotted.slick-slider{
+.guest_room .slick-dotted.slick-slider{
     display:flex;
     justify-content: center;
 }
@@ -508,7 +508,7 @@ footer .each_page a{
     .text p:last-child{
         font-size:1.5rem;
     }
-    .mc_item_2 {
+    .guest_room .mc_item_2 {
         height:100%!important;
         width:39rem!important;
         min-width:auto!important;
@@ -544,7 +544,7 @@ footer .each_page a{
         margin-bottom:2.6rem;
     }
     
-    .mc_2 .mc_text{
+    .guest_room .mc_2 .mc_text{
         margin-right:0;
     }
     .room.main_content.mc_2{

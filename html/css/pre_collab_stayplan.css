@@ -27,7 +27,7 @@ body{
 @media only screen and (max-width: 767px){
 	html{font-size: calc( 1000vw /430px  );}
 }
-.introduction{
+.pre_collab_stayplan .introduction{
     width:100%;
     margin-top:6.1rem;
     min-width:100%;
@@ -132,7 +132,7 @@ margin-left:0;
 .title2{
     display: inline-block;
 }
-.border_div{
+.pre_collab_stayplan .border_div{
     display: inline-block;
 }
 .title2 .border_div .border{
@@ -178,7 +178,7 @@ margin-left:0;
 .loccitane_royal_suite_flex .box{
     justify-content: space-between;
 }
-.flex_box{
+.pre_collab_stayplan .flex_box{
     width:38.8rem;
 }
 .flex_box img{
@@ -410,7 +410,7 @@ margin-left:0;
         margin-left:1rem;
     }
     /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-    .introduction{
+    .pre_collab_stayplan .introduction{
         min-width: auto;
         
         margin:0 auto;
@@ -588,7 +588,7 @@ margin-left:0;
         letter-spacing: 0.3rem;
         
     }
-    .title .border_div{
+    .pre_collab_stayplan .title .border_div{
         display:none;
     }
     .loccitane_royal_suite_mv img{

@@ -107,20 +107,20 @@ body{
     margin-bottom: 6rem;
 }
 /* セクション2 */
-.photo_spot{
+.stargazing .photo_spot{
     margin-bottom: 19rem;
 }
-.photo_spot li{
+.stargazing .photo_spot li{
     margin: 0rem 3.5rem 0rem 3.5rem;
     text-align: left;
 }
-.photo_spot li h2{
+.stargazing .photo_spot li h2{
     font-size: 1.8rem;
     font-weight: bold;
     white-space: nowrap;
     margin-top: 2rem;
 }
-.photo_spot li p{
+.stargazing .photo_spot li p{
     font-size: 1.4rem;
     margin-top: 0.5rem;
 }

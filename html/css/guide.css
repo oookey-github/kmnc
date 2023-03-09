@@ -48,6 +48,7 @@ body{
 }
 .guide .mc_2{
 	margin-top: 4.5rem;
+	padding-top: 0;
 }
 .guide .mc_2 .content_inner{
 	position: relative;

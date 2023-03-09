@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>同期処理</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="./css/fv.css">
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/restaurant.css">
+
+    <script>
+        // ローディング
+        $(function testFunc(callback){
+        //     //読み込みが完了したら実行する
+        //     $(window).on('load',function(){
+        //     //ローディングアニメーションをフェードアウト
+        //     $('#loader').delay(600).fadeOut(600);
+        //     callback();
+        // });
+        
+            //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+            setTimeout(function(){
+            $('#loader').fadeOut(600);
+            callback();
+            },2000);
+        });
+        // fvフェードイン
+        $(function myCallback(){
+            var wHeight = $(document).height();
+            var scrollAmount = $(document).scrollTop();
+
+            // フェードインアニメーション
+            $('.fv_fadein').each(function () {
+                var targetPosition = $(this).offset().top;
+                console.log(targetPosition);
+                if(scrollAmount > targetPosition - wHeight + 200) {
+                    $(this).addClass("fv_is-fadein");
+                }
+            });
+        });
+        testFunc(myCallback);
+    </script>
+
+</head>
+
+<!-- ローディング -->
+<div id="loader">
+    <div id="loader_logo"><img src="./image/load_logo.svg" alt="" class="fadeUp"></div>
+</div>
+
+<div class="toppage">
+    <div class="mv">
+        <div class="mv_inner">
+            <div class="front_blur"></div>
+            
+            <div class="flex header">
+                <div class="logo_icon">
+                    <a href="./index.html">
+                        <img src="./image/logo2.svg">
+                    </a>
+                </div>
+                <div class="nav_btn flex">
+                    <div class="bg3 btn flex pc">
+                        <img>
+                        <a href="https://reserve.489ban.net/client/kumanoclub/0/plan?_ga=2.3422384.1679297523.1678247235-497011290.1667267810&_gac=1.160607055.1676528460.CjwKCAiA3KefBhByEiwAi2LDHA7cYCgaY_12DQkpEQq9lCSUpYqnxP4gKphw98K-3HOfM1Wd-MHFRRoCVW0QAvD_BwE"><p class="fs13 c1"><span class="arrow"></span>宿泊プラン一覧</p></a>
+                    </div>
+                    <div class="bg3 btn flex pc">
+                        <img>
+                        <a href="https://reserve.489ban.net/client/kumanoclub/0/plan/availability/daily"><p class="fs13 c1"><span class="arrow"></span>空室情報</p></a>
+                    </div>
+                    <!-- ハンバーガーメニュー -->
+                    <div class="hamburger">
+                        <div class="openbtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <nav id="g-nav">
+                            <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                                <div class="nav_inner">
+                                    <div class="nav_bg"></div>
+                                    <div class="nav_access">
+                                        <a href="./index.html"><img src="./image/logo_menu.svg" alt=""></a>
+                                        <p>
+                                            世界遺産リゾート熊野倶楽部
+                                            <br><br>
+                                            〒519-4326
+                                            <br>
+                                            三重県熊野市久生屋町1430
+                                            <br><br>
+                                            TEL:0597-88-2045
+                                        </p>
+                                    </div>
+                                    <div class="nav_content">
+                                        <div class="flex">
+                                            <ul class="nav_mc">
+                                                <li>
+                                                    <a href="./guest_room/guest_room.html">
+                                                        <div class="horiz_text">
+                                                        <span class="text_line_h"></span>
+                                                        <h2 class="">客室のご案内</h2>
+                                                        <p>オールスイート</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./restaurant/restaurant.html">
+                                                        <div class="horiz_text">
+                                                        <span class="text_line_h"></span>
+                                                        <h2 class="">お食事のご案内</h2>
+                                                        <p>美しご馳走</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./bath/bath.html">
+                                                        <div class="horiz_text">
+                                                        <span class="text_line_h"></span>
+                                                        <h2 class="">露天風呂のご案内</h2>
+                                                        <p>天仰ぐ湯処</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./tourism/tourism.html">
+                                                        <div class="horiz_text">
+                                                        <span class="text_line_h"></span>
+                                                        <h2 class="">熊野の過ごし方</h2>
+                                                        <p>心揺さぶる体験</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./hospitality/hospitality.html">
+                                                        <div class="horiz_text">
+                                                        <span class="text_line_h"></span>
+                                                        <h2 class="">お出迎え・おもてなし</h2>
+                                                        <p>潤いの歓待</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav_sub">
+                                                <li><a href="#access">・アクセスマップ</a></li>
+                                                <li><a href="https://asp.hotel-story.ne.jp/mail/inquiry/?mc=75570001" target="_blank" rel="noopener">・お問い合せ</a></li>
+                                                <li><a href="#plan">・特別プラン</a></li>
+                                                <li><a href="./news/news_list.html">・お知らせ</a></li>
+                                            </ul>
+                                        </div>
+                                        <a href="./stargazing/stargazing.html">
+                                            <div class="nav_star">
+                                                <h2>星空鑑賞会<br><span>Starry Sky Viewing</span></h2>
+                                                <p><span class="arrow"></span>詳しくはこちら</p>
+                                            </div>
+                                        </a>
+                                        <div class="flex">
+                                            <a href="https://reserve.489ban.net/client/kumanoclub/0/plan?_ga=2.237116288.1679297523.1678247235-497011290.1667267810&_gac=1.247251830.1676528460.CjwKCAiA3KefBhByEiwAi2LDHA7cYCgaY_12DQkpEQq9lCSUpYqnxP4gKphw98K-3HOfM1Wd-MHFRRoCVW0QAvD_BwE" class="btn"><span class="arrow"></span>宿泊プラン一覧</a>
+                                            <a href="https://reserve.489ban.net/client/kumanoclub/0/plan/availability/daily" class="btn"><span class="arrow"></span>空室情報</a>
+                                        </div>
+                                        <div class="nav_sns flex">
+                                            <div class="flex_inner">
+                                                <div>
+                                                    <p class="fs14">公式SNS</p>
+                                                    <div class="insta_icon">
+                                                        <a href="">
+                                                            <img src="./image/instagram_icon.svg">
+                                                            <p class="fs08">Instagram</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="facebook_icon">
+                                                    <a href="">
+                                                        <img src="./image/facebook_icon.svg">
+                                                        <p class="fs08">Facebook</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#photo_spot" class="nav_photo">熊野周辺のフォトスポット</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </nav>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="mv_front fv_fadein">
+                <div class="logo_white"><img src="./image/logo_white.svg" alt=""></div>
+                <h2 class="front_title">伊勢神宮と<br>熊野古道をつなぐ<br>隠れ家リゾート</h2>
+            </div>
+            <a href="./news/news_detail.html" class="mv_news">
+                <h2>お知らせ：</h2>
+                <dl>
+                    <dt>2022/11/12</dt>
+                    <dd>熊野倶楽部ウェブサイトをリニューアルしました。</dd>
+                </dl>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- webp -->
+<script src="./js/modernizr-custom.js"></script>
+</body>
+</html>
