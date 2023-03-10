@@ -126,11 +126,14 @@ body img{
     transform: translateX(0);
 }
 .fv_fadein {
-    /* 最初は非表示 */
-    opacity: 0;
+    /*最初は非表示*/opacity: 0;
     visibility: hidden;
-    transform: translateY(5rem);
+    transform: translateY(3rem);
     transition: opacity 1.7s, visibility 1.7s, transform 1.7s;
+    -webkit-transform: translateY(3rem);
+    -moz-transform: translateY(3rem);
+    -ms-transform: translateY(3rem);
+    -o-transform: translateY(3rem);
 }
 /* フェードイン時に入るクラス */
 .fv_is-fadein {

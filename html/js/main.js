@@ -1,16 +1,32 @@
 // ローディング
-$(function(){
+$(function testFunc(callback){
     //読み込みが完了したら実行する
     $(window).on('load',function(){
-      //ローディングアニメーションをフェードアウト
-      $('#loader').delay(600).fadeOut(600);
-  });
-  
-    //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+    //ローディングアニメーションをフェードアウト
+    $('#loader').delay(600).fadeOut(600);
+     //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+            // setTimeout(function(){
+            // $('#loader').fadeOut(600);
+            // callback();
+            // },3000);
+
+    //セットタイムアウトを使って、読み込み完了の0.8秒後にfadeIn実施
     setTimeout(function(){
-      $('#loader').fadeOut(600);
-    },3000);
-  });
+    var wHeight = $(document).height();
+    var scrollAmount = $(document).scrollTop();
+    
+
+    // フェードインアニメーション
+    $('.fv_fadein').each(function () {
+        var targetPosition = $(this).offset().top;
+        console.log(targetPosition);
+        if(scrollAmount > targetPosition - wHeight + 200) {
+            $(this).addClass("fv_is-fadein");
+        }
+        });
+        },800);
+    });
+});
 
 // // ページ内リンクスクロール
 // $('#page-link a[href*="#"]').click(function () {//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
@@ -164,21 +180,21 @@ $(window).on('scroll',function () {
     }
     });
 }).trigger('scoll');
-// fvフェードイン
-$(function(){
-    var wHeight = $(document).height();
-    var scrollAmount = $(document).scrollTop();
+// // fvフェードイン
+// $(function(){
+//     var wHeight = $(document).height();
+//     var scrollAmount = $(document).scrollTop();
 
-    // フェードインアニメーション
-    $('.fv_fadein').each(function () {
-        var targetPosition = $(this).offset().top;
-        console.log(targetPosition);
-        if(scrollAmount > targetPosition - wHeight + 200) {
-            $(this).addClass("fv_is-fadein");
-        }
-    });
+//     // フェードインアニメーション
+//     $('.fv_fadein').each(function () {
+//         var targetPosition = $(this).offset().top;
+//         console.log(targetPosition);
+//         if(scrollAmount > targetPosition - wHeight + 200) {
+//             $(this).addClass("fv_is-fadein");
+//         }
+//     });
 
-});
+// });
 
 // モーダルウィンドウ
 //モーダル表示

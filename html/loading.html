@@ -53,7 +53,7 @@
         //ローディングアニメーションをフェードアウト
         $('#loader').delay(600).fadeOut(600);
 
-　　　　　　 //セットタイムアウトを使って、読み込み完了の1.2秒後にfadeIn実施
+        //セットタイムアウトを使って、読み込み完了の1.2秒後にfadeIn実施
         setTimeout(function(){
         var wHeight = $(document).height();
         var scrollAmount = $(document).scrollTop();
@@ -66,7 +66,7 @@
                 $(this).addClass("fv_is-fadein");
             }
         });
-        },1200);
+        },900);
     });
 });
 </script>
