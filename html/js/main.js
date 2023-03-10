@@ -4,10 +4,6 @@ $(function (){
     $(window).on('load',function(){
     //ローディングアニメーションをフェードアウト
     $('#loader').delay(600).fadeOut(600);
-     //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
-            setTimeout(function(){
-            $('#loader').fadeOut(600);
-            },3000);
 
     //セットタイムアウトを使って、読み込み完了の0.8秒後にfadeIn実施
     setTimeout(function(){
@@ -23,6 +19,10 @@ $(function (){
             $(this).addClass("fv_is-fadein");
         }
         });
+             //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+            setTimeout(function(){
+                $('#loader').fadeOut(600);
+                },3000);
         },800);
     });
 });
