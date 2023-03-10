@@ -1,14 +1,13 @@
 // ローディング
-$(function testFunc(callback){
+$(function (){
     //読み込みが完了したら実行する
     $(window).on('load',function(){
     //ローディングアニメーションをフェードアウト
     $('#loader').delay(600).fadeOut(600);
      //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
-            // setTimeout(function(){
-            // $('#loader').fadeOut(600);
-            // callback();
-            // },3000);
+            setTimeout(function(){
+            $('#loader').fadeOut(600);
+            },3000);
 
     //セットタイムアウトを使って、読み込み完了の0.8秒後にfadeIn実施
     setTimeout(function(){
@@ -27,14 +26,6 @@ $(function testFunc(callback){
         },800);
     });
 });
-
-// // ページ内リンクスクロール
-// $('#page-link a[href*="#"]').click(function () {//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
-// 	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
-// 	var pos = $(elmHash).offset().top;	//idの上部の距離を取得
-// 	$('body,html').animate({scrollTop: pos}, 400); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
-// 	return false;
-// });
 
 // スムーススクロール
 $(function(){
