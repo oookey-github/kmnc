@@ -1,15 +1,14 @@
-// ローディング
-$(function (){
+$(function testFunc(callback){
     //読み込みが完了したら実行する
     $(window).on('load',function(){
     //ローディングアニメーションをフェードアウト
     $('#loader').delay(600).fadeOut(600);
+    
 
     //セットタイムアウトを使って、読み込み完了の0.8秒後にfadeIn実施
     setTimeout(function(){
     var wHeight = $(document).height();
     var scrollAmount = $(document).scrollTop();
-    
 
     // フェードインアニメーション
     $('.fv_fadein').each(function () {
@@ -19,13 +18,52 @@ $(function (){
             $(this).addClass("fv_is-fadein");
         }
         });
-             //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
-            setTimeout(function(){
-                $('#loader').fadeOut(600);
-                },3000);
         },800);
     });
 });
+
+// // ローディング
+// $(function (){
+//     //読み込みが完了したら実行する
+//     $(window).on('load',function(){
+//     //ローディングアニメーションをフェードアウト
+//     $('#loader').delay(600).fadeOut(600);
+
+//     //セットタイムアウトを使って、読み込み完了の0.8秒後にfadeIn実施
+//     setTimeout(function(){
+//     var wHeight = $(document).height();
+//     var scrollAmount = $(document).scrollTop();
+    
+
+//     // フェードインアニメーション
+//     $('.fv_fadein').each(function () {
+//         var targetPosition = $(this).offset().top;
+//         console.log(targetPosition);
+//         if(scrollAmount > targetPosition - wHeight + 200) {
+//             $(this).addClass("fv_is-fadein");
+//         }
+//         });
+//             //  //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+//             // setTimeout(function(){
+//             //     $('#loader').fadeOut(600);
+//             //     },3000);
+//         },800);
+//     });
+// });
+
+// // ローディング
+// $(function(){
+//     //読み込みが完了したら実行する
+//     $(window).on('load',function(){
+//       //ローディングアニメーションをフェードアウト
+//       $('#loader').delay(600).fadeOut(600);
+//   });
+  
+//     //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+//     setTimeout(function(){
+//       $('#loader').fadeOut(600);
+//     },3000);
+//   });
 
 // スムーススクロール
 $(function(){
@@ -124,7 +162,7 @@ $(function(){
     });
 });
 
-// 宿泊予約PC
+// // 宿泊予約PC
 $(".hotel_reserve").hover(function () {//ボタンがクリックされたら
 	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
     $(".hotel_reserve_inner").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与

@@ -276,6 +276,7 @@ line-height: 1.1rem;;
     /*ナビのスタート位置と形状*/
 	bottom: 2rem;
     right: -120%;
+    /* right: 0; */
 	width:97rem;
     height: auto;/*ナビの高さ*/
     /*動き*/
@@ -284,7 +285,7 @@ line-height: 1.1rem;;
 
 /*アクティブクラスがついたら位置を0に*/
 .hotel_reserve_inner.panelactive{
-    right: 7rem;
+    right: 0rem;
 }
 
 .hotel_reserve_inner_sp{
@@ -294,22 +295,164 @@ line-height: 1.1rem;;
     /*ナビのスタート位置と形状*/
 	bottom: 0;
     left: -120%;
-	width:43rem;
+    /* left: 0; */
+	width:100%;
     height: auto;/*ナビの高さ*/
     /*動き*/
 	transition: all 0.6s;
+    z-index: 999;
 }
 
 /*アクティブクラスがついたら位置を0に*/
 .hotel_reserve_inner_sp.panelactive{
-    left: 8rem;
+    left: 0rem;
 }
 .hotel_reserve_inner_sp img{
     width: 42.5rem;
     height: auto;
 }
 
+/* 489版 */
+#search_489ban{
+    padding: 2rem 7rem;
+    background: #fff;
+    box-shadow: 0px 0px 12px #00000029;
+    font-family: 'Noto Sans JP', sans-serif;
+    height: 15.6rem;
+}
+#search_489ban form{
+    display: flex;
+    align-items: flex-end;
+}
+#search_489ban dl{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#search_489ban dt,
+#search_489ban dd{ margin: 0; padding: 0; display: table-cell; vertical-align: top;}
+#search_489ban dt{ font-size: 1rem; margin-bottom: 0.5rem;}
+#search_489ban dd{ }
+ 
+#search_489ban dd span,
+#search_489ban label,
+#search_489ban input,
+#search_489ban select{ 
+    display: inline-block;
+    font-weight: 400;
+}
+#search_489ban label{
+    font-size: 1.2rem;
+}
 
+#search_489ban input,#search_489ban select{
+    border: solid #707070 0.1rem;
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem 0.6rem 0.5rem;
+    letter-spacing: 0.1rem;
+    height: 4rem;
+    outline: none; 
+    background: #fff url("https://www.oyadonet.com/489/kuro/489ban_calender.png") no-repeat right 10px center; 
+    background-size: 16px;
+    cursor: pointer;
+    
+}
+#search_489ban input::-webkit-calendar-picker-indicator{
+    background: transparent;
+    cursor: pointer;
+}
+#search_489ban label input{
+    margin-left: 2.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.1rem;
+    cursor: pointer;
+}
+
+#search_489ban ul{}
+#search_489ban li{
+    list-style: none; display: inline-block;
+}
+
+#search_489ban button{
+    padding: 1.6rem 6rem;
+    background-color: #292929;
+    color: #fff;
+    font-size: 1.7rem;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+}
+
+#search_489ban .inbox_489ban{
+    margin-left: 4rem;
+    margin-right: 6rem;
+}
+#search_489ban .inbox_489ban:after {
+    content: "."; display: block;
+    height: 0; font-size: 0; visibility: hidden;
+}
+ 
+#search_489ban .stay_489ban,
+#search_489ban .room_489ban,
+#search_489ban .person_489ban{ width: 50%; float: left;}
+ 
+#search_489ban .stay_489ban dt,
+#search_489ban .room_489ban dt,
+#search_489ban .person_489ban dt{ width: auto;}
+ 
+#search_489ban .child_489ban{
+    border-bottom: 1px dotted #dedede;
+}
+#search_489ban .child_489ban:first-of-type{
+    padding: 5px 0 0;
+    border-top: 1px dotted #dedede;
+}
+#search_489ban .child_489ban:last-of-type{
+    margin: 0 0 10px; padding: 0 0 5px;
+}
+#search_489ban .child_489ban dt{ width: auto;}
+#search_489ban .child_489ban dd{ width: 70px; vertical-align: middle;}
+#search_489ban .child_489ban dt span{ display: block; font-size: 12px;}
+ 
+#search_489ban .price_489ban dt{ width: 65px;}
+#search_489ban .price_489ban div{ display: inline-block;}
+#search_489ban .price_489ban span{ font-size: 12px;}
+ 
+#search_489ban .tag_489ban,
+#search_489ban .tag_489ban dt,
+#search_489ban .tag_489ban dd{ width: 100%; display: block;}
+ 
+#search_489ban .tag_489ban .tag_mode_489ban{ font-size: 13px;}
+
+
+
+
+
+
+
+
+/*489ban*/
+.box_search_489ban{ width: 100%; max-width: 1200px; margin: 0 auto; display: table; line-height: 1 !important; background: #fff;}
+.box_search_489ban > div{ display: table-cell; vertical-align: middle;}
+.box_search_489ban .tit_489ban{ width: 25%; background: #19191a; text-align: center;}
+.box_search_489ban .tit_489ban img{ width: 93px; height: auto;}
+.box_search_489ban #search_489ban{overflow: hidden;}
+.box_search_489ban #search_489ban dl,
+.box_search_489ban #search_489ban .inbox_489ban{}
+.box_search_489ban #search_489ban dt{ padding: 0 0 5px; font-size: 16px; color: #000 !important;}
+.box_search_489ban #search_489ban input[type="text"] { height: 36px; padding: 5px 20px 5px 10px; border: solid 1px #000; outline: none; background: #fff url("https://www.oyadonet.com/489/kuro/489ban_calender.png") no-repeat right 5px center; background-size: 16px; box-sizing: border-box; font-size: 16px; width: 200px}
+.box_search_489ban #search_489ban input:disabled { color: #ADADAD;}
+.box_search_489ban #search_489ban input[type="text"] + label{ display: inline-block; margin: 5px 0 0; font-size: 16px !important;}
+.box_search_489ban #search_489ban select{-webkit-appearance: none; -moz-appearance: none; appearance: none; background:url("https://www.oyadonet.com/489/kuro/489ban_select.png") no-repeat right 5px center #fff; background-size:6px; width: 80px; cursor: pointer;}
+.box_search_489ban #search_489ban select::-ms-expand { display: none;}
+.box_search_489ban #search_489ban button{ float: left; width:198px; height:50px; padding: 2px 0 0 18px;-webkit-appearance: button; appearance: button; border: none; box-sizing: border-box; cursor: pointer; outline:none; background: url("https://www.oyadonet.com/489/kuro/489ban_btn.png") no-repeat 40px center #292929; background-size: 18px; text-align: center;}
+.box_search_489ban ul{ clear: both; overflow: hidden; display: flex; flex-wrap: wrap; font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif; margin-top: 1.5rem;}
+.box_search_489ban ul li{ font-size: 14px; width: auto; margin:0 35px 0 0;}
+.box_search_489ban ul li:last-child{ margin:0;}
+.box_search_489ban ul li a{ display: inline-block; color: #566875 !important; text-decoration: none; font-size: 1.2rem;}
+.box_search_489ban ul li a:hover{ text-decoration: underline;}
+.box_search_489ban ul li.ico_489ban1 a{ background: url("https://www.oyadonet.com/489/kuro/489ban_ico1.png") no-repeat 0 12px; background-size: 19px; padding: 15px 0 3px 25px;}
+.box_search_489ban ul li.ico_489ban2 a{ background: url("https://www.oyadonet.com/489/kuro/489ban_ico2.png") no-repeat 0 13px; background-size: 26px; padding: 15px 0 3px 32px;}
+.box_search_489ban ul li.ico_489ban3 a{ background: url("https://www.oyadonet.com/489/kuro/489ban_ico3.png") no-repeat 0 12px; background-size: 16px; padding: 15px 0 3px 23px;}
+.box_search_489ban ul li.ico_489ban4 a{ background: url("https://www.oyadonet.com/489/kuro/489ban_ico4.png") no-repeat 0 14px; background-size: 14px; padding: 15px 0 3px 20px;}
 
 
 
@@ -1650,6 +1793,45 @@ line-height: 1.1rem;;
 }
 
 @media screen and ( max-width:767px ){
+    /* 489版 */
+    #search_489ban{
+        padding: 0;
+        height: 10.5rem;
+    }
+    #search_489ban form{
+        align-items: flex-start;
+        justify-content: center;
+    }
+    #search_489ban label input{
+        margin-left: 0.5rem;
+    }
+    #search_489ban label{
+        margin-top: -0.5rem;
+    }
+    .box_search_489ban #search_489ban button{
+        width: 11.3rem;
+        margin-top: 1.6rem;
+        background-size: 1.4rem;
+    }
+    #search_489ban input, #search_489ban select {
+        letter-spacing: 0;
+        font-size: 1.4rem;
+    }
+    .box_search_489ban #search_489ban select{
+        width: 5.7rem;
+    }
+    #search_489ban .inbox_489ban{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #search_489ban button{
+        font-size: 1.4rem;
+    }
+    #search_489ban dd{
+        display: flex;
+        flex-direction: column;
+    }
+    
     .toppage .logo_icon{
         margin-left: 0;
     }
