@@ -244,7 +244,16 @@ footer{
         margin-bottom:0;
         padding-bottom:0;
         font-size:1.6rem;
+
     }
+    .sub_text p:first-child{
+        margin-bottom:4rem;
+    }
+    #omotenashi_2 .omotenashi_img_view img,
+    #omotenashi_4 .omotenashi_img_view img,
+    #omotenashi_6 .omotenashi_img_view img{
+        margin-right:1rem;
+}
     #omotenashi_1{
         padding-top:10rem;
     }
@@ -298,6 +307,7 @@ footer{
         letter-spacing: 0.02rem;
         line-height: 2.4rem;
     }
+    
     .right_text{
         width:100%;
     }
@@ -364,6 +374,9 @@ footer{
     #omotenashi_7{
         padding-bottom:10rem
     }
+    #omotenashi_6 .omotenashi_1 .title .title_inner p:nth-child(4){
+        margin-bottom:0;
+    }
     .omotenashi footer .each_page{
         justify-content: end;
     }
@@ -373,5 +386,8 @@ footer{
     }
     .omotenashi footer .each_page{
         width:90%;
+    }
+    .omotenashi .each_page_inner:first-child{
+        margin-left:4rem;
     }
 }

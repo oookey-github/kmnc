@@ -1,0 +1,130 @@
+
+#bath .guest_room_mv{
+    margin-bottom:0;
+}
+#bath .float-l{
+    width:40%;
+}
+#bath .float-r{
+    width:50%;
+    margin-bottom:10rem;
+}
+#bath .float-l p{
+    letter-spacing: 1.3rem;
+    line-height: 4.7rem;
+}
+#bath .float-r p{
+    letter-spacing: 0.2rem;
+    line-height: 3.2rem;
+}
+#bath .bath_mv{
+    width:90%;
+    margin:10rem auto 0;
+}
+.bath_img{
+    width:57.2rem;
+    height:50.1rem;
+}
+#bath1{
+    width:80%;
+    margin:0 auto;
+}
+#bath1 .guest_room_guidance_inner.room .flex{
+    width:100%;
+}
+#bath1 .guest_room_guidance_inner.room .main_content .float-l{
+    width:33%;
+}
+#bath1 .guest_room .guest_room_guidance_inner .float-l .title{
+    margin-bottom:5rem;
+    width:100%;
+}
+#bath1 .guest_room .main_content{
+    width:100%;
+}
+#bath1 .mc_2.room{
+    padding-top:0rem;
+}
+#bath1 .float-l .title p{
+    line-height: 5.2rem;
+}
+#bath1 .float-l .title p:last-child{
+    padding-left:1.5em;
+}
+#bath1 .float-l .title p:first-child{
+    margin-bottom:3.5rem;
+    margin-top:1.6rem;
+    letter-spacing: 0.3rem;
+    line-height: 2.4rem;
+}
+#bath1 .float-l p:last-child{
+    letter-spacing: 0.5rem;
+    line-height: 2.6rem;
+}
+#bath1 .float-l .explanation{
+    letter-spacing: 0.3rem;
+    line-height: 2.6rem;
+    display:inline-block;
+    margin-top:5rem;
+}
+#bath2 .room .mc_item_2.bath2_img{
+    width:77rem;
+}
+#bath2 .time.aft p:last-child{
+    text-indent: -1em;
+    padding-left:1em
+}
+#bath2 .border{
+    left:-12rem;
+    bottom:-2rem;
+}
+#bath2 .title p:first-child{
+    margin-bottom:1rem;
+    
+}
+#bath2 .title{
+    line-height: 5.2rem;
+}
+#bath2 .guest_room section{
+    padding-top:0;
+}
+#bath2 .mc_2{
+    padding-top:0;
+}
+#bath2 .guest_room .main_content.mc_2{
+    margin-top:10rem;
+}
+@media screen and ( max-width:767px ){
+    #bath{
+        display:inline-block
+    }
+    #bath .float-l{
+        width:100%;
+        float:none;
+        margin-bottom:1rem;
+    }
+
+    #bath .float-l p{
+        text-align: center;
+    }
+    #bath .float-r{
+        width:100%;
+        float:none;
+    }
+    #bath .float-r p{
+        text-align: center;
+    }
+    .bath_img{
+        width:100%;
+        height:32.3rem;
+    }
+    #bath1 .guest_room_guidance_inner.room .main_content .float-l{
+        width:100%;
+    }
+    #bath1 .guest_room_guidance_inner.room .flex{
+        flex-wrap:wrap;
+    }
+    #bath1 .guest_room_guidance_inner.room .main_content .float-l{
+        width:100%;
+    }
+}   
