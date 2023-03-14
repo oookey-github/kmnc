@@ -3,13 +3,17 @@ $(function testFunc(callback){
     $(window).on('load',function(){
     //ローディングアニメーションをフェードアウト
     $('#loader').delay(600).fadeOut(600);
-    
-
+});
     //セットタイムアウトを使って、読み込み完了の0.8秒後にfadeIn実施
+    
     setTimeout(function(){
+        $('#loader').fadeOut(500);
+    },800);
+    setTimeout(function (){
+        
     var wHeight = $(document).height();
     var scrollAmount = $(document).scrollTop();
-
+    
     // フェードインアニメーション
     $('.fv_fadein').each(function () {
         var targetPosition = $(this).offset().top;
@@ -17,10 +21,11 @@ $(function testFunc(callback){
         if(scrollAmount > targetPosition - wHeight + 200) {
             $(this).addClass("fv_is-fadein");
         }
+        
         });
         },800);
     });
-});
+
 
 // // ローディング
 // $(function (){
