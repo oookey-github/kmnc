@@ -1802,16 +1802,30 @@ line-height: 1.1rem;;
         align-items: flex-start;
         justify-content: center;
     }
+    #search_489ban dl{
+        position: relative;
+    }
+    #search_489ban label:nth-of-type(2){
+        position: absolute;
+        right: 0;
+    }
     #search_489ban label input{
         margin-left: 0.5rem;
+        height: 1.3rem;
     }
     #search_489ban label{
-        margin-top: -0.5rem;
+        
+    }
+    .box_search_489ban #search_489ban dt{
+        margin-bottom: 0.5rem;
+        padding-bottom: 0;
     }
     .box_search_489ban #search_489ban button{
         width: 11.3rem;
         margin-top: 1.6rem;
         background-size: 1.4rem;
+        background-position: 1.8rem;
+        padding-left: 24px;
     }
     #search_489ban input, #search_489ban select {
         letter-spacing: 0;
