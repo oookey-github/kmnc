@@ -209,6 +209,14 @@ $(window).on('scroll',function () {
     }
     });
 }).trigger('scoll');
+// お食事のご案内ぺージ　縦書き文字一行ずつフェードイン
+$(function(){
+    $('.vertical_text p') 
+    .css({opacity:0})
+    .each(function(i){
+        $(this).delay(500 * i).animate({opacity:1}, 1000);
+    })
+})
 // // fvフェードイン
 // $(function(){
 //     var wHeight = $(document).height();

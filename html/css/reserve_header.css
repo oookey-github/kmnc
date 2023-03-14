@@ -1,0 +1,28 @@
+.oyado_square{
+    position:absolute;
+    top:35%;
+    right:5%;
+}
+.oyado_square img{
+    width:18rem;
+}
+
+
+@media screen and ( max-width:767px ){
+    .reserve_header_sp{
+        width:100%;
+        height:10.6rem;
+    }
+    .reserve_header_sp a{
+        display:flex;
+        align-content:center;
+        height:100%;
+    }
+    .reserve_header_sp img{
+        width:45%;
+        margin:0 auto;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

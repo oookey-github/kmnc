@@ -131,3 +131,23 @@ body{
     background-image: url(../image/header_star.png);
     background-position: center;
 }
+/*　WebP対応の場合　露天風呂のご案内*/
+.webp .bath .header{
+    background-image: url(../image/webp/bath_mv.webp);
+    background-position: center;
+}
+/*　WebP非対応の場合　*/
+.no-webp .stargazing .header{
+    background-image: url(../image/bath_mv.png);
+    background-position: center;
+}
+/*　WebP対応の場合　露天風呂のご案内*/
+.webp .reserve .header{
+    background-image: url(../image/webp/reserve_header.webp);
+    background-position: center;
+}
+/*　WebP非対応の場合　*/
+.no-webp .reserve .header{
+    background-image: url(../image/reserve_header.png);
+    background-position: center;
+}
