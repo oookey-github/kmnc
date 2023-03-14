@@ -63,7 +63,6 @@ $(function testFunc(callback){
 //       //ローディングアニメーションをフェードアウト
 //       $('#loader').delay(600).fadeOut(600);
 //   });
-  
 //     //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
 //     setTimeout(function(){
 //       $('#loader').fadeOut(600);
@@ -91,10 +90,11 @@ $(".openbtn").click(function () {//ボタンがクリックされたら
     $("#g-nav").next().slideToggle(100);
 });
 
-$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+$(".nav_sub a").click(function () {//ナビゲーションのリンクがクリックされたら
     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
+
 
 // 特別プラン
 $(function(){
